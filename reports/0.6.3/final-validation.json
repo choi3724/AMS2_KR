@@ -68,6 +68,15 @@
     "github_repository_visibility": "PRIVATE",
     "anonymous_external_update_check": "REQUIRES_PUBLIC_RELEASE_ENDPOINT"
   },
+  "github": {
+    "repository": "https://github.com/choi3724/AMS2",
+    "commit": "c36d7f4913880bfd429ef01b6c1a78d38c26b537",
+    "tag": "v0.6.3",
+    "release": "https://github.com/choi3724/AMS2/releases/tag/v0.6.3",
+    "asset_uploaded": true,
+    "asset_size_bytes": 22211495,
+    "repository_visibility_changed": false
+  },
   "package": {
     "release_directory": "E:\\AMS2_Korean_Work\\releases\\AMS2-Korean-Closed-Beta-0.6.3-Pretendard",
     "zip": "E:\\AMS2_Korean_Work\\releases\\AMS2-Korean-Closed-Beta-0.6.3-Pretendard.zip",

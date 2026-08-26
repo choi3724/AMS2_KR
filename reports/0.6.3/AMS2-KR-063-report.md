@@ -32,6 +32,15 @@
 - GitHub latest release API를 조회하고 새 버전이면 release 페이지를 연다.
 - 현재 저장소가 private이므로 외부 익명 사용자의 조회는 공개 release endpoint가 마련되기 전까지 동작하지 않는다. 네트워크 실패는 설치를 차단하지 않는다.
 
+## GitHub
+
+- 저장소: `https://github.com/choi3724/AMS2`
+- 커밋: `c36d7f4913880bfd429ef01b6c1a78d38c26b537`
+- 태그: `v0.6.3`
+- Release: `https://github.com/choi3724/AMS2/releases/tag/v0.6.3`
+- 22,211,495바이트 ZIP asset 업로드: PASS
+- 저장소 가시성 변경: 없음
+
 ## 패키지 검증
 
 - ZIP: `E:\AMS2_Korean_Work\releases\AMS2-Korean-Closed-Beta-0.6.3-Pretendard.zip`
@@ -40,4 +49,3 @@
 - SHA256SUMS 452개: 452/452 PASS
 - release manifest JSON parse: PASS
 - physics/vehicles/tracks/PHYSICSPERSISTENT payload: 0개
-
