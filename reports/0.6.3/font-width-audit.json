@@ -1,0 +1,1071 @@
+﻿{
+    "schema":  "ams2-kr063-font-width-audit-v1",
+    "status":  "PASS",
+    "conclusion":  "The 0.6.3 candidate never increases Latin/numeric advance over 0.6.2. General UI uses a 92% floor; HUD uses 86% Latin and 80% compact-numeric floors. Glyph raster width, bearings, DDS atlases, and Hangul metrics remain unchanged.",
+    "baseline_directory":  "E:\\AMS2_Korean_Work\\releases\\AMS2-Korean-Closed-Beta-0.6.2-Hotfix-Pretendard\\payload\\direct\\gui",
+    "generated_at":  "2026-08-26T12:36:46.4471380+09:00",
+    "file_count":  9,
+    "total_wider_count":  0,
+    "total_hangul_metric_changes":  0,
+    "runtime_evidence":  [
+                             "work/AMS2-KR-063/runtime/interactive-pty/audio-bottom-2.png",
+                             "work/AMS2-KR-063/runtime/interactive-pty/controls-settings-top.png",
+                             "work/AMS2-KR-063/runtime/interactive-pty/graphics-top.png",
+                             "work/AMS2-KR-063/runtime/interactive-pty/cockpit-after-drive-2.png"
+                         ],
+    "fonts":  [
+                  {
+                      "font":  "kr08_font_data_list_value.bfont",
+                      "candidate_profile":  "GENERAL_LATIN_NUMERIC_92",
+                      "baseline_sha256":  "7EFBDC6FB26C5DBC5615C0648D37D2429035D171502D7D67A61FEA5FC491600D",
+                      "candidate_sha256":  "C8FF689126534DF5944C0FC1EC87FEA0E6FF2CAEBA743C18C67876BE6C3C9066",
+                      "shared_latin_codepoints":  222,
+                      "wider_count":  0,
+                      "equal_count":  32,
+                      "narrower_count":  190,
+                      "minimum_advance_ratio":  0.8571,
+                      "maximum_advance_ratio":  1,
+                      "left_bearing_changes":  0,
+                      "raster_width_changes":  0,
+                      "hangul_metric_changes":  0,
+                      "samples":  [
+                                      {
+                                          "text":  "Fanatec Wheel Base",
+                                          "baseline_advance":  156,
+                                          "candidate_advance":  141,
+                                          "reduction":  15,
+                                          "ratio":  0.9038,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "User Set 1",
+                                          "baseline_advance":  74,
+                                          "candidate_advance":  66,
+                                          "reduction":  8,
+                                          "ratio":  0.8919,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Project CARS 2",
+                                          "baseline_advance":  113,
+                                          "candidate_advance":  102,
+                                          "reduction":  11,
+                                          "ratio":  0.9027,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "1920x1080 143Hz",
+                                          "baseline_advance":  141,
+                                          "candidate_advance":  127,
+                                          "reduction":  14,
+                                          "ratio":  0.9007,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "2025/05/12 10:00",
+                                          "baseline_advance":  139,
+                                          "candidate_advance":  127,
+                                          "reduction":  12,
+                                          "ratio":  0.9137,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "01:29:35",
+                                          "baseline_advance":  70,
+                                          "candidate_advance":  64,
+                                          "reduction":  6,
+                                          "ratio":  0.9143,
+                                          "missing":  [
+
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Dry/Wet Skill",
+                                          "baseline_advance":  99,
+                                          "candidate_advance":  91,
+                                          "reduction":  8,
+                                          "ratio":  0.9192,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Limited Setup",
+                                          "baseline_advance":  106,
+                                          "candidate_advance":  96,
+                                          "reduction":  10,
+                                          "ratio":  0.9057,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Setup name",
+                                          "baseline_advance":  92,
+                                          "candidate_advance":  83,
+                                          "reduction":  9,
+                                          "ratio":  0.9022,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Match All Suspension",
+                                          "baseline_advance":  163,
+                                          "candidate_advance":  148,
+                                          "reduction":  15,
+                                          "ratio":  0.908,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "font":  "kr09_font_data_list_label.bfont",
+                      "candidate_profile":  "GENERAL_LATIN_NUMERIC_92",
+                      "baseline_sha256":  "B89785ABDF7A36448A5FAAFDB69E3EA1DC7F48AE8CA43FCF1BC6D5C28E47AFB7",
+                      "candidate_sha256":  "A23E1E5E97CCBD01CEE547E3BA19277EE8886CA3656029068BBB8B85859427E6",
+                      "shared_latin_codepoints":  222,
+                      "wider_count":  0,
+                      "equal_count":  32,
+                      "narrower_count":  190,
+                      "minimum_advance_ratio":  0.8571,
+                      "maximum_advance_ratio":  1,
+                      "left_bearing_changes":  0,
+                      "raster_width_changes":  0,
+                      "hangul_metric_changes":  0,
+                      "samples":  [
+                                      {
+                                          "text":  "Fanatec Wheel Base",
+                                          "baseline_advance":  156,
+                                          "candidate_advance":  141,
+                                          "reduction":  15,
+                                          "ratio":  0.9038,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "User Set 1",
+                                          "baseline_advance":  74,
+                                          "candidate_advance":  66,
+                                          "reduction":  8,
+                                          "ratio":  0.8919,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Project CARS 2",
+                                          "baseline_advance":  113,
+                                          "candidate_advance":  102,
+                                          "reduction":  11,
+                                          "ratio":  0.9027,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "1920x1080 143Hz",
+                                          "baseline_advance":  141,
+                                          "candidate_advance":  127,
+                                          "reduction":  14,
+                                          "ratio":  0.9007,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "2025/05/12 10:00",
+                                          "baseline_advance":  139,
+                                          "candidate_advance":  127,
+                                          "reduction":  12,
+                                          "ratio":  0.9137,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "01:29:35",
+                                          "baseline_advance":  70,
+                                          "candidate_advance":  64,
+                                          "reduction":  6,
+                                          "ratio":  0.9143,
+                                          "missing":  [
+
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Dry/Wet Skill",
+                                          "baseline_advance":  99,
+                                          "candidate_advance":  91,
+                                          "reduction":  8,
+                                          "ratio":  0.9192,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Limited Setup",
+                                          "baseline_advance":  106,
+                                          "candidate_advance":  96,
+                                          "reduction":  10,
+                                          "ratio":  0.9057,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Setup name",
+                                          "baseline_advance":  92,
+                                          "candidate_advance":  83,
+                                          "reduction":  9,
+                                          "ratio":  0.9022,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Match All Suspension",
+                                          "baseline_advance":  163,
+                                          "candidate_advance":  148,
+                                          "reduction":  15,
+                                          "ratio":  0.908,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "font":  "kr09_font_heading.bfont",
+                      "candidate_profile":  "GENERAL_LATIN_NUMERIC_92",
+                      "baseline_sha256":  "661ECC01497A3D8CDBD62B1CB3E102372DD6286704E342A6C06BF895C78E3B39",
+                      "candidate_sha256":  "0954E9A057EE986D1D4B57010867D6F502DC08592D48956253FF1D106AC78F76",
+                      "shared_latin_codepoints":  222,
+                      "wider_count":  0,
+                      "equal_count":  20,
+                      "narrower_count":  202,
+                      "minimum_advance_ratio":  0.8571,
+                      "maximum_advance_ratio":  1,
+                      "left_bearing_changes":  0,
+                      "raster_width_changes":  0,
+                      "hangul_metric_changes":  0,
+                      "samples":  [
+                                      {
+                                          "text":  "Fanatec Wheel Base",
+                                          "baseline_advance":  212,
+                                          "candidate_advance":  196,
+                                          "reduction":  16,
+                                          "ratio":  0.9245,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "User Set 1",
+                                          "baseline_advance":  100,
+                                          "candidate_advance":  92,
+                                          "reduction":  8,
+                                          "ratio":  0.92,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Project CARS 2",
+                                          "baseline_advance":  156,
+                                          "candidate_advance":  145,
+                                          "reduction":  11,
+                                          "ratio":  0.9295,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "1920x1080 143Hz",
+                                          "baseline_advance":  191,
+                                          "candidate_advance":  177,
+                                          "reduction":  14,
+                                          "ratio":  0.9267,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "2025/05/12 10:00",
+                                          "baseline_advance":  191,
+                                          "candidate_advance":  177,
+                                          "reduction":  14,
+                                          "ratio":  0.9267,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "01:29:35",
+                                          "baseline_advance":  95,
+                                          "candidate_advance":  89,
+                                          "reduction":  6,
+                                          "ratio":  0.9368,
+                                          "missing":  [
+
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Dry/Wet Skill",
+                                          "baseline_advance":  138,
+                                          "candidate_advance":  128,
+                                          "reduction":  10,
+                                          "ratio":  0.9275,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Limited Setup",
+                                          "baseline_advance":  147,
+                                          "candidate_advance":  136,
+                                          "reduction":  11,
+                                          "ratio":  0.9252,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Setup name",
+                                          "baseline_advance":  127,
+                                          "candidate_advance":  117,
+                                          "reduction":  10,
+                                          "ratio":  0.9213,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Match All Suspension",
+                                          "baseline_advance":  227,
+                                          "candidate_advance":  211,
+                                          "reduction":  16,
+                                          "ratio":  0.9295,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "font":  "kr09_font_heading_black.bfont",
+                      "candidate_profile":  "GENERAL_LATIN_NUMERIC_92",
+                      "baseline_sha256":  "9116FF0AE0FE3BBDA1A3B10E22FF82BE40DC78F3106752312D6123B5C8B1F4C0",
+                      "candidate_sha256":  "CCB1188ADE5E20547D8E59869B70EE91A5B4F3FD360FF756509A8547473B04F6",
+                      "shared_latin_codepoints":  222,
+                      "wider_count":  0,
+                      "equal_count":  20,
+                      "narrower_count":  202,
+                      "minimum_advance_ratio":  0.8571,
+                      "maximum_advance_ratio":  1,
+                      "left_bearing_changes":  0,
+                      "raster_width_changes":  0,
+                      "hangul_metric_changes":  0,
+                      "samples":  [
+                                      {
+                                          "text":  "Fanatec Wheel Base",
+                                          "baseline_advance":  212,
+                                          "candidate_advance":  196,
+                                          "reduction":  16,
+                                          "ratio":  0.9245,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "User Set 1",
+                                          "baseline_advance":  100,
+                                          "candidate_advance":  92,
+                                          "reduction":  8,
+                                          "ratio":  0.92,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Project CARS 2",
+                                          "baseline_advance":  156,
+                                          "candidate_advance":  145,
+                                          "reduction":  11,
+                                          "ratio":  0.9295,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "1920x1080 143Hz",
+                                          "baseline_advance":  191,
+                                          "candidate_advance":  177,
+                                          "reduction":  14,
+                                          "ratio":  0.9267,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "2025/05/12 10:00",
+                                          "baseline_advance":  191,
+                                          "candidate_advance":  177,
+                                          "reduction":  14,
+                                          "ratio":  0.9267,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "01:29:35",
+                                          "baseline_advance":  95,
+                                          "candidate_advance":  89,
+                                          "reduction":  6,
+                                          "ratio":  0.9368,
+                                          "missing":  [
+
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Dry/Wet Skill",
+                                          "baseline_advance":  138,
+                                          "candidate_advance":  128,
+                                          "reduction":  10,
+                                          "ratio":  0.9275,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Limited Setup",
+                                          "baseline_advance":  147,
+                                          "candidate_advance":  136,
+                                          "reduction":  11,
+                                          "ratio":  0.9252,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Setup name",
+                                          "baseline_advance":  127,
+                                          "candidate_advance":  117,
+                                          "reduction":  10,
+                                          "ratio":  0.9213,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Match All Suspension",
+                                          "baseline_advance":  227,
+                                          "candidate_advance":  211,
+                                          "reduction":  16,
+                                          "ratio":  0.9295,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "font":  "kr09_font_heading_bold.bfont",
+                      "candidate_profile":  "GENERAL_LATIN_NUMERIC_92",
+                      "baseline_sha256":  "5C787D014E70E9FF1D1D150288D7FCD9F20636A14618ABEAD36DA13ACBACA6BA",
+                      "candidate_sha256":  "30C05713B570C36D5E2B01D318243DC9670B648ED63A8E00F75A249898871F51",
+                      "shared_latin_codepoints":  222,
+                      "wider_count":  0,
+                      "equal_count":  20,
+                      "narrower_count":  202,
+                      "minimum_advance_ratio":  0.8571,
+                      "maximum_advance_ratio":  1,
+                      "left_bearing_changes":  0,
+                      "raster_width_changes":  0,
+                      "hangul_metric_changes":  0,
+                      "samples":  [
+                                      {
+                                          "text":  "Fanatec Wheel Base",
+                                          "baseline_advance":  212,
+                                          "candidate_advance":  196,
+                                          "reduction":  16,
+                                          "ratio":  0.9245,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "User Set 1",
+                                          "baseline_advance":  100,
+                                          "candidate_advance":  92,
+                                          "reduction":  8,
+                                          "ratio":  0.92,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Project CARS 2",
+                                          "baseline_advance":  156,
+                                          "candidate_advance":  145,
+                                          "reduction":  11,
+                                          "ratio":  0.9295,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "1920x1080 143Hz",
+                                          "baseline_advance":  191,
+                                          "candidate_advance":  177,
+                                          "reduction":  14,
+                                          "ratio":  0.9267,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "2025/05/12 10:00",
+                                          "baseline_advance":  191,
+                                          "candidate_advance":  177,
+                                          "reduction":  14,
+                                          "ratio":  0.9267,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "01:29:35",
+                                          "baseline_advance":  95,
+                                          "candidate_advance":  89,
+                                          "reduction":  6,
+                                          "ratio":  0.9368,
+                                          "missing":  [
+
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Dry/Wet Skill",
+                                          "baseline_advance":  138,
+                                          "candidate_advance":  128,
+                                          "reduction":  10,
+                                          "ratio":  0.9275,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Limited Setup",
+                                          "baseline_advance":  147,
+                                          "candidate_advance":  136,
+                                          "reduction":  11,
+                                          "ratio":  0.9252,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Setup name",
+                                          "baseline_advance":  127,
+                                          "candidate_advance":  117,
+                                          "reduction":  10,
+                                          "ratio":  0.9213,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Match All Suspension",
+                                          "baseline_advance":  227,
+                                          "candidate_advance":  211,
+                                          "reduction":  16,
+                                          "ratio":  0.9295,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "font":  "kr13_font_hud_light.bfont",
+                      "candidate_profile":  "HUD_LATIN_86_NUMERIC_80",
+                      "baseline_sha256":  "65096425673A7936DF8E71AAEED26636BC7BFF1AAECC7F0F3A38A6B4A789544B",
+                      "candidate_sha256":  "808032A587298EB8618C4A5D0C3232571A1B8C0834FCB5ECE1CA626854B81777",
+                      "shared_latin_codepoints":  222,
+                      "wider_count":  0,
+                      "equal_count":  0,
+                      "narrower_count":  222,
+                      "minimum_advance_ratio":  0.75,
+                      "maximum_advance_ratio":  0.9,
+                      "left_bearing_changes":  0,
+                      "raster_width_changes":  0,
+                      "hangul_metric_changes":  0,
+                      "samples":  [
+                                      {
+                                          "text":  "Fanatec Wheel Base",
+                                          "baseline_advance":  157,
+                                          "candidate_advance":  139,
+                                          "reduction":  18,
+                                          "ratio":  0.8854,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "User Set 1",
+                                          "baseline_advance":  74,
+                                          "candidate_advance":  63,
+                                          "reduction":  11,
+                                          "ratio":  0.8514,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Project CARS 2",
+                                          "baseline_advance":  116,
+                                          "candidate_advance":  97,
+                                          "reduction":  19,
+                                          "ratio":  0.8362,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "1920x1080 143Hz",
+                                          "baseline_advance":  140,
+                                          "candidate_advance":  114,
+                                          "reduction":  26,
+                                          "ratio":  0.8143,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "2025/05/12 10:00",
+                                          "baseline_advance":  139,
+                                          "candidate_advance":  112,
+                                          "reduction":  27,
+                                          "ratio":  0.8058,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "01:29:35",
+                                          "baseline_advance":  69,
+                                          "candidate_advance":  55,
+                                          "reduction":  14,
+                                          "ratio":  0.7971,
+                                          "missing":  [
+
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Dry/Wet Skill",
+                                          "baseline_advance":  100,
+                                          "candidate_advance":  85,
+                                          "reduction":  15,
+                                          "ratio":  0.85,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Limited Setup",
+                                          "baseline_advance":  106,
+                                          "candidate_advance":  92,
+                                          "reduction":  14,
+                                          "ratio":  0.8679,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Setup name",
+                                          "baseline_advance":  92,
+                                          "candidate_advance":  81,
+                                          "reduction":  11,
+                                          "ratio":  0.8804,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Match All Suspension",
+                                          "baseline_advance":  166,
+                                          "candidate_advance":  144,
+                                          "reduction":  22,
+                                          "ratio":  0.8675,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "font":  "kr13_font_hud_main.bfont",
+                      "candidate_profile":  "HUD_LATIN_86_NUMERIC_80",
+                      "baseline_sha256":  "3B3962A2235897A476E4EA57654AC591D28C82E563C2DFF9D8AE78B18F3A88AC",
+                      "candidate_sha256":  "D534E57925E1CB907C4386D1A9F04DA9D67E208B70EFB50AB6EF7FBB6EC76BE3",
+                      "shared_latin_codepoints":  222,
+                      "wider_count":  0,
+                      "equal_count":  0,
+                      "narrower_count":  222,
+                      "minimum_advance_ratio":  0.75,
+                      "maximum_advance_ratio":  0.9,
+                      "left_bearing_changes":  0,
+                      "raster_width_changes":  0,
+                      "hangul_metric_changes":  0,
+                      "samples":  [
+                                      {
+                                          "text":  "Fanatec Wheel Base",
+                                          "baseline_advance":  157,
+                                          "candidate_advance":  139,
+                                          "reduction":  18,
+                                          "ratio":  0.8854,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "User Set 1",
+                                          "baseline_advance":  74,
+                                          "candidate_advance":  63,
+                                          "reduction":  11,
+                                          "ratio":  0.8514,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Project CARS 2",
+                                          "baseline_advance":  116,
+                                          "candidate_advance":  97,
+                                          "reduction":  19,
+                                          "ratio":  0.8362,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "1920x1080 143Hz",
+                                          "baseline_advance":  140,
+                                          "candidate_advance":  114,
+                                          "reduction":  26,
+                                          "ratio":  0.8143,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "2025/05/12 10:00",
+                                          "baseline_advance":  139,
+                                          "candidate_advance":  112,
+                                          "reduction":  27,
+                                          "ratio":  0.8058,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "01:29:35",
+                                          "baseline_advance":  69,
+                                          "candidate_advance":  55,
+                                          "reduction":  14,
+                                          "ratio":  0.7971,
+                                          "missing":  [
+
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Dry/Wet Skill",
+                                          "baseline_advance":  100,
+                                          "candidate_advance":  85,
+                                          "reduction":  15,
+                                          "ratio":  0.85,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Limited Setup",
+                                          "baseline_advance":  106,
+                                          "candidate_advance":  92,
+                                          "reduction":  14,
+                                          "ratio":  0.8679,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Setup name",
+                                          "baseline_advance":  92,
+                                          "candidate_advance":  81,
+                                          "reduction":  11,
+                                          "ratio":  0.8804,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Match All Suspension",
+                                          "baseline_advance":  166,
+                                          "candidate_advance":  144,
+                                          "reduction":  22,
+                                          "ratio":  0.8675,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "font":  "kr13_phoenix_body_footnote.bfont",
+                      "candidate_profile":  "HUD_LATIN_86_NUMERIC_80",
+                      "baseline_sha256":  "D61A67E56E849BC13AAE760868AC7126237E6EAA67F94E51F9A5AE999E06F3A4",
+                      "candidate_sha256":  "528AD5BDCDD6C6FE9BA3609C72EC6AD2B0CC73EF42FF139A5B8AEFE775B5AD33",
+                      "shared_latin_codepoints":  222,
+                      "wider_count":  0,
+                      "equal_count":  0,
+                      "narrower_count":  222,
+                      "minimum_advance_ratio":  0.75,
+                      "maximum_advance_ratio":  0.9,
+                      "left_bearing_changes":  0,
+                      "raster_width_changes":  0,
+                      "hangul_metric_changes":  0,
+                      "samples":  [
+                                      {
+                                          "text":  "Fanatec Wheel Base",
+                                          "baseline_advance":  156,
+                                          "candidate_advance":  138,
+                                          "reduction":  18,
+                                          "ratio":  0.8846,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "User Set 1",
+                                          "baseline_advance":  74,
+                                          "candidate_advance":  63,
+                                          "reduction":  11,
+                                          "ratio":  0.8514,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Project CARS 2",
+                                          "baseline_advance":  113,
+                                          "candidate_advance":  96,
+                                          "reduction":  17,
+                                          "ratio":  0.8496,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "1920x1080 143Hz",
+                                          "baseline_advance":  141,
+                                          "candidate_advance":  115,
+                                          "reduction":  26,
+                                          "ratio":  0.8156,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "2025/05/12 10:00",
+                                          "baseline_advance":  139,
+                                          "candidate_advance":  112,
+                                          "reduction":  27,
+                                          "ratio":  0.8058,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "01:29:35",
+                                          "baseline_advance":  70,
+                                          "candidate_advance":  56,
+                                          "reduction":  14,
+                                          "ratio":  0.8,
+                                          "missing":  [
+
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Dry/Wet Skill",
+                                          "baseline_advance":  99,
+                                          "candidate_advance":  84,
+                                          "reduction":  15,
+                                          "ratio":  0.8485,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Limited Setup",
+                                          "baseline_advance":  106,
+                                          "candidate_advance":  92,
+                                          "reduction":  14,
+                                          "ratio":  0.8679,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Setup name",
+                                          "baseline_advance":  92,
+                                          "candidate_advance":  81,
+                                          "reduction":  11,
+                                          "ratio":  0.8804,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Match All Suspension",
+                                          "baseline_advance":  163,
+                                          "candidate_advance":  142,
+                                          "reduction":  21,
+                                          "ratio":  0.8712,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "font":  "kr13_phoenix_tab_title.bfont",
+                      "candidate_profile":  "HUD_LATIN_86_NUMERIC_80",
+                      "baseline_sha256":  "EA796EFEA9A85974E8231AF9C82E1B775A5784E737730CF5B8BBD9566D515EFA",
+                      "candidate_sha256":  "E8B5E313C22CDB6E17EF3C37D96AEE70946349FEBB611D253AF5BED4CF3E5F2E",
+                      "shared_latin_codepoints":  222,
+                      "wider_count":  0,
+                      "equal_count":  4,
+                      "narrower_count":  218,
+                      "minimum_advance_ratio":  0.75,
+                      "maximum_advance_ratio":  1,
+                      "left_bearing_changes":  0,
+                      "raster_width_changes":  0,
+                      "hangul_metric_changes":  0,
+                      "samples":  [
+                                      {
+                                          "text":  "Fanatec Wheel Base",
+                                          "baseline_advance":  150,
+                                          "candidate_advance":  133,
+                                          "reduction":  17,
+                                          "ratio":  0.8867,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "User Set 1",
+                                          "baseline_advance":  71,
+                                          "candidate_advance":  62,
+                                          "reduction":  9,
+                                          "ratio":  0.8732,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Project CARS 2",
+                                          "baseline_advance":  110,
+                                          "candidate_advance":  95,
+                                          "reduction":  15,
+                                          "ratio":  0.8636,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "1920x1080 143Hz",
+                                          "baseline_advance":  136,
+                                          "candidate_advance":  113,
+                                          "reduction":  23,
+                                          "ratio":  0.8309,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "2025/05/12 10:00",
+                                          "baseline_advance":  135,
+                                          "candidate_advance":  110,
+                                          "reduction":  25,
+                                          "ratio":  0.8148,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "01:29:35",
+                                          "baseline_advance":  67,
+                                          "candidate_advance":  54,
+                                          "reduction":  13,
+                                          "ratio":  0.806,
+                                          "missing":  [
+
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Dry/Wet Skill",
+                                          "baseline_advance":  97,
+                                          "candidate_advance":  83,
+                                          "reduction":  14,
+                                          "ratio":  0.8557,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Limited Setup",
+                                          "baseline_advance":  104,
+                                          "candidate_advance":  91,
+                                          "reduction":  13,
+                                          "ratio":  0.875,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Setup name",
+                                          "baseline_advance":  88,
+                                          "candidate_advance":  78,
+                                          "reduction":  10,
+                                          "ratio":  0.8864,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      },
+                                      {
+                                          "text":  "Match All Suspension",
+                                          "baseline_advance":  157,
+                                          "candidate_advance":  137,
+                                          "reduction":  20,
+                                          "ratio":  0.8726,
+                                          "missing":  [
+                                                          "U+0020"
+                                                      ]
+                                      }
+                                  ]
+                  }
+              ]
+}

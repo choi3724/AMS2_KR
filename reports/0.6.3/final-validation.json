@@ -1,0 +1,82 @@
+{
+  "schema": "ams2-kr-063-final-validation-v1",
+  "generated_at_kst": "2026-08-26T14:50:45+09:00",
+  "version": "Closed Beta 0.6.3",
+  "verdict": "PASS",
+  "installed_state": "INSTALLED_EXACT",
+  "runtime": {
+    "launcher": "AMS2 Korean Launcher.exe",
+    "launch_to_main_menu": "PASS",
+    "installed_release_main_menu_evidence": "release063-alt-enter.png",
+    "process_cleanup": "PASS",
+    "tested_views": [
+      "Main Menu",
+      "Options - Gameplay",
+      "Options - Graphics",
+      "Options - Audio",
+      "Options - Controls",
+      "Single Race overview",
+      "Opponent settings",
+      "Rules and penalties",
+      "Session settings",
+      "Driving HUD",
+      "HUD Beta",
+      "Pause",
+      "Pit strategy",
+      "Results",
+      "Multiplayer browser and create"
+    ]
+  },
+  "font_width": {
+    "verdict": "PASS",
+    "fonts_checked": 9,
+    "latin_numeric_wider_than_062": 0,
+    "hangul_metric_changes": 0,
+    "general_ui_advance_floor_percent": 92,
+    "hud_latin_advance_floor_percent": 86,
+    "hud_numeric_advance_floor_percent": 80,
+    "runtime_long_value_clipping_found": 0,
+    "runtime_samples": [
+      "Fanatec Wheel Base",
+      "User Set 1",
+      "Project CARS 2",
+      "1920x1080 143Hz",
+      "2025/05/12 10:00",
+      "01:29:35"
+    ]
+  },
+  "translation": {
+    "tdb_files_changed": 3,
+    "korean_value_changes": 32,
+    "non_korean_value_changes": 0,
+    "hash_key_changes": 0,
+    "roundtrip_parse": "PASS",
+    "mainmenu_inline_labels_changed": 2,
+    "pit_strategy_inline_labels_changed": 3,
+    "audio_blank_help_panels": {
+      "total_records_audited": 364,
+      "connected_or_korean": 362,
+      "source_absent_upstream": 2,
+      "unsafe_synthetic_binding_applied": false
+    }
+  },
+  "installer": {
+    "file_version": "0.6.3.0",
+    "update_from_062_hotfix": "PASS",
+    "final_check": "INSTALLED_EXACT",
+    "github_update_check": "IMPLEMENTED_NON_BLOCKING",
+    "github_repository_visibility": "PRIVATE",
+    "anonymous_external_update_check": "REQUIRES_PUBLIC_RELEASE_ENDPOINT"
+  },
+  "package": {
+    "release_directory": "E:\\AMS2_Korean_Work\\releases\\AMS2-Korean-Closed-Beta-0.6.3-Pretendard",
+    "zip": "E:\\AMS2_Korean_Work\\releases\\AMS2-Korean-Closed-Beta-0.6.3-Pretendard.zip",
+    "zip_size_bytes": 22211495,
+    "zip_sha256": "A4A2A2E41AFC830523E5AB4D00AE42FE482C374F86DFCD4517C17A9181B7D188",
+    "clean_extract": "PASS",
+    "sha256_entries_checked": 452,
+    "sha256_failures": 0,
+    "json_parse": "PASS",
+    "forbidden_physics_vehicle_track_entries": 0
+  }
+}

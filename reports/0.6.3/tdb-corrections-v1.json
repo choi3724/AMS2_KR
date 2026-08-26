@@ -1,0 +1,241 @@
+{
+  "schema": "ams2-kr063-runtime-confirmed-tdb-corrections-v1",
+  "status": "PASS",
+  "file_count": 3,
+  "korean_value_changes": 32,
+  "non_korean_value_changes": 0,
+  "hash_changes": 0,
+  "files": {
+    "game.tdb": {
+      "source": "E:\\SteamLibrary\\steamapps\\common\\Automobilista 2\\text\\game.tdb",
+      "output": "C:\\Users\\User\\Documents\\Codex\\2026-08-18\\files-pasted-by-the-user-2026\\work\\AMS2-KR-063\\tdb-corrections-v1\\game.tdb",
+      "source_sha256": "FDA0F0EB71C958FE49D1962C487F48784DC13E1105226EAE10E5E1CA9A8FA7E6",
+      "output_sha256": "977C63BE3B4E6086FFABC6FEC3479174EF4F0D5641A218CA323F84B3994BD0D1",
+      "key_count": 7400,
+      "hash_changes": 0,
+      "non_korean_value_changes": 0,
+      "korean_value_changes": 22,
+      "roundtrip_parse": "PASS",
+      "records": [
+        {
+          "key": "Game_MainMenu_VisualOnly",
+          "index": 542,
+          "before": "비주얼 한정",
+          "after": "외관 손상만"
+        },
+        {
+          "key": "Game_MainMenu_DrivingAidsReal",
+          "index": 657,
+          "before": "어센틱",
+          "after": "실차 기준"
+        },
+        {
+          "key": "Game_MainMenu_Primary",
+          "index": 1835,
+          "before": "1위",
+          "after": "기본"
+        },
+        {
+          "key": "Game_MainMenu_Secondary",
+          "index": 1836,
+          "before": "2위",
+          "after": "보조"
+        },
+        {
+          "key": "Game_MainMenu_DamageType",
+          "index": 1399,
+          "before": "손상 타입",
+          "after": "손상 유형"
+        },
+        {
+          "key": "Game_InGameMenu_DamageType",
+          "index": 2495,
+          "before": "손상 타입",
+          "after": "손상 유형"
+        },
+        {
+          "key": "Game_UI_TireCompound",
+          "index": 5741,
+          "before": "모든 타이어 컴파운드 매치",
+          "after": "모든 타이어 컴파운드 통일"
+        },
+        {
+          "key": "Game_UI_CreateNewPitStrategy",
+          "index": 5770,
+          "before": "새로운 피트 전략 생성",
+          "after": "새 피트 전략"
+        },
+        {
+          "key": "Game_UI_PitStrategyName",
+          "index": 5771,
+          "before": "피트 전략 명",
+          "after": "피트 전략 이름"
+        },
+        {
+          "key": "Game_UI_ResetPitStrategyToDe",
+          "index": 5775,
+          "before": "피트 전략을 기본값으로 리셋",
+          "after": "피트 전략 기본값 복원"
+        },
+        {
+          "key": "Game_UI_SetupName",
+          "index": 5804,
+          "before": "셋업 명",
+          "after": "셋업 이름"
+        },
+        {
+          "key": "Game_UI_FrontLeftSuspension",
+          "index": 6015,
+          "before": "좌측 프런트 서스펜션",
+          "after": "왼쪽 앞 서스펜션"
+        },
+        {
+          "key": "Game_UI_FrontRightSuspension",
+          "index": 6017,
+          "before": "우측 프런트 서스펜션",
+          "after": "오른쪽 앞 서스펜션"
+        },
+        {
+          "key": "Game_UI_RearLeftSuspension",
+          "index": 6018,
+          "before": "좌측 리어 서스펜션",
+          "after": "왼쪽 뒤 서스펜션"
+        },
+        {
+          "key": "Game_UI_RearRightSuspension",
+          "index": 6019,
+          "before": "우측 리어 서스펜션",
+          "after": "오른쪽 뒤 서스펜션"
+        },
+        {
+          "key": "Game_UI_FrontLeftBrakes",
+          "index": 6020,
+          "before": "좌측 프런트 브레이크",
+          "after": "왼쪽 앞 브레이크"
+        },
+        {
+          "key": "Game_UI_FrontRightBrakes",
+          "index": 6021,
+          "before": "우측 프런트 브레이크",
+          "after": "오른쪽 앞 브레이크"
+        },
+        {
+          "key": "Game_UI_RearLeftBrakes",
+          "index": 6022,
+          "before": "좌측 리어 브레이크",
+          "after": "왼쪽 뒤 브레이크"
+        },
+        {
+          "key": "Game_UI_RearRightBrakes",
+          "index": 6023,
+          "before": "우측 리어 브레이크",
+          "after": "오른쪽 뒤 브레이크"
+        },
+        {
+          "key": "Game_HelpText_TheAggressionLevelOf",
+          "index": 6496,
+          "before": "휠 투 휠 레이싱에서 AI의 공격성",
+          "after": "AI 드라이버의 여러 행동 특성을 조정합니다. 값을 낮추면 공격적인 AI도 더 신중해지고, 높이면 더 적극적으로 추월합니다.\r\n\r\n값이 높을수록 AI는 추월 의지가 강하고 양보가 적으며 반응이 빨라집니다. 좁은 상황에서 물러서기보다 코스를 벗어날 가능성도 커집니다.\r\n\r\n사실적인 레이스에는 중간 또는 높음을 권장합니다. GT·로드카 같은 무거운 차량은 중간, 포뮬러·프로토타입처럼 접지력이 높은 클래스는 높음이 적합합니다."
+        },
+        {
+          "key": "Game_HelpText_OptionsControlsPresetSelect",
+          "index": 6797,
+          "before": "개인 저장 슬롯 최대 5개에서 사용할 컨트롤러 프리셋을 선택합니다. 'User Set 1' 같은 이름은 수정하고 저장하기 전까지 게임 기본 프리셋입니다.",
+          "after": "개인 저장 슬롯 최대 5개에서 사용할 컨트롤러 프리셋을 선택합니다. '사용자 프리셋 1' 같은 이름은 수정하고 저장하기 전까지 게임 기본 프리셋입니다."
+        },
+        {
+          "key": "Game_HelpText_OptionsGameDamageType",
+          "index": 6504,
+          "before": "손상 타입은 차량이 견딜 수 있는 손상의 유형을 결정합니다. 다음의 네 가지 옵션이 있습니다.\r\n\r\n- 오프: 차량에 손상이 발생하지 않습니다.\r\n- 비주얼 한정: 손상은 차량의 외형에만 적용되며 퍼포먼스에는 영향을 미치지 않습니다\r\n- 퍼포먼스에 영향: 손상은 차량의 외형 및 성능에 영향을 미치나, 레이스 완주에 영향을 미치지는 않습니다.\r\n- 최대 데미지: 손상은 차량의 외형 및 성능에 영향을 미칩니다. 일정 정도 이상의 손상 발생 시 차량은 레이스를 완주하지 못할 수도 있습니다.",
+          "after": "손상 유형은 차량에 적용되는 손상 방식을 결정합니다. 다음 네 가지 옵션이 있습니다.\r\n\r\n- 끔: 차량 손상을 사용하지 않습니다.\r\n- 외관 손상만: 외형에만 손상이 적용되며 성능에는 영향을 주지 않습니다.\r\n- 성능에 영향: 외형과 성능에 손상이 적용되지만 레이스를 완주할 수 없을 정도의 치명적 손상은 발생하지 않습니다.\r\n- 전체: 외형과 성능 모두에 손상이 적용됩니다. 손상이 심하면 레이스를 완주하지 못할 수 있습니다."
+        }
+      ]
+    },
+    "pit.tdb": {
+      "source": "E:\\SteamLibrary\\steamapps\\common\\Automobilista 2\\text\\pit.tdb",
+      "output": "C:\\Users\\User\\Documents\\Codex\\2026-08-18\\files-pasted-by-the-user-2026\\work\\AMS2-KR-063\\tdb-corrections-v1\\pit.tdb",
+      "source_sha256": "583265AED9A7E522EB89EC98744BC80146DE8920D126CE61066868661BD29741",
+      "output_sha256": "BA02DF9813EF0D03336A7FCC19DE802B67A32FBA328707A7B90CF70483B397E1",
+      "key_count": 2604,
+      "hash_changes": 0,
+      "non_korean_value_changes": 0,
+      "korean_value_changes": 8,
+      "roundtrip_parse": "PASS",
+      "records": [
+        {
+          "key": "Pit_Strategy_Default",
+          "index": 2261,
+          "before": "초기 설정",
+          "after": "기본"
+        },
+        {
+          "key": "Pit_Strategy_EnterPitStrategyName",
+          "index": 2262,
+          "before": "피트 전략 명 입력",
+          "after": "피트 전략 이름 입력"
+        },
+        {
+          "key": "Pit_Strategy_WheelFront",
+          "index": 2270,
+          "before": "프런트",
+          "after": "앞"
+        },
+        {
+          "key": "Pit_Strategy_WheelRear",
+          "index": 2271,
+          "before": "리어",
+          "after": "뒤"
+        },
+        {
+          "key": "Pit_Strategy_InvalidPitStrategyName",
+          "index": 2273,
+          "before": "피트 전략명이 잘못되었습니다.",
+          "after": "올바른 피트 전략 이름을 입력하세요."
+        },
+        {
+          "key": "Pit_Strategy_EmptyPitStrategyName",
+          "index": 2274,
+          "before": "이름을 공란으로 둘 수 없습니다.",
+          "after": "이름을 입력하세요."
+        },
+        {
+          "key": "Pit_Strategy_WhitespacePitStrategyName",
+          "index": 2275,
+          "before": "이름에는 공백 문자 이외의 문자가 1문자 이상 포함되어야만 합니다.",
+          "after": "이름에는 공백이 아닌 문자가 하나 이상 있어야 합니다."
+        },
+        {
+          "key": "Pit_Strategy_CreateNewPitStrategy",
+          "index": 2276,
+          "before": "새 피트 전략 생성",
+          "after": "새 피트 전략"
+        }
+      ]
+    },
+    "rac.tdb": {
+      "source": "E:\\SteamLibrary\\steamapps\\common\\Automobilista 2\\text\\rac.tdb",
+      "output": "C:\\Users\\User\\Documents\\Codex\\2026-08-18\\files-pasted-by-the-user-2026\\work\\AMS2-KR-063\\tdb-corrections-v1\\rac.tdb",
+      "source_sha256": "A97976365B715ABF4ADEB469F56948F56F62C68E7976F88AFD5E6A75262DA67B",
+      "output_sha256": "9984828526F98B0B779CC00895478DA6652605E10ED37CB6119E22B71FA58EAF",
+      "key_count": 661,
+      "hash_changes": 0,
+      "non_korean_value_changes": 0,
+      "korean_value_changes": 2,
+      "roundtrip_parse": "PASS",
+      "records": [
+        {
+          "key": "RAC_UI_AUTHENTIC",
+          "index": 528,
+          "before": "어센틱",
+          "after": "실차 기준"
+        },
+        {
+          "key": "RAC_UI_ALWAYS",
+          "index": 543,
+          "before": "얼웨이즈",
+          "after": "항상"
+        }
+      ]
+    }
+  }
+}
