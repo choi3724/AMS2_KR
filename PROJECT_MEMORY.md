@@ -19,3 +19,16 @@ This rule is mandatory for every future AMS2 Korean patch release.
 6. A Release metadata correction must not replace or modify the tested ZIP asset.
 
 Root cause recorded on 2026-08-26: Windows PowerShell 5 interpreted Korean literals in a BOM-less UTF-8 release script as ANSI. Git repository files and the ZIP were correct; only the GitHub Release title and body were corrupted.
+
+## Release file naming rule
+
+Use the following base filename for every future distributable installer and ZIP:
+
+`AMS2 한국어 패치 CB 0.X.X`
+
+Examples:
+
+- `AMS2 한국어 패치 CB 0.7.0.exe`
+- `AMS2 한국어 패치 CB 0.7.0.zip`
+
+This rule applies to user-facing release filenames. Do not rename internal package IDs or the normal/VR launcher executables unless separately instructed.
