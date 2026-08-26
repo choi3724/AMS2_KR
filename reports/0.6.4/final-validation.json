@@ -1,0 +1,75 @@
+{
+  "schema": "ams2-kr-064-final-validation-v1",
+  "generated_at_kst": "2026-08-26T16:37:39+09:00",
+  "version": "Closed Beta 0.6.4",
+  "verdict": "PASS",
+  "installed_state": "INSTALLED_EXACT",
+  "change_scope": {
+    "bgui": "hud_infoabovecar.bgui",
+    "object": "ProfileName",
+    "old_font": "gui/kr13_phoenix_body_regular.bfont",
+    "new_font": "gui/kr13_driver_name_semibold.bfont",
+    "unrelated_bgui_bytes_changed": 0,
+    "other_hud_font_sizes_changed": 0,
+    "vehicle_display_fonts_changed": false
+  },
+  "font": {
+    "family": "Pretendard 1.3.9",
+    "weight": "SemiBold",
+    "pixel_size": 20,
+    "glyphs": 1344,
+    "atlases": 5,
+    "bfont_sha256": "B8664D4ED2D9BBF66F37D407A53C6E13C1651A0A1A58D756CFE8C231371BFA9A",
+    "bgui_sha256": "BC8CAE988E7FD47B4BC330139E0C1C150C5265E3FC76BC4B1B42BBB5014AE082",
+    "strict_parse": "PASS",
+    "missing_glyphs": 0
+  },
+  "runtime": {
+    "update_from_063": "PASS",
+    "launch_to_main_menu": "PASS",
+    "single_race_setup": "PASS",
+    "race_session": "PASS",
+    "driving_hud": "PASS",
+    "opponent_nameplate": "PASS_USER_DIRECT_CAPTURE",
+    "double_asterisk": 0,
+    "clipping": 0,
+    "background_box": 0
+  },
+  "installer": {
+    "file_version": "0.6.4.0",
+    "pre_state": "UPDATE_AVAILABLE_0.6.3",
+    "install_result": "UPDATED_EXACT",
+    "final_check": "INSTALLED_EXACT"
+  },
+  "payload_delta_from_063": {
+    "unchanged": 438,
+    "changed": 4,
+    "added": 6,
+    "removed": 0
+  },
+  "package": {
+    "release_directory": "E:\\AMS2_Korean_Work\\releases\\AMS2 한국어 패치 CB 0.6.4",
+    "zip": "E:\\AMS2_Korean_Work\\releases\\AMS2 한국어 패치 CB 0.6.4.zip",
+    "zip_size_bytes": 22327605,
+    "zip_sha256": "4F7EED362997358C4A238E5E3B159281879946E418A839A450AAD90D69902820",
+    "clean_extract": "PASS",
+    "archive_entries": 460,
+    "sha256_entries_checked": 458,
+    "sha256_failures": 0,
+    "json_parse": "PASS",
+    "direct_files": 448,
+    "modified_files": 94,
+    "created_files": 354,
+    "forbidden_physics_vehicle_track_entries": 0
+  },
+  "hard_invariants": {
+    "physicspersistent_changed": false,
+    "physicspersistent_remove_marker": false,
+    "generated_vehicle_files": 0,
+    "generated_track_physics_files": 0,
+    "crd_trd_driveline_postprocessing": 0,
+    "ams2cm_helper": false,
+    "dotnet_runtime": false,
+    "generated_bootfiles": false
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "ams2-kr-064-infoabovecar-font-route-v1",
+  "status": "PASS",
+  "source": "E:\\AMS2_Korean_Work\\releases\\AMS2-Korean-Closed-Beta-0.6.3-Pretendard\\payload\\direct\\gui\\hud_infoabovecar.bgui",
+  "output": "C:\\Users\\User\\Documents\\Codex\\2026-08-18\\files-pasted-by-the-user-2026\\work\\AMS2-KR-064\\payload-overrides\\GUI\\hud_infoabovecar.bgui",
+  "source_sha256": "8BFA8F209587B12F96489343D388C7A66D591F07D081B7CA63A8085D00826FBC",
+  "output_sha256": "BC8CAE988E7FD47B4BC330139E0C1C150C5265E3FC76BC4B1B42BBB5014AE082",
+  "bytes": 3604,
+  "profile_name_offset": 1614,
+  "font_offset": 1699,
+  "old_font": "gui\\kr13_phoenix_body_regular.bfont",
+  "new_font": "gui\\kr13_driver_name_semibold.bfont",
+  "equal_length_replacement": true,
+  "non_target_bytes_unchanged": true
+}

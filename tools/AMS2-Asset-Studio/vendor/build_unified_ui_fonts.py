@@ -34,6 +34,7 @@ DIMENSIONS = ((512, 512), (1024, 512), (1024, 1024), (2048, 512), (2048, 1024), 
 EXCLUDED_ALIASES = {"kr13_font_data_list", "kr13_font_heading_44"}
 PIT_FONT_ALIAS = "kr13_font_hud_pit1"
 PIT_HORIZONTAL_SCALE = 0.60
+DRIVER_NAME_FONT_ALIAS = "kr13_driver_name_semibold"
 
 
 def sha256(data: bytes) -> str:
@@ -189,6 +190,8 @@ def metrics_fit_legacy(candidate: dict[str, float], legacy: dict[str, float]) ->
 
 
 def weight_and_size(stem: str) -> tuple[str, int, str]:
+    if stem == DRIVER_NAME_FONT_ALIAS:
+        return "SemiBold", 20, "dedicated driving HUD opponent nameplate"
     if "page_title" in stem:
         return "ExtraBold", 46, "large page title"
     explicit = re.search(r"_(?:standard|heading)_(\d+)$", stem)
@@ -404,6 +407,7 @@ def main() -> int:
     eligible = sorted({Path(row["font"]).stem for row in inventory["fonts"] if row["font"].startswith("gui\\kr") and row["classification"] != "VEHICLE_DISPLAY" and Path(row["font"]).stem not in EXCLUDED_ALIASES})
     build_specs = [(stem, stem, False) for stem in eligible]
     build_specs.append((PIT_FONT_ALIAS, "kr13_font_hud_main", True))
+    build_specs.append((DRIVER_NAME_FONT_ALIAS, "kr13_phoenix_body_regular", False))
 
     sources = {}
     cmaps = {}
