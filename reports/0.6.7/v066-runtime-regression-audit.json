@@ -1,0 +1,125 @@
+{
+  "schema": "ams2-kr-067-v066-runtime-regression-audit-v1",
+  "status": "PASS_WITH_NEW_DISTANCE_FORMAT_PENDING",
+  "baseline": {
+    "git_commit": "7fd060a",
+    "description": "v0.6.6 서킷 정보 단위 및 AI 이름 한글화"
+  },
+  "static_audit": {
+    "v066_tdb_records_reverted": 0,
+    "v066_font_codepoints_missing": 0,
+    "bgui_changed_value_records_checked": 26,
+    "bgui_candidate_old_value_hits": 3,
+    "bgui_unresolved_visible_fallbacks": 0,
+    "bgui_candidate_classification": [
+      {
+        "key": "General_TrackDetails_USA",
+        "classification": "TECHNICAL_IDENTIFIER",
+        "reason": "Only _USA_ view-model tokens and STOCKUSA vehicle-display identifiers"
+      },
+      {
+        "key": "General_TrackDetails_Japan",
+        "classification": "TECHNICAL_IDENTIFIER",
+        "reason": "Only JapaneseBootFlow and JP-antipiracy resource identifiers"
+      },
+      {
+        "key": "General_TrackDetails_Rallycross",
+        "classification": "TECHNICAL_IDENTIFIER",
+        "reason": "Only RallycrossResultsTable and RallycrossTabMenu object identifiers"
+      }
+    ]
+  },
+  "runtime": [
+    {
+      "area": "Single Race event setup",
+      "checks": {
+        "country": "호주",
+        "course_type": "서킷",
+        "setup_limit": "셋업 제한",
+        "unexpected_text_backgrounds": 0
+      },
+      "status": "PASS",
+      "evidence": "runtime-after-car-select.png"
+    },
+    {
+      "area": "Profile statistics",
+      "checks": {
+        "wins": "우승 횟수",
+        "fastest_lap": "패스티스트 랩",
+        "pole": "폴 포지션",
+        "podium": "포디움",
+        "pole_ratio": "폴 포지션 비율",
+        "podium_ratio": "포디움 비율"
+      },
+      "status": "PASS",
+      "evidence": "runtime-v066-profile-audit-3.png"
+    },
+    {
+      "area": "Profile favorites",
+      "checks": {
+        "vehicle_use_time": "차량 운행 시간",
+        "distance_unit": "킬로미터"
+      },
+      "status": "PASS",
+      "evidence": "runtime-v066-favorites-audit.png"
+    },
+    {
+      "area": "Loading screen",
+      "checks": {
+        "country": "호주",
+        "distance": "6.21 킬로미터",
+        "altitude": "780 m"
+      },
+      "status": "PASS",
+      "evidence": "runtime-v066-ai-race-audit.png"
+    },
+    {
+      "area": "Actual Single Race HUD",
+      "checks": {
+        "full_korean_ai_names": true,
+        "given_surname_spacing": true,
+        "safety_car": "세이프티 카",
+        "human_nickname_preserved": "ENG-IceBlasT",
+        "corrupted_korean_names": 0,
+        "unexpected_text_backgrounds": 0
+      },
+      "status": "PASS",
+      "evidence": "runtime-v066-ai-driving-audit.png"
+    }
+  ],
+  "confirmed_regressions_and_fixes": [
+    {
+      "item": "Setup limit fallback text",
+      "cause": "menu_mainmenu_1_6.bgui retained the UTF-16 fallback 제한 셋업 while TDB contained 셋업 제한",
+      "fix": "Byte-size-preserving replacement of the single fallback occurrence",
+      "validation": "Exactly 8 bytes changed from the v0.6.6 BGUI baseline and runtime displays 셋업 제한"
+    },
+    {
+      "item": "v0.6.6 font visual regression",
+      "cause": "v0.6.6 regenerated common atlas glyphs while adding AI-name syllables",
+      "fix": "Preserve v0.6.5 common glyph pixels and metrics, append the 68 v0.6.6 AI syllables plus NBSP",
+      "validation": "0 common metric mismatches, 0 missing v0.6.6 codepoints, no gray glyph rectangles in runtime"
+    },
+    {
+      "item": "Above-car nameplate route",
+      "cause": "The custom IGPHASEHUD font route corrupted names; the stock route was known-good",
+      "fix": "Keep stock IGPHASEHUD.bff exact",
+      "validation": "Stock SHA F967D1A322EB75AAD742CF21888D75DB0CA4CB407ACDEC72F14D32BD5351E7DA"
+    }
+  ],
+  "not_a_v066_reversion": {
+    "item": "Single Race preview distance",
+    "v066_behavior": "거리(m) plus raw metre integer",
+    "current_behavior": "거리 plus raw metre integer",
+    "new_requested_behavior": "거리 plus #,### 미터",
+    "status": "PENDING_FORMATTER_PATH",
+    "reason": "The exposed BGUI view-model property is PreviewTrack_Length only; no formatted PreviewTrack property exists in BGUI or the executable string inventory. Loading and favorites use separate kilometre formatters."
+  },
+  "evidence_files": [
+    "v066-semantic-regression-audit.json",
+    "v066-live-file-audit.json",
+    "v066-bgui-fallback-audit.json",
+    "preview-distance-bgui-records.json",
+    "artifacts/mainmenu-fallback/patch-validation.json"
+  ]
+}

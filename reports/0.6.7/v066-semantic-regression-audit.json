@@ -1,0 +1,1528 @@
+{
+    "schema":  "ams2-kr-067-v066-semantic-regression-audit-v1",
+    "status":  "PASS",
+    "baseline":  "Closed Beta 0.6.6 direct payload",
+    "tdb":  [
+                {
+                    "file":  "text\\game.tdb",
+                    "v065_sha256":  "90E7BCBC97DC074D319E80F79C4F472ABEC15373E4172734C8BA1F85E90B68E2",
+                    "v066_sha256":  "A5110C65582CC517CE09897DAC12D3BBA4572A219348FCC7A3591417A6FD5FBF",
+                    "live_sha256":  "BFEB02CA85851F0EAC770242893FD35945756D770FA2F50B8AC86437CDF2C344",
+                    "counts":  {
+                                   "v066_changed_records":  4,
+                                   "v066_added_records":  0,
+                                   "preserved_exact":  4,
+                                   "preserved_semantic_format_variant":  0,
+                                   "reverted_to_v065":  0,
+                                   "changed_after_v066":  0
+                               },
+                    "non_exact_or_sample_records":  [
+                                                        {
+                                                            "index":  529,
+                                                            "key":  "Game_MainMenu_Time2",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "타임",
+                                                            "v066":  "차량 운행 시간",
+                                                            "live":  "차량 운행 시간",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  2688,
+                                                            "key":  "Game_TimeDateCurrency_PlayTimeFormatDDHHMM",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "[DD]일 [HH]시 [MM]분",
+                                                            "v066":  "[DD]일 [HH]시간 [MM]분",
+                                                            "live":  "[DD]일 [HH]시간 [MM]분",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  2689,
+                                                            "key":  "Game_TimeDateCurrency_PlayTimeFormatHHMM",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "[HH]시 [MM]분",
+                                                            "v066":  "[HH]시간 [MM]분",
+                                                            "live":  "[HH]시간 [MM]분",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  2690,
+                                                            "key":  "Game_TimeDateCurrency_DistanceKMFormat",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "[DISTANCE] KM",
+                                                            "v066":  "[DISTANCE] 킬로미터",
+                                                            "live":  "[DISTANCE] 킬로미터",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        }
+                                                    ]
+                },
+                {
+                    "file":  "text\\general.tdb",
+                    "v065_sha256":  "D4FF47442502DD5AA78EB242172464102E12CA5E9FB740DCABDA0937F677DEDB",
+                    "v066_sha256":  "B1785F373FB226BF82080487359A7922FCFF31FB9A89B68E754EA545477D6EA3",
+                    "live_sha256":  "B1785F373FB226BF82080487359A7922FCFF31FB9A89B68E754EA545477D6EA3",
+                    "counts":  {
+                                   "v066_changed_records":  29,
+                                   "v066_added_records":  7,
+                                   "preserved_exact":  29,
+                                   "preserved_semantic_format_variant":  0,
+                                   "reverted_to_v065":  0,
+                                   "changed_after_v066":  0
+                               },
+                    "non_exact_or_sample_records":  [
+                                                        {
+                                                            "index":  33,
+                                                            "key":  "General_TimeDateCurrency_PlayTimeFormatDDHHMM",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "[DD]일 [HH]시 [MM]분",
+                                                            "v066":  "[DD]일 [HH]시간 [MM]분",
+                                                            "live":  "[DD]일 [HH]시간 [MM]분",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  34,
+                                                            "key":  "General_TimeDateCurrency_PlayTimeFormatHHMM",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "[HH]시 [MM]분",
+                                                            "v066":  "[HH]시간 [MM]분",
+                                                            "live":  "[HH]시간 [MM]분",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  36,
+                                                            "key":  "General_TimeDateCurrency_DistanceKMFormat",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "[DISTANCE] KM",
+                                                            "v066":  "[DISTANCE] 킬로미터",
+                                                            "live":  "[DISTANCE] 킬로미터",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  351,
+                                                            "key":  "General_TrackDetails_Belgium",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "Belgium",
+                                                            "v066":  "벨기에",
+                                                            "live":  "벨기에",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  352,
+                                                            "key":  "General_TrackDetails_Circuit",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "Circuit",
+                                                            "v066":  "서킷",
+                                                            "live":  "서킷",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  439,
+                                                            "key":  "General_TrackDetails_PointToPoint",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "Point to Point",
+                                                            "v066":  "포인트 투 포인트",
+                                                            "live":  "포인트 투 포인트",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  441,
+                                                            "key":  "General_TrackDetails_Germany",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "Germany",
+                                                            "v066":  "독일",
+                                                            "live":  "독일",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  442,
+                                                            "key":  "General_TrackDetails_France",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "France",
+                                                            "v066":  "프랑스",
+                                                            "live":  "프랑스",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  443,
+                                                            "key":  "General_TrackDetails_Australia",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "Australia",
+                                                            "v066":  "호주",
+                                                            "live":  "호주",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  444,
+                                                            "key":  "General_TrackDetails_Spain",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "Spain",
+                                                            "v066":  "스페인",
+                                                            "live":  "스페인",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  445,
+                                                            "key":  "General_TrackDetails_Italy",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "Italy",
+                                                            "v066":  "이탈리아",
+                                                            "live":  "이탈리아",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  447,
+                                                            "key":  "General_TrackDetails_England",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "England",
+                                                            "v066":  "영국",
+                                                            "live":  "영국",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  448,
+                                                            "key":  "General_TrackDetails_USA",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "USA",
+                                                            "v066":  "미국",
+                                                            "live":  "미국",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  451,
+                                                            "key":  "General_TrackDetails_Japan",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "Japan",
+                                                            "v066":  "일본",
+                                                            "live":  "일본",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  458,
+                                                            "key":  "General_TrackDetails_Oval",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "Oval",
+                                                            "v066":  "오벌",
+                                                            "live":  "오벌",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  501,
+                                                            "key":  "General_TrackDetails_Kart",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "Karting Circuit",
+                                                            "v066":  "카트 서킷",
+                                                            "live":  "카트 서킷",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  611,
+                                                            "key":  "General_TrackDetails_Rallycross",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "Rallycross",
+                                                            "v066":  "랠리크로스",
+                                                            "live":  "랠리크로스",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  646,
+                                                            "key":  "General_TrackDetails_Austria",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "Austria",
+                                                            "v066":  "오스트리아",
+                                                            "live":  "오스트리아",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  647,
+                                                            "key":  "General_TrackDetails_Canada",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "Canada",
+                                                            "v066":  "캐나다",
+                                                            "live":  "캐나다",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  648,
+                                                            "key":  "General_TrackDetails_Norway",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "Norway",
+                                                            "v066":  "노르웨이",
+                                                            "live":  "노르웨이",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  650,
+                                                            "key":  "General_TrackDetails_Portugal",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "Portugal",
+                                                            "v066":  "포르투갈",
+                                                            "live":  "포르투갈",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  651,
+                                                            "key":  "General_TrackDetails_SouthAfrica",
+                                                            "key_occurrence":  0,
+                                                            "v065":  "South Africa",
+                                                            "v066":  "남아프리카 공화국",
+                                                            "live":  "남아프리카 공화국",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  996,
+                                                            "key":  "General_TrackDetails_Argentina",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "아르헨티나",
+                                                            "live":  "아르헨티나",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  997,
+                                                            "key":  "General_TrackDetails_Brazil",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "브라질",
+                                                            "live":  "브라질",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  998,
+                                                            "key":  "General_TrackDetails_Ecuador",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "에콰도르",
+                                                            "live":  "에콰도르",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  999,
+                                                            "key":  "General_TrackDetails_Finland",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "핀란드",
+                                                            "live":  "핀란드",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  1000,
+                                                            "key":  "General_TrackDetails_Hungary",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "헝가리",
+                                                            "live":  "헝가리",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  1001,
+                                                            "key":  "General_TrackDetails_Monaco",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "모나코",
+                                                            "live":  "모나코",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        },
+                                                        {
+                                                            "index":  1002,
+                                                            "key":  "General_TrackDetails_Turkey",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "튀르키예",
+                                                            "live":  "튀르키예",
+                                                            "status":  "PRESERVED_EXACT"
+                                                        }
+                                                    ]
+                },
+                {
+                    "file":  "text\\drivers.tdb",
+                    "v065_sha256":  null,
+                    "v066_sha256":  "8642FD6E468433812C012EA5C875CCBDA482380F52B6A8ABF23566EC04C467F2",
+                    "live_sha256":  "CD4C22EF213A1098E60EF54A564AC0E6E0AFAA601A4290DBB134CA5C62CD0C55",
+                    "counts":  {
+                                   "v066_changed_records":  4201,
+                                   "v066_added_records":  4201,
+                                   "preserved_exact":  0,
+                                   "preserved_semantic_format_variant":  4193,
+                                   "reverted_to_v065":  0,
+                                   "changed_after_v066":  8
+                               },
+                    "non_exact_or_sample_records":  [
+                                                        {
+                                                            "index":  0,
+                                                            "key":  "Drivers_Name_JeanPhilippeCampmajo",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "장필립캄프마조",
+                                                            "live":  "장 필립 캄프마조",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  1,
+                                                            "key":  "Drivers_Name_RobThompson",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "롭톰슨",
+                                                            "live":  "롭 톰슨",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  2,
+                                                            "key":  "Drivers_Name_RenatoSimioni",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "레나토시미오니",
+                                                            "live":  "레나토 시미오니",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  3,
+                                                            "key":  "Drivers_Name_DomLovric",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "돔로브릭",
+                                                            "live":  "돔 로브릭",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  4,
+                                                            "key":  "Drivers_Name_PavelKoshkin",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "파벨코쉬킨",
+                                                            "live":  "파벨 코쉬킨",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  5,
+                                                            "key":  "Drivers_Name_FernandoOliveiraJr",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "페르난도올리베이라주니어",
+                                                            "live":  "페르난도 올리베이라 주니어",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  6,
+                                                            "key":  "Drivers_Name_SergioLoro",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "세르히오로로",
+                                                            "live":  "세르히오 로로",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  7,
+                                                            "key":  "Drivers_Name_ToddNorbury",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "토드노베리",
+                                                            "live":  "토드 노베리",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  8,
+                                                            "key":  "Drivers_Name_ThiagoIzequiel",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "티아고이세키엘",
+                                                            "live":  "티아고 이세키엘",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  9,
+                                                            "key":  "Drivers_Name_GiancarloRampanelli",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "지안카를로람파넬리",
+                                                            "live":  "지안카를로 람파넬리",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  10,
+                                                            "key":  "Drivers_Name_RuneMorling",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "룬몰링",
+                                                            "live":  "룬 몰링",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  11,
+                                                            "key":  "Drivers_Name_BalaMuguran",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "발라무구란",
+                                                            "live":  "발라 무구란",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  12,
+                                                            "key":  "Drivers_Name_JonathanSimpson",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "조나단심슨",
+                                                            "live":  "조나단 심슨",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  13,
+                                                            "key":  "Drivers_Name_DaveStephenson",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "데이브스티븐슨",
+                                                            "live":  "데이브 스티븐슨",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  14,
+                                                            "key":  "Drivers_Name_GregoryBoundy",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "그레고리바운디",
+                                                            "live":  "그레고리 바운디",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  15,
+                                                            "key":  "Drivers_Name_HeitorCicoti",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "헤이터치코티",
+                                                            "live":  "헤이터 치코티",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  16,
+                                                            "key":  "Drivers_Name_AlexanderNabutovskiy",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "알렉산더나부토프스키",
+                                                            "live":  "알렉산더 나부토프스키",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  17,
+                                                            "key":  "Drivers_Name_IlyaMalyuev",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "일리아말류예프",
+                                                            "live":  "일리아 말류예프",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  18,
+                                                            "key":  "Drivers_Name_JasonPeek",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "제이슨픽",
+                                                            "live":  "제이슨 픽",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  19,
+                                                            "key":  "Drivers_Name_FrankAlexandre",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "프랭크알렉상드르",
+                                                            "live":  "프랭크 알렉상드르",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  20,
+                                                            "key":  "Drivers_Name_JoradsonRodriges",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "조라드슨로드리게스",
+                                                            "live":  "조라드슨 로드리게스",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  21,
+                                                            "key":  "Drivers_Name_FelipeBezerra",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "펠리페베제라",
+                                                            "live":  "펠리페 베제라",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  22,
+                                                            "key":  "Drivers_Name_RogerLopes",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "로저로페스",
+                                                            "live":  "로저 로페스",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  23,
+                                                            "key":  "Drivers_Name_ChrisWilliams",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "크리스윌리엄스",
+                                                            "live":  "크리스 윌리엄스",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  24,
+                                                            "key":  "Drivers_Name_IljaJusupov",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "일자유스포프",
+                                                            "live":  "일자 유스포프",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  25,
+                                                            "key":  "Drivers_Name_CarlosAndre",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "카를로스안드레",
+                                                            "live":  "카를로스 안드레",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  26,
+                                                            "key":  "Drivers_Name_GuilhermeVieira",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "길레르메비에이라",
+                                                            "live":  "길레르메 비에이라",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  27,
+                                                            "key":  "Drivers_Name_AyrtonTobin",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "아일튼토빈",
+                                                            "live":  "아일튼 토빈",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  28,
+                                                            "key":  "Drivers_Name_OanaMocanu",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "오아나모카누",
+                                                            "live":  "오아나 모카누",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  29,
+                                                            "key":  "Drivers_Name_BenSuttor",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "벤서터",
+                                                            "live":  "벤 서터",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  30,
+                                                            "key":  "Drivers_Name_DavidBoot",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "데이비드부트",
+                                                            "live":  "데이비드 부트",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  31,
+                                                            "key":  "Drivers_Name_TiagoEmanuel",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "티아고에마누엘",
+                                                            "live":  "티아고 에마누엘",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  32,
+                                                            "key":  "Drivers_Name_HenriqueClausing",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "엔리케클라우징",
+                                                            "live":  "엔리케 클라우징",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  33,
+                                                            "key":  "Drivers_Name_ElvisReis",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "엘비스레이스",
+                                                            "live":  "엘비스 레이스",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  34,
+                                                            "key":  "Drivers_Name_BrunoMendes",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "브루노멘데스",
+                                                            "live":  "브루노 멘데스",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  35,
+                                                            "key":  "Drivers_Name_JoseLopez",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "호세로페즈",
+                                                            "live":  "호세 로페즈",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  36,
+                                                            "key":  "Drivers_Name_AlejandroDiPietro",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "알레한드로디피에트로",
+                                                            "live":  "알레한드로 디 피에트로",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  37,
+                                                            "key":  "Drivers_Name_DanielSerra",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "다니엘세라",
+                                                            "live":  "다니엘 세라",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  38,
+                                                            "key":  "Drivers_Name_RicardoMauricio",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "리카르도마우리시오",
+                                                            "live":  "리카르도 마우리시오",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  39,
+                                                            "key":  "Drivers_Name_MarcosGomes",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "마르코스고메스",
+                                                            "live":  "마르코스 고메스",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  40,
+                                                            "key":  "Drivers_Name_ThiagoCamilo",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "티아고카밀로",
+                                                            "live":  "티아고 카밀로",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  41,
+                                                            "key":  "Drivers_Name_FelipeFraga",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "펠리페프라가",
+                                                            "live":  "펠리페 프라가",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  42,
+                                                            "key":  "Drivers_Name_DiegoNunes",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "디에고누네스",
+                                                            "live":  "디에고 누네스",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  43,
+                                                            "key":  "Drivers_Name_DenisNavarro",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "데니스나바로",
+                                                            "live":  "데니스 나바로",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  44,
+                                                            "key":  "Drivers_Name_JulioCampos",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "훌리오캄포스",
+                                                            "live":  "훌리오 캄포스",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  45,
+                                                            "key":  "Drivers_Name_GabrielCasagrande",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "가브리엘카사그란데",
+                                                            "live":  "가브리엘 카사그란데",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  46,
+                                                            "key":  "Drivers_Name_NelsonPiquetJr",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "넬슨피케주니어",
+                                                            "live":  "넬슨 피케 주니어",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  47,
+                                                            "key":  "Drivers_Name_RubensBarrichello",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "루벤스바리첼로",
+                                                            "live":  "루벤스 바리첼로",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  48,
+                                                            "key":  "Drivers_Name_LucasForesti",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "루카스포레스티",
+                                                            "live":  "루카스 포레스티",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  49,
+                                                            "key":  "Drivers_Name_MarcelColetta",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "마르셀콜레타",
+                                                            "live":  "마르셀 콜레타",
+                                                            "status":  "PRESERVED_SEMANTIC_FORMAT_VARIANT"
+                                                        },
+                                                        {
+                                                            "index":  374,
+                                                            "key":  "Drivers_Name_EduPianoFTruckFCTeamsTerritorioMotorsportEPiano",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "에듀피아노",
+                                                            "live":  "에두 피아노",
+                                                            "status":  "CHANGED_AFTER_V066"
+                                                        },
+                                                        {
+                                                            "index":  1146,
+                                                            "key":  "Drivers_Name_SafetyCarDriverPaceCarCamaroSSSCCamaroSSSC",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "세이프티카운전자",
+                                                            "live":  "세이프티 카",
+                                                            "status":  "CHANGED_AFTER_V066"
+                                                        },
+                                                        {
+                                                            "index":  1147,
+                                                            "key":  "Drivers_Name_SafetyCarDriverPaceCarMiniSCMiniSC",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "세이프티카운전자",
+                                                            "live":  "세이프티 카",
+                                                            "status":  "CHANGED_AFTER_V066"
+                                                        },
+                                                        {
+                                                            "index":  2824,
+                                                            "key":  "Drivers_Name_IngoKraftVTCC3",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "잉고크래프트",
+                                                            "live":  "잉고 크라프트",
+                                                            "status":  "CHANGED_AFTER_V066"
+                                                        },
+                                                        {
+                                                            "index":  3023,
+                                                            "key":  "Drivers_Name_ChaoCheongCART2022",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "청차오",
+                                                            "live":  "차오 청",
+                                                            "status":  "CHANGED_AFTER_V066"
+                                                        },
+                                                        {
+                                                            "index":  3195,
+                                                            "key":  "Drivers_Name_IsacYangFINTER",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "양이삭",
+                                                            "live":  "이삭 양",
+                                                            "status":  "CHANGED_AFTER_V066"
+                                                        },
+                                                        {
+                                                            "index":  3418,
+                                                            "key":  "Drivers_Name_IljaDongenGT3GEN2",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "일자동겐",
+                                                            "live":  "일리야 동언",
+                                                            "status":  "CHANGED_AFTER_V066"
+                                                        },
+                                                        {
+                                                            "index":  3515,
+                                                            "key":  "Drivers_Name_ManLiGT3R8LMS",
+                                                            "key_occurrence":  0,
+                                                            "v065":  null,
+                                                            "v066":  "리만",
+                                                            "live":  "만 리",
+                                                            "status":  "CHANGED_AFTER_V066"
+                                                        }
+                                                    ]
+                }
+            ],
+    "fonts":  {
+                  "totals":  {
+                                 "font_aliases":  49,
+                                 "aliases_with_v066_additions":  46,
+                                 "aliases_missing_v066_codepoints":  0,
+                                 "missing_v066_codepoints_total":  0,
+                                 "aliases_with_nbsp":  46,
+                                 "v065_common_metric_mismatches":  0
+                             },
+                  "fonts":  [
+                                {
+                                    "alias":  "kr08_aries_small",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr08_font_data_list_value",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr08_font_heading_14",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr08_font_heading_22",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr08_font_page_title",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr08_font_standard_12",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr08_font_standard_14",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr08_font_standard_16",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr08_font_standard_18",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr08_font_standard_19",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr08_font_standard_20",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr08_font_standard_21",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr08_font_standard_22",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr08_font_standard_36",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr08_font_standard_styletest",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr09_font_data_list_label",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr09_font_heading",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr09_font_heading_black",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr09_font_heading_bold",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr09_phoenix_page_title",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr1_font_hud_bold",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_aries_large",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_aries_large_black",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_aries_large_black_italic",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_aries_small",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_aries_small_black",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_driver_name_semibold",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1344,
+                                    "live_glyph_count":  1344,
+                                    "v066_additions":  0,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  false,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_font_data_list",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1344,
+                                    "live_glyph_count":  1344,
+                                    "v066_additions":  0,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  false,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_font_heading_20",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_font_heading_44",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1344,
+                                    "live_glyph_count":  1344,
+                                    "v066_additions":  0,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  false,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_font_heading_light",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_font_hud_light",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_font_hud_main",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_font_hud_pos",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_font_hud_tach_num",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_font_mono_16",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_font_session_time",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_font_standard_10",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_font_standard_11",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_font_standard_13",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_font_standard_15",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_font_standard_28",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_font_standard_30",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_font_standard_34",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_font_standard_40",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_phoenix_body_footnote",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_phoenix_body_large",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_phoenix_body_regular",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                },
+                                {
+                                    "alias":  "kr13_phoenix_tab_title",
+                                    "v065_glyph_count":  1344,
+                                    "v066_glyph_count":  1412,
+                                    "live_glyph_count":  1413,
+                                    "v066_additions":  68,
+                                    "missing_from_live":  0,
+                                    "missing":  [
+
+                                                ],
+                                    "nbsp_present":  true,
+                                    "v065_common_metric_mismatches":  0
+                                }
+                            ]
+              },
+    "summary":  {
+                    "tdb_records_reverted_to_v065":  0,
+                    "v066_font_codepoints_missing_from_live":  0,
+                    "note":  "CHANGED_AFTER_V066 is reviewed separately as an intentional 0.6.7 edit."
+                }
+}

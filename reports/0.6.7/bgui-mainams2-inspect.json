@@ -1,0 +1,229 @@
+{
+  "schema": "ams2-kr-005-bgui-parse-v1",
+  "bytes": 14355347,
+  "sha256": "3432C46895B9776D0B5DFEFB0A109263E6CC6A8B4E449CB00137A5536D6138E1",
+  "physical_coverage": {
+    "resource_header": {
+      "scale": 2.25,
+      "resource_count": 27,
+      "end_offset": "0x266"
+    },
+    "validated_text_style_records": 7201,
+    "unknown_bytes_policy": "All non-font bytes, including unknown record/container fields and trailing data, are retained verbatim by the serializer."
+  },
+  "font_inventory": {
+    "gui\\kr08_aries_small.bfont": 179,
+    "gui\\kr08_font_heading_14.bfont": 2,
+    "gui\\kr08_font_heading_22.bfont": 2,
+    "gui\\kr08_font_standard_12.bfont": 51,
+    "gui\\kr08_font_standard_14.bfont": 474,
+    "gui\\kr08_font_standard_16.bfont": 367,
+    "gui\\kr08_font_standard_18.bfont": 124,
+    "gui\\kr08_font_standard_19.bfont": 71,
+    "gui\\kr08_font_standard_20.bfont": 1567,
+    "gui\\kr08_font_standard_21.bfont": 101,
+    "gui\\kr08_font_standard_22.bfont": 41,
+    "gui\\kr08_font_standard_36.bfont": 28,
+    "gui\\kr08_font_standard_styletest.bfont": 1,
+    "gui\\kr09_phoenix_page_title.bfont": 446,
+    "gui\\kr13_aries_large.bfont": 1,
+    "gui\\kr13_aries_large_black_italic.bfont": 4,
+    "gui\\kr13_aries_small_black.bfont": 9,
+    "gui\\kr13_font_standard_11.bfont": 2,
+    "gui\\kr13_font_standard_15.bfont": 6,
+    "gui\\kr13_font_standard_28.bfont": 8,
+    "gui\\kr13_font_standard_30.bfont": 1,
+    "gui\\kr13_font_standard_34.bfont": 2,
+    "gui\\kr13_font_standard_40.bfont": 8,
+    "gui\\kr13_phoenix_body_footnote.bfont": 1050,
+    "gui\\kr13_phoenix_body_large.bfont": 531,
+    "gui\\kr13_phoenix_body_regular.bfont": 2070,
+    "gui\\kr13_phoenix_tab_title.bfont": 55
+  },
+  "options_targets": [
+    {
+      "record_path": "Layer_MainMenuAMS2/Options/Selected/settings/Text",
+      "group": 0,
+      "layer": "Layer_MainMenuAMS2",
+      "state": "Selected",
+      "record_start": "0x6C01C",
+      "record_type": "Text",
+      "local_id": 4,
+      "object_id": 2703,
+      "name_hash": "0x5F5D2B52",
+      "text_reference": "",
+      "text_reference_length": 0,
+      "text_reference_hash": "0xBD49D10D",
+      "field_after_text_hash": "0x00000000",
+      "font": "gui\\kr08_font_standard_22.bfont",
+      "font_length": 31,
+      "font_length_offset": "0x6C06E",
+      "font_bytes_offset": "0x6C06F",
+      "flags": "0x00000408",
+      "flags_offset": "0x6C08E",
+      "position": [
+        95.0,
+        10.0
+      ],
+      "size": [
+        185.0,
+        43.0
+      ],
+      "field_f32_2_unknown": [
+        0.0,
+        0.0
+      ],
+      "clip_rect": [
+        -1000.0,
+        -1000.0,
+        1000.0,
+        1000.0
+      ],
+      "alignment_style_raw_unknown": "030200000000000000000000",
+      "record_length": "UNKNOWN (no per-record byte-length field established)",
+      "parent_container_length": "UNKNOWN (no parent byte-length field established; serialization is consistent with field/count-delimited records)",
+      "child_count": "UNKNOWN for parent; Text is treated as a leaf",
+      "settings_start": "0x6BFBE",
+      "state_start": "0x6BCE1",
+      "options_start": "0x6BC0D"
+    },
+    {
+      "record_path": "Layer_MainMenuAMS2/Options/Unselected/settings/Text",
+      "group": 0,
+      "layer": "Layer_MainMenuAMS2",
+      "state": "Unselected",
+      "record_start": "0x6C409",
+      "record_type": "Text",
+      "local_id": 4,
+      "object_id": 2708,
+      "name_hash": "0x5F5D2B52",
+      "text_reference": "",
+      "text_reference_length": 0,
+      "text_reference_hash": "0xBD49D10D",
+      "field_after_text_hash": "0x00000000",
+      "font": "gui\\kr08_font_standard_22.bfont",
+      "font_length": 31,
+      "font_length_offset": "0x6C45B",
+      "font_bytes_offset": "0x6C45C",
+      "flags": "0x00000408",
+      "flags_offset": "0x6C47B",
+      "position": [
+        95.0,
+        10.0
+      ],
+      "size": [
+        185.0,
+        43.0
+      ],
+      "field_f32_2_unknown": [
+        0.0,
+        0.0
+      ],
+      "clip_rect": [
+        -1000.0,
+        -1000.0,
+        1000.0,
+        1000.0
+      ],
+      "alignment_style_raw_unknown": "030200000000000000000000",
+      "record_length": "UNKNOWN (no per-record byte-length field established)",
+      "parent_container_length": "UNKNOWN (no parent byte-length field established; serialization is consistent with field/count-delimited records)",
+      "child_count": "UNKNOWN for parent; Text is treated as a leaf",
+      "settings_start": "0x6C3AB",
+      "state_start": "0x6C0CC",
+      "options_start": "0x6BC0D"
+    },
+    {
+      "record_path": "Layer_DemoMenuNewLayer/Options/Selected/settings/Text",
+      "group": 1,
+      "layer": "Layer_DemoMenuNewLayer",
+      "state": "Selected",
+      "record_start": "0xB79C04",
+      "record_type": "Text",
+      "local_id": 4,
+      "object_id": 114211,
+      "name_hash": "0x5F5D2B52",
+      "text_reference": "",
+      "text_reference_length": 0,
+      "text_reference_hash": "0xBD49D10D",
+      "field_after_text_hash": "0x00000000",
+      "font": "gui\\kr08_font_standard_22.bfont",
+      "font_length": 31,
+      "font_length_offset": "0xB79C56",
+      "font_bytes_offset": "0xB79C57",
+      "flags": "0x00000408",
+      "flags_offset": "0xB79C76",
+      "position": [
+        95.0,
+        10.0
+      ],
+      "size": [
+        185.0,
+        43.0
+      ],
+      "field_f32_2_unknown": [
+        0.0,
+        0.0
+      ],
+      "clip_rect": [
+        -1000.0,
+        -1000.0,
+        1000.0,
+        1000.0
+      ],
+      "alignment_style_raw_unknown": "030200000000000000000000",
+      "record_length": "UNKNOWN (no per-record byte-length field established)",
+      "parent_container_length": "UNKNOWN (no parent byte-length field established; serialization is consistent with field/count-delimited records)",
+      "child_count": "UNKNOWN for parent; Text is treated as a leaf",
+      "settings_start": "0xB79BA6",
+      "state_start": "0xB798C9",
+      "options_start": "0xB797F5"
+    },
+    {
+      "record_path": "Layer_DemoMenuNewLayer/Options/Unselected/settings/Text",
+      "group": 1,
+      "layer": "Layer_DemoMenuNewLayer",
+      "state": "Unselected",
+      "record_start": "0xB79FF1",
+      "record_type": "Text",
+      "local_id": 4,
+      "object_id": 114216,
+      "name_hash": "0x5F5D2B52",
+      "text_reference": "",
+      "text_reference_length": 0,
+      "text_reference_hash": "0xBD49D10D",
+      "field_after_text_hash": "0x00000000",
+      "font": "gui\\kr08_font_standard_22.bfont",
+      "font_length": 31,
+      "font_length_offset": "0xB7A043",
+      "font_bytes_offset": "0xB7A044",
+      "flags": "0x00000408",
+      "flags_offset": "0xB7A063",
+      "position": [
+        95.0,
+        10.0
+      ],
+      "size": [
+        185.0,
+        43.0
+      ],
+      "field_f32_2_unknown": [
+        0.0,
+        0.0
+      ],
+      "clip_rect": [
+        -1000.0,
+        -1000.0,
+        1000.0,
+        1000.0
+      ],
+      "alignment_style_raw_unknown": "030200000000000000000000",
+      "record_length": "UNKNOWN (no per-record byte-length field established)",
+      "parent_container_length": "UNKNOWN (no parent byte-length field established; serialization is consistent with field/count-delimited records)",
+      "child_count": "UNKNOWN for parent; Text is treated as a leaf",
+      "settings_start": "0xB79F93",
+      "state_start": "0xB79CB4",
+      "options_start": "0xB797F5"
+    }
+  ]
+}

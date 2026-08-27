@@ -1,0 +1,40 @@
+{
+  "schema": "ams2-kr-v067-file-classification-v1",
+  "predecessor_sha": "7fd060a94201631506a6ca9983a3dde5961e0172",
+  "status": "PASS",
+  "commit_source": [
+    ".gitignore",
+    "reports/0.6.7/tools/audit_v066_bgui_fallbacks.py",
+    "reports/0.6.7/tools/audit_v066_regressions.ps1",
+    "reports/0.6.7/tools/audit_v066_regressions.py",
+    "reports/0.6.7/tools/build_safe_nbsp_bfonts.ps1",
+    "reports/0.6.7/tools/inspect_preview_distance.py",
+    "reports/0.6.7/tools/patch_mainmenu_fallback.py",
+    "reports/0.6.7/tools/search_tdb_values.ps1"
+  ],
+  "commit_report": [
+    "reports/0.6.7/artifacts/mainmenu-fallback/menu_mainmenu_1_6.bgui",
+    "reports/0.6.7/artifacts/mainmenu-fallback/patch-validation.json",
+    "reports/0.6.7/*.json",
+    "reports/0.6.7/*.md",
+    "reports/0.6.7/runtime-mainmenu-fallback-patched.png",
+    "reports/0.6.7/runtime-options-pre-safe-font.png",
+    "reports/0.6.7/runtime-single-race-fallback-patched.png",
+    "reports/0.6.7/runtime-after-car-select.png",
+    "reports/0.6.7/runtime-v066-profile-audit-3.png",
+    "reports/0.6.7/runtime-v066-favorites-audit.png",
+    "reports/0.6.7/runtime-v066-ai-race-audit.png",
+    "reports/0.6.7/runtime-v066-ai-race-grid.png",
+    "reports/0.6.7/runtime-v066-ai-driving-audit.png"
+  ],
+  "debug_only": {
+    "quarantine": "E:\\AMS2_Korean_Work\\local-debug\\AMS2-KR-068-v067-excluded",
+    "failed_safe_fonts": true,
+    "discarded_nameplate_builder_experiment": true,
+    "intermediate_screenshots": 29
+  },
+  "generated_cache": {
+    "pycache_files": 5,
+    "committed": false
+  }
+}

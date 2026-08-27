@@ -1,0 +1,3145 @@
+﻿[
+    {
+        "relative_path":  "AMS2 Korean Launcher.exe",
+        "extension":  ".exe",
+        "status":  "EXACT",
+        "base_sha":  "BDA38D90E55F4E2B7C8C548B5F7A5FB4522EEA66B48BC5EF4EA1B01DC59C8117",
+        "live_sha":  "BDA38D90E55F4E2B7C8C548B5F7A5FB4522EEA66B48BC5EF4EA1B01DC59C8117"
+    },
+    {
+        "relative_path":  "AMS2 Korean VR Launcher.exe",
+        "extension":  ".exe",
+        "status":  "EXACT",
+        "base_sha":  "F4F5779E3A392654445CEC5E7B32759967D86D91F8B5FC237B3182A6244EC361",
+        "live_sha":  "F4F5779E3A392654445CEC5E7B32759967D86D91F8B5FC237B3182A6244EC361"
+    },
+    {
+        "relative_path":  "hud_broadcastmirror_full.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "E2E67AA786977C774D92407AFA1F2DA7291A05F927EF6755DF66A1A808E0923E",
+        "live_sha":  "E2E67AA786977C774D92407AFA1F2DA7291A05F927EF6755DF66A1A808E0923E"
+    },
+    {
+        "relative_path":  "hud_carinfo.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "F6CE91E6A847354E136A306D989EE3CB87FD47FE58FAB42D9BF61BDC22CE7B09",
+        "live_sha":  "F6CE91E6A847354E136A306D989EE3CB87FD47FE58FAB42D9BF61BDC22CE7B09"
+    },
+    {
+        "relative_path":  "hud_carinfo_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "6B0F2E292351A0EDEF55D9116740D820A997CB3923773236CE674A2610D9B00B",
+        "live_sha":  "6B0F2E292351A0EDEF55D9116740D820A997CB3923773236CE674A2610D9B00B"
+    },
+    {
+        "relative_path":  "hud_display.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "BD18D6815C3569BBEFBFC6382CEF29B62F8F8044B1BBECB089A27B3AB35AF7EC",
+        "live_sha":  "BD18D6815C3569BBEFBFC6382CEF29B62F8F8044B1BBECB089A27B3AB35AF7EC"
+    },
+    {
+        "relative_path":  "hud_display_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "8576A2A72B6EFCF96F17250613DBE869E911AD62BE69EF37E51DD73007497F53",
+        "live_sha":  "8576A2A72B6EFCF96F17250613DBE869E911AD62BE69EF37E51DD73007497F53"
+    },
+    {
+        "relative_path":  "hud_formationlap.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "96D4BF1F64874018889DACFC6D53DA5631FF1C7ECF72D6EC51C87971C44C94F6",
+        "live_sha":  "96D4BF1F64874018889DACFC6D53DA5631FF1C7ECF72D6EC51C87971C44C94F6"
+    },
+    {
+        "relative_path":  "hud_formationlap_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "45FE67BBC87AB6416D8CC5F073104086C93BA38A88093933893E499A9561520D",
+        "live_sha":  "45FE67BBC87AB6416D8CC5F073104086C93BA38A88093933893E499A9561520D"
+    },
+    {
+        "relative_path":  "hud_global.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "52BCCAC42448370CD1D96D31318626852960D988912FDBAB6A0667FB16AD65F6",
+        "live_sha":  "52BCCAC42448370CD1D96D31318626852960D988912FDBAB6A0667FB16AD65F6"
+    },
+    {
+        "relative_path":  "hud_importantpenalties.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "3D07E2EC9EE824B9D842180AEBC1334F7C8623F9E3463A7968C107D80457069E",
+        "live_sha":  "3D07E2EC9EE824B9D842180AEBC1334F7C8623F9E3463A7968C107D80457069E"
+    },
+    {
+        "relative_path":  "hud_infoabovecar.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "BC8CAE988E7FD47B4BC330139E0C1C150C5265E3FC76BC4B1B42BBB5014AE082",
+        "live_sha":  "BC8CAE988E7FD47B4BC330139E0C1C150C5265E3FC76BC4B1B42BBB5014AE082"
+    },
+    {
+        "relative_path":  "hud_lap_info.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "654B64210133BF4D246BDE840309330F7DF37712134831C9BC134789EE7F3928",
+        "live_sha":  "654B64210133BF4D246BDE840309330F7DF37712134831C9BC134789EE7F3928"
+    },
+    {
+        "relative_path":  "hud_last3laps.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "C51CA19899BE1457EB99B875DF20FAB5036F9D1BF3458A6D2B0E609A354E101C",
+        "live_sha":  "C51CA19899BE1457EB99B875DF20FAB5036F9D1BF3458A6D2B0E609A354E101C"
+    },
+    {
+        "relative_path":  "hud_leaderboard.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "7C914A4F8986F5F849BB985E88FCA4A662530FCD629676D62ED04EC88CA8BED2",
+        "live_sha":  "7C914A4F8986F5F849BB985E88FCA4A662530FCD629676D62ED04EC88CA8BED2"
+    },
+    {
+        "relative_path":  "hud_leaderboard2.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "646CC189002EA6839E93301276944CBEE1DABDECA9D1F33081D5BDBC8355F70D",
+        "live_sha":  "646CC189002EA6839E93301276944CBEE1DABDECA9D1F33081D5BDBC8355F70D"
+    },
+    {
+        "relative_path":  "hud_leaderboard2_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "BC7E1812089CF927604A450F2956086FE73585180D7D7537B112AA49C979D924",
+        "live_sha":  "BC7E1812089CF927604A450F2956086FE73585180D7D7537B112AA49C979D924"
+    },
+    {
+        "relative_path":  "hud_lite.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "18B425DA81071A5C97ADB49575A1FCE76AD4D8E8D4E8A9528749CAB1D641B139",
+        "live_sha":  "18B425DA81071A5C97ADB49575A1FCE76AD4D8E8D4E8A9528749CAB1D641B139"
+    },
+    {
+        "relative_path":  "hud_message_chat.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "DE09F61B8738BC735EF2C30B48958EE00835F28AA55B2047B82ADE21BC35B02A",
+        "live_sha":  "DE09F61B8738BC735EF2C30B48958EE00835F28AA55B2047B82ADE21BC35B02A"
+    },
+    {
+        "relative_path":  "hud_message_contactpenaltywarning.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "B695A2FA6CBFAE648A881D020C1EA27AE9199E67CB5DE6FA082066E492D86B56",
+        "live_sha":  "B695A2FA6CBFAE648A881D020C1EA27AE9199E67CB5DE6FA082066E492D86B56"
+    },
+    {
+        "relative_path":  "hud_message_disqualified.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "C33D8BCC6C3D9179047AB12109E59B32FCC8963007B6A8176B5239E1ECD88C18",
+        "live_sha":  "C33D8BCC6C3D9179047AB12109E59B32FCC8963007B6A8176B5239E1ECD88C18"
+    },
+    {
+        "relative_path":  "hud_message_flags.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "E1E1317F3F5265EA57093F0999863C9986969EC4B0A6AC23B4E007A3663E1FF1",
+        "live_sha":  "E1E1317F3F5265EA57093F0999863C9986969EC4B0A6AC23B4E007A3663E1FF1"
+    },
+    {
+        "relative_path":  "hud_message_flags_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "5CC17B02A33931AC89F9C38A49C869D31ECDF67E31855528158EECEEEAB70566",
+        "live_sha":  "5CC17B02A33931AC89F9C38A49C869D31ECDF67E31855528158EECEEEAB70566"
+    },
+    {
+        "relative_path":  "hud_message_liveedit.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "88D000A67E1348F3CF08C5E76BFF4FEC1084C2BCB46FF16402F9932E5CF45803",
+        "live_sha":  "88D000A67E1348F3CF08C5E76BFF4FEC1084C2BCB46FF16402F9932E5CF45803"
+    },
+    {
+        "relative_path":  "hud_message_manualcontrol.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "A23A12392A24A5808112A8591B40F8D612DD6DB3225CD90F4F2112B82395EB4D",
+        "live_sha":  "A23A12392A24A5808112A8591B40F8D612DD6DB3225CD90F4F2112B82395EB4D"
+    },
+    {
+        "relative_path":  "hud_message_pitboard.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "E196CF0B7299A2ED281E5C8F8C36A522C648410513CE62313BD6E7BC6E916EBB",
+        "live_sha":  "E196CF0B7299A2ED281E5C8F8C36A522C648410513CE62313BD6E7BC6E916EBB"
+    },
+    {
+        "relative_path":  "hud_message_sessionover.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "232557DF76223B30915211421015549F54FBC4DF39B6B467B9F4D4DA18711C0D",
+        "live_sha":  "232557DF76223B30915211421015549F54FBC4DF39B6B467B9F4D4DA18711C0D"
+    },
+    {
+        "relative_path":  "hud_message_splittimes.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "2F39DEA1F0484EF559E4E91D4FDF50F52F437153DF8404706C7606C980C774BD",
+        "live_sha":  "2F39DEA1F0484EF559E4E91D4FDF50F52F437153DF8404706C7606C980C774BD"
+    },
+    {
+        "relative_path":  "hud_message_subtitles.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "863E8D7097F32502DE608A2477951D6649E0ECADE6A639ACB28CD0946FC6AA4E",
+        "live_sha":  "863E8D7097F32502DE608A2477951D6649E0ECADE6A639ACB28CD0946FC6AA4E"
+    },
+    {
+        "relative_path":  "hud_message_syncing.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "900FA1EA9CBBDA1670874FF31CB44A82E7FAD553B0D7CDE69C089A5461E8973A",
+        "live_sha":  "900FA1EA9CBBDA1670874FF31CB44A82E7FAD553B0D7CDE69C089A5461E8973A"
+    },
+    {
+        "relative_path":  "hud_message_timepenalty.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "395BBB85809EFDE73A4ED8ED89B291253080C61B5C8203B43C20535DDF99A400",
+        "live_sha":  "395BBB85809EFDE73A4ED8ED89B291253080C61B5C8203B43C20535DDF99A400"
+    },
+    {
+        "relative_path":  "hud_message_timepenaltymsg1.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "23B5491E54F4378C2EC9159AC5797A9A6D72BF81A6866FDF0A9E176B789CC645",
+        "live_sha":  "23B5491E54F4378C2EC9159AC5797A9A6D72BF81A6866FDF0A9E176B789CC645"
+    },
+    {
+        "relative_path":  "hud_message_timepenaltywarnings.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "5BEDB8E1D9E90C52AD60EE6BF7819877E700D9F2BC3ACFAAC87EB0B9EEAB88A0",
+        "live_sha":  "5BEDB8E1D9E90C52AD60EE6BF7819877E700D9F2BC3ACFAAC87EB0B9EEAB88A0"
+    },
+    {
+        "relative_path":  "hud_message_warning.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "948DB55F65CC426C889A808DF33AD207CEC15E4E85D932D1EB963A91FB02994F",
+        "live_sha":  "948DB55F65CC426C889A808DF33AD207CEC15E4E85D932D1EB963A91FB02994F"
+    },
+    {
+        "relative_path":  "hud_message_warning2.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "28EEE419E70382690BD0CD82C94043FC88BE62FACF2D041AA489DE5537C9443F",
+        "live_sha":  "28EEE419E70382690BD0CD82C94043FC88BE62FACF2D041AA489DE5537C9443F"
+    },
+    {
+        "relative_path":  "hud_message_warningcountdown.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "8816D760198D4C2168080935CB595E6EA2E134DCE083FB48418027AC6CC775CF",
+        "live_sha":  "8816D760198D4C2168080935CB595E6EA2E134DCE083FB48418027AC6CC775CF"
+    },
+    {
+        "relative_path":  "hud_message_wrongway.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "95EF03EA31CED94D171CA992FF8EA16358654DD4E6F67B3F10213833E7F37B50",
+        "live_sha":  "95EF03EA31CED94D171CA992FF8EA16358654DD4E6F67B3F10213833E7F37B50"
+    },
+    {
+        "relative_path":  "hud_position.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "2F71F253441962591915916C4D685E40CDC11382FA83B830783C15B937273C76",
+        "live_sha":  "2F71F253441962591915916C4D685E40CDC11382FA83B830783C15B937273C76"
+    },
+    {
+        "relative_path":  "hud_position_ams2.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "EE461716C5B7D0F053B8C4A9EBFCEBD20FB250619F1B1C7290EBE9A15290D90B",
+        "live_sha":  "EE461716C5B7D0F053B8C4A9EBFCEBD20FB250619F1B1C7290EBE9A15290D90B"
+    },
+    {
+        "relative_path":  "hud_position_ams2_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "3580BB7D3ED269555C0B0A72A6C07FEE50D67111ED05F43DD6F7343E486D25FB",
+        "live_sha":  "3580BB7D3ED269555C0B0A72A6C07FEE50D67111ED05F43DD6F7343E486D25FB"
+    },
+    {
+        "relative_path":  "hud_relativepositions.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "9D6B8C7DD070E40CC3CC769217B4AEBFFBA50F7E91CB53FC740FE99AFD270F78",
+        "live_sha":  "9D6B8C7DD070E40CC3CC769217B4AEBFFBA50F7E91CB53FC740FE99AFD270F78"
+    },
+    {
+        "relative_path":  "hud_relativepositions_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "9684345E5D95B1AB98A008F28D02E1F242CD7EEBF26471B49E0F17C4E47F307A",
+        "live_sha":  "9684345E5D95B1AB98A008F28D02E1F242CD7EEBF26471B49E0F17C4E47F307A"
+    },
+    {
+        "relative_path":  "hud_telemetry.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "7468753E558BC99A2AB3B09523ECA47FC4652A185494FC9482AB05FA4F5DAA4A",
+        "live_sha":  "7468753E558BC99A2AB3B09523ECA47FC4652A185494FC9482AB05FA4F5DAA4A"
+    },
+    {
+        "relative_path":  "hud_telemetry_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "BBDA2B5080C84801E9B248621D486E3A34E35C4DC10A71710B9C5378490EE8D8",
+        "live_sha":  "BBDA2B5080C84801E9B248621D486E3A34E35C4DC10A71710B9C5378490EE8D8"
+    },
+    {
+        "relative_path":  "hud_timetrialinfo.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "5188C3AB1C6D5488ECD7E53FEBE1A6A06A0458260B3F034A9DE77383CE27D805",
+        "live_sha":  "5188C3AB1C6D5488ECD7E53FEBE1A6A06A0458260B3F034A9DE77383CE27D805"
+    },
+    {
+        "relative_path":  "hud_timetrialinfo_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "CDEFF280A764467E382B4E83D6FF30D09C08DAE2779293A34F760902B9E2B6AE",
+        "live_sha":  "CDEFF280A764467E382B4E83D6FF30D09C08DAE2779293A34F760902B9E2B6AE"
+    },
+    {
+        "relative_path":  "hud_tires.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "367FF27B69597B374812DF5796C487378AA19F3B64A6125563BE7F2121F2ABD8",
+        "live_sha":  "367FF27B69597B374812DF5796C487378AA19F3B64A6125563BE7F2121F2ABD8"
+    },
+    {
+        "relative_path":  "hud_vignette_sms.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "AE9365650BADC2644FB59AA9159CF2985C2001B73F6CC4426F23FC67D8C5298F",
+        "live_sha":  "AE9365650BADC2644FB59AA9159CF2985C2001B73F6CC4426F23FC67D8C5298F"
+    },
+    {
+        "relative_path":  "hud_visualsplittimer.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "4CECDE2D65AA78F4C73E1834CF67B2A7C9D7EE839E38606798953F3FE3923F1C",
+        "live_sha":  "4CECDE2D65AA78F4C73E1834CF67B2A7C9D7EE839E38606798953F3FE3923F1C"
+    },
+    {
+        "relative_path":  "hud_visualsplittimer_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "486EEC345F21572B1C4571FED223108A630DC26F9B9B0C55D663FCCF4274FD6A",
+        "live_sha":  "486EEC345F21572B1C4571FED223108A630DC26F9B9B0C55D663FCCF4274FD6A"
+    },
+    {
+        "relative_path":  "hud_weatherforecast.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "2C2281525391A543575126CEF8BD9171DF98E8CFC68FE3477F63ABE9A4843E47",
+        "live_sha":  "2C2281525391A543575126CEF8BD9171DF98E8CFC68FE3477F63ABE9A4843E47"
+    },
+    {
+        "relative_path":  "gui\\display_aston_martin_valkyrie_lmh.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "AA3108A1E490D3A90501FFED7104B72A97D18FD3DE260A3329BE958FF2613946",
+        "live_sha":  "AA3108A1E490D3A90501FFED7104B72A97D18FD3DE260A3329BE958FF2613946"
+    },
+    {
+        "relative_path":  "gui\\display_aston_martin_valkyrie_lmh_IMSA.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "2ED34A7DB2C3BE7CA721C16352DE1A52DE7659F4DEB775E43A3BABAC8961CE8B",
+        "live_sha":  "2ED34A7DB2C3BE7CA721C16352DE1A52DE7659F4DEB775E43A3BABAC8961CE8B"
+    },
+    {
+        "relative_path":  "gui\\display_bmw_mhybrid_v8.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "1037D4050C27A75A7B1A42B8FBD0559B4D52AB38608B5932E64D8C4147391132",
+        "live_sha":  "1037D4050C27A75A7B1A42B8FBD0559B4D52AB38608B5932E64D8C4147391132"
+    },
+    {
+        "relative_path":  "gui\\display_bmw_mhybrid_v8_IMSA.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "1FC31C633B1A9C0CEAC5C3402D79A5D65AF1628FC17B6894B82642DABFDC12D7",
+        "live_sha":  "1FC31C633B1A9C0CEAC5C3402D79A5D65AF1628FC17B6894B82642DABFDC12D7"
+    },
+    {
+        "relative_path":  "gui\\display_brabham_bt62.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "E197F4CBC4F214C04123083906F73F1D741DA31830EFAAD6BEFC4675BF498CE3",
+        "live_sha":  "E197F4CBC4F214C04123083906F73F1D741DA31830EFAAD6BEFC4675BF498CE3"
+    },
+    {
+        "relative_path":  "gui\\display_cadillac_vseries.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "5C78274805122A1E0B8EFAB4BF33E350119F024FE59EF29DBD23C26122585192",
+        "live_sha":  "5C78274805122A1E0B8EFAB4BF33E350119F024FE59EF29DBD23C26122585192"
+    },
+    {
+        "relative_path":  "gui\\display_cadillac_vseries_IMSA.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "924C093EC56D9C7CC3AE67C9DE3F30443E0BA892863CB4C2B9119FAD822CE845",
+        "live_sha":  "924C093EC56D9C7CC3AE67C9DE3F30443E0BA892863CB4C2B9119FAD822CE845"
+    },
+    {
+        "relative_path":  "gui\\display_corvette_c8.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "B10A7500AC88F378E86D9058DB2D3F69330D481B9389C39470B9BB3F6C82CD11",
+        "live_sha":  "B10A7500AC88F378E86D9058DB2D3F69330D481B9389C39470B9BB3F6C82CD11"
+    },
+    {
+        "relative_path":  "gui\\display_formula_inter.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "FF5B8E23684BBADD880B51D18CB356C590C5C173B756D77F137CE4D959358C2D",
+        "live_sha":  "FF5B8E23684BBADD880B51D18CB356C590C5C173B756D77F137CE4D959358C2D"
+    },
+    {
+        "relative_path":  "gui\\display_formula_usa23.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "641817E004984A7F2F40F85B70B7B453779D7EFCC5D45E0A259327FDFF7478FC",
+        "live_sha":  "641817E004984A7F2F40F85B70B7B453779D7EFCC5D45E0A259327FDFF7478FC"
+    },
+    {
+        "relative_path":  "gui\\display_ginetta_gt3_new.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "E7E910469AA8A2AC9ED851BBCEE97DF1C87E21DD1E4CC600748FFBD573B8E0AA",
+        "live_sha":  "E7E910469AA8A2AC9ED851BBCEE97DF1C87E21DD1E4CC600748FFBD573B8E0AA"
+    },
+    {
+        "relative_path":  "gui\\display_lamborghini_sc63.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "79385806B72805304DB78AE959EF2D388165904269215C715AED5FF76FF5A041",
+        "live_sha":  "79385806B72805304DB78AE959EF2D388165904269215C715AED5FF76FF5A041"
+    },
+    {
+        "relative_path":  "gui\\display_lamborghini_sc63_IMSA.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "1E996E48517BA1C4AD99D847D56ED5DC11186C063196B8C71FA442CD5C778215",
+        "live_sha":  "1E996E48517BA1C4AD99D847D56ED5DC11186C063196B8C71FA442CD5C778215"
+    },
+    {
+        "relative_path":  "gui\\display_ligier_jsp217.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "0AAE46D6E0E9CD18F31C9A75511E181DD0836F0049183B3CBBD991CBF5702AD5",
+        "live_sha":  "0AAE46D6E0E9CD18F31C9A75511E181DD0836F0049183B3CBBD991CBF5702AD5"
+    },
+    {
+        "relative_path":  "gui\\display_ligier_jsp217_IMSA.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "117E0B0967D1E975BAF37B4D302B56E03CD7F5C92F05C215A20FFD113F492444",
+        "live_sha":  "117E0B0967D1E975BAF37B4D302B56E03CD7F5C92F05C215A20FFD113F492444"
+    },
+    {
+        "relative_path":  "gui\\display_mclaren_720s_gt3.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "4BE5459C91B5675917C142BB59239D4E1FDCFC2298A91AF518B1642FFF689F15",
+        "live_sha":  "4BE5459C91B5675917C142BB59239D4E1FDCFC2298A91AF518B1642FFF689F15"
+    },
+    {
+        "relative_path":  "gui\\display_oreca_07.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "C39FC24C15074DB4DDFA4EE5EF615B93002ABC47BEAF51A303EBF8AE3DF7DFDA",
+        "live_sha":  "C39FC24C15074DB4DDFA4EE5EF615B93002ABC47BEAF51A303EBF8AE3DF7DFDA"
+    },
+    {
+        "relative_path":  "gui\\display_oreca_07_IMSA.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "4D780BC89A25008BF8259D7677329B344FD1ED7308D1E7E49D78ADBF89239203",
+        "live_sha":  "4D780BC89A25008BF8259D7677329B344FD1ED7308D1E7E49D78ADBF89239203"
+    },
+    {
+        "relative_path":  "gui\\display_porsche_963.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "2DB6C971BAD551277B45841C94CA4A71E155F24A9B2CAE554ADBA17ED3E98F52",
+        "live_sha":  "2DB6C971BAD551277B45841C94CA4A71E155F24A9B2CAE554ADBA17ED3E98F52"
+    },
+    {
+        "relative_path":  "gui\\display_porsche_963_IMSA.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "8C4EEC0B6D8D9BAD7FC487C0D60F356E68E7B73DA6D8346E38076EFB60843A0E",
+        "live_sha":  "8C4EEC0B6D8D9BAD7FC487C0D60F356E68E7B73DA6D8346E38076EFB60843A0E"
+    },
+    {
+        "relative_path":  "gui\\display_porsche_991_gt3r.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "73A2B96F9BA1EEAFB812B2D704EBAD19EA905784746B30D90D49B7D03484DB79",
+        "live_sha":  "73A2B96F9BA1EEAFB812B2D704EBAD19EA905784746B30D90D49B7D03484DB79"
+    },
+    {
+        "relative_path":  "gui\\display_stock_usa_g3_lm.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "A45DD3CBA020B425D91C79A197296E4DB3BFD736823F39F9344019EBECFF37B3",
+        "live_sha":  "A45DD3CBA020B425D91C79A197296E4DB3BFD736823F39F9344019EBECFF37B3"
+    },
+    {
+        "relative_path":  "gui\\hud_broadcastmirror_full.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "E2E67AA786977C774D92407AFA1F2DA7291A05F927EF6755DF66A1A808E0923E",
+        "live_sha":  "E2E67AA786977C774D92407AFA1F2DA7291A05F927EF6755DF66A1A808E0923E"
+    },
+    {
+        "relative_path":  "gui\\hud_carinfo.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "F6CE91E6A847354E136A306D989EE3CB87FD47FE58FAB42D9BF61BDC22CE7B09",
+        "live_sha":  "F6CE91E6A847354E136A306D989EE3CB87FD47FE58FAB42D9BF61BDC22CE7B09"
+    },
+    {
+        "relative_path":  "gui\\hud_carinfo_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "6B0F2E292351A0EDEF55D9116740D820A997CB3923773236CE674A2610D9B00B",
+        "live_sha":  "6B0F2E292351A0EDEF55D9116740D820A997CB3923773236CE674A2610D9B00B"
+    },
+    {
+        "relative_path":  "gui\\hud_display.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "BD18D6815C3569BBEFBFC6382CEF29B62F8F8044B1BBECB089A27B3AB35AF7EC",
+        "live_sha":  "BD18D6815C3569BBEFBFC6382CEF29B62F8F8044B1BBECB089A27B3AB35AF7EC"
+    },
+    {
+        "relative_path":  "gui\\hud_display_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "8576A2A72B6EFCF96F17250613DBE869E911AD62BE69EF37E51DD73007497F53",
+        "live_sha":  "8576A2A72B6EFCF96F17250613DBE869E911AD62BE69EF37E51DD73007497F53"
+    },
+    {
+        "relative_path":  "gui\\hud_formationlap.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "96D4BF1F64874018889DACFC6D53DA5631FF1C7ECF72D6EC51C87971C44C94F6",
+        "live_sha":  "96D4BF1F64874018889DACFC6D53DA5631FF1C7ECF72D6EC51C87971C44C94F6"
+    },
+    {
+        "relative_path":  "gui\\hud_formationlap_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "45FE67BBC87AB6416D8CC5F073104086C93BA38A88093933893E499A9561520D",
+        "live_sha":  "45FE67BBC87AB6416D8CC5F073104086C93BA38A88093933893E499A9561520D"
+    },
+    {
+        "relative_path":  "gui\\hud_global.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "52BCCAC42448370CD1D96D31318626852960D988912FDBAB6A0667FB16AD65F6",
+        "live_sha":  "52BCCAC42448370CD1D96D31318626852960D988912FDBAB6A0667FB16AD65F6"
+    },
+    {
+        "relative_path":  "gui\\hud_importantpenalties.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "3D07E2EC9EE824B9D842180AEBC1334F7C8623F9E3463A7968C107D80457069E",
+        "live_sha":  "3D07E2EC9EE824B9D842180AEBC1334F7C8623F9E3463A7968C107D80457069E"
+    },
+    {
+        "relative_path":  "gui\\hud_infoabovecar.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "BC8CAE988E7FD47B4BC330139E0C1C150C5265E3FC76BC4B1B42BBB5014AE082",
+        "live_sha":  "BC8CAE988E7FD47B4BC330139E0C1C150C5265E3FC76BC4B1B42BBB5014AE082"
+    },
+    {
+        "relative_path":  "gui\\hud_lap_info.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "654B64210133BF4D246BDE840309330F7DF37712134831C9BC134789EE7F3928",
+        "live_sha":  "654B64210133BF4D246BDE840309330F7DF37712134831C9BC134789EE7F3928"
+    },
+    {
+        "relative_path":  "gui\\hud_last3laps.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "C51CA19899BE1457EB99B875DF20FAB5036F9D1BF3458A6D2B0E609A354E101C",
+        "live_sha":  "C51CA19899BE1457EB99B875DF20FAB5036F9D1BF3458A6D2B0E609A354E101C"
+    },
+    {
+        "relative_path":  "gui\\hud_leaderboard.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "7C914A4F8986F5F849BB985E88FCA4A662530FCD629676D62ED04EC88CA8BED2",
+        "live_sha":  "7C914A4F8986F5F849BB985E88FCA4A662530FCD629676D62ED04EC88CA8BED2"
+    },
+    {
+        "relative_path":  "gui\\hud_leaderboard2.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "646CC189002EA6839E93301276944CBEE1DABDECA9D1F33081D5BDBC8355F70D",
+        "live_sha":  "646CC189002EA6839E93301276944CBEE1DABDECA9D1F33081D5BDBC8355F70D"
+    },
+    {
+        "relative_path":  "gui\\hud_leaderboard2_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "BC7E1812089CF927604A450F2956086FE73585180D7D7537B112AA49C979D924",
+        "live_sha":  "BC7E1812089CF927604A450F2956086FE73585180D7D7537B112AA49C979D924"
+    },
+    {
+        "relative_path":  "gui\\hud_lite.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "18B425DA81071A5C97ADB49575A1FCE76AD4D8E8D4E8A9528749CAB1D641B139",
+        "live_sha":  "18B425DA81071A5C97ADB49575A1FCE76AD4D8E8D4E8A9528749CAB1D641B139"
+    },
+    {
+        "relative_path":  "gui\\hud_message_chat.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "DE09F61B8738BC735EF2C30B48958EE00835F28AA55B2047B82ADE21BC35B02A",
+        "live_sha":  "DE09F61B8738BC735EF2C30B48958EE00835F28AA55B2047B82ADE21BC35B02A"
+    },
+    {
+        "relative_path":  "gui\\hud_message_contactpenaltywarning.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "B695A2FA6CBFAE648A881D020C1EA27AE9199E67CB5DE6FA082066E492D86B56",
+        "live_sha":  "B695A2FA6CBFAE648A881D020C1EA27AE9199E67CB5DE6FA082066E492D86B56"
+    },
+    {
+        "relative_path":  "gui\\hud_message_disqualified.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "C33D8BCC6C3D9179047AB12109E59B32FCC8963007B6A8176B5239E1ECD88C18",
+        "live_sha":  "C33D8BCC6C3D9179047AB12109E59B32FCC8963007B6A8176B5239E1ECD88C18"
+    },
+    {
+        "relative_path":  "gui\\hud_message_flags.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "E1E1317F3F5265EA57093F0999863C9986969EC4B0A6AC23B4E007A3663E1FF1",
+        "live_sha":  "E1E1317F3F5265EA57093F0999863C9986969EC4B0A6AC23B4E007A3663E1FF1"
+    },
+    {
+        "relative_path":  "gui\\hud_message_flags_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "5CC17B02A33931AC89F9C38A49C869D31ECDF67E31855528158EECEEEAB70566",
+        "live_sha":  "5CC17B02A33931AC89F9C38A49C869D31ECDF67E31855528158EECEEEAB70566"
+    },
+    {
+        "relative_path":  "gui\\hud_message_liveedit.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "88D000A67E1348F3CF08C5E76BFF4FEC1084C2BCB46FF16402F9932E5CF45803",
+        "live_sha":  "88D000A67E1348F3CF08C5E76BFF4FEC1084C2BCB46FF16402F9932E5CF45803"
+    },
+    {
+        "relative_path":  "gui\\hud_message_manualcontrol.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "A23A12392A24A5808112A8591B40F8D612DD6DB3225CD90F4F2112B82395EB4D",
+        "live_sha":  "A23A12392A24A5808112A8591B40F8D612DD6DB3225CD90F4F2112B82395EB4D"
+    },
+    {
+        "relative_path":  "gui\\hud_message_pitboard.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "E196CF0B7299A2ED281E5C8F8C36A522C648410513CE62313BD6E7BC6E916EBB",
+        "live_sha":  "E196CF0B7299A2ED281E5C8F8C36A522C648410513CE62313BD6E7BC6E916EBB"
+    },
+    {
+        "relative_path":  "gui\\hud_message_sessionover.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "232557DF76223B30915211421015549F54FBC4DF39B6B467B9F4D4DA18711C0D",
+        "live_sha":  "232557DF76223B30915211421015549F54FBC4DF39B6B467B9F4D4DA18711C0D"
+    },
+    {
+        "relative_path":  "gui\\hud_message_splittimes.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "2F39DEA1F0484EF559E4E91D4FDF50F52F437153DF8404706C7606C980C774BD",
+        "live_sha":  "2F39DEA1F0484EF559E4E91D4FDF50F52F437153DF8404706C7606C980C774BD"
+    },
+    {
+        "relative_path":  "gui\\hud_message_subtitles.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "863E8D7097F32502DE608A2477951D6649E0ECADE6A639ACB28CD0946FC6AA4E",
+        "live_sha":  "863E8D7097F32502DE608A2477951D6649E0ECADE6A639ACB28CD0946FC6AA4E"
+    },
+    {
+        "relative_path":  "gui\\hud_message_syncing.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "900FA1EA9CBBDA1670874FF31CB44A82E7FAD553B0D7CDE69C089A5461E8973A",
+        "live_sha":  "900FA1EA9CBBDA1670874FF31CB44A82E7FAD553B0D7CDE69C089A5461E8973A"
+    },
+    {
+        "relative_path":  "gui\\hud_message_timepenalty.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "395BBB85809EFDE73A4ED8ED89B291253080C61B5C8203B43C20535DDF99A400",
+        "live_sha":  "395BBB85809EFDE73A4ED8ED89B291253080C61B5C8203B43C20535DDF99A400"
+    },
+    {
+        "relative_path":  "gui\\hud_message_timepenaltymsg1.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "23B5491E54F4378C2EC9159AC5797A9A6D72BF81A6866FDF0A9E176B789CC645",
+        "live_sha":  "23B5491E54F4378C2EC9159AC5797A9A6D72BF81A6866FDF0A9E176B789CC645"
+    },
+    {
+        "relative_path":  "gui\\hud_message_timepenaltywarnings.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "5BEDB8E1D9E90C52AD60EE6BF7819877E700D9F2BC3ACFAAC87EB0B9EEAB88A0",
+        "live_sha":  "5BEDB8E1D9E90C52AD60EE6BF7819877E700D9F2BC3ACFAAC87EB0B9EEAB88A0"
+    },
+    {
+        "relative_path":  "gui\\hud_message_warning.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "948DB55F65CC426C889A808DF33AD207CEC15E4E85D932D1EB963A91FB02994F",
+        "live_sha":  "948DB55F65CC426C889A808DF33AD207CEC15E4E85D932D1EB963A91FB02994F"
+    },
+    {
+        "relative_path":  "gui\\hud_message_warning2.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "28EEE419E70382690BD0CD82C94043FC88BE62FACF2D041AA489DE5537C9443F",
+        "live_sha":  "28EEE419E70382690BD0CD82C94043FC88BE62FACF2D041AA489DE5537C9443F"
+    },
+    {
+        "relative_path":  "gui\\hud_message_warningcountdown.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "8816D760198D4C2168080935CB595E6EA2E134DCE083FB48418027AC6CC775CF",
+        "live_sha":  "8816D760198D4C2168080935CB595E6EA2E134DCE083FB48418027AC6CC775CF"
+    },
+    {
+        "relative_path":  "gui\\hud_message_wrongway.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "95EF03EA31CED94D171CA992FF8EA16358654DD4E6F67B3F10213833E7F37B50",
+        "live_sha":  "95EF03EA31CED94D171CA992FF8EA16358654DD4E6F67B3F10213833E7F37B50"
+    },
+    {
+        "relative_path":  "gui\\hud_position.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "2F71F253441962591915916C4D685E40CDC11382FA83B830783C15B937273C76",
+        "live_sha":  "2F71F253441962591915916C4D685E40CDC11382FA83B830783C15B937273C76"
+    },
+    {
+        "relative_path":  "gui\\hud_position_ams2.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "EE461716C5B7D0F053B8C4A9EBFCEBD20FB250619F1B1C7290EBE9A15290D90B",
+        "live_sha":  "EE461716C5B7D0F053B8C4A9EBFCEBD20FB250619F1B1C7290EBE9A15290D90B"
+    },
+    {
+        "relative_path":  "gui\\hud_position_ams2_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "3580BB7D3ED269555C0B0A72A6C07FEE50D67111ED05F43DD6F7343E486D25FB",
+        "live_sha":  "3580BB7D3ED269555C0B0A72A6C07FEE50D67111ED05F43DD6F7343E486D25FB"
+    },
+    {
+        "relative_path":  "gui\\hud_relativepositions.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "9D6B8C7DD070E40CC3CC769217B4AEBFFBA50F7E91CB53FC740FE99AFD270F78",
+        "live_sha":  "9D6B8C7DD070E40CC3CC769217B4AEBFFBA50F7E91CB53FC740FE99AFD270F78"
+    },
+    {
+        "relative_path":  "gui\\hud_relativepositions_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "9684345E5D95B1AB98A008F28D02E1F242CD7EEBF26471B49E0F17C4E47F307A",
+        "live_sha":  "9684345E5D95B1AB98A008F28D02E1F242CD7EEBF26471B49E0F17C4E47F307A"
+    },
+    {
+        "relative_path":  "gui\\hud_telemetry.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "7468753E558BC99A2AB3B09523ECA47FC4652A185494FC9482AB05FA4F5DAA4A",
+        "live_sha":  "7468753E558BC99A2AB3B09523ECA47FC4652A185494FC9482AB05FA4F5DAA4A"
+    },
+    {
+        "relative_path":  "gui\\hud_telemetry_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "BBDA2B5080C84801E9B248621D486E3A34E35C4DC10A71710B9C5378490EE8D8",
+        "live_sha":  "BBDA2B5080C84801E9B248621D486E3A34E35C4DC10A71710B9C5378490EE8D8"
+    },
+    {
+        "relative_path":  "gui\\hud_timetrialinfo.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "5188C3AB1C6D5488ECD7E53FEBE1A6A06A0458260B3F034A9DE77383CE27D805",
+        "live_sha":  "5188C3AB1C6D5488ECD7E53FEBE1A6A06A0458260B3F034A9DE77383CE27D805"
+    },
+    {
+        "relative_path":  "gui\\hud_timetrialinfo_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "CDEFF280A764467E382B4E83D6FF30D09C08DAE2779293A34F760902B9E2B6AE",
+        "live_sha":  "CDEFF280A764467E382B4E83D6FF30D09C08DAE2779293A34F760902B9E2B6AE"
+    },
+    {
+        "relative_path":  "gui\\hud_tires.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "367FF27B69597B374812DF5796C487378AA19F3B64A6125563BE7F2121F2ABD8",
+        "live_sha":  "367FF27B69597B374812DF5796C487378AA19F3B64A6125563BE7F2121F2ABD8"
+    },
+    {
+        "relative_path":  "gui\\hud_vignette_sms.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "AE9365650BADC2644FB59AA9159CF2985C2001B73F6CC4426F23FC67D8C5298F",
+        "live_sha":  "AE9365650BADC2644FB59AA9159CF2985C2001B73F6CC4426F23FC67D8C5298F"
+    },
+    {
+        "relative_path":  "gui\\hud_visualsplittimer.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "4CECDE2D65AA78F4C73E1834CF67B2A7C9D7EE839E38606798953F3FE3923F1C",
+        "live_sha":  "4CECDE2D65AA78F4C73E1834CF67B2A7C9D7EE839E38606798953F3FE3923F1C"
+    },
+    {
+        "relative_path":  "gui\\hud_visualsplittimer_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "486EEC345F21572B1C4571FED223108A630DC26F9B9B0C55D663FCCF4274FD6A",
+        "live_sha":  "486EEC345F21572B1C4571FED223108A630DC26F9B9B0C55D663FCCF4274FD6A"
+    },
+    {
+        "relative_path":  "gui\\hud_weatherforecast.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "2C2281525391A543575126CEF8BD9171DF98E8CFC68FE3477F63ABE9A4843E47",
+        "live_sha":  "2C2281525391A543575126CEF8BD9171DF98E8CFC68FE3477F63ABE9A4843E47"
+    },
+    {
+        "relative_path":  "gui\\kr08_aries_small.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "E8FD0E6F56CB2F72C0FCBEAA753F003C5F19ED2C28E13C838DD74CB3F76D3C9A",
+        "live_sha":  "F0F5DF26B28CB73F74E4EAC5EE54DBF8310BE128B6E64368F63E4AB31F8A38F1"
+    },
+    {
+        "relative_path":  "gui\\kr08_aries_small_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "EF766846D0AB06926056C2F4C7B4E824C102A1ABC21D48CF348746C9571FC4F4",
+        "live_sha":  "8373C47B777D2F58700CDA3CEAC78C27F40674C92FE2CDDC59845A8E85EB0F15"
+    },
+    {
+        "relative_path":  "gui\\kr08_aries_small_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "974C9AEFA58DB2B920728F28B31274285EC90EF60A1131F79F3D0906CB79885C",
+        "live_sha":  "EC8F214842A50C270B924C96C4572E9444FC0203F5ED202967EA3FFDB288364C"
+    },
+    {
+        "relative_path":  "gui\\kr08_aries_small_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "27CD93A31C650DFAF36BA1F98CC6294AD3B86E3B5B9B2097AB03F81CEDF6B9FD",
+        "live_sha":  "6B01E042AEE8534ADDFC6367F310470CB3C872FE2BEE7EF4EEDB4C51E4299A61"
+    },
+    {
+        "relative_path":  "gui\\kr08_aries_small_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "99DDDE2149B27535CC8F9840BFA7C1BCD14020C42191F2A9F9B6763AFB51C201",
+        "live_sha":  "73E2D609F1982E4AC2F656C3B669B485F97A4BA7C2746183F7D0760542A5479C"
+    },
+    {
+        "relative_path":  "gui\\kr08_aries_small_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "DB9E028AFDC8825E69EEF466D595ECC7BBD1F83E6D809036E73F379F0AB25082",
+        "live_sha":  "78C0E139523BC5187A54B8F06B4C86B0B9626D44AE74A7B62CCFB37F287E81A6"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_data_list_value.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "305C981AE5276BFFCF7611FDEFFC58E61D8C4FA629FA87300F3DE779EE00EBE0",
+        "live_sha":  "699AA4D4D5073263E0685877AA94EE636E8D917E723DB2BB6B89B852BDEB5F54"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_data_list_value_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "3C8D4EC0ED7AA6EC547385F24711FAB308FA513DD48CECDA5DD35562DC71D6DE",
+        "live_sha":  "BC444AFE9A1544B667D283E3208752AFFE7E70411E69D73AE827F970A9DDC95F"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_data_list_value_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "696682A8953DEDED38C44671AE58F064CC6DB6C49444103DD91EF3AA773BDD1C",
+        "live_sha":  "554BA78D11468C178EF1BD1CEE4935A2835E59724420F915BDDAE05F3DB6EF10"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_data_list_value_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "0260F87A72463F429948DAE64BEFACE584046E2178F066BAE4A0EAD4CD1C97B4",
+        "live_sha":  "04CF111318FDA68F3BD446DAB1F357E839BEAB95808DE2B0346AAD5B0E311110"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_data_list_value_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "B7E6EA6D621E28251AD0CDD2E45AD9453F3678CB2278BE74EDF48B4A2E7B89FD",
+        "live_sha":  "FF2EEC02E4EAECE3584F08D5FC6845D846554B9DB0487F027203A3882A05DDCF"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_data_list_value_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "25DDAFB3DB6E733263FF96D927F7E08365FECF95E5B31AA3E1D797436A8E69B4",
+        "live_sha":  "BF9875A06A9BC2C7D80E64F72DF4BCCF489F4A4D82E1FC7DB217B6711628EEAC"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_heading_14.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "43D8157A0B4762E125150301B2CDD0FACCFDC56858B7DB94CAF5BEF446BA4900",
+        "live_sha":  "026E41EE23AF0B0E66830E8F8F9EDD6D439378ACEE6B1A05995D70CBE32D2E60"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_heading_14_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "3AD9FEF611F1C5005E4D4D1BCF770902EA6940C7EF5911392E5DC5E8043E36A3",
+        "live_sha":  "E2F74EE9AFA401916964FF142DF2547B8048A066CFAE702D7D84CB7E01A9F4EC"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_heading_14_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "9E7C30015BCAE5B643316878A74AABB57D4CE36140B82BF6D2AEB902EC70FA53",
+        "live_sha":  "24E1390D309FAAE90E6FD77CA36E98BC433BE488DB048A8C65F06B27F9A9F510"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_heading_14_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "5EB6F18E2744935A7F6666074E5039B216B0041C7CE89E112A401DA7D58DF2E9",
+        "live_sha":  "E005240C4C6B0E90D2A6E713095D387045C0B614A75D0FA9697AC7056B88E89D"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_heading_14_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "163E274B1F475BF081CC17E318C20635B1C28E57FC408E139720AC7070AA5922",
+        "live_sha":  "3A37D8294A719CCCD088DCAF9C1EAF55ACA8118D066A7FA8E35AFFA37B2FE1C9"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_heading_14_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "1A6F866696ABDFC3D882FF8BEB469AAEE08C1BFD0785E5A77E8D54A434EE72CD",
+        "live_sha":  "AB0E0732914F8B3FD423C9216B839A1DF3A3A55BA2A0DF6F98BE38178346DC77"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_heading_22.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "18689A2BB1CC9B926F986D19794AAF5B52E7F02720E4AB147DDD14CEFD8D976D",
+        "live_sha":  "923AB9C499DC737BB633F6307B66F919DA29F73DE5DA4784CA9001CC4BA42CE6"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_heading_22_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "E10BBFBC89947573F4B3315413ADE4C0C1767DEE8E622C84422974324ACC9C28",
+        "live_sha":  "FAF990F07D547B7CD3C8CC414EAFDF984F2DC8D39C2DA4BACA5F862AAE74B897"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_heading_22_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "AA599C064C49C124710E67AFCDF4BA3CA5A846CCBB0FCE66447D02FF2D0681E3",
+        "live_sha":  "C3D01087553FFA8B097780326A7382A64222E3FCC4A9C34E647FE4F482A70A82"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_heading_22_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "E9B859EBE9A8DE66BC49BBD85A1CA9EB1D0DD35F1B669FF810B11002983098C6",
+        "live_sha":  "6E8E0FB433487FF1696A43D16B2AFFBE6A8976F726BEB2643D2DFB89D0617F24"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_heading_22_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "6181FADA157B0C6E096BDAF952DC2F1E3F23830808415187E81D7391C4E83E3D",
+        "live_sha":  "3EA68B25D83E04FD0224245B2A9370BE2EB8AE1284ED035BB42E6E146F31E645"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_heading_22_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "442ED5A48BCE0E912DFAF953EA460E23E49A801EFA388EB262E354E38897945C",
+        "live_sha":  "872004693D3EBDFE72C854662A49FE479FA39174477DABF0EB24F4C47D263887"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_page_title.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "4E7B53764666DEB5BA27299FBDC09337A317D275AA2AE48CF105F6562E871547",
+        "live_sha":  "E7DB094290CD33E0C77E5DD044C0DD8D3005E7D0160AE07B12B5BA59DAA95572"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_page_title_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "32B1A456739181B7AF3998278FE155857CF55D24328A810BCA02088FBB196501",
+        "live_sha":  "50781333C1B6D5C7C38F7C382867C48C62DD5C65B707E761D80F2AEAE39548E4"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_page_title_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "7C711AD70615E077B8755F77E992890D5A0F9D7478532BA7346456B895F9976C",
+        "live_sha":  "3A59E43E2E94904F0D288709DCA2576C8184F6602C45FE24E116561E9C8591CF"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_page_title_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "ECF8AA634EC4A4612C2FF8680D5697E63BE2C6EF24BA95566A4EF47BBD1EBB81",
+        "live_sha":  "5E14C29AABC3568727B131DE655F4A541953FB03E0B17776952EF8A061127EF4"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_page_title_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "28D2DF172C17BC8231B0A4AC712773BB18B485BADAB4F9F6FF88F762CEC0DE30",
+        "live_sha":  "AEE813E9CBB18676AB2A756CD158847D002B80A15887E2E54A38AF77FD25BF92"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_page_title_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "F6917E30B2F367293220A9B99D7241A0618BDBFCD585B2B7D9F1C42BA5FC2427",
+        "live_sha":  "B609D3A94D70A82BCF3C744E6786294995632A7168C7EA01BC6B1E192594440E"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_12.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "9153DD2E0BA9CEB2B8655E7C37685DC12887B5398C6F64FC9AD93BF6B6BE6BA0",
+        "live_sha":  "CB2D07CAC48703248CF2F981C46E9CDB83A697F72DB93972C0701675BD8C7847"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_12_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "AD665C16C32924D485F2BEEB33BBEBAF8C01EE45D6719E4394D433A4A0543E54",
+        "live_sha":  "F4A661AC954DF4279FA94557AF10B2E5B969F5AB5B0985A5F66E9F215DCA9794"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_12_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "F139CCE55B5C75F841C5085DAC8604174D4183ADAB1400C112ECF0BA2735416D",
+        "live_sha":  "9D316C23B50B331BEFC7FB85E1E0E5C44B4DCDDE281847549B6A9D5F10AAF488"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_12_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "32FD3F12270CA3A8078901F653C3FA88A9BC64EE404A4E4C8876D9DBADEC225A",
+        "live_sha":  "A0E9508B99A5C4D61AEEF25F8E653F711375C920E6673F6F02B2F43F4E587796"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_12_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "344BE1E0585BC52F5B99FFB34CB2D5E3247610F43194E1EC49E8169BA2F22297",
+        "live_sha":  "8807A17D54FE039BC2BEE1240CC901DAA88724CE0C535441D2478F90C7196C61"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_12_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "A3F38603E34EABF11FE345DD190891C7E99995BCC4DF15ADE04D014631EF9C6B",
+        "live_sha":  "91B5FAF89E2EE03A845E823BFD53E7AE412EF1499C57D5586E331BF238F38C83"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_14.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "70195EC8486CDBA5F9D50B4E55324D64DAEAC6046F712D07D929F46ED4CCA533",
+        "live_sha":  "ACFC25272A678E845149E3F082787AB16D9DA2CD43BE9E38051985DD9570E975"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_14_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "D607AE37F8C910C15999849FB6BB639087E4EA605D4AF49ECB2EE6A0E9B61719",
+        "live_sha":  "655EC2154C049F6203321670B6CD53F708ABDAB9B3A8A0E63E7502D500EE2B2D"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_14_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "DF9D4CA03DEA343C465D3BC8CB31679257558B5208CDBF0EB52FAE02E930BB87",
+        "live_sha":  "6B65961B3DBEC90C5FBF5633778298BFF62F792E30739824A0F12777AF6E0C47"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_14_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "9240D87AD640E55083D951D711EFEE3590F08DE761E6B5402188D02B444AD000",
+        "live_sha":  "87C086EC2262E5F2B10490F093F844BFB6BDC287EE3884B4A3D5AE014E06B1CE"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_14_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "CC28DFF08A7202EC411FC43A6DA7FECC7689CC5CDADF75333EDB52017A008D9F",
+        "live_sha":  "9F6EAA63C64EEA963688094363E9AED06182836889285AFD177AFB97CA883E9B"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_14_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "ED414690C9CEF158B58B8F2A01F8AADCD70A1998BB30D0CABA08B96ED3C2E379",
+        "live_sha":  "243A8BBC292B4A7D2DC4195C5EC0DDBF1B7B7E85A0688BA2267B75DD734BEE8A"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_16.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "FDB8AE4031A0B06B5D30A9582F2E86B625C01BD9C91A92B359AB316EF27435DD",
+        "live_sha":  "E209D16319273A566CCF7F3A3222D3C2AE6FD3597B1630C65FD72BDF115E6B2C"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_16_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "988AC0603E1BF35902597E3DD173669E374036E6EE8F32D00E6BC5E15066F63B",
+        "live_sha":  "95E37A3DAF8D4A2B439DFBDF668DCCE8B1833DC54E542B50C59DAC04118FC575"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_16_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "77B9939A2D9FC30B4308D2357B12375BDAA81F2110E9995305BF1A2B333A5A73",
+        "live_sha":  "4D67415B4C98EFB4064E3F89D85307F6F54B86C71219FFA82B2B142DCAA88C9F"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_16_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "FBF256670E07CA1467BB0ABEBD9D099834CAF75D926402E72D10B42E5770E2DD",
+        "live_sha":  "3141B232483EA7B25AEFE2CA7C0AFE23089683A48E5A84AC3475553100ADEA77"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_16_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "B9E370C8D3F27FCE1E52F3F73EA0BCD946FED0877470B868CCED1C27CA0DCBAE",
+        "live_sha":  "A241A2519E607AE062B27260B4ED35852BBD2784CF2BC91526B00E75262F62EE"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_16_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "23D29FCB4DDE537D4DFE77D67AD4867270C80BAA3AE33F31A9D4BC4CD6BD2CE6",
+        "live_sha":  "4AA8935D3C87691FECBD138925873DCB35587E6601C9872C04673F318F157397"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_18.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "B692742AE67FBCED8AEA94161AC2F2FE24D2DDC878E11359D60F65FF3E7C345E",
+        "live_sha":  "88230018AFE50D3F15AF57EE3993517F908BEB115A4D67B037E6B5B8BF393B76"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_18_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "D574048503F882CA88313D2A0908ED36BBD92EE1216595A555EA3693BF2E90F9",
+        "live_sha":  "6C6F483DE754C7E433D0D92B125224EDDA24EEF13494FFE2BC7C767FBF234922"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_18_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "D54A60860AA11C80D0B5CA6BE3D28AEFE1F72F98AFC76DC66C1D1D3573CEA75F",
+        "live_sha":  "5B07A96F4D64FDBB59F3515F8C977089860011F142D6C1C75B875F82EDA1EC9D"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_18_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "52AAE4892F9372711E85DB7364CD14FDF7C9D8DA8BF59D4AF2EC6C04B302980C",
+        "live_sha":  "1590BEF40E7BCFFD3F87BE67F04C14CC095D2CA2395EE362981133C0FD3F1670"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_18_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "458B79D0120B3BEDF33B6862297ACB6D6AF521C23548199E62FF1EBC548CB278",
+        "live_sha":  "EEE62B5CDE9F085D41B87FB2AEE5ED0947AF2B14DC1089DFBF6C5CB53F5B2B90"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_18_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "DDCFAAB5B020DBFF7B50040637181740662BF7303982D13455E3579125CBD261",
+        "live_sha":  "5DD6C7AFC7C17A104305C3F2E12018E95A8499A3D9AB3B24ACFEB08F85C88233"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_19.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "8B00D5ED93F5942EAB03B0BD99F99BB9D0D69E988FC0C2E7BB3C6A21FC64407C",
+        "live_sha":  "C9798BA70059F076C02978FA143C46727E625EA676F97190B890E6BA482167D3"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_19_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "517EAA4AB574B2B5492C4D5434AE3BFD13444271875FE62B55B2BB200C3235BF",
+        "live_sha":  "A44FA670F242F6F1EF52B20EC5DCC19242502934E81F1B7AE59FFACAE880F69F"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_19_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "4551B9921A66D16C109AD76BE0FB27EBCEE1C6A90CE9877221148DE8299FB81B",
+        "live_sha":  "78FF43F53527F240162194E7788A4DDD012072FF4ED8B6C83D6F8CFF2AC68FE5"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_19_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "C040D1249C5FA32AF51EF891E0CFB44042A9318FB731AF11031BD3F292E7DF74",
+        "live_sha":  "205F3742E988AD8FB7264AFB5C20E035064C17838A8EFAD3B042B7F08F13D018"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_19_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "C06A64D42A31E9B33779BCEB771788B6F9F6061023772F9611F13FB53A5C39F9",
+        "live_sha":  "B4A054604F012DA9E44E57BA58802514F66084B4A61D2EFD4FB0CC043E8591E2"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_19_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "9FF1D3784111A15E101D47261DCA0031DAE755DAF780826C618E7E1B22185AC3",
+        "live_sha":  "0D4AE403CE9628EEC4B2237473787020A59E304A2AC9E54AC82AB57A2D967BB7"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_20.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "D94D3707B4AF5BD302BCB40967F61BE98A22ACF0B0ED287641933FB087E96600",
+        "live_sha":  "76C5D0B3A9B84C4028FAC1F4C8362946259CCBAFCE2473316897BE0830A5CA6D"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_20_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "BF23391D84C4EEC7F9D76575CDFA6357E55B92AD18B4D34EAA2F467B93316F6D",
+        "live_sha":  "DF97DF4CC934AAE7DAFAE12330376AA20CA23C7708582AAC49B3BB1FCD4A6FFC"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_20_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "A1F2930E78FAF0EF2D68224CB69B0F7CE39076A50A874AE7CACBBE6946E7D871",
+        "live_sha":  "90C415BF6FE7AC65ACA22A5D7B95D3C6C812D4B5F6342DBD8392F5C08F626704"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_20_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "4F02F29041DF7828ACA6DA324FF982415225B2543A07DAC8787A1572E6502EEB",
+        "live_sha":  "F360180BECCC60E299EE8C54F8A164A855E0C1B21E8217E3B9D35DC1046657E7"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_20_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "1ED1B72084F1E7DB9836050F444CB2DADA556330E8D6AA9A344A98943BCB630D",
+        "live_sha":  "4A04A5B155C0BC275B72B3423FD627B3B0B1264E4639CA5083D7F2A4A7D2ECFC"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_20_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "6C874702349D4952AFBCE24A34EC1A7E9366D4B97FB11EB119603CE25D86FF96",
+        "live_sha":  "BCB1A1744FE6F6C8F3EB07012290887C4C1F0F4B6E198FC670B49B391FCDB640"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_21.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "FF704740DB8102A8C331ED851935AFDBA58929CCC8FF6CBC9158FC79A5E26DEA",
+        "live_sha":  "B19FD7DBA73365D295675E8D8EFBAB9656A4FB80F77ED5BFADBF84530ECF1C2D"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_21_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "79B01D20DDB4A0382F83C3199EE3291911461476322D98E10F6252117AC02411",
+        "live_sha":  "6834BE19834B52D99CFA11F31009E3242FA9CCCBFB86C8776944C1381EA18C75"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_21_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "F073DC8611B74722C399BCC9F05E36671AFE120E34AACFA9656F74B71588D830",
+        "live_sha":  "80E4B53D1F30A12BB622974EA23C6E0CEB8C5431E2ADB1B9BBF0280F40A06D7C"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_21_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "1834EAC022AEE3A1DA4B5B65AC22B75F0BB3C16BF068C16F8D1C606E0DED9FED",
+        "live_sha":  "397E275DE701E6AC5FE0B71E29EF097139705B61CBC3EF198B2DA23E8870C496"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_21_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "AD8971E87BBCF14DFBADA411046A676C1AEA6106D823B128D9D048DCDD085FA9",
+        "live_sha":  "603DC04E1FAC4FCBE8DF03D84E36E6B2E49B9E1EA0427FD2F41028C93655BF04"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_21_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "4CE119526D13198CCE692C66DE97A8DB8E362CBDFD3FA88C5C914226EE7C194C",
+        "live_sha":  "ED2A7C20D5EE73CDBA594B0BD05B9F67F63C7C4A5330DDD659F69AA4F634D812"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_22.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "56FEF533DA238F4C96B7F7ACF25FD87EFAB855935E9F5497B5D5C968A6CC0177",
+        "live_sha":  "9B02D3661720FB7F89B19A53977EC9FA2C846BE62861E26BE3CAC748E723B6B3"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_22_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "71513FC8604A153DFA4ED731A0B3C145B03835A7F1964BBD5CA1B947621504F5",
+        "live_sha":  "9EAADC10F39B3661B8C23EDACFBAD9B89B7FB0AE1446680BE791A01BCB8A2AB8"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_22_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "6E0AAC63445F6C4C923B5EE274401F4E5A11FD938DFC27A4D1BE308823290B3E",
+        "live_sha":  "489D8CD4D439B17C8B85741E7AB61E0806BAF32DCE6FFCC28EFB660B6F5E318F"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_22_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "40343AE252299D4D9EEA3E74AD7255B94B99B5F52509E1F42979731D4130FDD4",
+        "live_sha":  "09D8545EE99B9F2E867964C64D528A31D42AE375D4EB9D54972D742AD8E726C4"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_22_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "FAAF2676B8D66E309A75C0BB3FA1E1FC41BFE1B5277990958F70EB74EC95F2C3",
+        "live_sha":  "83B622E4365DA5181470772CB7CD90E1F5D3BE9FC181DCF44D5F891A51DE7DE3"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_22_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "B5AFA2C59EC30FD2CECC39E1243C30BBFAFE3BC421C69F54BF9267B9E14C2F42",
+        "live_sha":  "2223CCA0982A1BC7DB5F591C58113D3EBB37F7D8FCA583ED106C81A62E704900"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_36.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "7A685DF6AFA63CB614C85EB99D68884B5BE06023C4AE191AAE6B7D0782F89332",
+        "live_sha":  "076081AB062F029C33C7A91A16E3A52BAEBBAB06D69B5CD56FCA949B5430D46D"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_36_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "DB390E1026FB8379B79B189D51FF3953AFC6FB349FB4FA3CAB413AD3E85255A9",
+        "live_sha":  "CE29C605DF5C1F80DFE435DCAED95AABC9F6F8F552E74D2457A2BF2F1C1F5AD0"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_36_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "FC10033BECF23685629FA1F9583E05A6BB4F0AE937E863302DD7622EC4C91F69",
+        "live_sha":  "85D97C8EBC8C967BB366E6B5C7149DF8B64E37FCB1DF2F59D82713DA41EB66D7"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_36_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "0C5E3F44431ED14EF42E5502FDDFF6227675C0EA73F98FE16B2E797C32FD14D0",
+        "live_sha":  "A75A998D49AEE68AA48F79380F0D827CEB98BE3F8F0548217E42443953C18C65"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_36_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "0C6F6452946BE4128ACBBDB9AE4327DA9ADA6CB2B115C34CF5298247129BEDB6",
+        "live_sha":  "0C91CFB108C013A046CE04D08A2901EB2A0670385EDA7F173F683397121060CC"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_36_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "93097A1127A1FF048856A2A1A767E9D62058A305F8FF053881E7F65CCA853B67",
+        "live_sha":  "FB78F669CE30F44824DB1230E6F736BBB9E15B2C056812A6F04E7FDDA01FE582"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_styletest.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "40FFEA48365E5B6219E174D64CFD65E4994114B13DB6CE583D5F36D9D366EC51",
+        "live_sha":  "7939D5DC0517523980E21B04513D77704D34A51127B08DB28FDF3A010F4E5A3B"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_styletest_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "B542E3D4116C851BB7B6765A8FE8DA9004629C1CEA59AA1A6DDF7563FCE305F9",
+        "live_sha":  "8362C6413261579B139A9DE4CC253EC15E11D34D22CCE558EDCC254A3617D745"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_styletest_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "C6F06FA588F6FB891EA4DC718B856F8E4B4EBA4478E730EEA28DC30A7E45759F",
+        "live_sha":  "4803B48F0BD4034FAE4DDF7E0D5A1BBA72D378EE31FF5EB154F0E795EF59C44F"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_styletest_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "EC57C0FC37D969B6257C4B82BD0449075E0B2B771D8552A396A959C134451918",
+        "live_sha":  "4331EA8337B8D00EE800492D35C29930ABF65B271CBE2791DC368D4112D079FA"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_styletest_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "3231FFED25E65A376B1A1FE580BCCFCCA367A1A03CC42884E2D51AB11E3DCB49",
+        "live_sha":  "76E6EFDD5D997D302A379276947833F9719934D8556F09401CFF1EF5DC9BFD99"
+    },
+    {
+        "relative_path":  "gui\\kr08_font_standard_styletest_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "1D6CD1B4FD0762B261140E30DDA84447D8312ACF1359A4E174C36AB181184DCF",
+        "live_sha":  "05ACFB5390C6301A5CE85C9FA8C417C51FC0ACE6D485881DF72475AC17626C00"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_data_list_label.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "D7CC381CD7DFE748599A67F2017F1CE1F737BB117EC0013D9DF673D49016B117",
+        "live_sha":  "B9A10366E06FA02E6629A7DF1A4A5F18A3EFE98D73BA3895F443B4315D70473C"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_data_list_label_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "3C8D4EC0ED7AA6EC547385F24711FAB308FA513DD48CECDA5DD35562DC71D6DE",
+        "live_sha":  "BC444AFE9A1544B667D283E3208752AFFE7E70411E69D73AE827F970A9DDC95F"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_data_list_label_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "E9A9A164524283AF12C822E080D19824D49838478FE4E8217C1F327F4701BB6D",
+        "live_sha":  "ABA5DD65274EAC31BA81DD335C558CED21E422B2E78905118216D0ADBE6AE7CF"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_data_list_label_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "12D2198A8300AD293D311C28468C81DBACE788BC90F25E3B7F29EC8FCA40A93B",
+        "live_sha":  "C8887B897A26E08452E2929C0A398BE6D442BD43F53CE28B53A6F26C9F0F02BB"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_data_list_label_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "37D411CE145C59D6577FADA7310D00311A3A763A2BCC3F1631AD4ED7853904D4",
+        "live_sha":  "D13A92D708C05ED52CF96B841256C9409543A30ACD9164F4D50B9FC34029EF25"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_data_list_label_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "FE2357BCB451BD98584CCB49960E5403838C2D01A8D19C46D5E36BF00B6D3A23",
+        "live_sha":  "079F592B9107A38DF6C7CB6A26224DF90553901804926C462C509FF4D7EC745A"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_heading.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "72CD78787A8E6D0A53F179BDD88BD188F847761F727AD00DA28990B712A052D1",
+        "live_sha":  "2C72437FCEC1DFA409C24CD0D4FDC725FF983C83E3EA2EE3DBAA20708D6BA74D"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_heading_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "37D0E244CF56BC8FA2B1FC52D93E8738E45A80CC9AF78C21D63470536A709213",
+        "live_sha":  "B013E1651A802B1E05B4C073C28A74B204A25A036DC4F447E71C1D1EED36FE37"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_heading_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "202CD91964E86847EDD4D58AC3E2EAD5229829F7FF9AD1182E5C0CD1E6E223B7",
+        "live_sha":  "9777FA88BBCC915102BD17EFCC96069531B0EE2D8D054C37C9EBD6F442DE4E6C"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_heading_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "70DFE8F0657070A180C07102B06C51F6985F344B263F62C6B5DF4E23243DEEAD",
+        "live_sha":  "A7CF765F205D24615845D11FEC8171F2016161CAB2D558184C69CFB77EF840FC"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_heading_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "174E3B7CFD99118313ED599E6AF55EA16824C2AD97BC53EED3A8A1504A7C5985",
+        "live_sha":  "41FC50BEBED4C31A299BFCC1F6D110A03A509BB52371EC02B574F01EAFF6F541"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_heading_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "02D7FD8F374076F442A595A8718E3BDDB046755C86557262B5038264805C91F5",
+        "live_sha":  "5D4CB2D5DD9A2B68B0B744C79161E522258CCD1758AE230FAB13525FE6092058"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_heading_black.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "3A856B907143B7F2846F9D80C963BA3BD5B1C0523DE5C69DDB6AC1E3BFE2C962",
+        "live_sha":  "C446B2D4EBC8E2F19693B4420846CDF0F2CF670D8BAF70688CB2A7F9EC721181"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_heading_black_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "85F10D10FA391538C8752386DE5EF6CE53F2D8C524192C8A459077B7D7449041",
+        "live_sha":  "B8D4401BE22302FB9A54D56727D3F4CFBD62BDE99E69C630FDFFD6357EC8864A"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_heading_black_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "D45AA8466F6A6BAC27DC63DE9820EDFF9B31B54EF96D517E1F52B5D12816B1B5",
+        "live_sha":  "7E35321C4E7EBEAFB11A2FE4AB761FC1F20E5DE75D4984D6833F0F3427CF0F8D"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_heading_black_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "F650F2891F6E1793407CAB9A3749CE045B61542DBFAA12D7E95C467F61D231FE",
+        "live_sha":  "546B5E0D8E9305DA9FFB364DC52693544C6235B7BD1340A32A768E5F3CF542F6"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_heading_black_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "E8782AA9A2C8CEF8F5D68EC8B463A8157542D8F2C4167A4DD7CC28624FF126BA",
+        "live_sha":  "49631B439850E1726228EB631EC6D25F2999CA5D93B4E86488CAC9DCF079E164"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_heading_black_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "C442C3DA3648CD35B912185588A9258723E14C1B60F336906E20DCA4AB4566F1",
+        "live_sha":  "8B5034D23900BCE5033C4D8DC461ED364039D16C3C4EC633243D01132F740E20"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_heading_bold.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "1B7F9665DE536E53CDA4D1A84846A56066ECB155CE718FDED0AB54018AB8A1E2",
+        "live_sha":  "23E52CED65091C3AEA8558063EC1424CA922914A69315B86BDFD8614D9100868"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_heading_bold_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "85F10D10FA391538C8752386DE5EF6CE53F2D8C524192C8A459077B7D7449041",
+        "live_sha":  "B8D4401BE22302FB9A54D56727D3F4CFBD62BDE99E69C630FDFFD6357EC8864A"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_heading_bold_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "D45AA8466F6A6BAC27DC63DE9820EDFF9B31B54EF96D517E1F52B5D12816B1B5",
+        "live_sha":  "7E35321C4E7EBEAFB11A2FE4AB761FC1F20E5DE75D4984D6833F0F3427CF0F8D"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_heading_bold_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "F650F2891F6E1793407CAB9A3749CE045B61542DBFAA12D7E95C467F61D231FE",
+        "live_sha":  "546B5E0D8E9305DA9FFB364DC52693544C6235B7BD1340A32A768E5F3CF542F6"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_heading_bold_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "E8782AA9A2C8CEF8F5D68EC8B463A8157542D8F2C4167A4DD7CC28624FF126BA",
+        "live_sha":  "49631B439850E1726228EB631EC6D25F2999CA5D93B4E86488CAC9DCF079E164"
+    },
+    {
+        "relative_path":  "gui\\kr09_font_heading_bold_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "C442C3DA3648CD35B912185588A9258723E14C1B60F336906E20DCA4AB4566F1",
+        "live_sha":  "8B5034D23900BCE5033C4D8DC461ED364039D16C3C4EC633243D01132F740E20"
+    },
+    {
+        "relative_path":  "gui\\kr09_phoenix_page_title.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "667FB24CC3E897C437908AE67B84B68DCE446744EFDFD258D513B3512FF687E9",
+        "live_sha":  "19D264C0A112F9764E4A72FB639D82033FA915C29FC06B355A4E4552BA5FCD76"
+    },
+    {
+        "relative_path":  "gui\\kr09_phoenix_page_title_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "C380A5DD72FBAD99A9A70D6AB7883EC771F3DEEBD26F4367FE05B4716FBA32C1",
+        "live_sha":  "43F80CDBFB836A245A5295CA8EDF67D5A09DFCA707952F85BDAB861572734569"
+    },
+    {
+        "relative_path":  "gui\\kr09_phoenix_page_title_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "74D47B9EA8EAC02129D3FE06C054372B248D536C7BE64FD22DCC3EAF5A7B9729",
+        "live_sha":  "1F458D7A684E08A41DE48E9322815C661DED0B1D8B3059BCBEE76F41A85EB10D"
+    },
+    {
+        "relative_path":  "gui\\kr09_phoenix_page_title_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "58DDEA5E15B8BBA64130268DBE29E87813A17728A4F67B2D081210ADDC2E823A",
+        "live_sha":  "AE286E0263A6DAAA8C61561078ACEC24CD6324B21AD1B95E35B5E9CFE112A926"
+    },
+    {
+        "relative_path":  "gui\\kr09_phoenix_page_title_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "88F14C32C594DDBC72F8C77C43AFA4250C1F29B4E96CBA1DA5A0F819444E6D02",
+        "live_sha":  "94213675B1439346E064DF6B5E189B619D24CCD99086F68179F72E51B1B25E4B"
+    },
+    {
+        "relative_path":  "gui\\kr09_phoenix_page_title_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "918C7F5BB522B3DE7271DCD93810A028A46901C496C1844F4A03B7A488F80009",
+        "live_sha":  "C70A551C895F3F98647206F0FE28E454A6CC159A12B8BD187EA199B607334DC8"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_large.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "FFC2A9ED146EBD6532039BCCAE86262CE3CE5754D5D6C430564D92818B66E108",
+        "live_sha":  "457337112323488E45D331D3CCA2E52C2FFCFD0587AB8DA0D3C257649F02DE96"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_large_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "489DF75DB047A6FFFBEF0CA897039511378A6F732DC08DB83B9CD9B57E5C815C",
+        "live_sha":  "0BAFD7ACCD8EDA3094537A93270C2C78C00ED7341E4551A8F349064523CA8F93"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_large_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "D52F5CB956C41E709A44F4DAF8005CB4126D302FD32FC0706645FC2B0F9AC3FB",
+        "live_sha":  "09F4B77507495B0F3570EA807F56988CC7B6BFBA6D2A28C8365358E06F2B45A0"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_large_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "8D4F0BE456A1270DF6520FB761C1ACF029F90C827F2D14E96750576747E81260",
+        "live_sha":  "D04315C6B89638F19ECA8A4E69B3B02C773BA041650694F69F04A5A056F04B76"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_large_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "D860CC3A9761961DC63EB029762CA41ACFC6FECADB670ED55A676BF85D28372B",
+        "live_sha":  "4F5D9A73F6DF66A42F0C2E3636DE1BF2980769C4C0BC567DF9ED1C874C376758"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_large_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "B252F91F98D64C35B0CE2C8B473A50A7180ACA7471E12EC2392C033DA8C6E877",
+        "live_sha":  "6BCD683B6A2677032054A125DF27CC5F1F3DF6D9FCA982B7A69E8EE62CEDADA6"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_large_black.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "2EA5E94F79940C800CE838A85BF031950C6742ACDCD827FD929CC8C770DE6692",
+        "live_sha":  "16067D92F74868B8BD37E45824C7B7BEAF3C8FAB4A75A337F23785B5132E9096"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_large_black_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "B92F7806E2E8790DA5D28CE2DAB74DC11B2F2229890971D74A0809F40F2CEDE7",
+        "live_sha":  "5A4C5321DF7F782B9D4BE88C27B00204A04C796A2CA4D60C6497B40E02C9B5FE"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_large_black_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "6A4340BF17ADBBD3561DBFCFE8502836F7B9362F81AAE984FBA40C92E71C95C6",
+        "live_sha":  "682E921DBF1A3A2EE37934849D2875B56401BEB7258F26A54D78DD62CD81D761"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_large_black_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "42D0DB6415F07B6E4AAECDA5A2E81BF1E8C1F7332CE4A7F8F53A4A4345CA3377",
+        "live_sha":  "A7898976A7C86BD6FC0252D3477D79A2AAB8D47F4291F1FDCBA19E8795846A75"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_large_black_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "0125F73E5E3CB326711C9BDD8B80000DED3BB4C94E7745408D814FA826EBCDD0",
+        "live_sha":  "C0B86234E0594759B3AAEE56E52C2C3AC974D3686F5BD77F55FE079ACAD2FCAE"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_large_black_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "5E588A0B0A1FF97A1CE81AB8EE3874BD26A06380532C656C2DD1E48675B0702F",
+        "live_sha":  "D6454E4ADD8E42BEF10345F892F55A89D123477428BFD659FDAD3EAEA3FC5C0B"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_large_black_italic.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "7EDF6FB23FEF7ACCCE61EEBAD144BD7439923DF076D49E5F9014692BA9B7C1A9",
+        "live_sha":  "5AD9AF0DC8FC250284C25DFA18C5E698B2D9EE41BF4CC364391824035FA6085B"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_large_black_italic_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "B92F7806E2E8790DA5D28CE2DAB74DC11B2F2229890971D74A0809F40F2CEDE7",
+        "live_sha":  "5A4C5321DF7F782B9D4BE88C27B00204A04C796A2CA4D60C6497B40E02C9B5FE"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_large_black_italic_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "6A4340BF17ADBBD3561DBFCFE8502836F7B9362F81AAE984FBA40C92E71C95C6",
+        "live_sha":  "682E921DBF1A3A2EE37934849D2875B56401BEB7258F26A54D78DD62CD81D761"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_large_black_italic_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "42D0DB6415F07B6E4AAECDA5A2E81BF1E8C1F7332CE4A7F8F53A4A4345CA3377",
+        "live_sha":  "A7898976A7C86BD6FC0252D3477D79A2AAB8D47F4291F1FDCBA19E8795846A75"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_large_black_italic_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "0125F73E5E3CB326711C9BDD8B80000DED3BB4C94E7745408D814FA826EBCDD0",
+        "live_sha":  "C0B86234E0594759B3AAEE56E52C2C3AC974D3686F5BD77F55FE079ACAD2FCAE"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_large_black_italic_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "5E588A0B0A1FF97A1CE81AB8EE3874BD26A06380532C656C2DD1E48675B0702F",
+        "live_sha":  "D6454E4ADD8E42BEF10345F892F55A89D123477428BFD659FDAD3EAEA3FC5C0B"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_small.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "A864CE44038EA26A23C178C6E2C373FF54C32D87B1A466F89E1755DDFDA0D21F",
+        "live_sha":  "4407B04E7F85E3DE4ACFA1661AEE9591E212BA19A6DEACBAB3DEB51AD2C9A23C"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_small_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "EF766846D0AB06926056C2F4C7B4E824C102A1ABC21D48CF348746C9571FC4F4",
+        "live_sha":  "8373C47B777D2F58700CDA3CEAC78C27F40674C92FE2CDDC59845A8E85EB0F15"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_small_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "974C9AEFA58DB2B920728F28B31274285EC90EF60A1131F79F3D0906CB79885C",
+        "live_sha":  "EC8F214842A50C270B924C96C4572E9444FC0203F5ED202967EA3FFDB288364C"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_small_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "27CD93A31C650DFAF36BA1F98CC6294AD3B86E3B5B9B2097AB03F81CEDF6B9FD",
+        "live_sha":  "6B01E042AEE8534ADDFC6367F310470CB3C872FE2BEE7EF4EEDB4C51E4299A61"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_small_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "99DDDE2149B27535CC8F9840BFA7C1BCD14020C42191F2A9F9B6763AFB51C201",
+        "live_sha":  "73E2D609F1982E4AC2F656C3B669B485F97A4BA7C2746183F7D0760542A5479C"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_small_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "DB9E028AFDC8825E69EEF466D595ECC7BBD1F83E6D809036E73F379F0AB25082",
+        "live_sha":  "78C0E139523BC5187A54B8F06B4C86B0B9626D44AE74A7B62CCFB37F287E81A6"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_small_black.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "5CFE99D9BB5590682CE9772D8567048329D360CD147EA0D99444365E1983A651",
+        "live_sha":  "87237281D3E6A7282405F24EAEC0857E2E63F64E637B15B564EA6169DC93B583"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_small_black_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "EF766846D0AB06926056C2F4C7B4E824C102A1ABC21D48CF348746C9571FC4F4",
+        "live_sha":  "8373C47B777D2F58700CDA3CEAC78C27F40674C92FE2CDDC59845A8E85EB0F15"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_small_black_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "974C9AEFA58DB2B920728F28B31274285EC90EF60A1131F79F3D0906CB79885C",
+        "live_sha":  "EC8F214842A50C270B924C96C4572E9444FC0203F5ED202967EA3FFDB288364C"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_small_black_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "27CD93A31C650DFAF36BA1F98CC6294AD3B86E3B5B9B2097AB03F81CEDF6B9FD",
+        "live_sha":  "6B01E042AEE8534ADDFC6367F310470CB3C872FE2BEE7EF4EEDB4C51E4299A61"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_small_black_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "99DDDE2149B27535CC8F9840BFA7C1BCD14020C42191F2A9F9B6763AFB51C201",
+        "live_sha":  "73E2D609F1982E4AC2F656C3B669B485F97A4BA7C2746183F7D0760542A5479C"
+    },
+    {
+        "relative_path":  "gui\\kr13_aries_small_black_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "DB9E028AFDC8825E69EEF466D595ECC7BBD1F83E6D809036E73F379F0AB25082",
+        "live_sha":  "78C0E139523BC5187A54B8F06B4C86B0B9626D44AE74A7B62CCFB37F287E81A6"
+    },
+    {
+        "relative_path":  "gui\\kr13_driver_name_semibold.bfont",
+        "extension":  ".bfont",
+        "status":  "EXACT",
+        "base_sha":  "B8664D4ED2D9BBF66F37D407A53C6E13C1651A0A1A58D756CFE8C231371BFA9A",
+        "live_sha":  "B8664D4ED2D9BBF66F37D407A53C6E13C1651A0A1A58D756CFE8C231371BFA9A"
+    },
+    {
+        "relative_path":  "gui\\kr13_driver_name_semibold_00.dds",
+        "extension":  ".dds",
+        "status":  "EXACT",
+        "base_sha":  "C0F76F5421B2732D9E7C78D5BA22142CE017DDB8B492AF900752D5E4F5A212C0",
+        "live_sha":  "C0F76F5421B2732D9E7C78D5BA22142CE017DDB8B492AF900752D5E4F5A212C0"
+    },
+    {
+        "relative_path":  "gui\\kr13_driver_name_semibold_01.dds",
+        "extension":  ".dds",
+        "status":  "EXACT",
+        "base_sha":  "4A4208EC379DA1F795FF7E5F6DD5EF73893559BBE56D63A02C39645D34F06530",
+        "live_sha":  "4A4208EC379DA1F795FF7E5F6DD5EF73893559BBE56D63A02C39645D34F06530"
+    },
+    {
+        "relative_path":  "gui\\kr13_driver_name_semibold_02.dds",
+        "extension":  ".dds",
+        "status":  "EXACT",
+        "base_sha":  "8E0CB3FC3C337FDF62384F7F7F2F8CD8F2AE73A8DA8B0F75E2BCF094EA511048",
+        "live_sha":  "8E0CB3FC3C337FDF62384F7F7F2F8CD8F2AE73A8DA8B0F75E2BCF094EA511048"
+    },
+    {
+        "relative_path":  "gui\\kr13_driver_name_semibold_03.dds",
+        "extension":  ".dds",
+        "status":  "EXACT",
+        "base_sha":  "746AC04B67C92616D6440237692D6039B4CD39CFE892057F27E6E7D01AB7E547",
+        "live_sha":  "746AC04B67C92616D6440237692D6039B4CD39CFE892057F27E6E7D01AB7E547"
+    },
+    {
+        "relative_path":  "gui\\kr13_driver_name_semibold_04.dds",
+        "extension":  ".dds",
+        "status":  "EXACT",
+        "base_sha":  "BEF4F4A6E8BE97AFC24A87B382FCD4E4F01A80AFC0DDECD1CF3CCE78EAB5A864",
+        "live_sha":  "BEF4F4A6E8BE97AFC24A87B382FCD4E4F01A80AFC0DDECD1CF3CCE78EAB5A864"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_data_list.bfont",
+        "extension":  ".bfont",
+        "status":  "EXACT",
+        "base_sha":  "DE578FF7C5C431DBDAC8A2937E8E4F6FBDC3BFD098C30D1ACD0061BD2FF38029",
+        "live_sha":  "DE578FF7C5C431DBDAC8A2937E8E4F6FBDC3BFD098C30D1ACD0061BD2FF38029"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_data_list_00.dds",
+        "extension":  ".dds",
+        "status":  "EXACT",
+        "base_sha":  "BE89BE90DE78F4E3364A4590AD81DBFA60E381634B0DCCFE7BB747554CC71DE1",
+        "live_sha":  "BE89BE90DE78F4E3364A4590AD81DBFA60E381634B0DCCFE7BB747554CC71DE1"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_data_list_01.dds",
+        "extension":  ".dds",
+        "status":  "EXACT",
+        "base_sha":  "B2A27DCAC0AF4CC5920AD97D8CD91DE0786D49BD7812F817A46289E6D86A91F3",
+        "live_sha":  "B2A27DCAC0AF4CC5920AD97D8CD91DE0786D49BD7812F817A46289E6D86A91F3"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_data_list_02.dds",
+        "extension":  ".dds",
+        "status":  "EXACT",
+        "base_sha":  "B2A27DCAC0AF4CC5920AD97D8CD91DE0786D49BD7812F817A46289E6D86A91F3",
+        "live_sha":  "B2A27DCAC0AF4CC5920AD97D8CD91DE0786D49BD7812F817A46289E6D86A91F3"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_data_list_03.dds",
+        "extension":  ".dds",
+        "status":  "EXACT",
+        "base_sha":  "B2A27DCAC0AF4CC5920AD97D8CD91DE0786D49BD7812F817A46289E6D86A91F3",
+        "live_sha":  "B2A27DCAC0AF4CC5920AD97D8CD91DE0786D49BD7812F817A46289E6D86A91F3"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_data_list_04.dds",
+        "extension":  ".dds",
+        "status":  "EXACT",
+        "base_sha":  "B2A27DCAC0AF4CC5920AD97D8CD91DE0786D49BD7812F817A46289E6D86A91F3",
+        "live_sha":  "B2A27DCAC0AF4CC5920AD97D8CD91DE0786D49BD7812F817A46289E6D86A91F3"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_heading_20.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "357DCF159481C37D2176A4BC595D0060AF3244B1B346D5D976734524B49A9136",
+        "live_sha":  "26C1B19F9CB12EFA0D22B077F7AE9B389677202889F250C9C9E731F5C60B3250"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_heading_20_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "2E0B72B002E8B81C2AEFF74FE416833F3D193E831B5671BBDD67A3CB1CF3A0A5",
+        "live_sha":  "0662CE49ECD484B025B8F820C1D988592E3D6BBF83F7AA9F8B94250413C8AF3D"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_heading_20_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "C127A30257A3B5E450A4D430F17732F487EDD60052CFDA42808ECD7419315F97",
+        "live_sha":  "C9192BB83EE2ABF59B2E90C6738D34B4A82A36341A22EE52969FBD9016DFB79B"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_heading_20_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "98630AF87D60D7FBE4835DACD939DD4E5964D58C5F6A4A9789E1AC3F6372CB3C",
+        "live_sha":  "26ACB0B49D09553F4D0E479A024FBB5B29C3B75DCEAC72655A1A9E5C1630F489"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_heading_20_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "5DA368EC46BD0D0CE137CE638B3BE08A333B233611E63DB82FA367B6D93FA001",
+        "live_sha":  "517BDF489C71A4CF8D17B5FBAED4394146BF4A2718AA834225FB0A1EBE0A7B66"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_heading_20_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "C72EDC81A2B336595A235A0C29D4EA1BBB4537F941C360B2843334B9E68FB510",
+        "live_sha":  "276A327E9F6D3D724A46B15A15C05535970954D6ED55CF702B075F0A4D054DE9"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_heading_44.bfont",
+        "extension":  ".bfont",
+        "status":  "EXACT",
+        "base_sha":  "5C50EE26D9D53D2A5E593B6A3B329BA4450BBBD1E2849D15405707E821349FC7",
+        "live_sha":  "5C50EE26D9D53D2A5E593B6A3B329BA4450BBBD1E2849D15405707E821349FC7"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_heading_44_00.dds",
+        "extension":  ".dds",
+        "status":  "EXACT",
+        "base_sha":  "6F8A0627D75E84EAEF03B57280A68E5695499FF2A6131821F895DFEDBD015FD9",
+        "live_sha":  "6F8A0627D75E84EAEF03B57280A68E5695499FF2A6131821F895DFEDBD015FD9"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_heading_44_01.dds",
+        "extension":  ".dds",
+        "status":  "EXACT",
+        "base_sha":  "0115DE9C7A6A8897C05FD218BACE1A9B382E2FBD57CD3A9015C5F02C0EC850C0",
+        "live_sha":  "0115DE9C7A6A8897C05FD218BACE1A9B382E2FBD57CD3A9015C5F02C0EC850C0"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_heading_44_02.dds",
+        "extension":  ".dds",
+        "status":  "EXACT",
+        "base_sha":  "37FC3CF360B78162578B887CFEE4AB8516EA277ABD40861A25AEB3195A0776B2",
+        "live_sha":  "37FC3CF360B78162578B887CFEE4AB8516EA277ABD40861A25AEB3195A0776B2"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_heading_44_03.dds",
+        "extension":  ".dds",
+        "status":  "EXACT",
+        "base_sha":  "2E338FF94334D6AE7A501998DCCDFBCA081A1025D86F4DCAD8C6403305F861A7",
+        "live_sha":  "2E338FF94334D6AE7A501998DCCDFBCA081A1025D86F4DCAD8C6403305F861A7"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_heading_44_04.dds",
+        "extension":  ".dds",
+        "status":  "EXACT",
+        "base_sha":  "A227FF34EDF390CF5565140526D165040241D79C2C1C77006AFDE44A26C8591A",
+        "live_sha":  "A227FF34EDF390CF5565140526D165040241D79C2C1C77006AFDE44A26C8591A"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_heading_light.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "1031750583DEBD71DDD902D308DED0BBBAA5EFC53437068591344998625FFEE5",
+        "live_sha":  "A7214AAD0FFA83842D5DA80D743ED8E7AF8409D2C8FDFB7527E73278DB1C75B4"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_heading_light_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "9CC0AE8071EF3C04B6014196D62F8D902013540496A35665D98D3F54C0DC3BB1",
+        "live_sha":  "336B43E2CEC1D997C5509B78D6BDD720D3F996E9ED31F11D59472157ABC1F65F"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_heading_light_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "6B054E28A3B80123796A3BBBFD74961FE432A5827EF29AF438B7D457FE9FF335",
+        "live_sha":  "5BC79277DCA4ECE07D5A1FC64389CCAF57D89B399980236928A9B46B1B10923E"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_heading_light_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "2990BC260055C231A11B2551620F647BA68114902D04406D0AFB729318AEE4CD",
+        "live_sha":  "62FBA9F32B288289A9D2BC30E1EB380D41E9074744A0CD57B6A583127AA3FC92"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_heading_light_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "D811838CA634197EDD98AD22F52F8865F9D3302A1B9DAB2636A2BD4B600C5FCD",
+        "live_sha":  "7BED1229016D8D3B32E7384BB340970AD737B32728F86A9DB6AD543D32551158"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_heading_light_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "D7366FB17E3FDF7BB6342D361E4979CD7A5A7AE2981BA851E847706454FF8663",
+        "live_sha":  "DD5B130ADE484AF4B08594803BA92BA3623033FF7C8E9D02DFC892B1BF82650C"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_light.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "BE96355E69214D9D6753BDE084F2CB34047284B1B143A93CF62E6E6FE30FC46D",
+        "live_sha":  "0DE0B08F25C123A0A082544EA42BB023E5C2DF05EA74C4AF989627B726549F2C"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_light_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "F23CF18FB89B3D978783EAC45CEA02F0A150B623DD8C6145403B22B1FF3AC9B8",
+        "live_sha":  "A3EB00914A539DA29821023F065A97BD66E528A2FED4F515B0CA897B536C53FE"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_light_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "7F5D1CB578BEFD63F95F814C3CAD6C9F6B989BCE1575797D1556AB3F431A78DB",
+        "live_sha":  "EB141C55971120235D7A8174BF3A5BDA5FA979D6D067E290E65516377074AF9D"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_light_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "AA6EAD3E1500ADD4D15E3969A961F8FBFB618AC415C426074F03BA75423FA262",
+        "live_sha":  "ADCC47BD1490A29ECDE769541130C3729089CB6F0E5B3372A376BEE4E1CA3392"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_light_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "99487418DFC73A5063761DBC291B0640D86B9DFBE062F7C42B45872FCE1AEE2F",
+        "live_sha":  "DE4EE23262A121D0D5B18DBA39600C48CE7F6D0E6615B193F19C1F51CA445163"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_light_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "D851A9487A6C5C1EC252FC8E36A373C4150DE1A0CB739A3441579BBC58600D32",
+        "live_sha":  "B09DBF0389102CB3C377FF0473CDECD751B37AC34BDC92C33D69432C7EDE818C"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_main.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "FEAD3BECCCAC437E72510CB1BC9E79174642AD6209E4D27ACE51BC08E742CD20",
+        "live_sha":  "C9D48C8B677313913444E1C8FC185CECB96176CC6C046983AAEAEE903BB9A624"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_main_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "F23CF18FB89B3D978783EAC45CEA02F0A150B623DD8C6145403B22B1FF3AC9B8",
+        "live_sha":  "A3EB00914A539DA29821023F065A97BD66E528A2FED4F515B0CA897B536C53FE"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_main_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "A4543506D16D69CCF8098B7FB880000BD666C29F86D2F58224E0FB590553F925",
+        "live_sha":  "F530655804091708C107BAC1316D2608575E3072AFF65D3A61C7D47704008D72"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_main_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "06DA8A693DE0751C27423A177D535B8220A2877BCD63A289DF5D68EB6DD6E97F",
+        "live_sha":  "2AE9D622521F7CECAE7DED875FAAFFA6999DEE1490E973095A230B32C49A8295"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_main_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "6B9A071AA32A4940FFF17F50B8B72B77835DD5E210D22FA2C3C7AC88AB6FD9B7",
+        "live_sha":  "404F9D14EA6F5AD49A1DB97079EE18639B5E230BC1453156AD205414EE20EA5A"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_main_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "A46C0B0EFE7010CADDF9E7226DB6BD97CF1AB767F8931275C96BEEA23B706065",
+        "live_sha":  "6F0150A261508215CA2137D58E7884CB5E58958A8E86B228669590FD1ED4EAFA"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_pos.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "A2E5A32798312CB7505DCB8283115A64D71A4C40B89B99D9FE26ABE4C868CB88",
+        "live_sha":  "2F1DC0E0B2C6678A67605725AEB1F4581E8D6892BC7D01C719D1AFD9BDAE7C46"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_pos_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "35E3680647D93F8C9FEA71E6216F482C91DE04FB4016E51D9F6550038C9D7310",
+        "live_sha":  "CA5AF874629199D4C776C8F6E1437DE74F30FCF969CB0626ABC5920662528639"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_pos_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "0AEC4502567CDED77E592807DF26AEC803620C90AE9EBB6B07E4C112617D45A6",
+        "live_sha":  "4610D5B67FB8E7C0B3F33222B48D9466B3927BF7A84C2634CFEF4756F23150EB"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_pos_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "658C0EA97B4726C72B82F7A83F60943FEF1AD01F4C5380F2394D77C2A46D0AE5",
+        "live_sha":  "9DA871E39D60D090E3C28FCCD1FD8EF101ADFA429629E14FADA175463933BE67"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_pos_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "1D90BA49D11E42E011D5533E8BAF8AAE1AE7F1B6DAC2F8E3885EBBC1E590D4DF",
+        "live_sha":  "196C735C38872AFE1B3B6AF053E547EBD851A3A5B3C1814464ACA7BFF3B39B13"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_pos_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "4C835BEFD8DB7879607D08D322E9690D0F0E765591E2BF8E522513158AD7B9EC",
+        "live_sha":  "5CBC44CA04B96FAF49EFD54C37955F525479F7CC3919D445D52094890D265DE6"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_tach_num.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "F425088D53609CFB4B2DBF1250AA3D818C75A53F355F3BFDAB62F50EBD6DE812",
+        "live_sha":  "6CF444682CD1D26CD1E037074937CB4EA7B758DC816CA7469191B4C9DD7CBBDE"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_tach_num_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "86AE47769CE0F3CE81DACA5B60AD101D4283F319F3B1A26100A6FF60AEAD6F9F",
+        "live_sha":  "F2368D6AD09A43880F5842AF2D84BEEF9EC828D4BA1C739977CFE05FDDF2461C"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_tach_num_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "F2CAD9DFA7816A504337FED7C704285106591429D1349FD4848CA514134C13D0",
+        "live_sha":  "25060DA9C2577C9A8B1458296452D171F28ED8F67953F80011D036BA99616E39"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_tach_num_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "1767FF019424323035D3A8194E76F392421268C3AF781EC11644E4F4D9A10BCA",
+        "live_sha":  "E8747AA80D9E1E9678A978BAFCC8A590BF5FAFB4779B9D434EC02F767BE002DB"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_tach_num_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "C2E98E55CE0735379EA2A0B01B8D5ABA86004C2A3257A2607173E41EC92EA153",
+        "live_sha":  "1AA1D1A96A29CD93A9586E786796275DF002507DD35D388B01ED63FFF1E5AFEB"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_hud_tach_num_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "2EC569A384CEF977C7C120C1E150C62860120E5223673C74EBA5F4590D562324",
+        "live_sha":  "39979D4E841BC2744881ED7DD6E48EE0CFCA6E1055B8BBEB43BF4C3DA0E56600"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_mono_16.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "B94AD7B82935C55D16211FB698FF124989FB625290735BD85E53DC470AA5DF2C",
+        "live_sha":  "D1D4537A08851DC8C8255E4247C62A4F735CE61A6F59B3C5D5016458063FEB55"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_mono_16_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "050B80F24212E4490B384015EDF2DDFE745301167F2BF4271608A9BCC96FD589",
+        "live_sha":  "AEC5D8EB4F58F92CAC3DC56657C6ED161D4780A5CE6F0D58547BE608EE74EBCA"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_mono_16_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "681F9A1B9F45360608075D1ECCBCBA4A9731B8E98420DDDC17817C104C431D5F",
+        "live_sha":  "D37486BD2A44B13C1B602F9A169DC5894456FF93CCF9558668B7B286B68C35C9"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_mono_16_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "FA7AC3B49E2B0FCB17EC7D08A7DC644958CCA35A410309AD61709C4FF1A99938",
+        "live_sha":  "9998229EEB999C8C1E02B46BE51699DABB9EC6CA9A6956AC70966876F0E9AAE7"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_mono_16_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "B06ACD897593FA314AF9D55B52AFB4F62600401B41AA1C95921DE86E2A515B98",
+        "live_sha":  "8BCA97FE25EF4C8F9626421B7E4D9530A82BDEE44776FC77C9200EA7CE513474"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_mono_16_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "1EC9EC2130422CF2D1CA3706E70158A686C1A994BA0E966CCD812EDF3CCEF0D5",
+        "live_sha":  "6D21B98BBB7538D2DAA39BE74704F2DC23D63A9189A1C7700FC9158875D581FF"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_session_time.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "995ECC8D30A232D7A3FF7CF000BE0E74E8DBE5BE652983A068B355924A5D2094",
+        "live_sha":  "36D480E7C498E0D1FA7D51479D9C3CCB900B8FE5A18A3D3D1A5523D7E8507CE5"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_session_time_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "10551D29D8A4016AF236BAA3B76FDCC1539B5B97881D903318CE70A8B9924197",
+        "live_sha":  "24143448A381A4BA7A93BE022B274C4080FDB71ED69F2B107863B3F747B27F64"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_session_time_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "8EFDAF831C20A89142CDA618C3C3DE290C93690F66EB8B3BD461E9F01F23E9FC",
+        "live_sha":  "561E348E398E09AA983C973FC8CBB44CB0390F5B4E008089167A16C15EFCF836"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_session_time_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "6EC1989D3CC5F37693E028FDD0E7F753B59B21F1D01BBF171642B9230C00DF10",
+        "live_sha":  "D7B24A8AEF88480674EAD0344C6D6057DB7D081A1ACE13B9A5EAAFA1F273426F"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_session_time_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "8E2A16587B89B8901D5456EBEE077B0F4B835F382C4639CF52D14A4F9A01EF5E",
+        "live_sha":  "D6A60D896504F324A35F30B3F92A85EED6B3590F687AEA7399A37EF9B9261E75"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_session_time_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "8F7590EDBBB5AAC9D2D6875F5DCFD0233DF43F86A35753A0CE98D65FA5BCCF33",
+        "live_sha":  "4AB0F1A42490FDF4F8259118039295A393463EC4CF4F99B6E3CCC72CF2313FEB"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_10.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "8C97FB5F9F25A182D7BEE5E3164A30B979E5380AF95806F5CE898505A10160E9",
+        "live_sha":  "1738AEA01179B96F8442D9EED7192AA1B23BDAA824FAA48CF47822737C058F5C"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_10_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "14ADAEBA8C47D5F43903A7FD4EE572F00396FF107410FCD6A12DD3D2878DAFA2",
+        "live_sha":  "7314D702C70E7DC2BAB64D51B66244F98C96168A957593FC074F9D1EE5696F74"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_10_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "09C1E722E867BEC33F564EECD49777B2B8F7106FDB543491367630CE2B49E7DB",
+        "live_sha":  "5F592B3CDBCB0AF3D61180A5B50866A678D30CC25882A3EB7932E95EC9ACF041"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_10_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "4C8050AC8794B9A6D5182BD1B849101DA799F11CFE17ACB561ED42D3BF3E7EF6",
+        "live_sha":  "EB17CBBA31F207021BBAAA56FE078C658E9D2BCE607CD396E5889F5351638422"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_10_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "D212F14DECE214439F6B7A6EE55F77A5AC8D81AFF709C20FB7BA55F7E8E21BD2",
+        "live_sha":  "809BE6AE7F1807A5336BC497C8EDF345B8027D2A096C3EB431D1F0C9588A432C"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_10_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "7780C0B15F0B7BE94E5506E44673846A5C0E8C3435ACE64EA1B9B2614F55C728",
+        "live_sha":  "3993A6C0E232A3096FC9737BD5E088238CBF17BF31EE0C35EA1CE8A07F5D19D1"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_11.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "F6EE6A5E2222823CA43D15610A5166FBE929400EF3B43510B2A2B3BAA5CD87E0",
+        "live_sha":  "237F34722A3E56A670A74BDDB6B7C62EF4C2FF4677DB6C3F6CA3D64576D5B4A4"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_11_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "10FB32EBFA14A49DEE0D6C156895AB2E82BFEA55F4C697DF33700995E4FE8067",
+        "live_sha":  "9D0B77DC358CA07E9E1C8EDE596B143C688D39CB3CD8F26C16E796847CA42F76"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_11_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "B379091AC1C48DB2EF7BA962AC62E397FB91547925EA1A3A98D2D5C1EEEE1318",
+        "live_sha":  "78CBC7A6156882CF462EB167395273A1F40237CB209B71BB43018CC9B2BF157D"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_11_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "09B7CDF3EF51E00674CC36F0DDA13FC181AE569F067917CF87BE276F642D9889",
+        "live_sha":  "5E3F5F088266F997862F00DF8C0A35CD8D27206F565C53E35A3BAB8610D627FB"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_11_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "6C5C1512B0FFFB40B2236A5C2AF1B6BA0CF650457B893BBDAC21EEE1683F1B50",
+        "live_sha":  "D5FD4F373279B4DECFF41995D4FECFF50158BAF06C305764A9C6184B4C8DF5E0"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_11_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "A8FC3824900D9E0D699A789A56620921C4448819A8188F87962FC3C3C5F53D70",
+        "live_sha":  "7ED2C00897F5384483A32DD7C0289A8B01FF82F74C16F0F78FFD28FF9A26C4AC"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_13.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "AD3E1A20700FBB8E40CFA3067C40C35BD203DDDFAF1AC17B1875E72530307F2C",
+        "live_sha":  "61AB3902A6068CDD2DAA62B490411CE4A7F1710C5E470A0AD229C9FE41545631"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_13_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "EDD5DDAA9AA7B6144A6C28691FF05A855FE655F7A103C4792E6D23E1B2574BDD",
+        "live_sha":  "0ABEC659AFE02A9BAA721772055FF0ADCE9402DEB065F4CB40DDAAA7282A6CFE"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_13_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "4833601039C70F0DA54115CF867D4D36B30F9B7E63EB2EF99C5CFDD0E0C70AA5",
+        "live_sha":  "0A21A17FA5950FDB1FB8EFCCE50BAD36CC9A2C563B5FF56225AA9DB21F0A90BA"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_13_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "F9DEF213A0CFCA86C993B56A3393016551FEA4C56781F1AC1538D78B72B5B91B",
+        "live_sha":  "751413683F82FC60E40D05C45728E1475326278782A980EA6D2EB0006DCC9206"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_13_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "5FB95F08B6E46527F45D23F6FD15B18E1E130F697227EA204BF2381B1F039AB1",
+        "live_sha":  "56C5114FBDB99BBC20BB1488F7F50C345EE59BE6DBC4BCFD10969D8CA88570A1"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_13_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "405172B898537C4ACDB120B339ACA5351A0385078BCF413A14EE7F5AE1B8E7DE",
+        "live_sha":  "9817558A3404A9EEA7215FB523E4DC855A0508CAC2EF210D7639EED62E125CB8"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_15.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "49C114179CFCF97C39180D6EF4B4AFD13300A84311D37BE037AABCCB81376280",
+        "live_sha":  "B0717A3AFD457DE125CD9692E35F321FE6F28181304A440D140DD6CE5E28A850"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_15_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "A20918D9C75DF27C6C1387C818C1730EDFDD201FB527574EDA76B1877D7FA34C",
+        "live_sha":  "C4904ABF9D3EF0F94D136AF11626572153A000D36F46F146F817E2B42F419B9A"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_15_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "92AEF3DC06C196CBB70D8DB56E669D4E27B180FD58735E270E5E1D7DA9EB6FC7",
+        "live_sha":  "5A67DB8030EEF26213A99BC56503FD3B354A20B435E3213867DF154C67106935"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_15_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "94DB4BEED69649884DA3C8270AB253EB6C59FB3E6327B457D304C893067AA9F1",
+        "live_sha":  "775093CC68D78CCA2CEE47767F04B4A5135962226496EDD7598922158AEEE161"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_15_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "C111959D0E968D92C5E3D9723D22F88AD31246D4C66E9F4CD7233DBF2A91DF7B",
+        "live_sha":  "9AF56FAB9B79884997F9371C54B43EFA750D75F879E62C7A1EB63EBAE9761203"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_15_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "BA50CFED446ABE38081FC8D0CB7C32511EDC75911F00094167C873CDD9FA5A21",
+        "live_sha":  "BB810704DB610E8D28EA1AC0C488A9021A1085B1365F0C270B89B3F68D1C4981"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_28.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "EF99341B184C8C940F552DA3BB5F35D8336545F276816366F5BD46CB47FA9F9F",
+        "live_sha":  "E40E9700F7D51117DC2A6715DF5BD2C78FEE53B0299847951863E5DD53C8ACE6"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_28_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "980A63389197E4D7826198529DD8DF9ECC3A3704AD96E6E926573727F4947C81",
+        "live_sha":  "D462CF6F4D41C3DF96E808FA38E7C35A2FB62D85FE5FA23F98987573BA118D7A"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_28_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "DBD92B613F42B288FF35FBB28886B33DC01A3F3582A80F0B71733D7877724E98",
+        "live_sha":  "7DDBEA585B00101ACA93BA4C8942FCD977DADE2C36EF7B6671F6FEF489A20C7B"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_28_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "36E9D6376EE9F05EDD5F64701BBFF09149B3A667E77617154D5B97573AFE0CF4",
+        "live_sha":  "80E1F85D7F2F410A4697D8E9318873736BD83FF90EB5593521E798FCFEA78AFC"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_28_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "4F28A1EA7EA66EC852777733F205CDA17F089EEA5299B57FC52C0C9A80E33FD8",
+        "live_sha":  "8283F7E671952CF6F3763F9C5F395402462493577DFEAA0F76F249FEE661B43A"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_28_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "61F5DB120130EF915243018BA3E31D9B62B84C56EA5F68C63AFA6AF762C05516",
+        "live_sha":  "163AFEDED5D92787BB87CCBEF94DE5A4467AF84E7298BEAF1C682766D8774E13"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_30.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "E8B67A18DB19B8A4CB0C55B793237ED9A3025F0E6C0E6FFAB96AF87E50D76E72",
+        "live_sha":  "9F66AC190928044364958D6A9CB3FD5ABA5E67E8EB03416377F8AD901F2D236E"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_30_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "C7C97BF5A680D31B21F9CD7C945DD34E56845AEE933699553D965A86B0BA8A3A",
+        "live_sha":  "3BB966ABC7E7AFA57E08C26824ECB9276D35617ED4B1681D1D5E61880C277F0B"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_30_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "FF9E305BD53BA9564917E5A37DF0DFE0FABEEA295A913289D00AB679858657EA",
+        "live_sha":  "D6BD8A42F6ED81470D10B31A14988207C37F1825564E1AB5AF09DD537E483B26"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_30_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "29A10C23FE4DFDEF668A48077F38090F7FF89C6BD281A97E1B79B58E85B7E3E1",
+        "live_sha":  "08B85624B5A92F4634007A2F57E9BEB1713269096DB8E4EA30921E0B8B84569B"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_30_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "A41A6170D1FB74B55F559A2480D5A3140B79D780AD619E28BFEC7C4FDAA59EF2",
+        "live_sha":  "B1DBD62C282CFE708C33A33AC903784795D9986C20DCC9ED772BB0E8AE78E770"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_30_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "827290656B6D77991847953E777C3C31DBD62C87C4333B46FA22FBF95C9D9776",
+        "live_sha":  "D094974285F28B4AD0AE469992DE49505D11FB8691643E3EAB7083BE8EA4F43A"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_34.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "FDE50CBFD710BF003C02BE8983FA5686ECC1A9A1152C1440B6B9B9B9E845049B",
+        "live_sha":  "4F3248C20CBA845274B19671A9980DD07484F24F17A171D4B6EA5A0CFB8495D4"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_34_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "092390CE60DE51CF53882653896A041208153559CA2248D354415A8A907DA84C",
+        "live_sha":  "F91D573AE5367781484026507FAA4ADDB9B18B1E10D17E3434225C81C35C20F2"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_34_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "69E01F366430499846427AB0C49C75BF45F357469DC2C67129F53E46155911AC",
+        "live_sha":  "8F83B975BEADEB899F5FFFBA4DAD08FD445F2B46888219034D177525573F6319"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_34_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "897E84986CF9CC6BD226DF96972D7F85087E75508EE673B4EF06221960E262E9",
+        "live_sha":  "402D67466AF5905F306C0C81A7A6FD5662DEDE9AE63ACDB1D7BC3FC760813D30"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_34_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "4CB650FD7FF8B82B18EA0C245E53ACC6C45B21A19F1A0106F28C69C21286497F",
+        "live_sha":  "C638F269F196F58B579357F89292E6BF101FD86177C84C88794649BFCC46FCFC"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_34_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "CE21F43F0D09447F32E7481ACAB29BAB316BA4E6D9685B40DBFABDF383689186",
+        "live_sha":  "22D39912F984214CC3FA1F155DB663E709E63CEE2A8D3ED3EBE8739F743555F0"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_40.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "8A2E657C35D3F5BC307591B64CD5143A67847EC2226229222B651248DE92FABD",
+        "live_sha":  "D85F503C56397CC62434177D03377456B81D020E854BDA2BF28E7EF7CC0E9B15"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_40_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "A2F81CA588607C32B38C6BE97994681C4A5DE174BFD34152A98463EB1695273A",
+        "live_sha":  "ECF80140DCCA8CCBF283B65B730EC30AD84E3549FF86C66CD852BCA58F4AF8C2"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_40_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "5F074EF8ADF8CCE56E6E30BB1BF7B02247816654F98F3FD4174EF0BD36930FBD",
+        "live_sha":  "EB871B891CCD0485F7A714F2A0B315656223A1C5945F526576991BEBD99CA400"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_40_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "0CB5B71FD4BFC988E6E628FE009A8114BB5B150A5286F087FCA8AB9DEEC09732",
+        "live_sha":  "2B81A7A1E4D72A5EA4AF516EDC1460B2ECFE870356F0EA650C1B34F1D04B08D4"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_40_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "A9FCF295E80C48713511157BC735FDB41A39E08B02C786697AF24FBAA4E2757C",
+        "live_sha":  "8296069AF0B9F854877A721AE783ED886FFD4653FD8FD330583854D885073602"
+    },
+    {
+        "relative_path":  "gui\\kr13_font_standard_40_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "055CFAF1B902B64DB3D4B5FA837E71A3DEABBAC75582A7EF42EC969C6D70CCC5",
+        "live_sha":  "314C7C8F1F654777C907A370B8F665E991348FCA7510415A3F87459E454A9FAC"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_body_footnote.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "F0FDEE663DC6FC8EECF6D8241F02DEE41B452C53DB1F85E5594626314DE683BB",
+        "live_sha":  "C5B7384530B3C6E7415654672014137B94710C3CAC8882AC5D9C716A97CD2AFA"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_body_footnote_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "3C8D4EC0ED7AA6EC547385F24711FAB308FA513DD48CECDA5DD35562DC71D6DE",
+        "live_sha":  "BC444AFE9A1544B667D283E3208752AFFE7E70411E69D73AE827F970A9DDC95F"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_body_footnote_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "E9A9A164524283AF12C822E080D19824D49838478FE4E8217C1F327F4701BB6D",
+        "live_sha":  "ABA5DD65274EAC31BA81DD335C558CED21E422B2E78905118216D0ADBE6AE7CF"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_body_footnote_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "12D2198A8300AD293D311C28468C81DBACE788BC90F25E3B7F29EC8FCA40A93B",
+        "live_sha":  "C8887B897A26E08452E2929C0A398BE6D442BD43F53CE28B53A6F26C9F0F02BB"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_body_footnote_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "37D411CE145C59D6577FADA7310D00311A3A763A2BCC3F1631AD4ED7853904D4",
+        "live_sha":  "D13A92D708C05ED52CF96B841256C9409543A30ACD9164F4D50B9FC34029EF25"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_body_footnote_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "FE2357BCB451BD98584CCB49960E5403838C2D01A8D19C46D5E36BF00B6D3A23",
+        "live_sha":  "079F592B9107A38DF6C7CB6A26224DF90553901804926C462C509FF4D7EC745A"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_body_large.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "AE05E7CCB5184B6930FD1E774F5465EFC34886923C21DFA7FCF00A98FF3DB692",
+        "live_sha":  "23660FAE8088DF3CA4EE720E57E9D6E690A224BE3922A89C84A8CA1407CB417B"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_body_large_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "F26EB502F5EFF4740801126DD0DF15597B5AB20B776D2BFE440C02F165F965FC",
+        "live_sha":  "B10B0C80EF3E3775CE61F0E145923324078298375EFD7E63A942C7B4A17E18A3"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_body_large_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "94964F0D8D9521254AFA07B2824ACDE7CDCBF9F5437C143499EA3CA3BDC6FFB5",
+        "live_sha":  "E08802396F54ECED52288E111DDDB811477EF917EB9185F52BB61F524DC79FB6"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_body_large_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "A0CD5C4DF58686A25541ABD2CB2C58B8524EB28075BDCB012D0380DA2D779C8D",
+        "live_sha":  "91E8C2265777C0726C4E83501B9969964F98F4E502DAB0846375338DF504DBCC"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_body_large_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "2C89887C8F771123542FBE37EFB9E003CCFA41BFED0B2D21BC4C8B943914E6FF",
+        "live_sha":  "E2F375FE2982BCECE8486586401BBEB4B8EA6AF087DC6ECBF33FDF710D65B367"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_body_large_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "B8A6AB02928688EB70A3B77BC825DAD77F177757FFF3AEC49C762F7F55826B4F",
+        "live_sha":  "3DAFD51A6D620CCCC25D445A97698BD37BF3D6896FF9CC2A5642940B8EA13DF9"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_body_regular.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "94DDD4BE2E3DAB5E047AC477A9929FB2811EDA60A7C88ECCD4B6AC9AB968AC7E",
+        "live_sha":  "911953A61F6CEB0EE37099C7B1916DE7E6B68B237489F4E216C72EA0AF27AA38"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_body_regular_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "8348681FB22AD13316E8B630B6E6AC243C64DA8F4CFBD0A7BF6308B336A4B54C",
+        "live_sha":  "1CC0C4B246DB78CEBBCAAEC5A6E513500E11C19236ED7F106FAB111E5D29B8A4"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_body_regular_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "B18B662EE815FEB0BE7B0F61EBA80AE9ACF88EB4EB7E7D2F8B536F410614BA51",
+        "live_sha":  "696250AF843847D1ED68367BAA035DA842FE2E4CF159AB25943BF7733A3AD067"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_body_regular_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "472E998FE90BCA4389EA898208A65BD956BAE28F51500C94ABF79DFB697A0D5C",
+        "live_sha":  "A061CD2A8BDA38D09723422E9BA0DD1D85ACB9138A141DE97685336AD045DE30"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_body_regular_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "CEA6B5B4C8B702349A4FE108AC5DAEC864A036A9BE0A256AC47EF868FD4CF9A3",
+        "live_sha":  "90ACA5A59EA17BDD201E4E9E7240B7D76F3849885FC53F000F895D4C4EA8CC54"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_body_regular_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "555A6EE4B152596CA5DA8B3AB676233978AA1E6F94E9029C71D922AD8BA0FDD2",
+        "live_sha":  "45DB66F4A76DFF1ADE7A506640D1E988C2AA1553323030A640B21B41DDCAA930"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_tab_title.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "329E0202720B21CA89355F3FE9F8C955A537569995375DF65700146E39F5F001",
+        "live_sha":  "A0B6CE8A3EFFE61896989BA753BB3BD82A24DAE00DE8CCD7999A7D2AABA6619F"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_tab_title_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "EF766846D0AB06926056C2F4C7B4E824C102A1ABC21D48CF348746C9571FC4F4",
+        "live_sha":  "8373C47B777D2F58700CDA3CEAC78C27F40674C92FE2CDDC59845A8E85EB0F15"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_tab_title_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "974C9AEFA58DB2B920728F28B31274285EC90EF60A1131F79F3D0906CB79885C",
+        "live_sha":  "EC8F214842A50C270B924C96C4572E9444FC0203F5ED202967EA3FFDB288364C"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_tab_title_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "27CD93A31C650DFAF36BA1F98CC6294AD3B86E3B5B9B2097AB03F81CEDF6B9FD",
+        "live_sha":  "6B01E042AEE8534ADDFC6367F310470CB3C872FE2BEE7EF4EEDB4C51E4299A61"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_tab_title_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "99DDDE2149B27535CC8F9840BFA7C1BCD14020C42191F2A9F9B6763AFB51C201",
+        "live_sha":  "73E2D609F1982E4AC2F656C3B669B485F97A4BA7C2746183F7D0760542A5479C"
+    },
+    {
+        "relative_path":  "gui\\kr13_phoenix_tab_title_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "DB9E028AFDC8825E69EEF466D595ECC7BBD1F83E6D809036E73F379F0AB25082",
+        "live_sha":  "78C0E139523BC5187A54B8F06B4C86B0B9626D44AE74A7B62CCFB37F287E81A6"
+    },
+    {
+        "relative_path":  "gui\\kr1_font_hud_bold.bfont",
+        "extension":  ".bfont",
+        "status":  "DIFFERENT",
+        "base_sha":  "386D94BB4B0B61DDBF4E7F301514E298824632F142517005169CAB12E1C19DDE",
+        "live_sha":  "35CA0A2C3D32C9CCE02A700CB47E6DB0FC750630B92D591BEE774FAC5AEA0DDD"
+    },
+    {
+        "relative_path":  "gui\\kr1_font_hud_bold_00.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "05DAE556037DA7BF4E4EF98CA13296C9EF5445808680F65C9989074C0413FB05",
+        "live_sha":  "B1B2329C6251DCACE4B178E5E61CC96482D3E45B315BF60AF33BC0D3B4094986"
+    },
+    {
+        "relative_path":  "gui\\kr1_font_hud_bold_01.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "4F3F97889BBBC99F22F580662A4F60F9FA00F34C29D18C03E11B348209FF5715",
+        "live_sha":  "7DA397F2B69D4C702D7058CDF99D2A91C37557EDF92A6DE337FF541D87EFD0FA"
+    },
+    {
+        "relative_path":  "gui\\kr1_font_hud_bold_02.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "AB286867A6692F69154BE2FAD0C825977678DC14B9836D98C429C0DD69704CDF",
+        "live_sha":  "7158B738F922BAF8D50CD2BBC72CE7F0DA81D5306C2954B1A453C347A22E1F35"
+    },
+    {
+        "relative_path":  "gui\\kr1_font_hud_bold_03.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "09F103CE564C1479035D7781826C5284459B8E1DE06F92F47177168EE9195A93",
+        "live_sha":  "7EEE4074C571DEA99F8CE3398961B3A5A6216F01D2CCDF83738715332E018AE7"
+    },
+    {
+        "relative_path":  "gui\\kr1_font_hud_bold_04.dds",
+        "extension":  ".dds",
+        "status":  "DIFFERENT",
+        "base_sha":  "2D8854C0617AF41A495920428E4670A067D48DAD5C72ACB4ECA801E169B0CB80",
+        "live_sha":  "09EDF9C26742AE2134DD2216CB067EBC3AEF8F591E371AC57F5A1BE40DED844A"
+    },
+    {
+        "relative_path":  "gui\\menu_binkdialogbox.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "F60CBA82ED910CA66ECD30548C0D1B491AB2D2224F5215D55DEB8F263A83A574",
+        "live_sha":  "F60CBA82ED910CA66ECD30548C0D1B491AB2D2224F5215D55DEB8F263A83A574"
+    },
+    {
+        "relative_path":  "gui\\menu_chatbox.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "32F51C5065EDAFDA9068C1FCF8F75E1C075178007ED4A85CA3DADCFD57EFA902",
+        "live_sha":  "32F51C5065EDAFDA9068C1FCF8F75E1C075178007ED4A85CA3DADCFD57EFA902"
+    },
+    {
+        "relative_path":  "gui\\menu_countdown.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "78E747198AC9FC2EEA5BF38825183ED8F2FDE7ADFAA2ADE7E6764964B2DB26F8",
+        "live_sha":  "78E747198AC9FC2EEA5BF38825183ED8F2FDE7ADFAA2ADE7E6764964B2DB26F8"
+    },
+    {
+        "relative_path":  "gui\\menu_dialogbox.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "C93041877486A917CEBA7900ED6EAFEE0636437023F28A959C4F44F7AC766E02",
+        "live_sha":  "C93041877486A917CEBA7900ED6EAFEE0636437023F28A959C4F44F7AC766E02"
+    },
+    {
+        "relative_path":  "gui\\menu_dialogbox_frontendonly_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "5949206E1355016F40211601484CB5F42D554985CB269D9BDE0BE19827AAA27D",
+        "live_sha":  "5949206E1355016F40211601484CB5F42D554985CB269D9BDE0BE19827AAA27D"
+    },
+    {
+        "relative_path":  "gui\\menu_dialogbox_frontendonly_ams2.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "FC01AD5625B15F5504C3365BD147BECEAE1F35B87078765E33411EF049B4FEFE",
+        "live_sha":  "FC01AD5625B15F5504C3365BD147BECEAE1F35B87078765E33411EF049B4FEFE"
+    },
+    {
+        "relative_path":  "gui\\menu_dialogbox_gamewide.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "1461E0C761F6DBDFFAE9E2FE13E50952E31D37FAEA5729D478F58D47FCB46DA9",
+        "live_sha":  "1461E0C761F6DBDFFAE9E2FE13E50952E31D37FAEA5729D478F58D47FCB46DA9"
+    },
+    {
+        "relative_path":  "gui\\menu_dialogbox_gamewide_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "40E6FA49B7CD9C4BFFED9C2CE470DC28071722B133B921009ED6A2E943179C20",
+        "live_sha":  "40E6FA49B7CD9C4BFFED9C2CE470DC28071722B133B921009ED6A2E943179C20"
+    },
+    {
+        "relative_path":  "gui\\menu_dialogbox_gamewide_ams2.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "6871115B73C48A66B3AEF54AD011B2A548D579245435843C34965CEA44E2703E",
+        "live_sha":  "6871115B73C48A66B3AEF54AD011B2A548D579245435843C34965CEA44E2703E"
+    },
+    {
+        "relative_path":  "gui\\menu_ingamemenu_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "AA6D444CC4E98C544E55807289C8D14CEA6288B08D354CFCF76954EC5A669993",
+        "live_sha":  "AA6D444CC4E98C544E55807289C8D14CEA6288B08D354CFCF76954EC5A669993"
+    },
+    {
+        "relative_path":  "gui\\menu_ingamemenu_ams2.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "C81D2C22597B10ECC58A3174AE4DEBBD435BBE5BBD23CD4C032EC6012B29E75C",
+        "live_sha":  "C81D2C22597B10ECC58A3174AE4DEBBD435BBE5BBD23CD4C032EC6012B29E75C"
+    },
+    {
+        "relative_path":  "gui\\menu_loadingscreen.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "A34E974383E28EBD7675EA34D3B85C85323E5BFF616A5173C1DD7DA4A2FD9DDB",
+        "live_sha":  "A34E974383E28EBD7675EA34D3B85C85323E5BFF616A5173C1DD7DA4A2FD9DDB"
+    },
+    {
+        "relative_path":  "gui\\menu_loadingscreen_demo.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "7A41323A0E27EC65FBDE2633F8B34DB01EB326E501FC2EA7427BEF9B7971A22B",
+        "live_sha":  "7A41323A0E27EC65FBDE2633F8B34DB01EB326E501FC2EA7427BEF9B7971A22B"
+    },
+    {
+        "relative_path":  "gui\\menu_loadtofrontend.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "F2DD449D067364EF49D6BBB0224CB784AA03C0BB0B592E58C5276187317F7240",
+        "live_sha":  "F2DD449D067364EF49D6BBB0224CB784AA03C0BB0B592E58C5276187317F7240"
+    },
+    {
+        "relative_path":  "gui\\menu_login.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "35F144DD24C6D7AD9FC3E434A3681F41BE291F639DB16BEAE936FA7C1CBF72B4",
+        "live_sha":  "35F144DD24C6D7AD9FC3E434A3681F41BE291F639DB16BEAE936FA7C1CBF72B4"
+    },
+    {
+        "relative_path":  "gui\\menu_mainmenuams2.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "3432C46895B9776D0B5DFEFB0A109263E6CC6A8B4E449CB00137A5536D6138E1",
+        "live_sha":  "3432C46895B9776D0B5DFEFB0A109263E6CC6A8B4E449CB00137A5536D6138E1"
+    },
+    {
+        "relative_path":  "gui\\menu_mainmenu_1_6.bgui",
+        "extension":  ".bgui",
+        "status":  "DIFFERENT",
+        "base_sha":  "34EFB86CF7DBFA7E4C657D75EA20193BABA528CA86B2C54F1256140782489653",
+        "live_sha":  "FE5D29C4737990DEEF0D9B768C214C7583D95CFF7E5004DF6F8C54719A1A28ED"
+    },
+    {
+        "relative_path":  "gui\\menu_message.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "821D9B33E3D1EB0784E463140EFE9341504D99ADA3B5EA8044844E055E886E1B",
+        "live_sha":  "821D9B33E3D1EB0784E463140EFE9341504D99ADA3B5EA8044844E055E886E1B"
+    },
+    {
+        "relative_path":  "gui\\menu_messagebox.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "7B3E4A682907D1FDCE1E66499021D3394DC5F24D1CBF94B76CFF2AF616C05B89",
+        "live_sha":  "7B3E4A682907D1FDCE1E66499021D3394DC5F24D1CBF94B76CFF2AF616C05B89"
+    },
+    {
+        "relative_path":  "gui\\menu_savedialog.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "896DD4CCB51BABD01C8391EBBEA919AA05C6F97522A2B2F451E941EFFF490C6A",
+        "live_sha":  "896DD4CCB51BABD01C8391EBBEA919AA05C6F97522A2B2F451E941EFFF490C6A"
+    },
+    {
+        "relative_path":  "gui\\menu_setupscreens.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "5CE6AD63C5B9FAC5F4CDE33B76248EE50BB5775B1EF7409551CAFAEB49253595",
+        "live_sha":  "5CE6AD63C5B9FAC5F4CDE33B76248EE50BB5775B1EF7409551CAFAEB49253595"
+    },
+    {
+        "relative_path":  "gui\\menu_setupscreens_demo.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "5D98F3B635F5E193958FCB97BED637BB3D3038F21764F19B0DE30111B56E46C7",
+        "live_sha":  "5D98F3B635F5E193958FCB97BED637BB3D3038F21764F19B0DE30111B56E46C7"
+    },
+    {
+        "relative_path":  "gui\\menu_setupscreens_demo_vw.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "10B979B307C0ABE222564A94E1DCC7E9F8D77CB3109FC2A28A37EFCD1FFCE6C7",
+        "live_sha":  "10B979B307C0ABE222564A94E1DCC7E9F8D77CB3109FC2A28A37EFCD1FFCE6C7"
+    },
+    {
+        "relative_path":  "gui\\menu_subtitles.bgui",
+        "extension":  ".bgui",
+        "status":  "EXACT",
+        "base_sha":  "9D60B732616FAF6FA6F20DD6A12D4653B660E70B5529BD551BB9706BE0190173",
+        "live_sha":  "9D60B732616FAF6FA6F20DD6A12D4653B660E70B5529BD551BB9706BE0190173"
+    },
+    {
+        "relative_path":  "text\\career.tdb",
+        "extension":  ".tdb",
+        "status":  "EXACT",
+        "base_sha":  "9B0ED8038D328E221D5977114A44BA97CB1784A7F6D62FA2227BF7BDBF9A034C",
+        "live_sha":  "9B0ED8038D328E221D5977114A44BA97CB1784A7F6D62FA2227BF7BDBF9A034C"
+    },
+    {
+        "relative_path":  "text\\drivers.tdb",
+        "extension":  ".tdb",
+        "status":  "DIFFERENT",
+        "base_sha":  "8642FD6E468433812C012EA5C875CCBDA482380F52B6A8ABF23566EC04C467F2",
+        "live_sha":  "CD4C22EF213A1098E60EF54A564AC0E6E0AFAA601A4290DBB134CA5C62CD0C55"
+    },
+    {
+        "relative_path":  "text\\game.tdb",
+        "extension":  ".tdb",
+        "status":  "DIFFERENT",
+        "base_sha":  "A5110C65582CC517CE09897DAC12D3BBA4572A219348FCC7A3591417A6FD5FBF",
+        "live_sha":  "BFEB02CA85851F0EAC770242893FD35945756D770FA2F50B8AC86437CDF2C344"
+    },
+    {
+        "relative_path":  "text\\general.tdb",
+        "extension":  ".tdb",
+        "status":  "EXACT",
+        "base_sha":  "B1785F373FB226BF82080487359A7922FCFF31FB9A89B68E754EA545477D6EA3",
+        "live_sha":  "B1785F373FB226BF82080487359A7922FCFF31FB9A89B68E754EA545477D6EA3"
+    },
+    {
+        "relative_path":  "text\\online.tdb",
+        "extension":  ".tdb",
+        "status":  "EXACT",
+        "base_sha":  "ACCD418F139CF91E7DAB8F7D2F716E8AC8D0FF5E2D5B0E2AF110E766FD1ED9E0",
+        "live_sha":  "ACCD418F139CF91E7DAB8F7D2F716E8AC8D0FF5E2D5B0E2AF110E766FD1ED9E0"
+    },
+    {
+        "relative_path":  "text\\pit.tdb",
+        "extension":  ".tdb",
+        "status":  "EXACT",
+        "base_sha":  "BA02DF9813EF0D03336A7FCC19DE802B67A32FBA328707A7B90CF70483B397E1",
+        "live_sha":  "BA02DF9813EF0D03336A7FCC19DE802B67A32FBA328707A7B90CF70483B397E1"
+    },
+    {
+        "relative_path":  "text\\platform.tdb",
+        "extension":  ".tdb",
+        "status":  "EXACT",
+        "base_sha":  "ED3EB248AEAD84C46C8C0F763E7D1A94990324436C74E1AF95D34103AF32748E",
+        "live_sha":  "ED3EB248AEAD84C46C8C0F763E7D1A94990324436C74E1AF95D34103AF32748E"
+    },
+    {
+        "relative_path":  "text\\presence.tdb",
+        "extension":  ".tdb",
+        "status":  "EXACT",
+        "base_sha":  "08DE9F6FF313DEA02E881AC22208AD5EEEDA08D1B3FB1535AC7E7A359E759DEA",
+        "live_sha":  "08DE9F6FF313DEA02E881AC22208AD5EEEDA08D1B3FB1535AC7E7A359E759DEA"
+    },
+    {
+        "relative_path":  "text\\rac.tdb",
+        "extension":  ".tdb",
+        "status":  "DIFFERENT",
+        "base_sha":  "9984828526F98B0B779CC00895478DA6652605E10ED37CB6119E22B71FA58EAF",
+        "live_sha":  "184D533A005B9AE1A28D94EE76DF7F113CA7E2AEB4DC042EAF27A6F5390D222C"
+    }
+]

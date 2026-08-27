@@ -1,0 +1,1884 @@
+{
+  "schema": "ams2-kr-067-preview-distance-bgui-inspection-v1",
+  "source": "E:\\SteamLibrary\\steamapps\\common\\Automobilista 2\\GUI\\menu_mainmenu_1_6.bgui",
+  "text_record_count": 7133,
+  "named_node_count": 71720,
+  "windows": [
+    {
+      "reference": "VM-CustomEvent-TrackAndVehicleSelection-TrackEx-PreviewTrack_Length",
+      "reference_offset": "0x562177",
+      "nearest_text_records": [
+        {
+          "ordinal": 3682,
+          "start": "0x55AD34",
+          "local_id": 4,
+          "object_id": 41904,
+          "position": [
+            -28.0,
+            11.0
+          ],
+          "size": [
+            82.0,
+            0.10000000149011612
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "510200000000000000000000",
+          "text_reference": "",
+          "font": "gui\\kr09_font_heading_bold.bfont",
+          "flags": "0x00000001"
+        },
+        {
+          "ordinal": 3683,
+          "start": "0x55AE20",
+          "local_id": 4,
+          "object_id": 41905,
+          "position": [
+            60.0,
+            11.0
+          ],
+          "size": [
+            9.0,
+            26.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "510200000000000000000000",
+          "text_reference": "",
+          "font": "gui\\kr09_font_heading_bold.bfont",
+          "flags": "0x00000001"
+        },
+        {
+          "ordinal": 3684,
+          "start": "0x55AF12",
+          "local_id": 4,
+          "object_id": 41907,
+          "position": [
+            74.0,
+            11.0
+          ],
+          "size": [
+            256.0,
+            26.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "510200000000000000000000",
+          "text_reference": "VM-CustomEvent-TrackAndVehicleSelection-VehicleFullName",
+          "font": "gui\\kr09_font_heading_bold.bfont",
+          "flags": "0x00000001"
+        },
+        {
+          "ordinal": 3685,
+          "start": "0x55B05D",
+          "local_id": 4,
+          "object_id": 41926,
+          "position": [
+            -28.0,
+            0.0
+          ],
+          "size": [
+            1050.0,
+            50.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "010200000000000000000000",
+          "text_reference": "VM-CustomEvent-TrackAndVehicleSelection-VehicleFullName",
+          "font": "gui\\kr09_font_heading_bold.bfont",
+          "flags": "0x00000009"
+        },
+        {
+          "ordinal": 3686,
+          "start": "0x55B95F",
+          "local_id": 4,
+          "object_id": 41955,
+          "position": [
+            -28.0,
+            11.0
+          ],
+          "size": [
+            0.10000000149011612,
+            0.10000000149011612
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "510200000000000000000000",
+          "text_reference": "",
+          "font": "gui\\kr09_font_heading.bfont",
+          "flags": "0x00000000"
+        },
+        {
+          "ordinal": 3687,
+          "start": "0x55BA4E",
+          "local_id": 4,
+          "object_id": 41956,
+          "position": [
+            -21.899999618530273,
+            11.0
+          ],
+          "size": [
+            8.0,
+            26.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "510200000000000000000000",
+          "text_reference": "",
+          "font": "gui\\kr09_font_heading.bfont",
+          "flags": "0x00000000"
+        },
+        {
+          "ordinal": 3688,
+          "start": "0x55BB43",
+          "local_id": 4,
+          "object_id": 41958,
+          "position": [
+            -8.899999618530273,
+            11.0
+          ],
+          "size": [
+            256.0,
+            26.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "510200000000000000000000",
+          "text_reference": "VM-CustomEvent-TrackAndVehicleSelection-VehicleFullName",
+          "font": "gui\\kr09_font_heading.bfont",
+          "flags": "0x00000000"
+        },
+        {
+          "ordinal": 3689,
+          "start": "0x55BC91",
+          "local_id": 4,
+          "object_id": 41977,
+          "position": [
+            -28.0,
+            0.0
+          ],
+          "size": [
+            1050.0,
+            50.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "010200000000000000000000",
+          "text_reference": "VM-CustomEvent-TrackAndVehicleSelection-VehicleFullName",
+          "font": "gui\\kr09_font_heading_bold.bfont",
+          "flags": "0x00000009"
+        },
+        {
+          "ordinal": 3690,
+          "start": "0x56053A",
+          "local_id": 4,
+          "object_id": 42216,
+          "position": [
+            -28.0,
+            11.0
+          ],
+          "size": [
+            0.10000000149011612,
+            0.10000000149011612
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "510200000000000000000000",
+          "text_reference": "",
+          "font": "gui\\kr09_font_heading.bfont",
+          "flags": "0x00000000"
+        },
+        {
+          "ordinal": 3691,
+          "start": "0x560623",
+          "local_id": 4,
+          "object_id": 42217,
+          "position": [
+            -21.899999618530273,
+            11.0
+          ],
+          "size": [
+            8.0,
+            26.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "510200000000000000000000",
+          "text_reference": "",
+          "font": "gui\\kr09_font_heading.bfont",
+          "flags": "0x00000000"
+        },
+        {
+          "ordinal": 3692,
+          "start": "0x560712",
+          "local_id": 4,
+          "object_id": 42219,
+          "position": [
+            -8.899999618530273,
+            11.0
+          ],
+          "size": [
+            455.0,
+            31.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "510200000000000000000000",
+          "text_reference": "VM-CustomEvent-TrackAndVehicleSelection-TrackEx-PreviewTrack_Name",
+          "font": "gui\\kr09_font_heading.bfont",
+          "flags": "0x00000408"
+        },
+        {
+          "ordinal": 3693,
+          "start": "0x56087E",
+          "local_id": 4,
+          "object_id": 42249,
+          "position": [
+            -28.0,
+            0.0
+          ],
+          "size": [
+            575.0,
+            51.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "010200000000000000000000",
+          "text_reference": "VM-CustomEvent-TrackAndVehicleSelection-TrackEx-PreviewTrack_Name",
+          "font": "gui\\kr09_font_heading_bold.bfont",
+          "flags": "0x00000409"
+        },
+        {
+          "ordinal": 3694,
+          "start": "0x561192",
+          "local_id": 4,
+          "object_id": 42289,
+          "position": [
+            -28.0,
+            11.0
+          ],
+          "size": [
+            0.10000000149011612,
+            0.10000000149011612
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "510200000000000000000000",
+          "text_reference": "",
+          "font": "gui\\kr09_font_heading.bfont",
+          "flags": "0x00000000"
+        },
+        {
+          "ordinal": 3695,
+          "start": "0x561281",
+          "local_id": 4,
+          "object_id": 42290,
+          "position": [
+            -21.899999618530273,
+            11.0
+          ],
+          "size": [
+            8.0,
+            26.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "510200000000000000000000",
+          "text_reference": "",
+          "font": "gui\\kr09_font_heading.bfont",
+          "flags": "0x00000000"
+        },
+        {
+          "ordinal": 3696,
+          "start": "0x561376",
+          "local_id": 4,
+          "object_id": 42292,
+          "position": [
+            -8.899999618530273,
+            11.0
+          ],
+          "size": [
+            455.0,
+            31.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "510200000000000000000000",
+          "text_reference": "VM-CustomEvent-TrackAndVehicleSelection-TrackEx-PreviewTrack_Name",
+          "font": "gui\\kr09_font_heading.bfont",
+          "flags": "0x00000408"
+        },
+        {
+          "ordinal": 3697,
+          "start": "0x5614E8",
+          "local_id": 4,
+          "object_id": 42322,
+          "position": [
+            -28.0,
+            0.0
+          ],
+          "size": [
+            575.0,
+            51.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "010200000000000000000000",
+          "text_reference": "VM-CustomEvent-TrackAndVehicleSelection-TrackEx-PreviewTrack_Name",
+          "font": "gui\\kr09_font_heading_bold.bfont",
+          "flags": "0x00000409"
+        },
+        {
+          "ordinal": 3698,
+          "start": "0x563245",
+          "local_id": 4,
+          "object_id": 42416,
+          "position": [
+            -28.0,
+            0.0
+          ],
+          "size": [
+            340.0,
+            50.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "010200000000000000000000",
+          "text_reference": "",
+          "font": "gui\\kr09_font_heading_bold.bfont",
+          "flags": "0x00000009"
+        },
+        {
+          "ordinal": 3699,
+          "start": "0x5639D2",
+          "local_id": 4,
+          "object_id": 42426,
+          "position": [
+            -28.0,
+            0.0
+          ],
+          "size": [
+            340.0,
+            50.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "010200000000000000000000",
+          "text_reference": "",
+          "font": "gui\\kr09_font_heading_bold.bfont",
+          "flags": "0x00000009"
+        },
+        {
+          "ordinal": 3700,
+          "start": "0x56947E",
+          "local_id": 4,
+          "object_id": 42577,
+          "position": [
+            -28.0,
+            0.0
+          ],
+          "size": [
+            340.0,
+            50.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "010200000000000000000000",
+          "text_reference": "",
+          "font": "gui\\kr09_font_heading_bold.bfont",
+          "flags": "0x00000009"
+        },
+        {
+          "ordinal": 3701,
+          "start": "0x569C0B",
+          "local_id": 4,
+          "object_id": 42587,
+          "position": [
+            -28.0,
+            0.0
+          ],
+          "size": [
+            340.0,
+            50.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "010200000000000000000000",
+          "text_reference": "",
+          "font": "gui\\kr09_font_heading_bold.bfont",
+          "flags": "0x00000009"
+        }
+      ],
+      "nearest_named_nodes": [
+        {
+          "start": "0x5614E8",
+          "delta": -3215,
+          "local_id": 4,
+          "name": "Text",
+          "object_id": 42322,
+          "position": [
+            -28.0,
+            0.0
+          ],
+          "size": [
+            575.0,
+            51.0
+          ]
+        },
+        {
+          "start": "0x561659",
+          "delta": -2846,
+          "local_id": 3,
+          "name": "VehicleRender",
+          "object_id": 42352,
+          "position": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            620.0,
+            348.0
+          ]
+        },
+        {
+          "start": "0x56175D",
+          "delta": -2586,
+          "local_id": 3,
+          "name": "DataPanel",
+          "object_id": 42353,
+          "position": [
+            0.0,
+            -275.0
+          ],
+          "size": [
+            620.0,
+            139.0
+          ]
+        },
+        {
+          "start": "0x561824",
+          "delta": -2387,
+          "local_id": 3,
+          "name": "DataList",
+          "object_id": 42354,
+          "position": [
+            0.0,
+            -275.0
+          ],
+          "size": [
+            1150.0,
+            166.0
+          ]
+        },
+        {
+          "start": "0x561915",
+          "delta": -2146,
+          "local_id": 3,
+          "name": "Column",
+          "object_id": 42355,
+          "position": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            405.0,
+            160.0
+          ]
+        },
+        {
+          "start": "0x5619D9",
+          "delta": -1950,
+          "local_id": 3,
+          "name": "DataRow",
+          "object_id": 42356,
+          "position": [
+            0.0,
+            9.0
+          ],
+          "size": [
+            405.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0x561A9E",
+          "delta": -1753,
+          "local_id": 4,
+          "name": "Label",
+          "object_id": 42357,
+          "position": [
+            20.0,
+            0.0
+          ],
+          "size": [
+            185.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0x561B88",
+          "delta": -1519,
+          "local_id": 4,
+          "name": "Value",
+          "object_id": 42358,
+          "position": [
+            210.0,
+            0.0
+          ],
+          "size": [
+            210.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0x561CDD",
+          "delta": -1178,
+          "local_id": 3,
+          "name": "DataRow",
+          "object_id": 42375,
+          "position": [
+            0.0,
+            29.0
+          ],
+          "size": [
+            405.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0x561DA2",
+          "delta": -981,
+          "local_id": 4,
+          "name": "Label",
+          "object_id": 42376,
+          "position": [
+            20.0,
+            0.0
+          ],
+          "size": [
+            185.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0x561E8C",
+          "delta": -747,
+          "local_id": 4,
+          "name": "Value",
+          "object_id": 42377,
+          "position": [
+            210.0,
+            0.0
+          ],
+          "size": [
+            210.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0x561F7E",
+          "delta": -505,
+          "local_id": 3,
+          "name": "DataRow",
+          "object_id": 42381,
+          "position": [
+            0.0,
+            49.0
+          ],
+          "size": [
+            405.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0x562043",
+          "delta": -308,
+          "local_id": 4,
+          "name": "Label",
+          "object_id": 42382,
+          "position": [
+            20.0,
+            0.0
+          ],
+          "size": [
+            185.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0x56212D",
+          "delta": -74,
+          "local_id": 4,
+          "name": "Value",
+          "object_id": 42383,
+          "position": [
+            210.0,
+            0.0
+          ],
+          "size": [
+            210.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0x56226A",
+          "delta": 243,
+          "local_id": 3,
+          "name": "DataRow",
+          "object_id": 42390,
+          "position": [
+            0.0,
+            69.0
+          ],
+          "size": [
+            405.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0x56232F",
+          "delta": 440,
+          "local_id": 4,
+          "name": "Label",
+          "object_id": 42391,
+          "position": [
+            20.0,
+            0.0
+          ],
+          "size": [
+            185.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0x562419",
+          "delta": 674,
+          "local_id": 4,
+          "name": "Value",
+          "object_id": 42392,
+          "position": [
+            210.0,
+            0.0
+          ],
+          "size": [
+            210.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0x562554",
+          "delta": 989,
+          "local_id": 3,
+          "name": "DataRow",
+          "object_id": 42397,
+          "position": [
+            0.0,
+            89.0
+          ],
+          "size": [
+            405.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0x562619",
+          "delta": 1186,
+          "local_id": 4,
+          "name": "Label",
+          "object_id": 42398,
+          "position": [
+            20.0,
+            0.0
+          ],
+          "size": [
+            185.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0x562703",
+          "delta": 1420,
+          "local_id": 4,
+          "name": "Value",
+          "object_id": 42399,
+          "position": [
+            210.0,
+            0.0
+          ],
+          "size": [
+            210.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0x562842",
+          "delta": 1739,
+          "local_id": 3,
+          "name": "VehicleRender",
+          "object_id": 42404,
+          "position": [
+            205.0,
+            56.0
+          ],
+          "size": [
+            210.0,
+            210.0
+          ]
+        },
+        {
+          "start": "0x562944",
+          "delta": 1997,
+          "local_id": 3,
+          "name": "Logo",
+          "object_id": 42405,
+          "position": [
+            490.0,
+            292.0
+          ],
+          "size": [
+            102.0,
+            102.0
+          ]
+        },
+        {
+          "start": "0x562A3F",
+          "delta": 2248,
+          "local_id": 6,
+          "name": "SessionSettings",
+          "object_id": 42406,
+          "position": [
+            0.0,
+            435.0
+          ],
+          "size": [
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "start": "0x562B18",
+          "delta": 2465,
+          "local_id": 7,
+          "name": "Selected",
+          "object_id": 42407,
+          "position": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "start": "0x562B72",
+          "delta": 2555,
+          "local_id": 3,
+          "name": "MenuItem",
+          "object_id": 42408,
+          "position": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            385.0,
+            285.0
+          ]
+        },
+        {
+          "start": "0x562C38",
+          "delta": 2753,
+          "local_id": 3,
+          "name": "Panel",
+          "object_id": 42409,
+          "position": [
+            0.0,
+            50.0
+          ],
+          "size": [
+            385.0,
+            185.0
+          ]
+        },
+        {
+          "start": "0x562CFB",
+          "delta": 2948,
+          "local_id": 3,
+          "name": "Header",
+          "object_id": 42410,
+          "position": [
+            0.0,
+            -50.0
+          ],
+          "size": [
+            385.0,
+            50.0
+          ]
+        },
+        {
+          "start": "0x562DDF",
+          "delta": 3176,
+          "local_id": 3,
+          "name": "Footer",
+          "object_id": 42411,
+          "position": [
+            50.0,
+            0.0
+          ],
+          "size": [
+            285.0,
+            50.0
+          ]
+        },
+        {
+          "start": "0x562EA3",
+          "delta": 3372,
+          "local_id": 3,
+          "name": "DIALOG_PANEL_CORNER_20",
+          "object_id": 42412,
+          "position": [
+            -50.0,
+            0.0
+          ],
+          "size": [
+            50.0,
+            50.0
+          ]
+        },
+        {
+          "start": "0x562F77",
+          "delta": 3584,
+          "local_id": 3,
+          "name": "DIALOG_PANEL_CORNER_20",
+          "object_id": 42413,
+          "position": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            50.0,
+            50.0
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "VM-CustomRace-TrackAndVehicleSelection-TrackEx-PreviewTrack_Length",
+      "reference_offset": "0xB51B69",
+      "nearest_text_records": [
+        {
+          "ordinal": 5578,
+          "start": "0xB4942A",
+          "local_id": 4,
+          "object_id": 115987,
+          "position": [
+            52.0,
+            0.0
+          ],
+          "size": [
+            85.0,
+            50.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "010200000000000000000000",
+          "text_reference": "",
+          "font": "GUI\\kr09_font_heading_bold.bfont",
+          "flags": "0x00000009"
+        },
+        {
+          "ordinal": 5579,
+          "start": "0xB49B88",
+          "local_id": 4,
+          "object_id": 115996,
+          "position": [
+            52.0,
+            0.0
+          ],
+          "size": [
+            85.0,
+            50.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "010200000000000000000000",
+          "text_reference": "",
+          "font": "GUI\\kr09_font_heading_bold.bfont",
+          "flags": "0x00000009"
+        },
+        {
+          "ordinal": 5580,
+          "start": "0xB49F9F",
+          "local_id": 4,
+          "object_id": 116001,
+          "position": [
+            52.0,
+            0.0
+          ],
+          "size": [
+            85.0,
+            50.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "010200000000000000000000",
+          "text_reference": "",
+          "font": "GUI\\kr09_font_heading_bold.bfont",
+          "flags": "0x00000009"
+        },
+        {
+          "ordinal": 5581,
+          "start": "0xB4AA74",
+          "local_id": 4,
+          "object_id": 116015,
+          "position": [
+            -28.0,
+            11.0
+          ],
+          "size": [
+            0.10000000149011612,
+            0.10000000149011612
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "510200000000000000000000",
+          "text_reference": "",
+          "font": "gui\\kr09_font_heading.bfont",
+          "flags": "0x00000000"
+        },
+        {
+          "ordinal": 5582,
+          "start": "0xB4AB5D",
+          "local_id": 4,
+          "object_id": 116016,
+          "position": [
+            -21.899999618530273,
+            11.0
+          ],
+          "size": [
+            8.0,
+            26.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "510200000000000000000000",
+          "text_reference": "",
+          "font": "gui\\kr09_font_heading.bfont",
+          "flags": "0x00000000"
+        },
+        {
+          "ordinal": 5583,
+          "start": "0xB4AC4C",
+          "local_id": 4,
+          "object_id": 116018,
+          "position": [
+            -8.899999618530273,
+            11.0
+          ],
+          "size": [
+            256.0,
+            26.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "510200000000000000000000",
+          "text_reference": "VM-CustomRace-TrackAndVehicleSelection-VehicleFullName",
+          "font": "gui\\kr09_font_heading.bfont",
+          "flags": "0x00000000"
+        },
+        {
+          "ordinal": 5584,
+          "start": "0xB4AD93",
+          "local_id": 4,
+          "object_id": 116037,
+          "position": [
+            -28.0,
+            0.0
+          ],
+          "size": [
+            1080.0,
+            50.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "010200000000000000000000",
+          "text_reference": "VM-CustomRace-TrackAndVehicleSelection-VehicleFullName",
+          "font": "gui\\kr09_font_heading_bold.bfont",
+          "flags": "0x00000009"
+        },
+        {
+          "ordinal": 5585,
+          "start": "0xB4B693",
+          "local_id": 4,
+          "object_id": 116066,
+          "position": [
+            -28.0,
+            11.0
+          ],
+          "size": [
+            0.10000000149011612,
+            0.10000000149011612
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "510200000000000000000000",
+          "text_reference": "",
+          "font": "gui\\kr09_font_heading.bfont",
+          "flags": "0x00000000"
+        },
+        {
+          "ordinal": 5586,
+          "start": "0xB4B782",
+          "local_id": 4,
+          "object_id": 116067,
+          "position": [
+            -21.899999618530273,
+            11.0
+          ],
+          "size": [
+            8.0,
+            26.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "510200000000000000000000",
+          "text_reference": "",
+          "font": "gui\\kr09_font_heading.bfont",
+          "flags": "0x00000000"
+        },
+        {
+          "ordinal": 5587,
+          "start": "0xB4B877",
+          "local_id": 4,
+          "object_id": 116069,
+          "position": [
+            -8.899999618530273,
+            11.0
+          ],
+          "size": [
+            256.0,
+            26.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "510200000000000000000000",
+          "text_reference": "VM-CustomRace-TrackAndVehicleSelection-VehicleFullName",
+          "font": "gui\\kr09_font_heading.bfont",
+          "flags": "0x00000000"
+        },
+        {
+          "ordinal": 5588,
+          "start": "0xB4B9C4",
+          "local_id": 4,
+          "object_id": 116088,
+          "position": [
+            -28.0,
+            0.0
+          ],
+          "size": [
+            1080.0,
+            50.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "010200000000000000000000",
+          "text_reference": "VM-CustomRace-TrackAndVehicleSelection-VehicleFullName",
+          "font": "gui\\kr09_font_heading_bold.bfont",
+          "flags": "0x00000009"
+        },
+        {
+          "ordinal": 5589,
+          "start": "0xB5020D",
+          "local_id": 4,
+          "object_id": 116325,
+          "position": [
+            -28.0,
+            11.0
+          ],
+          "size": [
+            0.10000000149011612,
+            0.10000000149011612
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "110200000000000000000000",
+          "text_reference": "",
+          "font": "gui\\kr09_font_heading.bfont",
+          "flags": "0x00000000"
+        },
+        {
+          "ordinal": 5590,
+          "start": "0xB502F6",
+          "local_id": 4,
+          "object_id": 116326,
+          "position": [
+            49.0,
+            11.0
+          ],
+          "size": [
+            8.0,
+            26.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "110200000000000000000000",
+          "text_reference": "",
+          "font": "gui\\kr09_font_heading.bfont",
+          "flags": "0x00000000"
+        },
+        {
+          "ordinal": 5591,
+          "start": "0xB503E5",
+          "local_id": 4,
+          "object_id": 116328,
+          "position": [
+            -28.0,
+            0.0
+          ],
+          "size": [
+            550.0,
+            50.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "010200000000000000000000",
+          "text_reference": "VM-CustomRace-TrackAndVehicleSelection-TrackEx-PreviewTrack_Name",
+          "font": "gui\\kr09_font_heading_bold.bfont",
+          "flags": "0x00000009"
+        },
+        {
+          "ordinal": 5592,
+          "start": "0xB50CF7",
+          "local_id": 4,
+          "object_id": 116368,
+          "position": [
+            -28.0,
+            11.0
+          ],
+          "size": [
+            0.10000000149011612,
+            0.10000000149011612
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "110200000000000000000000",
+          "text_reference": "",
+          "font": "gui\\kr09_font_heading.bfont",
+          "flags": "0x00000000"
+        },
+        {
+          "ordinal": 5593,
+          "start": "0xB50DE6",
+          "local_id": 4,
+          "object_id": 116369,
+          "position": [
+            49.0,
+            11.0
+          ],
+          "size": [
+            8.0,
+            26.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "110200000000000000000000",
+          "text_reference": "",
+          "font": "gui\\kr09_font_heading.bfont",
+          "flags": "0x00000000"
+        },
+        {
+          "ordinal": 5594,
+          "start": "0xB50EDB",
+          "local_id": 4,
+          "object_id": 116371,
+          "position": [
+            -28.0,
+            0.0
+          ],
+          "size": [
+            550.0,
+            50.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "010200000000000000000000",
+          "text_reference": "VM-CustomRace-TrackAndVehicleSelection-TrackEx-PreviewTrack_Name",
+          "font": "gui\\kr09_font_heading_bold.bfont",
+          "flags": "0x00000009"
+        },
+        {
+          "ordinal": 5595,
+          "start": "0xB52C2E",
+          "local_id": 4,
+          "object_id": 116465,
+          "position": [
+            -28.0,
+            0.0
+          ],
+          "size": [
+            1080.0,
+            50.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "010200000000000000000000",
+          "text_reference": "",
+          "font": "gui\\kr09_font_heading_bold.bfont",
+          "flags": "0x00000009"
+        },
+        {
+          "ordinal": 5596,
+          "start": "0xB533BB",
+          "local_id": 4,
+          "object_id": 116475,
+          "position": [
+            -28.0,
+            0.0
+          ],
+          "size": [
+            1080.0,
+            50.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "010200000000000000000000",
+          "text_reference": "",
+          "font": "gui\\kr09_font_heading_bold.bfont",
+          "flags": "0x00000009"
+        },
+        {
+          "ordinal": 5597,
+          "start": "0xB5AA5D",
+          "local_id": 4,
+          "object_id": 117048,
+          "position": [
+            56.0,
+            120.0
+          ],
+          "size": [
+            53.0,
+            26.0
+          ],
+          "clip_rect": [
+            -1000.0,
+            -1000.0,
+            1000.0,
+            1000.0
+          ],
+          "alignment_style_raw": "110200000000000000000000",
+          "text_reference": "",
+          "font": "gui\\kr09_font_heading.bfont",
+          "flags": "0x00000000"
+        }
+      ],
+      "nearest_named_nodes": [
+        {
+          "start": "0xB50DE6",
+          "delta": -3459,
+          "local_id": 4,
+          "name": "Text",
+          "object_id": 116369,
+          "position": [
+            49.0,
+            11.0
+          ],
+          "size": [
+            8.0,
+            26.0
+          ]
+        },
+        {
+          "start": "0xB50EDB",
+          "delta": -3214,
+          "local_id": 4,
+          "name": "Text",
+          "object_id": 116371,
+          "position": [
+            -28.0,
+            0.0
+          ],
+          "size": [
+            550.0,
+            50.0
+          ]
+        },
+        {
+          "start": "0xB5104B",
+          "delta": -2846,
+          "local_id": 3,
+          "name": "VehicleRender",
+          "object_id": 116401,
+          "position": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            620.0,
+            348.0
+          ]
+        },
+        {
+          "start": "0xB5114E",
+          "delta": -2587,
+          "local_id": 3,
+          "name": "DataPanel",
+          "object_id": 116402,
+          "position": [
+            0.0,
+            -275.0
+          ],
+          "size": [
+            620.0,
+            139.0
+          ]
+        },
+        {
+          "start": "0xB51215",
+          "delta": -2388,
+          "local_id": 3,
+          "name": "DataList",
+          "object_id": 116403,
+          "position": [
+            0.0,
+            -275.0
+          ],
+          "size": [
+            1150.0,
+            166.0
+          ]
+        },
+        {
+          "start": "0xB51306",
+          "delta": -2147,
+          "local_id": 3,
+          "name": "Column",
+          "object_id": 116404,
+          "position": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            405.0,
+            160.0
+          ]
+        },
+        {
+          "start": "0xB513CA",
+          "delta": -1951,
+          "local_id": 3,
+          "name": "DataRow",
+          "object_id": 116405,
+          "position": [
+            0.0,
+            9.0
+          ],
+          "size": [
+            405.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0xB5148F",
+          "delta": -1754,
+          "local_id": 4,
+          "name": "Label",
+          "object_id": 116406,
+          "position": [
+            20.0,
+            0.0
+          ],
+          "size": [
+            185.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0xB51579",
+          "delta": -1520,
+          "local_id": 4,
+          "name": "Value",
+          "object_id": 116407,
+          "position": [
+            210.0,
+            0.0
+          ],
+          "size": [
+            210.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0xB516CD",
+          "delta": -1180,
+          "local_id": 3,
+          "name": "DataRow",
+          "object_id": 116424,
+          "position": [
+            0.0,
+            29.0
+          ],
+          "size": [
+            405.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0xB51792",
+          "delta": -983,
+          "local_id": 4,
+          "name": "Label",
+          "object_id": 116425,
+          "position": [
+            20.0,
+            0.0
+          ],
+          "size": [
+            185.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0xB5187C",
+          "delta": -749,
+          "local_id": 4,
+          "name": "Value",
+          "object_id": 116426,
+          "position": [
+            210.0,
+            0.0
+          ],
+          "size": [
+            210.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0xB51970",
+          "delta": -505,
+          "local_id": 3,
+          "name": "DataRow",
+          "object_id": 116430,
+          "position": [
+            0.0,
+            49.0
+          ],
+          "size": [
+            405.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0xB51A35",
+          "delta": -308,
+          "local_id": 4,
+          "name": "Label",
+          "object_id": 116431,
+          "position": [
+            20.0,
+            0.0
+          ],
+          "size": [
+            185.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0xB51B1F",
+          "delta": -74,
+          "local_id": 4,
+          "name": "Value",
+          "object_id": 116432,
+          "position": [
+            210.0,
+            0.0
+          ],
+          "size": [
+            210.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0xB51C5B",
+          "delta": 242,
+          "local_id": 3,
+          "name": "DataRow",
+          "object_id": 116439,
+          "position": [
+            0.0,
+            69.0
+          ],
+          "size": [
+            405.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0xB51D20",
+          "delta": 439,
+          "local_id": 4,
+          "name": "Label",
+          "object_id": 116440,
+          "position": [
+            20.0,
+            0.0
+          ],
+          "size": [
+            185.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0xB51E0A",
+          "delta": 673,
+          "local_id": 4,
+          "name": "Value",
+          "object_id": 116441,
+          "position": [
+            210.0,
+            0.0
+          ],
+          "size": [
+            210.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0xB51F44",
+          "delta": 987,
+          "local_id": 3,
+          "name": "DataRow",
+          "object_id": 116446,
+          "position": [
+            0.0,
+            89.0
+          ],
+          "size": [
+            405.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0xB52009",
+          "delta": 1184,
+          "local_id": 4,
+          "name": "Label",
+          "object_id": 116447,
+          "position": [
+            20.0,
+            0.0
+          ],
+          "size": [
+            185.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0xB520F3",
+          "delta": 1418,
+          "local_id": 4,
+          "name": "Value",
+          "object_id": 116448,
+          "position": [
+            210.0,
+            0.0
+          ],
+          "size": [
+            210.0,
+            22.0
+          ]
+        },
+        {
+          "start": "0xB52231",
+          "delta": 1736,
+          "local_id": 3,
+          "name": "VehicleRender",
+          "object_id": 116453,
+          "position": [
+            205.0,
+            56.0
+          ],
+          "size": [
+            210.0,
+            210.0
+          ]
+        },
+        {
+          "start": "0xB52332",
+          "delta": 1993,
+          "local_id": 3,
+          "name": "Logo",
+          "object_id": 116454,
+          "position": [
+            490.0,
+            292.0
+          ],
+          "size": [
+            102.0,
+            102.0
+          ]
+        },
+        {
+          "start": "0xB5242C",
+          "delta": 2243,
+          "local_id": 6,
+          "name": "SessionSettings",
+          "object_id": 116455,
+          "position": [
+            0.0,
+            435.0
+          ],
+          "size": [
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "start": "0xB52501",
+          "delta": 2456,
+          "local_id": 7,
+          "name": "Selected",
+          "object_id": 116456,
+          "position": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "start": "0xB5255B",
+          "delta": 2546,
+          "local_id": 3,
+          "name": "MenuItem",
+          "object_id": 116457,
+          "position": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            1485.0,
+            285.0
+          ]
+        },
+        {
+          "start": "0xB52621",
+          "delta": 2744,
+          "local_id": 3,
+          "name": "Panel",
+          "object_id": 116458,
+          "position": [
+            0.0,
+            50.0
+          ],
+          "size": [
+            1485.0,
+            70.0
+          ]
+        },
+        {
+          "start": "0xB526E4",
+          "delta": 2939,
+          "local_id": 3,
+          "name": "Header",
+          "object_id": 116459,
+          "position": [
+            0.0,
+            -50.0
+          ],
+          "size": [
+            1485.0,
+            50.0
+          ]
+        },
+        {
+          "start": "0xB527C8",
+          "delta": 3167,
+          "local_id": 3,
+          "name": "Footer",
+          "object_id": 116460,
+          "position": [
+            50.0,
+            0.0
+          ],
+          "size": [
+            1385.0,
+            50.0
+          ]
+        },
+        {
+          "start": "0xB5288C",
+          "delta": 3363,
+          "local_id": 3,
+          "name": "DIALOG_PANEL_CORNER_20",
+          "object_id": 116461,
+          "position": [
+            -50.0,
+            0.0
+          ],
+          "size": [
+            50.0,
+            50.0
+          ]
+        }
+      ]
+    }
+  ]
+}

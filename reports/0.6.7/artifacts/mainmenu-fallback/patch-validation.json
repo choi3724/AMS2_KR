@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "source_entry": "AMS2 한국어 패치 CB 0.6.6/payload/direct/gui/menu_mainmenu_1_6.bgui",
+  "source_sha256": "34EFB86CF7DBFA7E4C657D75EA20193BABA528CA86B2C54F1256140782489653",
+  "output_sha256": "1903023E097EEE1DE04E9F7C3D6AC01B762CA4E2F2BFDC15D9E72F3464F9F948",
+  "source_size": 14410685,
+  "output_size": 14410685,
+  "changed_byte_count": 8,
+  "change": {
+    "old": "제한 셋업",
+    "new": "셋업 제한",
+    "count": 1
+  },
+  "v067_experimental_object_renames_retained": false
+}

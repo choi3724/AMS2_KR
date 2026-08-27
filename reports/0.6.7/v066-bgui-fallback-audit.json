@@ -1,0 +1,776 @@
+{
+  "schema": "ams2-kr-067-v066-bgui-fallback-audit-v1",
+  "status": "PASS",
+  "scope": "All Korean values changed by 0.6.6 in game.tdb/general.tdb, searched byte-exact in every live BGUI",
+  "changed_record_count": 26,
+  "candidate_stale_fallback_count": 3,
+  "technical_identifier_count": 3,
+  "unresolved_visible_fallback_count": 0,
+  "candidates": [
+    {
+      "source_file": "text/general.tdb",
+      "index": 448,
+      "key": "General_TrackDetails_USA",
+      "v065": "USA",
+      "v066": "미국",
+      "old_value_bgui_hits": [
+        {
+          "file": "GUI\\display_camaro_nascar.bgui",
+          "encoding": "utf-8",
+          "count": 3,
+          "offsets": [
+            "0x662A",
+            "0x9929",
+            "0xD213"
+          ],
+          "contexts": [
+            "� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �? ��� �? \u0003 \u0013STOCKUSAPITSPEEDBAR?VE;� �@ �A �B @B z� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �?",
+            "� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �? ��� �? \u0003 \u0013STOCKUSAPITSPEEDBAR?VE; \u0001 �@ �A �B @B z� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �?",
+            "� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �? ��� �? \u0003 \u0013STOCKUSAPITSPEEDBAR?VE;C\u0001 �@ �A �B @B z� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �?"
+          ]
+        },
+        {
+          "file": "GUI\\display_stock_usa_gen3.bgui",
+          "encoding": "utf-8",
+          "count": 3,
+          "offsets": [
+            "0x663F",
+            "0xE89F",
+            "0x121E5"
+          ],
+          "contexts": [
+            "� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �? ��� �? \u0003 \u0013STOCKUSAPITSPEEDBAR?VE;� �@ �A �B @B z� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �?",
+            "� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �? ��� �? \u0003 \u0013STOCKUSAPITSPEEDBAR?VE;f\u0001 �@ �A �B @B z� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �?",
+            "� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �? ��� �? \u0003 \u0013STOCKUSAPITSPEEDBAR?VE;�\u0001 �@ �A �B @B z� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �?"
+          ]
+        },
+        {
+          "file": "GUI\\menu_ingamemenu_1_6.bgui",
+          "encoding": "utf-16le",
+          "count": 1,
+          "offsets": [
+            "0x9319F4"
+          ],
+          "contexts": [
+            "㾀 㾀 ￿￿ 㾀 \u0001 \u0004 嘅污敵䖊ᜃ䤋\u0002 䇀 䌠 䇐 쑺 쑺 䑺 䑺ȃ ￿￿嘿ⵍ潌扢⵹牔捡䅫摮敖楨汣卥汥捥楴湯吭慲正硅倭敲楶睥牔捡彫潌慣楴湯瘒큔 期極歜ㅲ弳潦瑮獟慴摮牡彤㌱戮潦瑮Ј ꏿꎣ 㾀 㾀 \u0005 _USA_ \u0006 嘇桥捩敬筺䤤\u0002 䌯 㾀 㾀 쑺 쑺 䑺 䑺ȃ ￿￿ഀ䧑½ ＀ ؀ ̀ ጀ潬扢役汢捯彫楣捲極띴壶▒ɉ 뎀C倀C 稀Ä稀Ä稀D稀̈́\u0002 ＀￿ÿ턍뵉 \u0001 愔獭弲慭湩敭畮〰⸹摤s렀>>㗀? ? ഀ浡㉳浟楡浮湥ᱵ統ፖ潬扢役汢捯彫敶楨汣뉥鈔 㾀"
+          ]
+        },
+        {
+          "file": "GUI\\menu_ingamemenu_ams2.bgui",
+          "encoding": "utf-16le",
+          "count": 1,
+          "offsets": [
+            "0x619F1F"
+          ],
+          "contexts": [
+            "耀?耀? ＀￿ÿ耀? Ā Ѐ Ԁ慖畬詥ͅ戗Ź 쀀A C퀀A 稀Ä稀Ä稀D稀̈́\u0002 ＀￿㿿䵖䰭扯祢吭慲正湁噤桥捩敬敓敬瑣潩⵮牔捡䕫⵸牐癥敩呷慲正䱟捯瑡潩ቮ呶Ð ἀ畧屩牫㌱晟湯彴瑳湡慤摲ㅟ⸳晢湯ࡴ\u0004＀ꎣ£ 耀?耀? Ԁ 开唀匀䄀开 ؀ ܀敖楨汣穥㉻篳Ź ⼀C耀?耀? 稀Ä稀Ä稀D稀̈́\u0002 ＀￿ÿ턍뵉 ÿ \u0006 \u0003 氓扯祢扟潬正损物畣瑩鉘祼\u0001 耀䎳 䍐 쑺 쑺 䑺 䑺ȃ ￿￿ഀ䧑½ Ā ᐀浡㉳浟楡浮湥ふ㤰搮獤 㺸 㻸쀀㼵 㼰 愍獭弲慭湩敭畮焜噽氓扯祢扟潬正癟桥捩敬ᒲ龒 耀"
+          ]
+        },
+        {
+          "file": "GUI\\menu_mainmenuams2.bgui",
+          "encoding": "utf-16le",
+          "count": 1,
+          "offsets": [
+            "0x3C7166"
+          ],
+          "contexts": [
+            "㾀 㾀 ￿￿ 㾀 \u0001 \u0004 嘅污敵䖊ᜃ獙 䇀 䌠 䇐 쑺 쑺 䑺 䑺ȃ ￿￿嘿ⵍ潌扢⵹牔捡䅫摮敖楨汣卥汥捥楴湯吭慲正硅倭敲楶睥牔捡彫潌慣楴湯瘒큔 期極歜ㅲ弳潦瑮獟慴摮牡彤㌱戮潦瑮Ј ꏿꎣ 㾀 㾀 \u0005 _USA_ \u0006 嘇桥捩敬筺獲 䌯 㾀 㾀 쑺 쑺 䑺 䑺ȃ ￿￿嘶ⵍ潌扢⵹牔捡䅫摮敖楨汣卥汥捥楴湯嘭桥捩敬湉敤⵸湅扡敬鱤䚭ě Ā Ȁ 턍뵉 \u0001 䄞瑣癩瑡⁥敖楨汣⁥敓敬瑣䐠慩潬ꅧ鑫Ö \u0001 ＀ ؀ ̀ ጀ潬扢役汢捯彫楣捲極띴壶玒s 뎀C倀C 稀Ä稀Ä稀"
+          ]
+        }
+      ],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": true,
+      "review": {
+        "classification": "TECHNICAL_IDENTIFIER",
+        "reason": "Only _USA_ view-model tokens and STOCKUSA vehicle-display identifiers; not visible country fallback text."
+      }
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 451,
+      "key": "General_TrackDetails_Japan",
+      "v065": "Japan",
+      "v066": "일본",
+      "old_value_bgui_hits": [
+        {
+          "file": "GUI\\menu_splash_load.bgui",
+          "encoding": "utf-8",
+          "count": 2,
+          "offsets": [
+            "0x671",
+            "0x102B"
+          ],
+          "contexts": [
+            "\u0013ams2_buttons000.dds �> �> �#? �> ams2_buttons\u0005G��\bbtn-backveJ� �? �? ���� �? \u0004 \u0010JapaneseBootFlow�B`� A\u0002 \u0004 \u0004 \u0003 JP-antipiracy�-�� �D �D z� z� zD zD\u000f\u0002 \u000f ���� \u0001 \u0011JP-antipiracy.dds",
+            "D zD \u0002 \u000f ���� \u0001 \u0011JP-antipiracy.dds �? �? �? �? ��� �? \u0013JapaneseBootFlowXB1$��m \u0004B\u0002 \u0003 \u0003 \u0003 SplashScreenQ%� �D �D z� z� zD zD\u000f\u0002 \u000f ! ���� \u0001 �? �?"
+          ]
+        }
+      ],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": true,
+      "review": {
+        "classification": "TECHNICAL_IDENTIFIER",
+        "reason": "Only JapaneseBootFlow and JP-antipiracy resource identifiers; not visible country fallback text."
+      }
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 611,
+      "key": "General_TrackDetails_Rallycross",
+      "v065": "Rallycross",
+      "v066": "랠리크로스",
+      "old_value_bgui_hits": [
+        {
+          "file": "GUI\\menu_ingamemenu_1_6.bgui",
+          "encoding": "utf-8",
+          "count": 2,
+          "offsets": [
+            "0x3650ED",
+            "0x4173EA"
+          ],
+          "contexts": [
+            "#gui\\kr08_font_data_list_value.bfont\b\u0004 �����U{� �? �? !ams2_font_data_list_value_DEFAULTvK/[\u0014Data List Label Text \u0003 \u0016RallycrossResultsTable��LJe� �? �? z� z� zD zD\u0003 ���� �I� \u0001 �? �? �? �?",
+            "#gui\\kr08_font_data_list_value.bfont\b\u0004 �����U{� �? �? !ams2_font_data_list_value_DEFAULTvK/[\u0014Data List Label Text \u0003 \u0016RallycrossResultsTable��LJ�/\u0001 �? �? z� z� zD zD\u0013 ���� �I� \u0001 �? �? �? �?"
+          ]
+        },
+        {
+          "file": "GUI\\menu_ingamemenu_ams2.bgui",
+          "encoding": "utf-8",
+          "count": 1,
+          "offsets": [
+            "0x7C06C8"
+          ],
+          "contexts": [
+            "z� z� zD zD\u0003\u0002 \u0003 ���� �I� \u0001 �? �? �? �? ��� �? \u0001 \u0005 \u0011RallycrossTabMenu�n�9k�\u0001 �C �D ,B z� z� zD zD\u0003 \u0003 ���� �I� \u0005\u001a ) �C\u0002 �? �? \u0005 \u0006 HighlightsTab�#`�l�\u0001 �C ,B"
+          ]
+        }
+      ],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": true,
+      "review": {
+        "classification": "TECHNICAL_IDENTIFIER",
+        "reason": "Only RallycrossResultsTable and RallycrossTabMenu object identifiers; not visible localized label text."
+      }
+    }
+  ],
+  "all_changed_records": [
+    {
+      "source_file": "text/game.tdb",
+      "index": 529,
+      "key": "Game_MainMenu_Time2",
+      "v065": "타임",
+      "v066": "차량 운행 시간",
+      "old_value_bgui_hits": [],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": false
+    },
+    {
+      "source_file": "text/game.tdb",
+      "index": 2688,
+      "key": "Game_TimeDateCurrency_PlayTimeFormatDDHHMM",
+      "v065": "[DD]일 [HH]시 [MM]분",
+      "v066": "[DD]일 [HH]시간 [MM]분",
+      "old_value_bgui_hits": [],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": false
+    },
+    {
+      "source_file": "text/game.tdb",
+      "index": 2689,
+      "key": "Game_TimeDateCurrency_PlayTimeFormatHHMM",
+      "v065": "[HH]시 [MM]분",
+      "v066": "[HH]시간 [MM]분",
+      "old_value_bgui_hits": [],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": false
+    },
+    {
+      "source_file": "text/game.tdb",
+      "index": 2690,
+      "key": "Game_TimeDateCurrency_DistanceKMFormat",
+      "v065": "[DISTANCE] KM",
+      "v066": "[DISTANCE] 킬로미터",
+      "old_value_bgui_hits": [],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": false
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 33,
+      "key": "General_TimeDateCurrency_PlayTimeFormatDDHHMM",
+      "v065": "[DD]일 [HH]시 [MM]분",
+      "v066": "[DD]일 [HH]시간 [MM]분",
+      "old_value_bgui_hits": [],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": false
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 34,
+      "key": "General_TimeDateCurrency_PlayTimeFormatHHMM",
+      "v065": "[HH]시 [MM]분",
+      "v066": "[HH]시간 [MM]분",
+      "old_value_bgui_hits": [],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": false
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 36,
+      "key": "General_TimeDateCurrency_DistanceKMFormat",
+      "v065": "[DISTANCE] KM",
+      "v066": "[DISTANCE] 킬로미터",
+      "old_value_bgui_hits": [],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": false
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 351,
+      "key": "General_TrackDetails_Belgium",
+      "v065": "Belgium",
+      "v066": "벨기에",
+      "old_value_bgui_hits": [],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": false
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 352,
+      "key": "General_TrackDetails_Circuit",
+      "v065": "Circuit",
+      "v066": "서킷",
+      "old_value_bgui_hits": [
+        {
+          "file": "GUI\\menu_dialogbox.bgui",
+          "encoding": "utf-16le",
+          "count": 34,
+          "offsets": [
+            "0x3D719",
+            "0x3DC66",
+            "0x3E4D7",
+            "0x445AD",
+            "0x44AFD",
+            "0x45373",
+            "0x16181C",
+            "0x1621F3",
+            "0x162BCA",
+            "0x1635A1",
+            "0x163F78",
+            "0x16494F",
+            "0x165326",
+            "0x165CFD",
+            "0x1666D4",
+            "0x1670AB",
+            "0x167A82",
+            "0x168459",
+            "0x168E30",
+            "0x169807"
+          ],
+          "contexts": [
+            "? ＀￿ÿ耀? Ѐ ᄀ牔捡ㅫ慎敭灁汰湩絫鯕\u0006 ꀀB㐀Â쎀C저A 稀Ä稀Ä稀D稀ń\u0002 \u0001 ＀￿⯿牄癩牥丠瑥潷歲䰠捯污䘠癡畯楲整吠慲正ㄠ丠浡忝5 ⌀畧屩牫㌱灟潨湥硩扟摯役敲畧慬⹲晢湯t ＀�ð 耀?耀? ⌀潦瑮灟潨湥硩晟潯湴瑯彥敲畧慬彲楬桧楴鿚ԡ桗瑩❥ 䌀椀爀挀甀椀琀 搀攀 䈀愀爀挀攀氀漀渀愀ⴀ䌀愀琀愀氀甀渀礀愀 一愀琀椀漀渀愀氀 ̀ ఀ牔捡㉫潈摬牥껡ۀ 䊀 䍐 䐸 䊠 쑺 쑺 䑺 䑺ȃ ̀ ￿￿䐮楲敶⁲敎睴牯⁫潌慣⁬慆潶牵瑩⁥牔捡⁫′楖楳汢䩮i Ā 㾀 㾀 耀?耀? ￿ÿ耀? Ā ̀",
+            "㾀 㾀 샿 㾀 \u0004 向慲正串浡䅥灰楬歮᯵筛ۆ 䈀 뾀 䎠 䇨 쑺 쑺 䑺 䑺ȁ Ā ￿￿䐫楲敶⁲敎睴牯⁫潌慣⁬慆潶牵瑩⁥牔捡⁫′慎敭� 朡極歜ㅲ弳桰敯楮彸潢祤江牡敧戮潦瑮\b ÿ 㾀 㾀 昜湯彴桰敯楮彸潢祤江牡敧摟牡繫◓' Circuit de Barcelona-Catalunya National \u0004 吗慲正吲浩健慬敹䅤灰楬歮㯪﯏۫ 䌀 뾀 䋠 䇨 쑺 쑺 䑺 䑺Ȅ Ѐ ￿￿䐶楲敶⁲敎睴牯⁫潌慣⁬慆潶牵瑩⁥牔捡⁫′敍牴捩倠潲牧獥�ёÒ ℀畧屩牫㌱灟潨湥硩扟摯役慬杲⹥晢湯ࡴ ＀ 耀?耀? ᰀ潦瑮灟潨湥",
+            "耀?耀? ＀�ð耀? Ѐ ᄀ牔捡㍫慎敭灁汰湩ᮾ\u0006 耀A耀¿ꀀCA 稀Ä稀Ä稀D稀ń\u0002 \u0001 ＀￿⯿牄癩牥丠瑥潷歲䰠捯污䘠癡畯楲整吠慲正㌠丠浡\u0018 ℀畧屩牫㌱灟潨湥硩扟摯役慬杲⹥晢湯ࡴ ＀ 耀?耀? ᰀ潦瑮灟潨湥硩扟摯役慬杲彥慤歲퍾踥✀ 䌀椀爀挀甀椀琀 搀攀 䈀愀爀挀攀氀漀渀愀ⴀ䌀愀琀愀氀甀渀礀愀 一愀琀椀漀渀愀氀 Ѐ ᜀ牔捡㍫楔敭汐祡摥灁汰湩湫㶁ᯞ\u0007 C耀¿BA 稀Ä稀Ä稀D稀ф\u0002 \u0004 ＀￿㛿牄癩牥丠瑥潷歲䰠捯污䘠癡畯楲整吠慲正㌠䴠瑥楲⁣牐杯敲獳먠 朡極歜ㅲ弳桰敯楮彸潢祤江牡敧戮潦瑮\b ÿ 㾀 㾀 昜湯彴桰敯",
+            "￿￿ 㾀 \u0004 向慲正丱浡䅥灰楬歮헣࠰ 䊠 숴耀䏃 䇈 쑺 쑺 䑺 䑺ȁ Ā ￿￿䐬楲敶⁲敎睴牯⁫敒潭整䘠癡畯楲整吠慲正ㄠ丠浡콥謙 ⌀畧屩牫㌱灟潨湥硩扟摯役敲畧慬⹲晢湯t ＀�ð 耀?耀? ⌀潦瑮灟潨湥硩晟潯湴瑯彥敲畧慬彲楬桧楴鿚ԡ桗瑩❥ 䌀椀爀挀甀椀琀 搀攀 䈀愀爀挀攀氀漀渀愀ⴀ䌀愀琀愀氀甀渀礀愀 一愀琀椀漀渀愀氀 ̀ ఀ牔捡㉫潈摬牥껡ࡕ 䊀 䍐 䐸 䊠 쑺 쑺 䑺 䑺ȃ ̀ ￿￿䐯楲敶⁲敎睴牯⁫敒潭整䘠癡畯楲整吠慲正㈠嘠獩扩敬䰾횰 \u0001 耀?耀? 㾀 㾀 ＀￿ 㾀 \u0001 \u0003",
+            "㾀 㾀 샿 㾀 \u0004 向慲正串浡䅥灰楬歮᯵筛࡛ 䈀 뾀 䎠 䇨 쑺 쑺 䑺 䑺ȁ Ā ￿￿䐬楲敶⁲敎睴牯⁫敒潭整䘠癡畯楲整吠慲正㈠丠浡홥ẄE ℀畧屩牫㌱灟潨湥硩扟摯役慬杲⹥晢湯ࡴ ＀ 耀?耀? ᰀ潦瑮灟潨湥硩扟摯役慬杲彥慤歲퍾踥✀ 䌀椀爀挀甀椀琀 搀攀 䈀愀爀挀攀氀漀渀愀ⴀ䌀愀琀愀氀甀渀礀愀 一愀琀椀漀渀愀氀 Ѐ ᜀ牔捡㉫楔敭汐祡摥灁汰湩켻胻\b C耀¿BA 稀Ä稀Ä稀D稀ф\u0002 \u0004 ＀￿㟿牄癩牥丠瑥潷歲删浥瑯⁥慆潶牵瑩⁥牔捡⁫′敍牴捩倠潲牧獥詳๗\u001a ℀畧屩牫㌱灟潨湥硩扟摯役慬杲⹥晢湯ࡴ ＀ 耀?耀? ᰀ潦瑮灟潨"
+          ]
+        },
+        {
+          "file": "GUI\\menu_dialogbox_frontendonly_1_6.bgui",
+          "encoding": "utf-8",
+          "count": 1,
+          "offsets": [
+            "0x5EB41D"
+          ],
+          "contexts": [
+            "dicons_1_6000.dds \\> �> �> �> \u0013buttonsandicons_1_6��ߪ PADLOCK_ICONE�� �? �? ���� �? \u0003 CircuitInfo�rN|�� ��C >C ��C |C z� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �? ��"
+          ]
+        },
+        {
+          "file": "GUI\\menu_dialogbox_frontendonly_1_6.bgui",
+          "encoding": "utf-16le",
+          "count": 3,
+          "offsets": [
+            "0x1DA189",
+            "0x1DB63F",
+            "0x6B51F0"
+          ],
+          "contexts": [
+            "湯t ＀￿ÿ 耀?耀? 倏条⁥楔汴⁥敔瑸\u0001 1 \u0004 吉慲正慎敭䨑巔䴱 䌅 䅰耀䐢 䇰 쑺 쑺 䑺 䑺ȁ ￿￿䐫楲敶⁲敎睴牯⁫潌慣⁬慆潶牵瑩⁥牔捡⁫‱慎敭�㕟 朠極歜ひ弹潦瑮桟慥楤杮扟汯⹤晢湯ࡴ ＀￿ÿ 䀀?耀? 倊牵⁥桗瑩❥ 䌀椀爀挀甀椀琀 搀攀 䈀愀爀挀攀氀漀渀愀ⴀ䌀愀琀愀氀甀渀礀愀 一愀琀椀漀渀愀氀 ̀ ऀ牔捡䥫潣浮ῖ嘇M 怀B耀@耀B耀B 稀Ä稀Ä稀D稀̈́\u0002 ＀￿⯿牄癩牥丠瑥潷歲䰠捯污䘠癡畯楲整吠慲正ㄠ䤠潣啮꼌\u0011 Ā 㾀 㾀 耀?耀? ＀￿ÿ耀? ̀ ऀ牔捡",
+            "湯t ＀￿ÿ 耀?耀? 倏条⁥楔汴⁥敔瑸\u0001 3 \u0004 吉慲正慎敭䨑巔䶉 䌅 䅰耀䐢 䇰 쑺 쑺 䑺 䑺ȃ ￿￿䐫楲敶⁲敎睴牯⁫潌慣⁬慆潶牵瑩⁥牔捡⁫″慎敭뷨ᣤ 朠極歜ひ弹潦瑮桟慥楤杮扟汯⹤晢湯ࡴ ＀￿ÿ 䀀?耀? 倊牵⁥桗瑩❥ 䌀椀爀挀甀椀琀 搀攀 䈀愀爀挀攀氀漀渀愀ⴀ䌀愀琀愀氀甀渀礀愀 一愀琀椀漀渀愀氀 ̀ ऀ牔捡䥫潣浮ῖ긇M 怀B耀@耀B耀B 稀Ä稀Ä稀D稀̈́\u0002 ＀￿⯿牄癩牥丠瑥潷歲䰠捯污䘠癡畯楲整吠慲正㌠䤠潣詮䲫 Ā 㾀 㾀 耀?耀? ＀￿ÿ耀? ̀ ऀ牔捡",
+            "㾀 㾀 ￿￿ 㾀 \u0004 向慲正丱浡䅥灰楬歮헣 䊨 䂀 䎹 䇨 쑺 쑺 䑺 䑺ȁ Ā ￿￿䐫楲敶⁲敎睴牯⁫潌慣⁬慆潶牵瑩⁥牔捡⁫‱慎敭�㕟 朡極歜ㅲ弳桰敯楮彸潢祤江牡敧戮潦瑮Ј ÿ 㾀 㾀 昜湯彴桰敯楮彸潢祤江牡敧摟牡繫◓' Circuit de Barcelona-Catalunya National \u0004 吗慲正吱浩健慬敹䅤灰楬歮㐔縆 䌊 䌀 䈐 쑺 쑺 䑺 䑺Ȅ Ѐ ￿￿䐶楲敶⁲敎睴牯⁫潌慣⁬慆潶牵瑩⁥牔捡⁫‱敍牴捩倠潲牧獥ᙳşJ ℀畧屩牫㌱灟潨湥硩扟摯役慬杲⹥晢湯ࡴ\u0004＀ 耀?耀? ᰀ潦瑮灟潨湥"
+          ]
+        },
+        {
+          "file": "GUI\\menu_dialogbox_frontendonly_ams2.bgui",
+          "encoding": "utf-16le",
+          "count": 18,
+          "offsets": [
+            "0x1683CC",
+            "0x16942D",
+            "0x16A48E",
+            "0x16B4EF",
+            "0x16C550",
+            "0x16D5B1",
+            "0x16E612",
+            "0x16F673",
+            "0x1706D4",
+            "0x171735",
+            "0x172796",
+            "0x1737F7",
+            "0x174858",
+            "0x1758B9",
+            "0x1FE4E2",
+            "0x1FFA97",
+            "0x23352B",
+            "0x711860"
+          ],
+          "contexts": [
+            "㾀 㾀 ￿￿ 㾀 \u0004 吐慲正慎敭灁汰湩穫ᔑ吚= 瀀B䀀A螀C頀A 稀Ä稀Ä稀D稀̈́\u0002 \u0003 ＀￿ÿ턍뵉 朤極歜ㅲ弳桰敯楮彸潢祤晟潯湴瑯⹥晢湯t ＀￿ÿ 耀?耀? ⌀潦瑮灟潨湥硩晟潯湴瑯彥敲畧慬彲楬桧楴鿚ਡ畐敲圠楨整' Circuit de Barcelona-Catalunya National \u0003 䐇䍌捉湯榜䤀㵹 䉠 䉠 䈬 쑺 쑺 䑺 䑺ؖ ￿￿ഀ䧑½ Ā 㾀 㾀 耀?耀? ￿ÿ耀? Ȁ ̀ ܀畢䥹潣n墪竗= 䀀A À怀B怀B 稀Ä稀Ä稀",
+            "耀?耀? ＀￿ÿ耀? Ѐ က牔捡乫浡䅥灰楬歮ᅺᨕ㶌 䉰 䅀耀䎇 䆘 쑺 쑺 䑺 䑺ȃ ̀ ￿￿ഀ䧑½ ␀畧屩牫㌱灟潨湥硩扟摯役潦瑯潮整戮潦瑮 ￿￿ 㾀 㾀 昣湯彴桰敯楮彸潦瑯潮整牟来汵牡江杩瑨�↟倊牵⁥桗瑩❥ 䌀椀爀挀甀椀琀 搀攀 䈀愀爀挀攀氀漀渀愀ⴀ䌀愀琀愀氀甀渀礀愀 一愀琀椀漀渀愀氀 ̀ ܀䱄䥃潣鱮i녉= 怀B 怀BⰀB 稀Ä稀Ä稀D稀ᙄ\u0006 ＀￿ÿ턍뵉 \u0001 耀?耀? 㾀 㾀 ＀￿ 㾀 \u0002 \u0003 戇祵捉湯ꨀ흘㶲 䅀 쀀 䉠 䉠 쑺 쑺",
+            "㾀 㾀 ￿￿ 㾀 \u0004 吐慲正慎敭灁汰湩穫ᔑ쐚= 瀀B䀀A螀C頀A 稀Ä稀Ä稀D稀̈́\u0002 \u0003 ＀￿ÿ턍뵉 朤極歜ㅲ弳桰敯楮彸潢祤晟潯湴瑯⹥晢湯t ＀￿ÿ 耀?耀? ⌀潦瑮灟潨湥硩晟潯湴瑯彥敲畧慬彲楬桧楴鿚ਡ畐敲圠楨整' Circuit de Barcelona-Catalunya National \u0003 䐇䍌捉湯榜䤀㷩 䉠 䉠 䈬 쑺 쑺 䑺 䑺ؖ ￿￿ഀ䧑½ Ā 㾀 㾀 耀?耀? ￿ÿ耀? Ȁ ̀ ܀畢䥹潣n墪= 䀀A À怀B怀B 稀Ä稀Ä稀",
+            "耀?耀? ＀￿ÿ耀? Ѐ က牔捡乫浡䅥灰楬歮ᅺᨕ㷼 䉰 䅀耀䎇 䆘 쑺 쑺 䑺 䑺ȃ ̀ ￿￿ഀ䧑½ ␀畧屩牫㌱灟潨湥硩扟摯役潦瑯潮整戮潦瑮 ￿￿ 㾀 㾀 昣湯彴桰敯楮彸潦瑯潮整牟来汵牡江杩瑨�↟倊牵⁥桗瑩❥ 䌀椀爀挀甀椀琀 搀攀 䈀愀爀挀攀氀漀渀愀ⴀ䌀愀琀愀氀甀渀礀愀 一愀琀椀漀渀愀氀 ̀ ܀䱄䥃潣鱮iⅉ> 怀B 怀BⰀB 稀Ä稀Ä稀D稀ᙄ\u0006 ＀￿ÿ턍뵉 \u0001 耀?耀? 㾀 㾀 ＀￿ 㾀 \u0002 \u0003 戇祵捉湯ꨀ흘㸢 䅀 쀀 䉠 䉠 쑺 쑺",
+            "㾀 㾀 ￿￿ 㾀 \u0004 吐慲正慎敭灁汰湩穫ᔑ㐚> 瀀B䀀A螀C頀A 稀Ä稀Ä稀D稀̈́\u0002 \u0003 ＀￿ÿ턍뵉 朤極歜ㅲ弳桰敯楮彸潢祤晟潯湴瑯⹥晢湯t ＀￿ÿ 耀?耀? ⌀潦瑮灟潨湥硩晟潯湴瑯彥敲畧慬彲楬桧楴鿚ਡ畐敲圠楨整' Circuit de Barcelona-Catalunya National \u0003 䐇䍌捉湯榜䤀㹙 䉠 䉠 䈬 쑺 쑺 䑺 䑺ؖ ￿￿ഀ䧑½ Ā 㾀 㾀 耀?耀? ￿ÿ耀? Ȁ ̀ ܀畢䥹潣n墪嫗> 䀀A À怀B怀B 稀Ä稀Ä稀"
+          ]
+        },
+        {
+          "file": "GUI\\menu_dialogbox_gamewide.bgui",
+          "encoding": "utf-16le",
+          "count": 8,
+          "offsets": [
+            "0x28F7A",
+            "0x29C53",
+            "0x2A1A0",
+            "0x2AA11",
+            "0x30648",
+            "0x31327",
+            "0x31877",
+            "0x320ED"
+          ],
+          "contexts": [
+            "昜湯彴桰敯楮彸潢祤江牡敧摟牡繫◓\u0002 69 \u0004 向慲正丱浡䅥灰楬歮헣Ӟ 䋐 뾀 䎠 䈐 쑺 쑺 䑺 䑺ȁ Ā ￿￿䐫楲敶⁲敎睴牯⁫潌慣⁬慆潶牵瑩⁥牔捡⁫‱慎敭�㕟 朡極歜ㅲ弳桰敯楮彸潢祤江牡敧戮潦瑮\b ÿ 㾀 㾀 昜湯彴桰敯楮彸潢祤江牡敧摟牡繫◓' Circuit de Barcelona-Catalunya National \u0003 吒慲正䤱慭敧灁汰湩ū傓͆\u0005 쀀B 耀C C 稀Ä稀Ä稀D稀̈́\u0002 \u0003 ＀￿⳿牄癩牥丠瑥潷歲䰠捯污䘠癡畯楲整吠慲正ㄠ倠潨潴墙 \u0001 耀?耀? 㾀 㾀 ￿￿ 㾀",
+            "? ＀￿ÿ耀? Ѐ ᄀ牔捡ㅫ慎敭灁汰湩絫Ꮥ\u0005 ꀀB㐀Â쎀C저A 稀Ä稀Ä稀D稀ń\u0002 \u0001 ＀￿⯿牄癩牥丠瑥潷歲䰠捯污䘠癡畯楲整吠慲正ㄠ丠浡忝5 ⌀畧屩牫㌱灟潨湥硩扟摯役敲畧慬⹲晢湯t ＀�ð 耀?耀? ⌀潦瑮灟潨湥硩晟潯湴瑯彥敲畧慬彲楬桧楴鿚ԡ桗瑩❥ 䌀椀爀挀甀椀琀 搀攀 䈀愀爀挀攀氀漀渀愀ⴀ䌀愀琀愀氀甀渀礀愀 一愀琀椀漀渀愀氀 ̀ ఀ牔捡㉫潈摬牥껡Ը 䊀 䍐 䐸 䊠 쑺 쑺 䑺 䑺ȃ ̀ ￿￿䐮楲敶⁲敎睴牯⁫潌慣⁬慆潶牵瑩⁥牔捡⁫′楖楳汢䩮i Ā 㾀 㾀 耀?耀? ￿ÿ耀? Ā ̀",
+            "㾀 㾀 샿 㾀 \u0004 向慲正串浡䅥灰楬歮᯵筛Ծ 䈀 뾀 䎠 䇨 쑺 쑺 䑺 䑺ȁ Ā ￿￿䐫楲敶⁲敎睴牯⁫潌慣⁬慆潶牵瑩⁥牔捡⁫′慎敭� 朡極歜ㅲ弳桰敯楮彸潢祤江牡敧戮潦瑮\b ÿ 㾀 㾀 昜湯彴桰敯楮彸潢祤江牡敧摟牡繫◓' Circuit de Barcelona-Catalunya National \u0004 吗慲正吲浩健慬敹䅤灰楬歮㯪﯏գ 䌀 뾀 䋠 䇨 쑺 쑺 䑺 䑺Ȅ Ѐ ￿￿䐶楲敶⁲敎睴牯⁫潌慣⁬慆潶牵瑩⁥牔捡⁫′敍牴捩倠潲牧獥�ёÒ ℀畧屩牫㌱灟潨湥硩扟摯役慬杲⹥晢湯ࡴ ＀ 耀?耀? ᰀ潦瑮灟潨湥",
+            "耀?耀? ＀�ð耀? Ѐ ᄀ牔捡㍫慎敭灁汰湩ᮾ減\u0005 耀A耀¿ꀀCA 稀Ä稀Ä稀D稀ń\u0002 \u0001 ＀￿⯿牄癩牥丠瑥潷歲䰠捯污䘠癡畯楲整吠慲正㌠丠浡\u0018 ℀畧屩牫㌱灟潨湥硩扟摯役慬杲⹥晢湯ࡴ ＀ 耀?耀? ᰀ潦瑮灟潨湥硩扟摯役慬杲彥慤歲퍾踥✀ 䌀椀爀挀甀椀琀 搀攀 䈀愀爀挀攀氀漀渀愀ⴀ䌀愀琀愀氀甀渀礀愀 一愀琀椀漀渀愀氀 Ѐ ᜀ牔捡㍫楔敭汐祡摥灁汰湩湫㶁鏞\u0005 C耀¿BA 稀Ä稀Ä稀D稀ф\u0002 \u0004 ＀￿㛿牄癩牥丠瑥潷歲䰠捯污䘠癡畯楲整吠慲正㌠䴠瑥楲⁣牐杯敲獳먠 朡極歜ㅲ弳桰敯楮彸潢祤江牡敧戮潦瑮\b ÿ 㾀 㾀 昜湯彴桰敯",
+            "ᰀ潦瑮灟潨湥硩扟摯役慬杲彥慤歲퍾踥Ȁ 㘀㤀 Ѐ ᄀ牔捡ㅫ慎敭灁汰湩絫쓕\u0006 퀀B耀¿ꀀCကB 稀Ä稀Ä稀D稀ń\u0002 \u0001 ＀￿⳿牄癩牥丠瑥潷歲删浥瑯⁥慆潶牵瑩⁥牔捡⁫‱慎敭᧏辋 朡極歜ㅲ弳桰敯楮彸潢祤江牡敧戮潦瑮\b ÿ 㾀 㾀 昜湯彴桰敯楮彸潢祤江牡敧摟牡繫◓' Circuit de Barcelona-Catalunya National \u0003 吒慲正䤱慭敧灁汰湩ū傓\u0006 쀀B 耀C C 稀Ä稀Ä稀D稀̈́\u0002 \u0003 ＀￿ⷿ牄癩牥丠瑥潷歲删浥瑯⁥慆潶牵瑩⁥牔捡⁫‱桐瑯큯Õ Ā 㾀 㾀 耀?耀? ＀￿ÿ耀?"
+          ]
+        },
+        {
+          "file": "GUI\\menu_dialogbox_gamewide_1_6.bgui",
+          "encoding": "utf-16le",
+          "count": 8,
+          "offsets": [
+            "0x35E0C",
+            "0x36AD6",
+            "0x37023",
+            "0x37894",
+            "0x3D4AD",
+            "0x3E17D",
+            "0x3E6CD",
+            "0x3EF43"
+          ],
+          "contexts": [
+            "昜湯彴桰敯楮彸潢祤江牡敧摟牡繫◓\u0002 69 \u0004 向慲正丱浡䅥灰楬歮헣׿ 䋐 뾀 䎠 䈐 쑺 쑺 䑺 䑺ȁ Ā ￿￿䐫楲敶⁲敎睴牯⁫潌慣⁬慆潶牵瑩⁥牔捡⁫‱慎敭�㕟 朡極歜ㅲ弳桰敯楮彸潢祤江牡敧戮潦瑮\b ÿ 㾀 㾀 昜湯彴桰敯楮彸潢祤江牡敧摟牡繫◓' Circuit de Barcelona-Catalunya National \u0003 吒慲正䤱慭敧灁汰湩ū傓⑆\u0006 쀀B 耀C C 稀Ä稀Ä稀D稀̈́\u0002 \u0003 ＀￿⳿牄癩牥丠瑥潷歲䰠捯污䘠癡畯楲整吠慲正ㄠ倠潨潴墙 \u0001 耀?耀? 㾀 㾀 ￿￿ 㾀",
+            "?耀? ＀￿ÿ耀? Ѐ ᄀ牔捡ㅫ慎敭灁汰湩絫㓕\u0006 ꀀB㐀Â쎀C저A 稀Ä稀Ä稀D稀ń\u0002 \u0001 ＀￿⯿牄癩牥丠瑥潷歲䰠捯污䘠癡畯楲整吠慲正ㄠ丠浡忝5 ⌀畧屩牫㌱灟潨湥硩扟摯役敲畧慬⹲晢湯t ＀�ð 耀?耀? ⌀潦瑮灟潨湥硩晟潯湴瑯彥敲畧慬彲楬桧楴鿚!' Circuit de Barcelona-Catalunya National \u0003 同慲正䠲汯敤割妮\u0006 耀B倀C㠀DꀀB 稀Ä稀Ä稀D稀̈́\u0002 \u0003 ＀￿⻿牄癩牥丠瑥潷歲䰠捯污䘠癡畯楲整吠慲正㈠嘠獩扩敬滶楊 \u0001 耀?耀? 㾀 㾀 ＀￿ 㾀 \u0001 \u0003",
+            "耀?耀? ＀�ð耀? Ѐ ᄀ牔捡㉫慎敭灁汰湩嬛彻\u0006 B耀¿ꀀCA 稀Ä稀Ä稀D稀ń\u0002 \u0001 ＀￿⯿牄癩牥丠瑥潷歲䰠捯污䘠癡畯楲整吠慲正㈠丠浡慥棸Ú ℀畧屩牫㌱灟潨湥硩扟摯役慬杲⹥晢湯ࡴ ＀ 耀?耀? ᰀ潦瑮灟潨湥硩扟摯役慬杲彥慤歲퍾踥✀ 䌀椀爀挀甀椀琀 搀攀 䈀愀爀挀攀氀漀渀愀ⴀ䌀愀琀愀氀甀渀礀愀 一愀琀椀漀渀愀氀 Ѐ ᜀ牔捡㉫楔敭汐祡摥灁汰湩켻蓻\u0006 C耀¿BA 稀Ä稀Ä稀D稀ф\u0002 \u0004 ＀￿㛿牄癩牥丠瑥潷歲䰠捯污䘠癡畯楲整吠慲正㈠䴠瑥楲⁣牐杯敲獳凘툄 朡極歜ㅲ弳桰敯楮彸潢祤江牡敧戮潦瑮\b ÿ 㾀 㾀 昜湯彴桰敯",
+            "㾀 㾀 샿 㾀 \u0004 向慲正丳浡䅥灰楬歮뻷ᬛڏ 䆀 뾀 䎠 䇨 쑺 쑺 䑺 䑺ȁ Ā ￿￿䐫楲敶⁲敎睴牯⁫潌慣⁬慆潶牵瑩⁥牔捡⁫″慎敭뷨ᣤ 朡極歜ㅲ弳桰敯楮彸潢祤江牡敧戮潦瑮\b ÿ 㾀 㾀 昜湯彴桰敯楮彸潢祤江牡敧摟牡繫◓' Circuit de Barcelona-Catalunya National \u0004 吗慲正吳浩健慬敹䅤灰楬歮腮�ڴ 䌀 뾀 䋠 䇨 쑺 쑺 䑺 䑺Ȅ Ѐ ￿￿䐶楲敶⁲敎睴牯⁫潌慣⁬慆潶牵瑩⁥牔捡⁫″敍牴捩倠潲牧獥⁳⪺ö ℀畧屩牫㌱灟潨湥硩扟摯役慬杲⹥晢湯ࡴ ＀ 耀?耀? ᰀ潦瑮灟潨湥",
+            "昜湯彴桰敯楮彸潢祤江牡敧摟牡繫◓\u0002 69 \u0004 向慲正丱浡䅥灰楬歮헣ߥ 䋐 뾀 䎠 䈐 쑺 쑺 䑺 䑺ȁ Ā ￿￿䐬楲敶⁲敎睴牯⁫敒潭整䘠癡畯楲整吠慲正ㄠ丠浡콥謙 ℀畧屩牫㌱灟潨湥硩扟摯役慬杲⹥晢湯ࡴ ＀ 耀?耀? ᰀ潦瑮灟潨湥硩扟摯役慬杲彥慤歲퍾踥✀ 䌀椀爀挀甀椀琀 搀攀 䈀愀爀挀攀氀漀渀愀ⴀ䌀愀琀愀氀甀渀礀愀 一愀琀椀漀渀愀氀 ̀ ሀ牔捡ㅫ浉条䅥灰楬歮錁䙐ࠊ 䋀 䎀 䌀 쑺 쑺 䑺 䑺ȃ ̀ ￿￿䐭楲敶⁲敎睴牯⁫敒潭整䘠癡畯楲整吠慲正ㄠ倠潨潴헢 \u0001 耀?耀? 㾀 㾀 ￿￿ 㾀"
+          ]
+        },
+        {
+          "file": "GUI\\menu_dialogbox_gamewide_ams2.bgui",
+          "encoding": "utf-16le",
+          "count": 8,
+          "offsets": [
+            "0x3A6E0",
+            "0x3B3AA",
+            "0x3B8F7",
+            "0x3C168",
+            "0x41D81",
+            "0x42A51",
+            "0x42FA1",
+            "0x43817"
+          ],
+          "contexts": [
+            "昜湯彴桰敯楮彸潢祤江牡敧摟牡繫◓\u0002 69 \u0004 向慲正丱浡䅥灰楬歮헣ژ 䋐 뾀 䎠 䈐 쑺 쑺 䑺 䑺ȁ Ā ￿￿䐫楲敶⁲敎睴牯⁫潌慣⁬慆潶牵瑩⁥牔捡⁫‱慎敭�㕟 朡極歜ㅲ弳桰敯楮彸潢祤江牡敧戮潦瑮\b ÿ 㾀 㾀 昜湯彴桰敯楮彸潢祤江牡敧摟牡繫◓' Circuit de Barcelona-Catalunya National \u0003 吒慲正䤱慭敧灁汰湩ū傓뵆\u0006 쀀B 耀C C 稀Ä稀Ä稀D稀̈́\u0002 \u0003 ＀￿⳿牄癩牥丠瑥潷歲䰠捯污䘠癡畯楲整吠慲正ㄠ倠潨潴墙 \u0001 耀?耀? 㾀 㾀 ￿￿ 㾀",
+            "?耀? ＀￿ÿ耀? Ѐ ᄀ牔捡ㅫ慎敭灁汰湩絫췕\u0006 ꀀB㐀Â쎀C저A 稀Ä稀Ä稀D稀ń\u0002 \u0001 ＀￿⯿牄癩牥丠瑥潷歲䰠捯污䘠癡畯楲整吠慲正ㄠ丠浡忝5 ⌀畧屩牫㌱灟潨湥硩扟摯役敲畧慬⹲晢湯t ＀�ð 耀?耀? ⌀潦瑮灟潨湥硩晟潯湴瑯彥敲畧慬彲楬桧楴鿚!' Circuit de Barcelona-Catalunya National \u0003 同慲正䠲汯敤割\u0006 耀B倀C㠀DꀀB 稀Ä稀Ä稀D稀̈́\u0002 \u0003 ＀￿⻿牄癩牥丠瑥潷歲䰠捯污䘠癡畯楲整吠慲正㈠嘠獩扩敬滶楊 \u0001 耀?耀? 㾀 㾀 ＀￿ 㾀 \u0001 \u0003",
+            "耀?耀? ＀�ð耀? Ѐ ᄀ牔捡㉫慎敭灁汰湩嬛\u0006 B耀¿ꀀCA 稀Ä稀Ä稀D稀ń\u0002 \u0001 ＀￿⯿牄癩牥丠瑥潷歲䰠捯污䘠癡畯楲整吠慲正㈠丠浡慥棸Ú ℀畧屩牫㌱灟潨湥硩扟摯役慬杲⹥晢湯ࡴ ＀ 耀?耀? ᰀ潦瑮灟潨湥硩扟摯役慬杲彥慤歲퍾踥✀ 䌀椀爀挀甀椀琀 搀攀 䈀愀爀挀攀氀漀渀愀ⴀ䌀愀琀愀氀甀渀礀愀 一愀琀椀漀渀愀氀 Ѐ ᜀ牔捡㉫楔敭汐祡摥灁汰湩켻᷻\u0007 C耀¿BA 稀Ä稀Ä稀D稀ф\u0002 \u0004 ＀￿㛿牄癩牥丠瑥潷歲䰠捯污䘠癡畯楲整吠慲正㈠䴠瑥楲⁣牐杯敲獳凘툄 朡極歜ㅲ弳桰敯楮彸潢祤江牡敧戮潦瑮\b ÿ 㾀 㾀 昜湯彴桰敯",
+            "㾀 㾀 샿 㾀 \u0004 向慲正丳浡䅥灰楬歮뻷ᬛܨ 䆀 뾀 䎠 䇨 쑺 쑺 䑺 䑺ȁ Ā ￿￿䐫楲敶⁲敎睴牯⁫潌慣⁬慆潶牵瑩⁥牔捡⁫″慎敭뷨ᣤ 朡極歜ㅲ弳桰敯楮彸潢祤江牡敧戮潦瑮\b ÿ 㾀 㾀 昜湯彴桰敯楮彸潢祤江牡敧摟牡繫◓' Circuit de Barcelona-Catalunya National \u0004 吗慲正吳浩健慬敹䅤灰楬歮腮�ݍ 䌀 뾀 䋠 䇨 쑺 쑺 䑺 䑺Ȅ Ѐ ￿￿䐶楲敶⁲敎睴牯⁫潌慣⁬慆潶牵瑩⁥牔捡⁫″敍牴捩倠潲牧獥⁳⪺ö ℀畧屩牫㌱灟潨湥硩扟摯役慬杲⹥晢湯ࡴ ＀ 耀?耀? ᰀ潦瑮灟潨湥",
+            "昜湯彴桰敯楮彸潢祤江牡敧摟牡繫◓\u0002 69 \u0004 向慲正丱浡䅥灰楬歮헣ࡾ 䋐 뾀 䎠 䈐 쑺 쑺 䑺 䑺ȁ Ā ￿￿䐬楲敶⁲敎睴牯⁫敒潭整䘠癡畯楲整吠慲正ㄠ丠浡콥謙 ℀畧屩牫㌱灟潨湥硩扟摯役慬杲⹥晢湯ࡴ ＀ 耀?耀? ᰀ潦瑮灟潨湥硩扟摯役慬杲彥慤歲퍾踥✀ 䌀椀爀挀甀椀琀 搀攀 䈀愀爀挀攀氀漀渀愀ⴀ䌀愀琀愀氀甀渀礀愀 一愀琀椀漀渀愀氀 ̀ ሀ牔捡ㅫ浉条䅥灰楬歮錁䙐ࢣ 䋀 䎀 䌀 쑺 쑺 䑺 䑺ȃ ̀ ￿￿䐭楲敶⁲敎睴牯⁫敒潭整䘠癡畯楲整吠慲正ㄠ倠潨潴헢 \u0001 耀?耀? 㾀 㾀 ￿￿ 㾀"
+          ]
+        },
+        {
+          "file": "GUI\\menu_ingamemenu_1_6.bgui",
+          "encoding": "utf-16le",
+          "count": 1,
+          "offsets": [
+            "0x9317F8"
+          ],
+          "contexts": [
+            "㾀 쯿ਊ 㾀 \u0004 吅瑩敬뒒粝䤉\u0002 䈈 䌴 䈐 쑺 쑺 䑺 䑺ȃ ￿￿嘻ⵍ潌扢⵹牔捡䅫摮敖楨汣卥汥捥楴湯吭慲正硅倭敲楶睥牔捡彫慎敭袣 期極歜ひ弸潦瑮獟慴摮牡彤㈱戮潦瑮\u0001 폿폓 㾀 㾀 \u001b _Long Beach Street Circuit_\u0001 \u0003 倅慬湩㾜甠䤊\u0002 선 䇀 䇀 쑺 쑺 䑺 䑺ȉ ￿￿嘳ⵍ潌扢⵹牔捡䅫摮敖楨汣卥汥捥楴湯倭敲楶睥牔捡彫汆条�䎼 \u0001 耀?耀? 㾀 㾀 ￿￿ 㾀 \u0001 \u0004 嘅污敵䖊ᜃ䤋\u0002 䇀 䌠 䇐 쑺 쑺 䑺 䑺ȃ"
+          ]
+        },
+        {
+          "file": "GUI\\menu_ingamemenu_ams2.bgui",
+          "encoding": "utf-16le",
+          "count": 1,
+          "offsets": [
+            "0x619D23"
+          ],
+          "contexts": [
+            "耀? ＀ો 耀? Ѐ Ԁ楔汴鉥鶴恼Ź ࠀB 㐀CကB 稀Ä稀Ä稀D稀̈́\u0002 ＀￿㯿䵖䰭扯祢吭慲正湁噤桥捩敬敓敬瑣潩⵮牔捡䕫⵸牐癥敩呷慲正也浡ꍥ貈ã ἀ畧屩牫㠰晟湯彴瑳湡慤摲ㅟ⸲晢湯Ŵ ＀폓Ó 耀?耀? ᬀ 开䰀漀渀最 䈀攀愀挀栀 匀琀爀攀攀琀 䌀椀爀挀甀椀琀开Ā ̀ Ԁ汐楡鱮‿慵Ź Á쀀A쀀A 稀Ä稀Ä稀D稀ॄ\u0002 ＀￿㏿䵖䰭扯祢吭慲正湁噤桥捩敬敓敬瑣潩⵮牐癥敩呷慲正䙟慬魧볝C Ā 㾀 㾀 耀?耀? ＀￿ÿ耀? Ā Ѐ Ԁ慖畬詥ͅ戗Ź 쀀A C퀀A 稀Ä稀Ä稀D稀̈́\u0002"
+          ]
+        },
+        {
+          "file": "GUI\\menu_loadingscreen.bgui",
+          "encoding": "utf-8",
+          "count": 3,
+          "offsets": [
+            "0x29979",
+            "0x2D2F3",
+            "0x2E7DB"
+          ],
+          "contexts": [
+            "hicle Available Compounds��l� gui\\kr13_font_standard_11.bfont\u0001 ���� �? �? D R I V E L A Y O U T \u0003 \u0007Circuit?��kb\u0006 �D �C �\u0004D z� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �? ��� �",
+            "icle Headlights�\u0003� #gui\\kr08_font_data_list_value.bfont\b ���� �? �? \u0014Data List Value Text\u0005 _ Y E S _ \u0003 CircuitInfo�rN|;\u0007 @�D \u001bD ��C z� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �? ��",
+            "peed Limit String�C�e #gui\\kr08_font_data_list_value.bfont\b ���� �? �? \u0014Data List Value Text\u0004 _ 3 1 _ \u0003 CircuitRender�*�+�\u0007 MC `B RC RC z� z� zD zD\u0003\u0002 ���� Track Map �]4 \u0001 �? �? �? �?"
+          ]
+        },
+        {
+          "file": "GUI\\menu_loadingscreen_demo.bgui",
+          "encoding": "utf-8",
+          "count": 1,
+          "offsets": [
+            "0xC922"
+          ],
+          "contexts": [
+            "hicle Available Compounds��l� gui\\kr13_font_standard_11.bfont\u0001 ���� �? �? D R I V E L A Y O U T \u0003 \u0007Circuit?��k�\u0001 �D �C �\u0004D z� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �? ��� �"
+          ]
+        },
+        {
+          "file": "GUI\\menu_mainmenu_1_6.bgui",
+          "encoding": "utf-16le",
+          "count": 2,
+          "offsets": [
+            "0x3BB044",
+            "0x3BB6C8"
+          ],
+          "contexts": [
+            "쇠 䄰 䍺 䊴 쑺 쑺 䑺 䑺ȃ ￿￿嘻ⵍ潌扢⵹牔捡䅫摮敖楨汣卥汥捥楴湯吭慲正硅倭敲楶睥牔捡彫慎敭袣 朠極歜ひ弹潦瑮桟慥楤杮扟汯⹤晢湯ॴ ＀￿ÿ 耀?耀? ᤀ浡㉳晟湯彴敨摡湩彧䕄䅆䱕陔셇⒁牂湡敤⁤求捯⁫效摡牥吠硥⁴湕敳敬瑣摥\u001b _Long Beach Street Circuit_ \b 唊獮汥捥整덤㫒빥f 耀?耀? 稀Ä稀Ä稀D稀̈́ ＀￿ÿ턍뵉 \u0001 \u0003 䴈湥䥵整ꤺ뿖f 醀C簀C 稀Ä稀Ä稀D稀̈́\u0002 ＀￿ÿ턍뵉 \u0001 耀?耀? 㾀 㾀 ＀￿ 㾀 \u0002 \u0003 䰐䉏奂䵟久录䱂䍏ｋ됂",
+            "쇠 䄰 䍺 䊴 쑺 쑺 䑺 䑺ȃ ￿￿嘻ⵍ潌扢⵹牔捡䅫摮敖楨汣卥汥捥楴湯吭慲正硅倭敲楶睥牔捡彫慎敭袣 朠極歜ひ弹潦瑮桟慥楤杮扟汯⹤晢湯ॴ ＀￿ÿ 耀?耀? ᤀ浡㉳晟湯彴敨摡湩彧䕄䅆䱕陔셇⒁牂湡敤⁤求捯⁫效摡牥吠硥⁴湕敳敬瑣摥\u001b _Long Beach Street Circuit_ \u0003 合瑩敬慂散�f 䠀Â䠀B醀C䠀B 稀Ä稀Ä稀D稀̈́\u0002 ＀￿ÿ턍뵉 \u0001 耀?耀? 㾀 㾀 －￿ 㾀 \u0003 䰒捯瑡潩䵮灡灁汰湩䙫찄�f 阀B툀BఀCఀC 稀Ä稀Ä稀D稀̈́\u0002 ＀￿ㇿ䵖䰭扯祢吭慲正湁噤桥捩敬敓敬"
+          ]
+        },
+        {
+          "file": "GUI\\menu_mainmenuams2.bgui",
+          "encoding": "utf-16le",
+          "count": 1,
+          "offsets": [
+            "0x3C6F6A"
+          ],
+          "contexts": [
+            "㾀 쯿ਊ 㾀 \u0004 吅瑩敬뒒粝獗 䈈 䌴 䈐 쑺 쑺 䑺 䑺ȃ ￿￿嘻ⵍ潌扢⵹牔捡䅫摮敖楨汣卥汥捥楴湯吭慲正硅倭敲楶睥牔捡彫慎敭袣 期極歜ひ弸潦瑮獟慴摮牡彤㈱戮潦瑮\u0001 폿폓 㾀 㾀 \u001b _Long Beach Street Circuit_\u0001 \u0003 倅慬湩㾜甠獘 선 䇀 䇀 쑺 쑺 䑺 䑺ȉ ￿￿嘳ⵍ潌扢⵹牔捡䅫摮敖楨汣卥汥捥楴湯倭敲楶睥牔捡彫汆条�䎼 \u0001 耀?耀? 㾀 㾀 ￿￿ 㾀 \u0001 \u0004 嘅污敵䖊ᜃ獙 䇀 䌠 䇐 쑺 쑺 䑺 䑺ȃ"
+          ]
+        }
+      ],
+      "new_value_bgui_hits": [
+        {
+          "file": "GUI\\menu_mainmenu_1_6.bgui",
+          "encoding": "utf-16le",
+          "count": 1,
+          "offsets": [
+            "0x561F76"
+          ],
+          "contexts": [
+            "℀浡㉳晟湯彴慤慴江獩彴慬敢彬䕄䅆䱕❔몔ᐯ慄慴䰠獩⁴慌敢⁬敔瑸 \u0004 嘅污敵䖊ᜃꖉ 䍒 䍒 䆰 쑺 쑺 䑺 䑺ȃ ￿￿ഀ䧑½ ⌀畧屩牫㠰晟湯彴慤慴江獩彴慶畬⹥晢湯ࡴ ＀￿ÿ 耀?耀? ℀浡㉳晟湯彴慤慴江獩彴慶畬彥䕄䅆䱕癔⽋ᑛ慄慴䰠獩⁴慖畬⁥敔瑸\u0002 서킷 \u0003 䐇瑡剡睯䂎ꖍ 䉄耀䏊 䆰 쑺 쑺 䑺 䑺ȃ ￿￿ഀ䧑½ Ā 㾀 㾀 耀?耀? ￿ÿ耀? Ȁ Ѐ Ԁ慌敢繬鉸踝¥ ꀀA 㤀C뀀A 稀Ä稀Ä稀D稀̈́\u0002 ＀￿ÿ턍뵉 朣極歜ひ弹潦瑮摟瑡彡楬瑳江扡汥戮潦瑮"
+          ]
+        }
+      ],
+      "candidate_stale_fallback": false
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 439,
+      "key": "General_TrackDetails_PointToPoint",
+      "v065": "Point to Point",
+      "v066": "포인트 투 포인트",
+      "old_value_bgui_hits": [],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": false
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 441,
+      "key": "General_TrackDetails_Germany",
+      "v065": "Germany",
+      "v066": "독일",
+      "old_value_bgui_hits": [],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": false
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 442,
+      "key": "General_TrackDetails_France",
+      "v065": "France",
+      "v066": "프랑스",
+      "old_value_bgui_hits": [],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": false
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 443,
+      "key": "General_TrackDetails_Australia",
+      "v065": "Australia",
+      "v066": "호주",
+      "old_value_bgui_hits": [],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": false
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 444,
+      "key": "General_TrackDetails_Spain",
+      "v065": "Spain",
+      "v066": "스페인",
+      "old_value_bgui_hits": [],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": false
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 445,
+      "key": "General_TrackDetails_Italy",
+      "v065": "Italy",
+      "v066": "이탈리아",
+      "old_value_bgui_hits": [],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": false
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 447,
+      "key": "General_TrackDetails_England",
+      "v065": "England",
+      "v066": "영국",
+      "old_value_bgui_hits": [],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": false
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 448,
+      "key": "General_TrackDetails_USA",
+      "v065": "USA",
+      "v066": "미국",
+      "old_value_bgui_hits": [
+        {
+          "file": "GUI\\display_camaro_nascar.bgui",
+          "encoding": "utf-8",
+          "count": 3,
+          "offsets": [
+            "0x662A",
+            "0x9929",
+            "0xD213"
+          ],
+          "contexts": [
+            "� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �? ��� �? \u0003 \u0013STOCKUSAPITSPEEDBAR?VE;� �@ �A �B @B z� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �?",
+            "� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �? ��� �? \u0003 \u0013STOCKUSAPITSPEEDBAR?VE; \u0001 �@ �A �B @B z� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �?",
+            "� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �? ��� �? \u0003 \u0013STOCKUSAPITSPEEDBAR?VE;C\u0001 �@ �A �B @B z� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �?"
+          ]
+        },
+        {
+          "file": "GUI\\display_stock_usa_gen3.bgui",
+          "encoding": "utf-8",
+          "count": 3,
+          "offsets": [
+            "0x663F",
+            "0xE89F",
+            "0x121E5"
+          ],
+          "contexts": [
+            "� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �? ��� �? \u0003 \u0013STOCKUSAPITSPEEDBAR?VE;� �@ �A �B @B z� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �?",
+            "� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �? ��� �? \u0003 \u0013STOCKUSAPITSPEEDBAR?VE;f\u0001 �@ �A �B @B z� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �?",
+            "� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �? ��� �? \u0003 \u0013STOCKUSAPITSPEEDBAR?VE;�\u0001 �@ �A �B @B z� z� zD zD\u0003\u0002 ���� �I� \u0001 �? �? �? �?"
+          ]
+        },
+        {
+          "file": "GUI\\menu_ingamemenu_1_6.bgui",
+          "encoding": "utf-16le",
+          "count": 1,
+          "offsets": [
+            "0x9319F4"
+          ],
+          "contexts": [
+            "㾀 㾀 ￿￿ 㾀 \u0001 \u0004 嘅污敵䖊ᜃ䤋\u0002 䇀 䌠 䇐 쑺 쑺 䑺 䑺ȃ ￿￿嘿ⵍ潌扢⵹牔捡䅫摮敖楨汣卥汥捥楴湯吭慲正硅倭敲楶睥牔捡彫潌慣楴湯瘒큔 期極歜ㅲ弳潦瑮獟慴摮牡彤㌱戮潦瑮Ј ꏿꎣ 㾀 㾀 \u0005 _USA_ \u0006 嘇桥捩敬筺䤤\u0002 䌯 㾀 㾀 쑺 쑺 䑺 䑺ȃ ￿￿ഀ䧑½ ＀ ؀ ̀ ጀ潬扢役汢捯彫楣捲極띴壶▒ɉ 뎀C倀C 稀Ä稀Ä稀D稀̈́\u0002 ＀￿ÿ턍뵉 \u0001 愔獭弲慭湩敭畮〰⸹摤s렀>>㗀? ? ഀ浡㉳浟楡浮湥ᱵ統ፖ潬扢役汢捯彫敶楨汣뉥鈔 㾀"
+          ]
+        },
+        {
+          "file": "GUI\\menu_ingamemenu_ams2.bgui",
+          "encoding": "utf-16le",
+          "count": 1,
+          "offsets": [
+            "0x619F1F"
+          ],
+          "contexts": [
+            "耀?耀? ＀￿ÿ耀? Ā Ѐ Ԁ慖畬詥ͅ戗Ź 쀀A C퀀A 稀Ä稀Ä稀D稀̈́\u0002 ＀￿㿿䵖䰭扯祢吭慲正湁噤桥捩敬敓敬瑣潩⵮牔捡䕫⵸牐癥敩呷慲正䱟捯瑡潩ቮ呶Ð ἀ畧屩牫㌱晟湯彴瑳湡慤摲ㅟ⸳晢湯ࡴ\u0004＀ꎣ£ 耀?耀? Ԁ 开唀匀䄀开 ؀ ܀敖楨汣穥㉻篳Ź ⼀C耀?耀? 稀Ä稀Ä稀D稀̈́\u0002 ＀￿ÿ턍뵉 ÿ \u0006 \u0003 氓扯祢扟潬正损物畣瑩鉘祼\u0001 耀䎳 䍐 쑺 쑺 䑺 䑺ȃ ￿￿ഀ䧑½ Ā ᐀浡㉳浟楡浮湥ふ㤰搮獤 㺸 㻸쀀㼵 㼰 愍獭弲慭湩敭畮焜噽氓扯祢扟潬正癟桥捩敬ᒲ龒 耀"
+          ]
+        },
+        {
+          "file": "GUI\\menu_mainmenuams2.bgui",
+          "encoding": "utf-16le",
+          "count": 1,
+          "offsets": [
+            "0x3C7166"
+          ],
+          "contexts": [
+            "㾀 㾀 ￿￿ 㾀 \u0001 \u0004 嘅污敵䖊ᜃ獙 䇀 䌠 䇐 쑺 쑺 䑺 䑺ȃ ￿￿嘿ⵍ潌扢⵹牔捡䅫摮敖楨汣卥汥捥楴湯吭慲正硅倭敲楶睥牔捡彫潌慣楴湯瘒큔 期極歜ㅲ弳潦瑮獟慴摮牡彤㌱戮潦瑮Ј ꏿꎣ 㾀 㾀 \u0005 _USA_ \u0006 嘇桥捩敬筺獲 䌯 㾀 㾀 쑺 쑺 䑺 䑺ȃ ￿￿嘶ⵍ潌扢⵹牔捡䅫摮敖楨汣卥汥捥楴湯嘭桥捩敬湉敤⵸湅扡敬鱤䚭ě Ā Ȁ 턍뵉 \u0001 䄞瑣癩瑡⁥敖楨汣⁥敓敬瑣䐠慩潬ꅧ鑫Ö \u0001 ＀ ؀ ̀ ጀ潬扢役汢捯彫楣捲極띴壶玒s 뎀C倀C 稀Ä稀Ä稀"
+          ]
+        }
+      ],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": true,
+      "review": {
+        "classification": "TECHNICAL_IDENTIFIER",
+        "reason": "Only _USA_ view-model tokens and STOCKUSA vehicle-display identifiers; not visible country fallback text."
+      }
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 451,
+      "key": "General_TrackDetails_Japan",
+      "v065": "Japan",
+      "v066": "일본",
+      "old_value_bgui_hits": [
+        {
+          "file": "GUI\\menu_splash_load.bgui",
+          "encoding": "utf-8",
+          "count": 2,
+          "offsets": [
+            "0x671",
+            "0x102B"
+          ],
+          "contexts": [
+            "\u0013ams2_buttons000.dds �> �> �#? �> ams2_buttons\u0005G��\bbtn-backveJ� �? �? ���� �? \u0004 \u0010JapaneseBootFlow�B`� A\u0002 \u0004 \u0004 \u0003 JP-antipiracy�-�� �D �D z� z� zD zD\u000f\u0002 \u000f ���� \u0001 \u0011JP-antipiracy.dds",
+            "D zD \u0002 \u000f ���� \u0001 \u0011JP-antipiracy.dds �? �? �? �? ��� �? \u0013JapaneseBootFlowXB1$��m \u0004B\u0002 \u0003 \u0003 \u0003 SplashScreenQ%� �D �D z� z� zD zD\u000f\u0002 \u000f ! ���� \u0001 �? �?"
+          ]
+        }
+      ],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": true,
+      "review": {
+        "classification": "TECHNICAL_IDENTIFIER",
+        "reason": "Only JapaneseBootFlow and JP-antipiracy resource identifiers; not visible country fallback text."
+      }
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 458,
+      "key": "General_TrackDetails_Oval",
+      "v065": "Oval",
+      "v066": "오벌",
+      "old_value_bgui_hits": [],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": false
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 501,
+      "key": "General_TrackDetails_Kart",
+      "v065": "Karting Circuit",
+      "v066": "카트 서킷",
+      "old_value_bgui_hits": [],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": false
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 611,
+      "key": "General_TrackDetails_Rallycross",
+      "v065": "Rallycross",
+      "v066": "랠리크로스",
+      "old_value_bgui_hits": [
+        {
+          "file": "GUI\\menu_ingamemenu_1_6.bgui",
+          "encoding": "utf-8",
+          "count": 2,
+          "offsets": [
+            "0x3650ED",
+            "0x4173EA"
+          ],
+          "contexts": [
+            "#gui\\kr08_font_data_list_value.bfont\b\u0004 �����U{� �? �? !ams2_font_data_list_value_DEFAULTvK/[\u0014Data List Label Text \u0003 \u0016RallycrossResultsTable��LJe� �? �? z� z� zD zD\u0003 ���� �I� \u0001 �? �? �? �?",
+            "#gui\\kr08_font_data_list_value.bfont\b\u0004 �����U{� �? �? !ams2_font_data_list_value_DEFAULTvK/[\u0014Data List Label Text \u0003 \u0016RallycrossResultsTable��LJ�/\u0001 �? �? z� z� zD zD\u0013 ���� �I� \u0001 �? �? �? �?"
+          ]
+        },
+        {
+          "file": "GUI\\menu_ingamemenu_ams2.bgui",
+          "encoding": "utf-8",
+          "count": 1,
+          "offsets": [
+            "0x7C06C8"
+          ],
+          "contexts": [
+            "z� z� zD zD\u0003\u0002 \u0003 ���� �I� \u0001 �? �? �? �? ��� �? \u0001 \u0005 \u0011RallycrossTabMenu�n�9k�\u0001 �C �D ,B z� z� zD zD\u0003 \u0003 ���� �I� \u0005\u001a ) �C\u0002 �? �? \u0005 \u0006 HighlightsTab�#`�l�\u0001 �C ,B"
+          ]
+        }
+      ],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": true,
+      "review": {
+        "classification": "TECHNICAL_IDENTIFIER",
+        "reason": "Only RallycrossResultsTable and RallycrossTabMenu object identifiers; not visible localized label text."
+      }
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 646,
+      "key": "General_TrackDetails_Austria",
+      "v065": "Austria",
+      "v066": "오스트리아",
+      "old_value_bgui_hits": [],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": false
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 647,
+      "key": "General_TrackDetails_Canada",
+      "v065": "Canada",
+      "v066": "캐나다",
+      "old_value_bgui_hits": [],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": false
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 648,
+      "key": "General_TrackDetails_Norway",
+      "v065": "Norway",
+      "v066": "노르웨이",
+      "old_value_bgui_hits": [],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": false
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 650,
+      "key": "General_TrackDetails_Portugal",
+      "v065": "Portugal",
+      "v066": "포르투갈",
+      "old_value_bgui_hits": [],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": false
+    },
+    {
+      "source_file": "text/general.tdb",
+      "index": 651,
+      "key": "General_TrackDetails_SouthAfrica",
+      "v065": "South Africa",
+      "v066": "남아프리카 공화국",
+      "old_value_bgui_hits": [],
+      "new_value_bgui_hits": [],
+      "candidate_stale_fallback": false
+    }
+  ]
+}
