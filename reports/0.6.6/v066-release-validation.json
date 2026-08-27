@@ -1,0 +1,37 @@
+{
+  "schema": "ams2-kr-v066-release-validation-v1",
+  "status": "PASS",
+  "version": "0.6.6",
+  "buildid": "24132163",
+  "predecessor": "0.6.5",
+  "install": "UPDATED_EXACT",
+  "runtime": {
+    "main_menu": "PASS",
+    "single_player_detail": "PASS",
+    "actual_single_race_classes": 3,
+    "ai_full_names": "PASS",
+    "safety_car": "PASS",
+    "gray_glyph_backgrounds": 0,
+    "missing_glyph_markers": 0,
+    "crash_dialogs": 0
+  },
+  "remove": "RESTORED_EXACT",
+  "post_remove_detection": "UPDATE_AVAILABLE_0.6.5",
+  "reinstall": "INSTALLED_EXACT",
+  "final_state": "0.6.6_INSTALLED_EXACT",
+  "direct_files": 449,
+  "font_aliases": 46,
+  "existing_glyphs_preserved_per_font": 1344,
+  "added_ai_name_glyphs_per_font": 68,
+  "payload_integrity": "PASS",
+  "json_validation": "PASS",
+  "release_zip": {
+    "path": "releases/0.6.6/AMS2 한국어 패치 CB 0.6.6.zip",
+    "bytes": 22383923,
+    "sha256": "7CD8EDE5222422856578F06BA935C5DFF6EA64C054D873719F35EDD97455A9E6"
+  },
+  "clean_extraction": "PASS",
+  "extracted_file_count": 462,
+  "sha256sums_entries": 461,
+  "sha256sums_validation": "PASS"
+}

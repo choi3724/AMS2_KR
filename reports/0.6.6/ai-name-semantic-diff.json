@@ -1,0 +1,16 @@
+{
+  "schema": "ams2-kr-066-ai-name-semantic-diff-v1",
+  "status": "PASS",
+  "source": "text/drivers.tdb",
+  "record_count": 4201,
+  "unique_original_names": 2701,
+  "korean_display_values_changed": 4201,
+  "non_name_semantic_changes": 0,
+  "skill_changes": 0,
+  "aggression_changes": 0,
+  "personality_changes": 0,
+  "vehicle_or_livery_changes": 0,
+  "human_nickname_changes": 0,
+  "collisions_reviewed": 9,
+  "unresolved": 0
+}

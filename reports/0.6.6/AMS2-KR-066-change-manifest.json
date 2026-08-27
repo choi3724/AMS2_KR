@@ -1,0 +1,52 @@
+{
+  "schema": "ams2-kr-066-change-manifest-v1",
+  "status": "PASS",
+  "changes": [
+    {
+      "source_file": "text/general.tdb",
+      "key_or_object": "General_TrackDetails country/type values",
+      "old": "English country/type values",
+      "new": "21 Korean country values and 5 Korean course-type values",
+      "reason": "Complete user-facing track detail localization"
+    },
+    {
+      "source_file": "text/game.tdb and text/general.tdb",
+      "key_or_object": "PlayTimeFormatHHMM/DDHHMM",
+      "old": "시",
+      "new": "시간",
+      "reason": "Clarify duration rather than clock time"
+    },
+    {
+      "source_file": "text/game.tdb",
+      "key_or_object": "Game_MainMenu_Time2",
+      "old": "타임",
+      "new": "차량 운행 시간",
+      "reason": "Clarify favorite-vehicle statistic"
+    },
+    {
+      "source_file": "text/drivers.tdb",
+      "key_or_object": "Korean display value for 4,201 records",
+      "old": "English stock AI display name",
+      "new": "Full Korean phonetic name as one runtime token",
+      "reason": "Prevent first-name initial abbreviation and localize stock AI names"
+    },
+    {
+      "source_file": "GUI general UI BFONT/DDS aliases",
+      "key_or_object": "46 existing aliases",
+      "old": "1,344 glyphs",
+      "new": "same 1,344 glyphs plus 68 AI-name Hangul syllables",
+      "reason": "Zero missing glyphs without changing existing pixel/metric behavior"
+    },
+    {
+      "source_file": "GUI/menu_mainmenu_1_6.bgui",
+      "key_or_object": "Single Player PreviewTrack_Length",
+      "old": "v0.6.5 binding",
+      "new": "byte-exact preserved binding with 거리(m) label",
+      "reason": "Latest user instruction requires raw metres"
+    }
+  ],
+  "track_metadata_changes": 0,
+  "altitude_changes": 0,
+  "ai_semantic_changes_outside_name": 0,
+  "vehicle_display_font_changes": 0
+}

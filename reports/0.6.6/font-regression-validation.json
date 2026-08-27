@@ -1,0 +1,467 @@
+{
+  "schema": "ams2-kr-066-v065-font-visual-regression-v1",
+  "status": "PASS",
+  "policy": "PRESERVE_V065_EXISTING_GLYPH_PIXELS_AND_METRICS_ADD_ONLY_REQUIRED_AI_SYLLABLES",
+  "fonts": [
+    {
+      "alias": "kr08_aries_small",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr08_font_data_list_value",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr08_font_heading_14",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr08_font_heading_22",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr08_font_page_title",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr08_font_standard_12",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr08_font_standard_14",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr08_font_standard_16",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr08_font_standard_18",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr08_font_standard_19",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr08_font_standard_20",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr08_font_standard_21",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr08_font_standard_22",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr08_font_standard_36",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr08_font_standard_styletest",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr09_font_data_list_label",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr09_font_heading",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr09_font_heading_black",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr09_font_heading_bold",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr09_phoenix_page_title",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_aries_large",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_aries_large_black",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_aries_large_black_italic",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_aries_small",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_aries_small_black",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_font_heading_20",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_font_heading_light",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_font_hud_light",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_font_hud_main",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_font_hud_pos",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_font_hud_tach_num",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_font_mono_16",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_font_session_time",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_font_standard_10",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_font_standard_11",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_font_standard_13",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_font_standard_15",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_font_standard_28",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_font_standard_30",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_font_standard_34",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_font_standard_40",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_phoenix_body_footnote",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_phoenix_body_large",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_phoenix_body_regular",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr13_phoenix_tab_title",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    },
+    {
+      "alias": "kr1_font_hud_bold",
+      "v065_glyphs": 1344,
+      "v066_glyphs": 1412,
+      "added_glyphs": 68,
+      "common_glyphs": 1344,
+      "existing_metric_mismatches": 0,
+      "existing_pixel_mismatches": 0,
+      "status": "PASS"
+    }
+  ]
+}

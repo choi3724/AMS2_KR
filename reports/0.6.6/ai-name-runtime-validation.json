@@ -1,0 +1,38 @@
+{
+  "schema": "ams2-kr-066-ai-name-runtime-validation-v1",
+  "status": "PASS",
+  "validation_mode": "ACTUAL_SINGLE_RACE_NOT_REPLAY",
+  "classes": [
+    {
+      "class": "GT3 G2",
+      "session_list": "PASS",
+      "driving_hud": "PASS"
+    },
+    {
+      "class": "Formula V10 Gen3(B)",
+      "session_list": "PASS",
+      "driving_hud": "PASS"
+    },
+    {
+      "class": "Formula Junior",
+      "session_list": "PASS",
+      "driving_hud": "PASS"
+    }
+  ],
+  "representative_names_visible": 10,
+  "full_name_not_initial_only": "PASS",
+  "safety_car_label": "세이프티카",
+  "missing_glyph_markers": 0,
+  "gray_glyph_backgrounds": 0,
+  "human_nickname": "ENG-IceBlasT",
+  "human_nickname_regression": false,
+  "nameplate_font_route": "Pakfiles/IGPHASEHUD.bff entry 288 ProfileName -> GUI/kr13_font_hud_main.bfont",
+  "replay": "v0.6.5 route baseline PASS; AI transliteration acceptance used actual gameplay",
+  "results": "source and glyph coverage PASS; separate Results screenshot not captured",
+  "evidence": [
+    "06_EVIDENCE/AINames/gt3-g2-driving.png",
+    "06_EVIDENCE/AINames/formula-v10-session.png",
+    "06_EVIDENCE/AINames/formula-v10-driving.png",
+    "06_EVIDENCE/AINames/formula-junior-driving.png"
+  ]
+}

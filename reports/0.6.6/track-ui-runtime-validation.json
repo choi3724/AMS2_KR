@@ -1,0 +1,22 @@
+{
+  "schema": "ams2-kr-066-track-ui-runtime-validation-v1",
+  "status": "PASS",
+  "main_menu": "PASS",
+  "single_player_detail": {
+    "status": "PASS",
+    "track": "Formula V10 Gen3(B) test event",
+    "country": "아르헨티나",
+    "type": "서킷",
+    "distance_label": "거리(m)",
+    "distance_value": "4312",
+    "gray_glyph_backgrounds": 0
+  },
+  "course_select": "PASS_SOURCE_INVENTORY_AND_PRIOR_RUNTIME",
+  "loading": "PASS_EXISTING_KILOMETRE_FORMAT",
+  "altitude_regression": "PASS_UNCHANGED",
+  "evidence": [
+    "06_EVIDENCE/CourseSelect/course-select-v065-reference.png",
+    "06_EVIDENCE/SinglePlayer/v066-final-single-race.png",
+    "06_EVIDENCE/Loading/loading-v066.png"
+  ]
+}
