@@ -1,0 +1,20 @@
+{
+  "schema": "ams2-kr-068-final-commit-v1",
+  "predecessor_sha": "f8df34e7c19edb8ab2f1f83e8fbf2d3046b44363",
+  "v068_commit_sha": "abc1a6703922d8d6ce425ed80337e743b0aa605a",
+  "message": "v0.6.8 Pretendard 폰트 안정화 및 AI 글리프 안전 증설",
+  "committed_files": 26,
+  "excluded": {
+    "font_build_output_files": 294,
+    "determinism_second_run_files": 294,
+    "redundant_runtime_screenshots": 16,
+    "font_artifact": "E:/AMS2_Korean_Work/artifacts/AMS2-KR-068/fonts",
+    "determinism_debug": "E:/AMS2_Korean_Work/local-debug/AMS2-KR-068-determinism-run2",
+    "runtime_debug": "E:/AMS2_Korean_Work/local-debug/AMS2-KR-068-runtime-redundant"
+  },
+  "runtime_gate": "PASS_ACTUAL_SINGLE_RACE",
+  "nameplate_status": "NAMEPLATE_VISUAL_PENDING",
+  "translation_files_modified": 0,
+  "distance_modified": false,
+  "status": "PASS_WITH_NAMEPLATE_VISUAL_PENDING"
+}
