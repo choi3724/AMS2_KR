@@ -1,0 +1,46 @@
+{
+  "schema": "ams2-kr-v065-release-validation-v1",
+  "status": "PASS",
+  "version": "0.6.5",
+  "buildid": "24132163",
+  "install": "UPDATED_EXACT",
+  "runtime": {
+    "main_menu": "PASS",
+    "first_replay": "PASS",
+    "profile_name_font": "PASS",
+    "bff_crc_errors": 0
+  },
+  "remove": "RESTORED_EXACT",
+  "stock_launch": "PASS",
+  "reinstall": "INSTALLED_EXACT",
+  "final_state": "0.6.5_INSTALLED_EXACT",
+  "release_zip": {
+    "path": "releases/0.6.5/AMS2 한국어 패치 CB 0.6.5.zip",
+    "sha256": "337B30D429CA182CC53253470836563DB1E449EA827D5294D2052D780BC7D703",
+    "clean_extraction": "PASS",
+    "sha256sums_validation": "PASS",
+    "file_count": 461
+  },
+  "igphasehud": {
+    "source_sha256": "F967D1A322EB75AAD742CF21888D75DB0CA4CB407ACDEC72F14D32BD5351E7DA",
+    "target_sha256": "D1618BB1F6E09F53E8BB86F4A163C2934B91814F5F326670381C5496B3D7C398",
+    "entry_count": 355,
+    "changed_entry_count": 1,
+    "unchanged_entry_count": 354,
+    "entry_index": 288,
+    "resource": "gui/hud_infoabovecar.bgui",
+    "object": "ProfileName"
+  },
+  "evidence": {
+    "screenshots": [
+      "v065-mainmenu.png",
+      "v065-first-replay-runtime.png",
+      "v065-stock-mainmenu.png"
+    ],
+    "logs": [
+      "20260827T071936.827Z.log",
+      "20260827T074912.480Z.log",
+      "20260827T075309.727Z.log"
+    ]
+  }
+}

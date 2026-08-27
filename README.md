@@ -4,20 +4,20 @@ Automobilista 2 비공식 한국어 패치 및 관련 제작 도구 저장소입
 
 ## 최신 배포본
 
-- 버전: Closed Beta 0.6.4
+- 버전: Closed Beta 0.6.5
 - 제작자: ENGIceBlasT
 - 설치 후 게임은 `AMS2 Korean Launcher.exe` 또는 설치 과정에서 만든 바로가기로 실행합니다.
 - 일반 실행과 VR 모드 실행은 각각 제공되는 바로가기를 사용합니다.
-- 0.6.4는 이전 설치 버전을 감지하며, 새 버전 확인 버튼을 제공합니다.
+- 0.6.5는 이전 설치 버전을 감지하며, 새 버전 확인 버튼을 제공합니다.
 
-배포 ZIP과 검증 자료는 `releases/0.6.4`, `reports/0.6.4`에서 확인할 수 있습니다.
+배포 ZIP과 검증 자료는 `releases/0.6.5`, `reports/0.6.5`에서 확인할 수 있습니다.
 
-## 0.6.4 핵심 변경
+## 0.6.5 핵심 변경
 
-- 주행 중 차량 위 상대 이름을 전용 Pretendard SemiBold 폰트로 통일
-- `ProfileName` 폰트 경로만 교체해 다른 HUD 글자 크기와 차량 전용 폰트는 유지
-- 0.6.3의 번역·폰트 폭·HUD 결과를 그대로 보존
-- 0.6.3 업데이트 설치, Main Menu, Single Race 및 실제 주행 검증
+- `IGPHASEHUD.bff`의 `hud_infoabovecar.bgui`에서 차량 위 이름 `ProfileName` 폰트 경로만 Pretendard HUD 폰트로 변경
+- 355개 BFF 엔트리 중 대상 1개만 수정하고 나머지 354개 엔트리는 byte/metadata 변경 없이 보존
+- 최신 `game.tdb`, Main Menu 및 In-game Menu BGUI 반영
+- 업데이트 설치, Main Menu, 첫 번째 Replay, 제거·순정 부팅·재설치 검증
 
 ## 제작 도구
 
