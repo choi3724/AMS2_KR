@@ -1,0 +1,30 @@
+{
+  "schema": "ams2-kr-068-ai-font-runtime-validation-v1",
+  "source_ai_names": 4201,
+  "required_codepoints": 508,
+  "new_codepoints": 69,
+  "missing_after_build": 0,
+  "actual_single_race_grid_size": 48,
+  "distinct_ai_rows_visually_examined": 41,
+  "corrupted_ai_names": 0,
+  "missing_ai_glyphs": 0,
+  "spacing_failures": 0,
+  "human_nickname": "ENG-IceBlasT",
+  "human_nickname_regressions": 0,
+  "safety_car_expected": "세이프티 카",
+  "safety_car_actual": "세이프티 카",
+  "safety_car_result": "PASS",
+  "nameplate": {
+    "igphasehud_mode": "STOCK",
+    "igphasehud_sha256": "F967D1A322EB75AAD742CF21888D75DB0CA4CB407ACDEC72F14D32BD5351E7DA",
+    "dedicated_pretendard_poc": "NOT_ATTEMPTED",
+    "visual_status": "NAMEPLATE_VISUAL_PENDING"
+  },
+  "evidence": [
+    "evidence/runtime-single-race-actual-01.png",
+    "evidence/runtime-ai-list-lower-02.png",
+    "evidence/runtime-ai-list-bottom-03.png",
+    "evidence/runtime-drive-attempt-01.png"
+  ],
+  "status": "PASS_WITH_NAMEPLATE_VISUAL_PENDING"
+}

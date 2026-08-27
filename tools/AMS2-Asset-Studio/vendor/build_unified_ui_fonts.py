@@ -21,6 +21,11 @@ from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
 
+if __name__ == "__main__" and "--append-only" in sys.argv:
+    from ams2_golden_font_appender import main as append_only_main
+
+    raise SystemExit(append_only_main([arg for arg in sys.argv[1:] if arg != "--append-only"]))
+
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 

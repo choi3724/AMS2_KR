@@ -1,0 +1,15 @@
+{
+  "schema": "ams2-kr-068-git-baseline-v1",
+  "branch": "main",
+  "starting_local_head": "7fd060a94201631506a6ca9983a3dde5961e0172",
+  "origin_main": "dda9802ea37dda53aa6e2a3d03792df35cf5cf64",
+  "starting_ahead": 2,
+  "starting_behind": 0,
+  "v067_primary_commit": "60a361ee4d1b68decf3dcb40d5e5d394ff02f2a4",
+  "v067_metadata_commit": "f8df34e7c19edb8ab2f1f83e8fbf2d3046b44363",
+  "phase1_predecessor": "f8df34e7c19edb8ab2f1f83e8fbf2d3046b44363",
+  "phase1_start_ahead": 4,
+  "phase1_start_behind": 0,
+  "history_reset": false,
+  "status": "PASS"
+}

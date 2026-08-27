@@ -1,0 +1,447 @@
+{
+  "schema": "ams2-kr-068-v065-current-font-diff-v1",
+  "fonts": [
+    {
+      "alias": "kr08_aries_small",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1250,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr08_font_data_list_value",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1034,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr08_font_heading_14",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1039,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr08_font_heading_22",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1250,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr08_font_page_title",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1205,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr08_font_standard_12",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1013,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr08_font_standard_14",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1045,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr08_font_standard_16",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1250,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr08_font_standard_18",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1250,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr08_font_standard_19",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1250,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr08_font_standard_20",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1028,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr08_font_standard_21",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1164,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr08_font_standard_22",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1250,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr08_font_standard_36",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1250,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr08_font_standard_styletest",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1250,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr09_font_data_list_label",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1034,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr09_font_heading",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1250,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr09_font_heading_black",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1250,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr09_font_heading_bold",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1250,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr09_phoenix_page_title",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1162,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_aries_large",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1063,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_aries_large_black",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1063,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_aries_large_black_italic",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1063,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_aries_small",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1250,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_aries_small_black",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1250,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_driver_name_semibold",
+      "common_glyphs": 1344,
+      "index_changes": 0,
+      "metric_changes": 0,
+      "uv_changes": 0,
+      "page_changes": 0,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_font_data_list",
+      "common_glyphs": 1344,
+      "index_changes": 0,
+      "metric_changes": 0,
+      "uv_changes": 0,
+      "page_changes": 0,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_font_heading_20",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1024,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_font_heading_44",
+      "common_glyphs": 1344,
+      "index_changes": 0,
+      "metric_changes": 0,
+      "uv_changes": 0,
+      "page_changes": 0,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_font_heading_light",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1246,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_font_hud_light",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1250,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_font_hud_main",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1250,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_font_hud_pos",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1129,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_font_hud_tach_num",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1099,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_font_mono_16",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1250,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_font_session_time",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1188,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_font_standard_10",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1250,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_font_standard_11",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1241,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_font_standard_13",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1049,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_font_standard_15",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1039,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_font_standard_28",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1244,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_font_standard_30",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1041,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_font_standard_34",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1250,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_font_standard_40",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1055,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_phoenix_body_footnote",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1034,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_phoenix_body_large",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1045,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_phoenix_body_regular",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1028,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr13_phoenix_tab_title",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1250,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    },
+    {
+      "alias": "kr1_font_hud_bold",
+      "common_glyphs": 1344,
+      "index_changes": 1250,
+      "metric_changes": 0,
+      "uv_changes": 1250,
+      "page_changes": 106,
+      "bitmap_pixel_changes": 0
+    }
+  ],
+  "status": "INVENTORY"
+}

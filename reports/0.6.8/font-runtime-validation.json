@@ -1,0 +1,34 @@
+{
+  "schema": "ams2-kr-068-font-runtime-validation-v1",
+  "runtime_date_kst": "2026-08-28",
+  "launch_executable": "E:/SteamLibrary/steamapps/common/Automobilista 2/AMS2 Korean Launcher.exe",
+  "screens": {
+    "startup_to_main_menu": "PASS",
+    "main_menu": "PASS",
+    "options": "PASS",
+    "user_event": "PASS",
+    "session_setup": "PASS",
+    "rules_and_penalties": "PASS",
+    "actual_single_race": "PASS",
+    "race_hud": "PASS",
+    "session_list": "PASS"
+  },
+  "visual": {
+    "gray_text_backgrounds": 0,
+    "rough_outline_regressions": 0,
+    "halo_regressions": 0,
+    "clipping_regressions_observed": 0,
+    "star_replacement_glyphs": 0
+  },
+  "evidence": [
+    "evidence/runtime-steam-after-click.png",
+    "evidence/runtime-options-02.png",
+    "evidence/runtime-single-race-setup-01.png",
+    "evidence/runtime-rules-penalties-03.png",
+    "evidence/runtime-single-race-actual-01.png",
+    "evidence/runtime-ai-list-lower-02.png",
+    "evidence/runtime-ai-list-bottom-03.png",
+    "evidence/runtime-drive-attempt-01.png"
+  ],
+  "status": "PASS"
+}

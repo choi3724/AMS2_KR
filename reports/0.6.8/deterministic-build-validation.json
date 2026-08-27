@@ -1,0 +1,11 @@
+{
+  "schema": "ams2-kr-068-deterministic-build-v1",
+  "run1": "E:/AMS2_Korean_Work/artifacts/AMS2-KR-068/fonts",
+  "run2": "E:/AMS2_Korean_Work/local-debug/AMS2-KR-068-determinism-run2/fonts",
+  "file_count_run1": 294,
+  "file_count_run2": 294,
+  "only_run1": [],
+  "only_run2": [],
+  "hash_mismatches": [],
+  "status": "PASS"
+}

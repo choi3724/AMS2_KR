@@ -1,0 +1,9 @@
+{
+  "schema": "ams2-kr-068-font-alpha-regression-v1",
+  "existing_glyph_pixel_changes": 0,
+  "unexpected_external_alpha_pixels": 0,
+  "gray_background_pixels": 0,
+  "halo_regression": 0,
+  "rough_outline_regression": 0,
+  "status": "PASS"
+}

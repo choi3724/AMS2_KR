@@ -1,0 +1,14 @@
+{
+  "schema": "ams2-kr-068-golden-glyph-preservation-v1",
+  "golden_glyph_count_per_font": 1344,
+  "compared_fonts": 46,
+  "compared_glyphs": 61824,
+  "index_changes": 0,
+  "metric_changes": 0,
+  "advance_changes": 0,
+  "bearing_changes": 0,
+  "uv_changes": 0,
+  "page_changes": 0,
+  "pixel_changes": 0,
+  "status": "PASS"
+}

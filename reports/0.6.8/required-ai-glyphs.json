@@ -1,0 +1,289 @@
+{
+  "schema": "ams2-kr-068-required-ai-glyphs-v1",
+  "total_ai_names": 4201,
+  "required_codepoints": 508,
+  "present_in_golden": 439,
+  "missing_from_golden": 69,
+  "missing_codepoints": [
+    {
+      "codepoint": "U+00A0",
+      "character": " "
+    },
+    {
+      "codepoint": "U+AC90",
+      "character": "겐"
+    },
+    {
+      "codepoint": "U+ACF0",
+      "character": "곰"
+    },
+    {
+      "codepoint": "U+AF43",
+      "character": "꽃"
+    },
+    {
+      "codepoint": "U+B12C",
+      "character": "넬"
+    },
+    {
+      "codepoint": "U+B137",
+      "character": "넷"
+    },
+    {
+      "codepoint": "U+B1E8",
+      "character": "뇨"
+    },
+    {
+      "codepoint": "U+B1FD",
+      "character": "뇽"
+    },
+    {
+      "codepoint": "U+B304",
+      "character": "댄"
+    },
+    {
+      "codepoint": "U+B3D4",
+      "character": "돔"
+    },
+    {
+      "codepoint": "U+B515",
+      "character": "딕"
+    },
+    {
+      "codepoint": "U+B524",
+      "character": "딤"
+    },
+    {
+      "codepoint": "U+B525",
+      "character": "딥"
+    },
+    {
+      "codepoint": "U+B81B",
+      "character": "렛"
+    },
+    {
+      "codepoint": "U+BA5C",
+      "character": "멜"
+    },
+    {
+      "codepoint": "U+BB90",
+      "character": "뮐"
+    },
+    {
+      "codepoint": "U+BC25",
+      "character": "밥"
+    },
+    {
+      "codepoint": "U+BC45",
+      "character": "뱅"
+    },
+    {
+      "codepoint": "U+BCA1",
+      "character": "벡"
+    },
+    {
+      "codepoint": "U+BCB5",
+      "character": "벵"
+    },
+    {
+      "codepoint": "U+BEA8",
+      "character": "뺨"
+    },
+    {
+      "codepoint": "U+C0BF",
+      "character": "삿"
+    },
+    {
+      "codepoint": "U+C0CC",
+      "character": "샌"
+    },
+    {
+      "codepoint": "U+C0EC",
+      "character": "샬"
+    },
+    {
+      "codepoint": "U+C149",
+      "character": "셉"
+    },
+    {
+      "codepoint": "U+C200",
+      "character": "숀"
+    },
+    {
+      "codepoint": "U+C258",
+      "character": "쉘"
+    },
+    {
+      "codepoint": "U+C2EF",
+      "character": "싯"
+    },
+    {
+      "codepoint": "U+C568",
+      "character": "앨"
+    },
+    {
+      "codepoint": "U+C570",
+      "character": "앰"
+    },
+    {
+      "codepoint": "U+C584",
+      "character": "얄"
+    },
+    {
+      "codepoint": "U+C5E0",
+      "character": "엠"
+    },
+    {
+      "codepoint": "U+C60C",
+      "character": "옌"
+    },
+    {
+      "codepoint": "U+C641",
+      "character": "왁"
+    },
+    {
+      "codepoint": "U+C648",
+      "character": "왈"
+    },
+    {
+      "codepoint": "U+C698",
+      "character": "욘"
+    },
+    {
+      "codepoint": "U+C6E9",
+      "character": "웩"
+    },
+    {
+      "codepoint": "U+C6EC",
+      "character": "웬"
+    },
+    {
+      "codepoint": "U+C705",
+      "character": "윅"
+    },
+    {
+      "codepoint": "U+C787",
+      "character": "잇"
+    },
+    {
+      "codepoint": "U+C958",
+      "character": "쥘"
+    },
+    {
+      "codepoint": "U+CCB8",
+      "character": "첸"
+    },
+    {
+      "codepoint": "U+CD0C",
+      "character": "촌"
+    },
+    {
+      "codepoint": "U+CD10",
+      "character": "촐"
+    },
+    {
+      "codepoint": "U+CE7C",
+      "character": "칼"
+    },
+    {
+      "codepoint": "U+CE85",
+      "character": "캅"
+    },
+    {
+      "codepoint": "U+CE87",
+      "character": "캇"
+    },
+    {
+      "codepoint": "U+CEA3",
+      "character": "캣"
+    },
+    {
+      "codepoint": "U+CF08",
+      "character": "켈"
+    },
+    {
+      "codepoint": "U+CF65",
+      "character": "콥"
+    },
+    {
+      "codepoint": "U+CF67",
+      "character": "콧"
+    },
+    {
+      "codepoint": "U+CF78",
+      "character": "콸"
+    },
+    {
+      "codepoint": "U+CFE1",
+      "character": "쿡"
+    },
+    {
+      "codepoint": "U+CFE4",
+      "character": "쿤"
+    },
+    {
+      "codepoint": "U+D018",
+      "character": "퀘"
+    },
+    {
+      "codepoint": "U+D044",
+      "character": "큄"
+    },
+    {
+      "codepoint": "U+D0E4",
+      "character": "탤"
+    },
+    {
+      "codepoint": "U+D1A8",
+      "character": "톨"
+    },
+    {
+      "codepoint": "U+D2A0",
+      "character": "튠"
+    },
+    {
+      "codepoint": "U+D33B",
+      "character": "팻"
+    },
+    {
+      "codepoint": "U+D33D",
+      "character": "팽"
+    },
+    {
+      "codepoint": "U+D3A0",
+      "character": "펠"
+    },
+    {
+      "codepoint": "U+D3AB",
+      "character": "펫"
+    },
+    {
+      "codepoint": "U+D401",
+      "character": "퐁"
+    },
+    {
+      "codepoint": "U+D54D",
+      "character": "핍"
+    },
+    {
+      "codepoint": "U+D54F",
+      "character": "핏"
+    },
+    {
+      "codepoint": "U+D5CC",
+      "character": "헌"
+    },
+    {
+      "codepoint": "U+D5F4",
+      "character": "헴"
+    },
+    {
+      "codepoint": "U+D789",
+      "character": "힉"
+    }
+  ],
+  "newly_appended_per_general_font": 69,
+  "general_fonts": 46,
+  "missing_after_build": 0,
+  "status": "PASS"
+}
