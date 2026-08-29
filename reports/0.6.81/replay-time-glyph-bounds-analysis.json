@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "active_font": {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\Automobilista 2\\GUI\\kr13_font_hud_main.bfont",
+    "sha256": "E31E0CB5132ADF34792D56D3C2AF4885A0C73BA569434D4133FD8AF982B0B841",
+    "embedded_name": "kr13_font_hud_main",
+    "glyph_count": 1413,
+    "dds_pages": [
+      {"page": 0, "sha256": "CB958492EFF8328C7BE2105FCC881A0246297929634D5DD8113E84FFD1212223"},
+      {"page": 1, "sha256": "35E91398F866CC38C5FA81CB5B2879F7710C7CFC4C94834E8D6B4D785679A02D"},
+      {"page": 2, "sha256": "8D7506570AD18B70A355A1A2B910C9C15BC02A78070432B4DFEB9FD61A65D9DF"},
+      {"page": 3, "sha256": "55C2FC89415DCD60CDC17D9F13EF5866A147EE95A062FB9C34542C3D02E49DF3"},
+      {"page": 4, "sha256": "B8FABCCD791BFFA5791BA2A37FEE9CE2FEBD929A3936AF77A5F43F8A39FC5E82"}
+    ]
+  },
+  "glyph_metrics": {
+    "+": {"bearing": 0, "raster_width": 10, "advance": 8, "trailing": -2},
+    "-": {"bearing": 0, "raster_width": 7, "advance": 6, "trailing": -1},
+    ".": {"bearing": 0, "raster_width": 4, "advance": 3, "trailing": -1},
+    ":": {"bearing": 0, "raster_width": 4, "advance": 3, "trailing": -1},
+    "0": {"bearing": 0, "raster_width": 11, "advance": 9, "trailing": -2},
+    "1": {"bearing": 0, "raster_width": 8, "advance": 6, "trailing": -2},
+    "2": {"bearing": 0, "raster_width": 10, "advance": 8, "trailing": -2},
+    "3": {"bearing": 0, "raster_width": 10, "advance": 8, "trailing": -2},
+    "4": {"bearing": 0, "raster_width": 11, "advance": 9, "trailing": -2},
+    "5": {"bearing": 0, "raster_width": 11, "advance": 9, "trailing": -2},
+    "6": {"bearing": 0, "raster_width": 11, "advance": 9, "trailing": -2},
+    "7": {"bearing": 0, "raster_width": 10, "advance": 8, "trailing": -2},
+    "8": {"bearing": 0, "raster_width": 11, "advance": 9, "trailing": -2},
+    "9": {"bearing": 0, "raster_width": 11, "advance": 9, "trailing": -2}
+  },
+  "string_bounds": [
+    {"text": "0:00.000", "advance": 60, "visible_width": 62, "final_trailing": -2},
+    {"text": "0:59.999", "advance": 60, "visible_width": 62, "final_trailing": -2},
+    {"text": "1:23.456", "advance": 55, "visible_width": 57, "final_trailing": -2},
+    {"text": "9:59.999", "advance": 60, "visible_width": 62, "final_trailing": -2},
+    {"text": "12:34.567", "advance": 63, "visible_width": 65, "final_trailing": -2},
+    {"text": "+0:00.000", "advance": 68, "visible_width": 70, "final_trailing": -2},
+    {"text": "+12:34.567", "advance": 71, "visible_width": 73, "final_trailing": -2},
+    {"text": "-0:00.000", "advance": 66, "visible_width": 68, "final_trailing": -2}
+  ],
+  "geometry": {
+    "inner_parent_width": 293,
+    "outer_visible_row_width": 284,
+    "current_x": 76,
+    "control_width": 70,
+    "resolved_left": 217,
+    "resolved_right": 287,
+    "control_overrun": 3,
+    "glyph_raster_overhang": 2,
+    "total_logical_overrun": 5,
+    "effective_screen_scale": 2.0,
+    "estimated_screen_overrun": 10
+  },
+  "change_policy": {
+    "freeze": ["Hangul metrics", "Latin letter metrics", "BFONT", "DDS", "nameplate assets"],
+    "conditionally_allowed_only_if_layout_fix_fails": ["0-9", ":", ".", "+", "-"],
+    "selected_first_fix": "layout x only"
+  }
+}

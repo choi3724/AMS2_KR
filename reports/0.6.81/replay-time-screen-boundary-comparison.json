@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "coordinate_space": "full desktop capture pixels",
+  "fixed_boundary_x": 528,
+  "samples": [
+    {
+      "state": "slow_wheel_input",
+      "image": "runtime-evidence/replay-time-v39-slow-scroll-panel.png",
+      "row_rightmost_light_pixel": {"2": 528, "3": 528, "4": 528, "5": 528, "6": 528}
+    },
+    {
+      "state": "slow_post_input",
+      "image": "runtime-evidence/replay-time-v39-slow-post-stop-panel.png",
+      "row_rightmost_light_pixel": {"2": 528, "3": 528, "4": 528, "5": 528, "6": 528}
+    },
+    {
+      "state": "fast_wheel_input",
+      "image": "runtime-evidence/replay-time-v39-fast-scroll-panel.png",
+      "row_rightmost_light_pixel": {"2": 528, "3": 528, "4": 528, "5": 528, "6": 528}
+    },
+    {
+      "state": "fast_post_input",
+      "image": "runtime-evidence/replay-time-v39-fast-post-stop-panel.png",
+      "row_rightmost_light_pixel": {"2": 528, "3": 528, "4": 528, "5": 528, "6": 528}
+    }
+  ],
+  "idle_series": {
+    "frames": 20,
+    "path_pattern": "runtime-evidence/replay-time-v39-idle-series/frame-###.png",
+    "contact_sheet": "runtime-evidence/replay-time-v39-idle-contact-sheet.png",
+    "observation": "time strings changed while the right cut boundary stayed fixed"
+  },
+  "screen_interpretation": {
+    "visible_cut_boundary": 528,
+    "estimated_complete_glyph_right": 538,
+    "estimated_missing_width": 10,
+    "logical_equivalent": 5
+  },
+  "conclusion": "The final numeral shape changes perceived severity; the clipping boundary itself does not move."
+}

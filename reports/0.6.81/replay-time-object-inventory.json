@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "status": "PRE_DIAGNOSTIC_COMPLETE_ACTIVE_GROUP_UNPROVEN",
+  "generated_at_kst": "2026-08-29",
+  "active_resource_route": {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\Automobilista 2\\hud_leaderboard2_1_6.bgui",
+    "sha256": "BC7E1812089CF927604A450F2956086FE73585180D7D7537B112AA49C979D924",
+    "bytes": 197354,
+    "route_proven_by": "Procmon CreateFile/ReadFile SUCCESS",
+    "shadowed_resource": "Pakfiles/IGPHASEHUD.bff::gui/hud_leaderboard2_1_6.bgui"
+  },
+  "binding_name": "SplitApplink",
+  "total_candidates": 25,
+  "groups": [
+    {
+      "group": "A",
+      "count": 11,
+      "object_ids": [97, 183, 269, 355, 441, 527, 613, 699, 785, 871, 957],
+      "object_start_offsets": [7530, 16522, 25514, 34506, 43498, 52490, 61482, 70474, 79466, 88458, 97450],
+      "x_field_offsets": [7555, 16547, 25539, 34531, 43523, 52515, 61507, 70499, 79491, 88483, 97475],
+      "geometry": {"x": 76.0, "y": 0.0, "width": 70.0, "height": 25.0},
+      "alignment_hex": "040200000001000000000000",
+      "alignment_interpretation": "right",
+      "font": "gui\\kr13_font_hud_main.bfont",
+      "clip_rect": [-1000.0, -1000.0, 1000.0, 1000.0],
+      "runtime_identity": "UNPROVEN"
+    },
+    {
+      "group": "B",
+      "count": 4,
+      "object_ids": [1058, 1077, 1098, 1153],
+      "object_start_offsets": [109281, 110285, 111651, 117932],
+      "geometry": {"x": 152.0, "y": -3.0, "width": 108.0, "height": 28.0},
+      "font": "gui\\kr08_font_standard_14.bfont",
+      "runtime_identity": "UNPROVEN"
+    },
+    {
+      "group": "C",
+      "count": 10,
+      "object_ids": [1210, 1266, 1322, 1379, 1435, 1491, 1547, 1603, 1659, 1715],
+      "object_start_offsets": [124616, 131431, 138246, 145301, 152116, 158931, 165746, 172561, 179376, 186192],
+      "geometry": {"x": 132.0, "y": 0.0, "width": 78.0, "height": 26.0},
+      "font": "gui\\kr13_phoenix_body_footnote.bfont",
+      "runtime_identity": "UNPROVEN"
+    }
+  ],
+  "pre_existing_strong_diagnostics": [
+    {
+      "id": "GROUP_A_X176",
+      "path": "E:\\AMS2_Korean_Work\\artifacts\\AMS2-KR-068.1-replay-time-diagnostic-groupA-x176\\hud_leaderboard2_1_6.bgui",
+      "sha256": "5C1436A7DE72CB2CE88AD7FB467F4B6DB3A4710AF2E19BF4B2FF32487AB26765",
+      "change": "11 group-A x fields: 76 -> 176",
+      "runtime_executed": false
+    },
+    {
+      "id": "GROUP_BC_XPLUS100",
+      "path": "E:\\AMS2_Korean_Work\\artifacts\\AMS2-KR-068.1-replay-time-diagnostic-groupBC-xplus100\\hud_leaderboard2_1_6.bgui",
+      "sha256": "95854901AC74C16AA11294FDFC60032F3C561FC8A8F41B7D48E5B646014BD456",
+      "change": "groups B and C x fields: +100",
+      "runtime_executed": false
+    },
+    {
+      "id": "ALL_SPLIT_WIDTH_ZERO",
+      "path": "E:\\AMS2_Korean_Work\\artifacts\\AMS2-KR-068.1-replay-time-diagnostic-all-split-width0\\hud_leaderboard2_1_6.bgui",
+      "sha256": "C834063EBBB5B27F4E195E540018A80000A53CB598F6BC7E46E200DCC550E494",
+      "change": "all 25 SplitApplink widths -> 0",
+      "runtime_executed": false
+    },
+    {
+      "id": "ALL_SPLIT_UNBOUND",
+      "path": "E:\\AMS2_Korean_Work\\artifacts\\AMS2-KR-068.1-replay-time-diagnostic-all-split-unbound\\hud_leaderboard2_1_6.bgui",
+      "sha256": "177FF1B07F0C6DE56B0011CA1147CE58C32A9CB31ABECC123B68B58141D9DC2F",
+      "change": "binding name byte changed for all 25 candidates",
+      "runtime_executed": false
+    }
+  ],
+  "fine_change_allowed": false
+}
+

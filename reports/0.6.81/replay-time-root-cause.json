@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "status": "ROOT_CAUSE_CONFIRMED_STATIC_AND_RUNTIME_ROUTE",
+  "root_causes": [
+    {
+      "id": "ACTIVE_RESOURCE_SHADOWING",
+      "description": "The game loads the root loose hud_leaderboard2_1_6.bgui, shadowing the IGPHASEHUD.bff entry changed by v34-v40 candidates.",
+      "evidence": "Procmon ReadFile SUCCESS on E:\\SteamLibrary\\steamapps\\common\\Automobilista 2\\hud_leaderboard2_1_6.bgui"
+    },
+    {
+      "id": "FIXED_RIGHT_EDGE_OVERRUN",
+      "description": "The active right-anchored time control ends 3 logical px beyond the visible row edge, and the active digit raster extends another 2 logical px beyond advance.",
+      "control_overrun_logical_px": 3,
+      "glyph_overhang_logical_px": 2,
+      "total_overrun_logical_px": 5
+    }
+  ],
+  "state_variance_disposition": {
+    "is_dynamic_clip_boundary": false,
+    "fixed_screen_boundary_x": 528,
+    "apparent_variance_reason": "The rightmost numeral changes over time and has a different visible stroke shape at the same fixed cut boundary."
+  },
+  "invalidated_candidates": {
+    "versions": ["v34", "v35", "v36", "v37", "v38", "v39", "v40"],
+    "reason": "They targeted a BFF entry hidden by the active root loose BGUI; no runtime effect can be attributed to those edits."
+  },
+  "recommended_minimal_candidate": {
+    "target": "root and GUI direct loose hud_leaderboard2_1_6.bgui payloads",
+    "object": "Group A SplitApplink x field only",
+    "object_count": 11,
+    "old_x": 76.0,
+    "new_x": 81.0,
+    "width": 70.0,
+    "alignment": "right unchanged",
+    "font": "gui\\kr13_font_hud_main.bfont unchanged",
+    "expected_control_right": 282,
+    "expected_visible_glyph_right": 284,
+    "name_column_right": 203,
+    "expected_name_time_gap": 9
+  },
+  "forbidden_in_candidate": [
+    "Hangul width changes",
+    "Latin letter width changes",
+    "BFONT regeneration",
+    "DDS regeneration",
+    "nameplate changes",
+    "IGPHASEHUD.bff changes",
+    "translation changes"
+  ],
+  "runtime_gate": [
+    "0:00.000 fully visible",
+    "0:59.999 fully visible",
+    "1:23.456 fully visible",
+    "9:59.999 fully visible",
+    "12:34.567 fully visible",
+    "no driver-name overlap",
+    "no text background regression",
+    "no Hangul/nameplate regression"
+  ]
+}

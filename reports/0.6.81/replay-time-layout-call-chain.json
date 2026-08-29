@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "status": "PARTIAL_CHAIN_PROVEN_ACTIVE_OBJECT_AND_CLIP_OWNER_PENDING",
+  "chain": [
+    {
+      "order": 1,
+      "stage": "replay timing data",
+      "owner": "AMS2 replay/session runtime",
+      "status": "PROVEN_BY_DYNAMIC_VALUES",
+      "evidence": "time values change during replay"
+    },
+    {
+      "order": 2,
+      "stage": "time formatter",
+      "owner": "AMS2 engine",
+      "status": "FORMAT_OBSERVED_SYMBOL_UNRESOLVED",
+      "evidence": "m:ss.fff-like output; no static TDB or inline literal identified"
+    },
+    {
+      "order": 3,
+      "stage": "BGUI dynamic binding",
+      "owner": "SplitApplink",
+      "status": "NAME_PROVEN_CONSUMER_UNPROVEN",
+      "evidence": "25 same-name candidates in loaded resource"
+    },
+    {
+      "order": 4,
+      "stage": "resource precedence",
+      "owner": "root loose hud_leaderboard2_1_6.bgui",
+      "status": "PROVEN",
+      "evidence": "Procmon ReadFile SUCCESS, 197354 bytes"
+    },
+    {
+      "order": 5,
+      "stage": "text object group",
+      "owner": "A or B or C",
+      "status": "UNPROVEN",
+      "evidence_required": ">=100px runtime movement or disappearance"
+    },
+    {
+      "order": 6,
+      "stage": "row/list parent transform",
+      "owner": "BGUI hierarchy/runtime list instance",
+      "status": "UNPROVEN",
+      "evidence_required": "active group proof followed by parent-bound comparison"
+    },
+    {
+      "order": 7,
+      "stage": "font and glyph bounds",
+      "owner": "font associated with proven active group",
+      "status": "CANDIDATE_METRICS_AVAILABLE_NOT_CAUSAL",
+      "evidence": "group-specific fonts differ; active group not yet proven"
+    },
+    {
+      "order": 8,
+      "stage": "final clipping/scissor",
+      "owner": "text rect, parent rect, runtime scissor, or viewport",
+      "status": "UNPROVEN",
+      "evidence": "sampled visible boundary is fixed at desktop x=528"
+    }
+  ],
+  "next_permitted_action": "execute pre-existing strong group diagnostics",
+  "next_forbidden_action": "create or deploy a fine correction"
+}
+

@@ -1,0 +1,107 @@
+{
+  "schema": "ams2-kr-068.1-nameplate-embedded-name-minimal-fix-v1",
+  "status": "PASS",
+  "root_cause": "Dedicated BFONT embedded name resolved Phoenix DDS pages instead of dedicated nameplate DDS pages",
+  "input_root": "E:\\AMS2_Korean_Work\\artifacts\\AMS2-KR-068.1-candidate10c-bap\\fonts",
+  "output_root": "E:\\AMS2_Korean_Work\\artifacts\\AMS2-KR-068.1-candidate11-nameplate-name\\fonts",
+  "bfont": {
+    "input": "E:\\AMS2_Korean_Work\\artifacts\\AMS2-KR-068.1-candidate10c-bap\\fonts\\kr13_driver_name_semibold\\kr13_driver_name_semibold.bfont",
+    "output": "E:\\AMS2_Korean_Work\\artifacts\\AMS2-KR-068.1-candidate11-nameplate-name\\fonts\\kr13_driver_name_semibold\\kr13_driver_name_semibold.bfont",
+    "before_sha256": "A4005F7BFE733C40029C231CFA6090C469FD4F45EC83DAE03916BB9EBBDEA0C6",
+    "after_sha256": "6409DA7DE921013C28357E59CC0F7FA85FC8954BB1BE0E47FB152120B5CDB958",
+    "before_embedded_name": "kr13_phoenix_body_regular",
+    "after_embedded_name": "kr13_driver_name_semibold",
+    "name_offset": 20,
+    "name_length": 25,
+    "changed_byte_count": 20,
+    "changed_offsets": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ]
+  },
+  "dds": [
+    {
+      "page": 0,
+      "source": "E:\\AMS2_Korean_Work\\artifacts\\AMS2-KR-068.1-candidate10c-bap\\fonts\\kr13_driver_name_semibold\\kr13_driver_name_semibold_00.dds",
+      "output": "E:\\AMS2_Korean_Work\\artifacts\\AMS2-KR-068.1-candidate11-nameplate-name\\fonts\\kr13_driver_name_semibold\\kr13_driver_name_semibold_00.dds",
+      "source_sha256": "C0F76F5421B2732D9E7C78D5BA22142CE017DDB8B492AF900752D5E4F5A212C0",
+      "output_sha256": "C0F76F5421B2732D9E7C78D5BA22142CE017DDB8B492AF900752D5E4F5A212C0",
+      "byte_exact": true
+    },
+    {
+      "page": 1,
+      "source": "E:\\AMS2_Korean_Work\\artifacts\\AMS2-KR-068.1-candidate10c-bap\\fonts\\kr13_driver_name_semibold\\kr13_driver_name_semibold_01.dds",
+      "output": "E:\\AMS2_Korean_Work\\artifacts\\AMS2-KR-068.1-candidate11-nameplate-name\\fonts\\kr13_driver_name_semibold\\kr13_driver_name_semibold_01.dds",
+      "source_sha256": "4A4208EC379DA1F795FF7E5F6DD5EF73893559BBE56D63A02C39645D34F06530",
+      "output_sha256": "4A4208EC379DA1F795FF7E5F6DD5EF73893559BBE56D63A02C39645D34F06530",
+      "byte_exact": true
+    },
+    {
+      "page": 2,
+      "source": "E:\\AMS2_Korean_Work\\artifacts\\AMS2-KR-068.1-candidate10c-bap\\fonts\\kr13_driver_name_semibold\\kr13_driver_name_semibold_02.dds",
+      "output": "E:\\AMS2_Korean_Work\\artifacts\\AMS2-KR-068.1-candidate11-nameplate-name\\fonts\\kr13_driver_name_semibold\\kr13_driver_name_semibold_02.dds",
+      "source_sha256": "8E0CB3FC3C337FDF62384F7F7F2F8CD8F2AE73A8DA8B0F75E2BCF094EA511048",
+      "output_sha256": "8E0CB3FC3C337FDF62384F7F7F2F8CD8F2AE73A8DA8B0F75E2BCF094EA511048",
+      "byte_exact": true
+    },
+    {
+      "page": 3,
+      "source": "E:\\AMS2_Korean_Work\\artifacts\\AMS2-KR-068.1-candidate10c-bap\\fonts\\kr13_driver_name_semibold\\kr13_driver_name_semibold_03.dds",
+      "output": "E:\\AMS2_Korean_Work\\artifacts\\AMS2-KR-068.1-candidate11-nameplate-name\\fonts\\kr13_driver_name_semibold\\kr13_driver_name_semibold_03.dds",
+      "source_sha256": "746AC04B67C92616D6440237692D6039B4CD39CFE892057F27E6E7D01AB7E547",
+      "output_sha256": "746AC04B67C92616D6440237692D6039B4CD39CFE892057F27E6E7D01AB7E547",
+      "byte_exact": true
+    },
+    {
+      "page": 4,
+      "source": "E:\\AMS2_Korean_Work\\artifacts\\AMS2-KR-068.1-candidate10c-bap\\fonts\\kr13_driver_name_semibold\\kr13_driver_name_semibold_04.dds",
+      "output": "E:\\AMS2_Korean_Work\\artifacts\\AMS2-KR-068.1-candidate11-nameplate-name\\fonts\\kr13_driver_name_semibold\\kr13_driver_name_semibold_04.dds",
+      "source_sha256": "6A50996E61194436130B52D8A608D21A8C2B2B7F9A83C937BD7EA1BA823F8595",
+      "output_sha256": "6A50996E61194436130B52D8A608D21A8C2B2B7F9A83C937BD7EA1BA823F8595",
+      "byte_exact": true
+    }
+  ],
+  "contracts": {
+    "file_size_unchanged": true,
+    "version_unchanged": true,
+    "scale_unchanged": true,
+    "header_fields_unchanged": true,
+    "glyph_count_unchanged": true,
+    "codepoints_byte_exact": true,
+    "uvs_byte_exact": true,
+    "metrics_byte_exact": true,
+    "footer_byte_exact": true,
+    "line_height_baseline_unchanged": true,
+    "atlas_contract_unchanged": true,
+    "embedded_name_fixed": true,
+    "changed_bytes_confined_to_name_field": true,
+    "all_dds_byte_exact": true
+  },
+  "forbidden_changes": {
+    "dds_changes": 0,
+    "glyph_record_changes": 0,
+    "uv_changes": 0,
+    "metric_changes": 0,
+    "footer_changes": 0,
+    "igphasehud_changes": 0,
+    "tdb_changes": 0
+  }
+}

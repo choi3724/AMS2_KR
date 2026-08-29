@@ -1,0 +1,28 @@
+{
+  "schema": "ams2-kr-068.1-player-list-runtime-validation-v1",
+  "route": "player/session list",
+  "font_alias": "kr13_phoenix_body_large",
+  "status": "PASS",
+  "basis": [
+    "USER_CONFIRMED_SESSION_LIST_NORMAL",
+    "CANDIDATE11_ACTUAL_SINGLE_RACE_LIST_CAPTURED"
+  ],
+  "preservation_policy": "Do not modify the player-list BFONT/DDS route",
+  "checks": {
+    "korean_identity": "PASS",
+    "missing_glyph_star": 0,
+    "gray_glyph_background": 0,
+    "human_nickname": "PASS",
+    "safety_car_text": "세이프티 카"
+  },
+  "evidence": [
+    "runtime/candidate11-session-ready.png",
+    "runtime/candidate11-driving-initial.png",
+    "runtime/candidate11-live-list-scroll.png",
+    "player-list-idle.png",
+    "player-list-slow-scroll-steam.jpg",
+    "player-list-fast-scroll-steam.jpg",
+    "player-list-post-scroll-steam.jpg"
+  ]
+}
+

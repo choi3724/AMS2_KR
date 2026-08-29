@@ -1,0 +1,3527 @@
+{
+  "routes": [
+    {
+      "alias": "kr13_phoenix_body_large",
+      "pre_bfont": "E:\\AMS2_Korean_Work\\artifacts\\AMS2-KR-068.1-candidate11-nameplate-name\\fonts\\kr13_phoenix_body_large\\kr13_phoenix_body_large.bfont",
+      "pre_bfont_sha256": "C8B4A5C7784FDB29D94E08237635802A650316BD340A462478A048055E523C7E",
+      "current_bfont": "E:\\AMS2_Korean_Work\\artifacts\\AMS2-KR-068.1-candidate12-nameplate-background\\fonts\\kr13_phoenix_body_large\\kr13_phoenix_body_large.bfont",
+      "current_bfont_sha256": "C8B4A5C7784FDB29D94E08237635802A650316BD340A462478A048055E523C7E",
+      "embedded_name": "kr13_phoenix_body_large",
+      "version": 10,
+      "glyph_count": 1413,
+      "atlas_count": 5,
+      "glyphs_per_atlas": 324,
+      "line_height": 28,
+      "baseline": 24,
+      "bfont_byte_exact": true,
+      "embedded_name_matches_alias": true,
+      "targets": [
+        {
+          "pre": {
+            "codepoint": "U+CF67",
+            "character": "콧",
+            "utf8_hex": "ECBDA7",
+            "utf16le_hex": "67CF",
+            "record_index": 1393,
+            "page": 4,
+            "page_local_index": 97,
+            "rect": [
+              448,
+              116,
+              460,
+              144
+            ],
+            "uv": [
+              0.875,
+              0.2265625,
+              0.8984375,
+              0.28125
+            ],
+            "metric": [
+              0,
+              12,
+              12
+            ],
+            "bitmap_sha256": "52D9C06387185BAA9768E76AE0F2A9902869DA8DBB85E8320393A4049D20F560",
+            "active_pixels": 91,
+            "analysis": {
+              "active_bounds": [
+                0,
+                13,
+                12,
+                26
+              ],
+              "padding": {
+                "left": 0,
+                "right": 0,
+                "top": 13,
+                "bottom": 2
+              },
+              "active_pixels": 91,
+              "antialias_levels": 13
+            }
+          },
+          "current": {
+            "codepoint": "U+CF67",
+            "character": "콧",
+            "utf8_hex": "ECBDA7",
+            "utf16le_hex": "67CF",
+            "record_index": 1393,
+            "page": 4,
+            "page_local_index": 97,
+            "rect": [
+              448,
+              116,
+              460,
+              144
+            ],
+            "uv": [
+              0.875,
+              0.2265625,
+              0.8984375,
+              0.28125
+            ],
+            "metric": [
+              0,
+              12,
+              12
+            ],
+            "bitmap_sha256": "52D9C06387185BAA9768E76AE0F2A9902869DA8DBB85E8320393A4049D20F560",
+            "active_pixels": 91,
+            "analysis": {
+              "active_bounds": [
+                0,
+                13,
+                12,
+                26
+              ],
+              "padding": {
+                "left": 0,
+                "right": 0,
+                "top": 13,
+                "bottom": 2
+              },
+              "active_pixels": 91,
+              "antialias_levels": 13
+            }
+          },
+          "pre_neighbors": [
+            {
+              "record_index": 1390,
+              "codepoint": "U+CEA3",
+              "character": "캣",
+              "page": 4,
+              "page_local_index": 94
+            },
+            {
+              "record_index": 1391,
+              "codepoint": "U+CF08",
+              "character": "켈",
+              "page": 4,
+              "page_local_index": 95
+            },
+            {
+              "record_index": 1392,
+              "codepoint": "U+CF65",
+              "character": "콥",
+              "page": 4,
+              "page_local_index": 96
+            },
+            {
+              "record_index": 1393,
+              "codepoint": "U+CF67",
+              "character": "콧",
+              "page": 4,
+              "page_local_index": 97
+            },
+            {
+              "record_index": 1394,
+              "codepoint": "U+CF78",
+              "character": "콸",
+              "page": 4,
+              "page_local_index": 98
+            },
+            {
+              "record_index": 1395,
+              "codepoint": "U+CFE1",
+              "character": "쿡",
+              "page": 4,
+              "page_local_index": 99
+            },
+            {
+              "record_index": 1396,
+              "codepoint": "U+CFE4",
+              "character": "쿤",
+              "page": 4,
+              "page_local_index": 100
+            }
+          ],
+          "current_neighbors": [
+            {
+              "record_index": 1390,
+              "codepoint": "U+CEA3",
+              "character": "캣",
+              "page": 4,
+              "page_local_index": 94
+            },
+            {
+              "record_index": 1391,
+              "codepoint": "U+CF08",
+              "character": "켈",
+              "page": 4,
+              "page_local_index": 95
+            },
+            {
+              "record_index": 1392,
+              "codepoint": "U+CF65",
+              "character": "콥",
+              "page": 4,
+              "page_local_index": 96
+            },
+            {
+              "record_index": 1393,
+              "codepoint": "U+CF67",
+              "character": "콧",
+              "page": 4,
+              "page_local_index": 97
+            },
+            {
+              "record_index": 1394,
+              "codepoint": "U+CF78",
+              "character": "콸",
+              "page": 4,
+              "page_local_index": 98
+            },
+            {
+              "record_index": 1395,
+              "codepoint": "U+CFE1",
+              "character": "쿡",
+              "page": 4,
+              "page_local_index": 99
+            },
+            {
+              "record_index": 1396,
+              "codepoint": "U+CFE4",
+              "character": "쿤",
+              "page": 4,
+              "page_local_index": 100
+            }
+          ],
+          "mapping_byte_exact": true,
+          "bitmap_byte_exact": true,
+          "page_binding_hypotheses": [
+            {
+              "sampled_page": 0,
+              "rect": [
+                448,
+                116,
+                460,
+                144
+              ],
+              "bitmap_sha256": "CE7C9239CBCA4D540E8FFC3181847B7EB9310D2445A2E12C3CB6033BC2C08917",
+              "active_pixels": 10,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+B290",
+                  "character": "느",
+                  "different_pixels": 59,
+                  "maximum_delta": 255,
+                  "mean_delta": 23.776785714285715,
+                  "bitmap_sha256": "D3048DE18976790C9A2F92BC25AB7109FED6D94348B27390DFB20B55C488D6C6"
+                },
+                {
+                  "codepoint": "U+C2A4",
+                  "character": "스",
+                  "different_pixels": 64,
+                  "maximum_delta": 255,
+                  "mean_delta": 25.342261904761905,
+                  "bitmap_sha256": "5A3BF0A7D4F7D8249CA856F81DADE8EA4CCC0B03C99EF55B33044277932513CC"
+                },
+                {
+                  "codepoint": "U+ADF8",
+                  "character": "그",
+                  "different_pixels": 62,
+                  "maximum_delta": 255,
+                  "mean_delta": 25.4375,
+                  "bitmap_sha256": "255176703812756A017F34CC519656EE68C382F683BDD45F17048AF8D1C8B801"
+                },
+                {
+                  "codepoint": "U+B2C8",
+                  "character": "니",
+                  "different_pixels": 63,
+                  "maximum_delta": 255,
+                  "mean_delta": 26.342261904761905,
+                  "bitmap_sha256": "C0893C94D1CAC597F329846E92536BC427BBD4D1A63FDB794E5E52E814042593"
+                },
+                {
+                  "codepoint": "U+B204",
+                  "character": "누",
+                  "different_pixels": 66,
+                  "maximum_delta": 255,
+                  "mean_delta": 26.43452380952381,
+                  "bitmap_sha256": "396F3EA5D92CE96E095A8960102FE6B707D1237C134D368F77E55FB295A15965"
+                },
+                {
+                  "codepoint": "U+B178",
+                  "character": "노",
+                  "different_pixels": 63,
+                  "maximum_delta": 255,
+                  "mean_delta": 27.050595238095237,
+                  "bitmap_sha256": "1F6329738214878311EF972E2AE04BBB34547E8A6B8A203B7C687CEFC853EE80"
+                },
+                {
+                  "codepoint": "U+B098",
+                  "character": "나",
+                  "different_pixels": 68,
+                  "maximum_delta": 255,
+                  "mean_delta": 27.523809523809526,
+                  "bitmap_sha256": "D34B9E14A68EFD33C516755D1338FA32AB9C42E5B57530531CCF4CD4526DE053"
+                },
+                {
+                  "codepoint": "U+AE30",
+                  "character": "기",
+                  "different_pixels": 68,
+                  "maximum_delta": 255,
+                  "mean_delta": 27.851190476190474,
+                  "bitmap_sha256": "F89CEB28865A08D26E288512B6E4BA683A5D5C04002991433D11C3D98FCF30C1"
+                }
+              ]
+            },
+            {
+              "sampled_page": 1,
+              "rect": [
+                448,
+                116,
+                460,
+                144
+              ],
+              "bitmap_sha256": "5AAF56B596CC62895CC7BE4707DCB006D2E119F11CE34C042B5539BFFB6CEC19",
+              "active_pixels": 102,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+AE70",
+                  "character": "깰",
+                  "different_pixels": 0,
+                  "maximum_delta": 0,
+                  "mean_delta": 0.0,
+                  "bitmap_sha256": "5AAF56B596CC62895CC7BE4707DCB006D2E119F11CE34C042B5539BFFB6CEC19"
+                },
+                {
+                  "codepoint": "U+CC14",
+                  "character": "찔",
+                  "different_pixels": 89,
+                  "maximum_delta": 255,
+                  "mean_delta": 13.205357142857142,
+                  "bitmap_sha256": "77085243820C4A4BD430CAEA20E9FA2A4170C936EF207FA788B7F0B831A6EBEC"
+                },
+                {
+                  "codepoint": "U+C5D8",
+                  "character": "엘",
+                  "different_pixels": 69,
+                  "maximum_delta": 255,
+                  "mean_delta": 15.130952380952381,
+                  "bitmap_sha256": "63C62D8CB9386AFB1A4042B32BEF4C96F2C3BDAF12E40C0D8E77995E527057C4"
+                },
+                {
+                  "codepoint": "U+D3BC",
+                  "character": "펼",
+                  "different_pixels": 94,
+                  "maximum_delta": 255,
+                  "mean_delta": 15.863095238095237,
+                  "bitmap_sha256": "8BBB6ADE8E7DB320CC4FC56C13E01254F558FBFC6F34AC14C601B1018C578F72"
+                },
+                {
+                  "codepoint": "U+CEEC",
+                  "character": "컬",
+                  "different_pixels": 78,
+                  "maximum_delta": 255,
+                  "mean_delta": 17.13095238095238,
+                  "bitmap_sha256": "8A219966083E26F78B342420C33932B9AB306EB10AFD4E9219D2D5962CBDCE27"
+                },
+                {
+                  "codepoint": "U+C808",
+                  "character": "절",
+                  "different_pixels": 89,
+                  "maximum_delta": 255,
+                  "mean_delta": 18.086309523809526,
+                  "bitmap_sha256": "597133B7E5F1582D22851AAABA1C4A0E8B8DD78DC3E2DC30BFC5DD6C5DEB5ED3"
+                },
+                {
+                  "codepoint": "U+ACB0",
+                  "character": "결",
+                  "different_pixels": 93,
+                  "maximum_delta": 255,
+                  "mean_delta": 18.708333333333332,
+                  "bitmap_sha256": "577CA0945841BA9A80009E17DC93F5C1E031411B791CBD7A233FA8C2888B6DC3"
+                },
+                {
+                  "codepoint": "U+C258",
+                  "character": "쉘",
+                  "different_pixels": 105,
+                  "maximum_delta": 255,
+                  "mean_delta": 18.970238095238095,
+                  "bitmap_sha256": "3D3D9460315DAC0BE75026B54AD8F65DBC41FC7ED7A6DCB6F659C1FC7209FE12"
+                }
+              ]
+            },
+            {
+              "sampled_page": 2,
+              "rect": [
+                448,
+                116,
+                460,
+                144
+              ],
+              "bitmap_sha256": "F39F223EBD77C4FF1BC85C6A64C18573AEB1BAB9DA1E7D0167DFB0D7E77F70EC",
+              "active_pixels": 91,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+BC24",
+                  "character": "밤",
+                  "different_pixels": 0,
+                  "maximum_delta": 0,
+                  "mean_delta": 0.0,
+                  "bitmap_sha256": "F39F223EBD77C4FF1BC85C6A64C18573AEB1BAB9DA1E7D0167DFB0D7E77F70EC"
+                },
+                {
+                  "codepoint": "U+BC1B",
+                  "character": "받",
+                  "different_pixels": 36,
+                  "maximum_delta": 255,
+                  "mean_delta": 6.029761904761905,
+                  "bitmap_sha256": "839EBDCB43B19FCC68366F66B568C8D281CF8CEB122552682F950CCED58FDE80"
+                },
+                {
+                  "codepoint": "U+BC29",
+                  "character": "방",
+                  "different_pixels": 60,
+                  "maximum_delta": 207,
+                  "mean_delta": 10.404761904761905,
+                  "bitmap_sha256": "8E91511E5BB9FE71FF303654512EA5871A86B443DA48A4770F0DE3258DA7C435"
+                },
+                {
+                  "codepoint": "U+B118",
+                  "character": "넘",
+                  "different_pixels": 58,
+                  "maximum_delta": 255,
+                  "mean_delta": 11.681547619047619,
+                  "bitmap_sha256": "DE277EDF9A6C6DA5B60F99CD05C910369110C33390A857CDFCBC45D94754D3D4"
+                },
+                {
+                  "codepoint": "U+D0D0",
+                  "character": "탐",
+                  "different_pixels": 52,
+                  "maximum_delta": 255,
+                  "mean_delta": 12.949404761904763,
+                  "bitmap_sha256": "C240E5F306D0CE5F39FACF8A20615ADDA24D9C191F26A7499B75FAD2A46E2150"
+                },
+                {
+                  "codepoint": "U+BC16",
+                  "character": "밖",
+                  "different_pixels": 55,
+                  "maximum_delta": 255,
+                  "mean_delta": 12.952380952380953,
+                  "bitmap_sha256": "6E06A11B8728551C433CCC387CFC460CACB53FEC5BC71560E2DF296A0FF738A8"
+                },
+                {
+                  "codepoint": "U+BE59",
+                  "character": "빙",
+                  "different_pixels": 78,
+                  "maximum_delta": 207,
+                  "mean_delta": 13.306547619047619,
+                  "bitmap_sha256": "AA277921C6A3DC6C4049AE5B15261AD4897CC1018AC535B8BCC2EEF43055A72B"
+                },
+                {
+                  "codepoint": "U+C554",
+                  "character": "암",
+                  "different_pixels": 69,
+                  "maximum_delta": 223,
+                  "mean_delta": 13.630952380952381,
+                  "bitmap_sha256": "3DE1EA2BA298E85757BACD070DCB8B38EA6AFE5BA435AE835073F6F1D0A7FB46"
+                }
+              ]
+            },
+            {
+              "sampled_page": 3,
+              "rect": [
+                448,
+                116,
+                460,
+                144
+              ],
+              "bitmap_sha256": "46CCDEBA87D5C05E794C423BC3CCD1FDA2EAF767025D8B0D50BA546E33BA6455",
+              "active_pixels": 81,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+C9D9",
+                  "character": "짙",
+                  "different_pixels": 0,
+                  "maximum_delta": 0,
+                  "mean_delta": 0.0,
+                  "bitmap_sha256": "46CCDEBA87D5C05E794C423BC3CCD1FDA2EAF767025D8B0D50BA546E33BA6455"
+                },
+                {
+                  "codepoint": "U+C9C8",
+                  "character": "질",
+                  "different_pixels": 30,
+                  "maximum_delta": 255,
+                  "mean_delta": 3.5625,
+                  "bitmap_sha256": "877DFA09B4018F3D535A2CA6F0D41AE13D4AD6C4D36183A858F0F24C2A95F443"
+                },
+                {
+                  "codepoint": "U+C808",
+                  "character": "절",
+                  "different_pixels": 69,
+                  "maximum_delta": 255,
+                  "mean_delta": 8.553571428571429,
+                  "bitmap_sha256": "597133B7E5F1582D22851AAABA1C4A0E8B8DD78DC3E2DC30BFC5DD6C5DEB5ED3"
+                },
+                {
+                  "codepoint": "U+CCA0",
+                  "character": "철",
+                  "different_pixels": 53,
+                  "maximum_delta": 255,
+                  "mean_delta": 8.973214285714286,
+                  "bitmap_sha256": "45C70628B1E2AC7DFA55F72EF87CFAA6761DCBC0C7FC7E10B491CC2A52A16B29"
+                },
+                {
+                  "codepoint": "U+C9D1",
+                  "character": "집",
+                  "different_pixels": 66,
+                  "maximum_delta": 255,
+                  "mean_delta": 10.538690476190476,
+                  "bitmap_sha256": "AEF8F48CDA2569D842AB59A72BB58D13C9F3FF305C937F0FD48157E87DF851ED"
+                },
+                {
+                  "codepoint": "U+C2E4",
+                  "character": "실",
+                  "different_pixels": 69,
+                  "maximum_delta": 255,
+                  "mean_delta": 11.776785714285714,
+                  "bitmap_sha256": "FC2B2790B735F26CD5BE9A73F559ADCE76E7B07B81035770DF3B1994B28160A8"
+                },
+                {
+                  "codepoint": "U+C124",
+                  "character": "설",
+                  "different_pixels": 70,
+                  "maximum_delta": 255,
+                  "mean_delta": 13.101190476190476,
+                  "bitmap_sha256": "E1C1722ECFFD28353E5B040C3E716017D36266AEFA65D511478FBD5270800F99"
+                },
+                {
+                  "codepoint": "U+C15C",
+                  "character": "셜",
+                  "different_pixels": 52,
+                  "maximum_delta": 255,
+                  "mean_delta": 13.425595238095237,
+                  "bitmap_sha256": "0F52E4252F56524748CCBE255CC8F4B4CEE0E76F5DF6AAF6BDFA71032A4DF4FA"
+                }
+              ]
+            },
+            {
+              "sampled_page": 4,
+              "rect": [
+                448,
+                116,
+                460,
+                144
+              ],
+              "bitmap_sha256": "52D9C06387185BAA9768E76AE0F2A9902869DA8DBB85E8320393A4049D20F560",
+              "active_pixels": 91,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+CF67",
+                  "character": "콧",
+                  "different_pixels": 0,
+                  "maximum_delta": 0,
+                  "mean_delta": 0.0,
+                  "bitmap_sha256": "52D9C06387185BAA9768E76AE0F2A9902869DA8DBB85E8320393A4049D20F560"
+                },
+                {
+                  "codepoint": "U+BABB",
+                  "character": "못",
+                  "different_pixels": 70,
+                  "maximum_delta": 255,
+                  "mean_delta": 15.175595238095237,
+                  "bitmap_sha256": "823FF45CD9F872E1F960EBB245DC472888FE56AFA070CA4A68C4A42CCEAE533C"
+                },
+                {
+                  "codepoint": "U+CF58",
+                  "character": "콘",
+                  "different_pixels": 66,
+                  "maximum_delta": 255,
+                  "mean_delta": 15.330357142857142,
+                  "bitmap_sha256": "E8F9B34BC7369419261B2567CB27F7F06141EAF2EAB2AB970755AA5087546E55"
+                },
+                {
+                  "codepoint": "U+C637",
+                  "character": "옷",
+                  "different_pixels": 74,
+                  "maximum_delta": 255,
+                  "mean_delta": 16.833333333333332,
+                  "bitmap_sha256": "880F92FB9F01BA748B4B3BC1881BBEC3615C2B1B17E8BE8A216AA8E1CBA3542A"
+                },
+                {
+                  "codepoint": "U+CF69",
+                  "character": "콩",
+                  "different_pixels": 59,
+                  "maximum_delta": 255,
+                  "mean_delta": 17.830357142857142,
+                  "bitmap_sha256": "93ADDEFBE883E8B560A2685A25929E62DA36D1E52FF1BEDF8DF6ABF3E163411B"
+                },
+                {
+                  "codepoint": "U+B4EF",
+                  "character": "듯",
+                  "different_pixels": 64,
+                  "maximum_delta": 255,
+                  "mean_delta": 18.071428571428573,
+                  "bitmap_sha256": "9EB29F9F8ADE99FD0DAC7AD9A186A4E5635D62CAF4BF3B83708ECD39A15BEB82"
+                },
+                {
+                  "codepoint": "U+D3FF",
+                  "character": "폿",
+                  "different_pixels": 76,
+                  "maximum_delta": 255,
+                  "mean_delta": 19.300595238095237,
+                  "bitmap_sha256": "4AA7635E5851B26B02CAF5953EA2CE3782EE063FE98973ACED7DB94AF7E8C0F8"
+                },
+                {
+                  "codepoint": "U+CF64",
+                  "character": "콤",
+                  "different_pixels": 69,
+                  "maximum_delta": 255,
+                  "mean_delta": 19.592261904761905,
+                  "bitmap_sha256": "A4F9821AFDAFA0692AE7D1D6C7A24459B418CCB407838F840845E57F54B66B34"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "pre": {
+            "codepoint": "U+BC25",
+            "character": "밥",
+            "utf8_hex": "EBB0A5",
+            "utf16le_hex": "25BC",
+            "record_index": 1359,
+            "page": 4,
+            "page_local_index": 63,
+            "rect": [
+              268,
+              80,
+              280,
+              108
+            ],
+            "uv": [
+              0.5234375,
+              0.15625,
+              0.546875,
+              0.2109375
+            ],
+            "metric": [
+              0,
+              12,
+              12
+            ],
+            "bitmap_sha256": "4B0C49CC13F09E7678F62A306628BC4D51BA3512F21D2F9A87B6F95B0C5F4D24",
+            "active_pixels": 86,
+            "analysis": {
+              "active_bounds": [
+                1,
+                13,
+                12,
+                26
+              ],
+              "padding": {
+                "left": 1,
+                "right": 0,
+                "top": 13,
+                "bottom": 2
+              },
+              "active_pixels": 86,
+              "antialias_levels": 14
+            }
+          },
+          "current": {
+            "codepoint": "U+BC25",
+            "character": "밥",
+            "utf8_hex": "EBB0A5",
+            "utf16le_hex": "25BC",
+            "record_index": 1359,
+            "page": 4,
+            "page_local_index": 63,
+            "rect": [
+              268,
+              80,
+              280,
+              108
+            ],
+            "uv": [
+              0.5234375,
+              0.15625,
+              0.546875,
+              0.2109375
+            ],
+            "metric": [
+              0,
+              12,
+              12
+            ],
+            "bitmap_sha256": "4B0C49CC13F09E7678F62A306628BC4D51BA3512F21D2F9A87B6F95B0C5F4D24",
+            "active_pixels": 86,
+            "analysis": {
+              "active_bounds": [
+                1,
+                13,
+                12,
+                26
+              ],
+              "padding": {
+                "left": 1,
+                "right": 0,
+                "top": 13,
+                "bottom": 2
+              },
+              "active_pixels": 86,
+              "antialias_levels": 14
+            }
+          },
+          "pre_neighbors": [
+            {
+              "record_index": 1356,
+              "codepoint": "U+B81B",
+              "character": "렛",
+              "page": 4,
+              "page_local_index": 60
+            },
+            {
+              "record_index": 1357,
+              "codepoint": "U+BA5C",
+              "character": "멜",
+              "page": 4,
+              "page_local_index": 61
+            },
+            {
+              "record_index": 1358,
+              "codepoint": "U+BB90",
+              "character": "뮐",
+              "page": 4,
+              "page_local_index": 62
+            },
+            {
+              "record_index": 1359,
+              "codepoint": "U+BC25",
+              "character": "밥",
+              "page": 4,
+              "page_local_index": 63
+            },
+            {
+              "record_index": 1360,
+              "codepoint": "U+BC45",
+              "character": "뱅",
+              "page": 4,
+              "page_local_index": 64
+            },
+            {
+              "record_index": 1361,
+              "codepoint": "U+BCA1",
+              "character": "벡",
+              "page": 4,
+              "page_local_index": 65
+            },
+            {
+              "record_index": 1362,
+              "codepoint": "U+BCB5",
+              "character": "벵",
+              "page": 4,
+              "page_local_index": 66
+            }
+          ],
+          "current_neighbors": [
+            {
+              "record_index": 1356,
+              "codepoint": "U+B81B",
+              "character": "렛",
+              "page": 4,
+              "page_local_index": 60
+            },
+            {
+              "record_index": 1357,
+              "codepoint": "U+BA5C",
+              "character": "멜",
+              "page": 4,
+              "page_local_index": 61
+            },
+            {
+              "record_index": 1358,
+              "codepoint": "U+BB90",
+              "character": "뮐",
+              "page": 4,
+              "page_local_index": 62
+            },
+            {
+              "record_index": 1359,
+              "codepoint": "U+BC25",
+              "character": "밥",
+              "page": 4,
+              "page_local_index": 63
+            },
+            {
+              "record_index": 1360,
+              "codepoint": "U+BC45",
+              "character": "뱅",
+              "page": 4,
+              "page_local_index": 64
+            },
+            {
+              "record_index": 1361,
+              "codepoint": "U+BCA1",
+              "character": "벡",
+              "page": 4,
+              "page_local_index": 65
+            },
+            {
+              "record_index": 1362,
+              "codepoint": "U+BCB5",
+              "character": "벵",
+              "page": 4,
+              "page_local_index": 66
+            }
+          ],
+          "mapping_byte_exact": true,
+          "bitmap_byte_exact": true,
+          "page_binding_hypotheses": [
+            {
+              "sampled_page": 0,
+              "rect": [
+                268,
+                80,
+                280,
+                108
+              ],
+              "bitmap_sha256": "E5A69115B0EB6D6AC08F0381191FDBB76EFA9AE2665123FA849332289F62EA4C",
+              "active_pixels": 29,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+C2A4",
+                  "character": "스",
+                  "different_pixels": 67,
+                  "maximum_delta": 255,
+                  "mean_delta": 24.678571428571427,
+                  "bitmap_sha256": "5A3BF0A7D4F7D8249CA856F81DADE8EA4CCC0B03C99EF55B33044277932513CC"
+                },
+                {
+                  "codepoint": "U+ACE0",
+                  "character": "고",
+                  "different_pixels": 69,
+                  "maximum_delta": 255,
+                  "mean_delta": 25.0,
+                  "bitmap_sha256": "E7EE356B7D57FC2117690E34BD62974497893FB6C4818ABC0D2B9EEA31CF0B92"
+                },
+                {
+                  "codepoint": "U+B204",
+                  "character": "누",
+                  "different_pixels": 65,
+                  "maximum_delta": 255,
+                  "mean_delta": 25.479166666666668,
+                  "bitmap_sha256": "396F3EA5D92CE96E095A8960102FE6B707D1237C134D368F77E55FB295A15965"
+                },
+                {
+                  "codepoint": "U+B290",
+                  "character": "느",
+                  "different_pixels": 64,
+                  "maximum_delta": 255,
+                  "mean_delta": 25.488095238095237,
+                  "bitmap_sha256": "D3048DE18976790C9A2F92BC25AB7109FED6D94348B27390DFB20B55C488D6C6"
+                },
+                {
+                  "codepoint": "U+C18C",
+                  "character": "소",
+                  "different_pixels": 67,
+                  "maximum_delta": 255,
+                  "mean_delta": 25.758928571428573,
+                  "bitmap_sha256": "76628B937DDA19D97835538E197EBA0B00C3E9EDBADA6DC33DDD002339EDA12D"
+                },
+                {
+                  "codepoint": "U+B178",
+                  "character": "노",
+                  "different_pixels": 65,
+                  "maximum_delta": 255,
+                  "mean_delta": 25.80952380952381,
+                  "bitmap_sha256": "1F6329738214878311EF972E2AE04BBB34547E8A6B8A203B7C687CEFC853EE80"
+                },
+                {
+                  "codepoint": "U+C218",
+                  "character": "수",
+                  "different_pixels": 71,
+                  "maximum_delta": 255,
+                  "mean_delta": 26.705357142857142,
+                  "bitmap_sha256": "9F70A8B25581D24BB9544F5BE87268E2D969F37FF76B040FD641DF426757E191"
+                },
+                {
+                  "codepoint": "U+AE30",
+                  "character": "기",
+                  "different_pixels": 75,
+                  "maximum_delta": 255,
+                  "mean_delta": 28.044642857142858,
+                  "bitmap_sha256": "F89CEB28865A08D26E288512B6E4BA683A5D5C04002991433D11C3D98FCF30C1"
+                }
+              ]
+            },
+            {
+              "sampled_page": 1,
+              "rect": [
+                268,
+                80,
+                280,
+                108
+              ],
+              "bitmap_sha256": "A712D2A0E1F41DE83DA2749AE582C7C42D19EB9C9055B266688DCAE20730AAA4",
+              "active_pixels": 85,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+AD74",
+                  "character": "굴",
+                  "different_pixels": 0,
+                  "maximum_delta": 0,
+                  "mean_delta": 0.0,
+                  "bitmap_sha256": "A712D2A0E1F41DE83DA2749AE582C7C42D19EB9C9055B266688DCAE20730AAA4"
+                },
+                {
+                  "codepoint": "U+AE00",
+                  "character": "글",
+                  "different_pixels": 30,
+                  "maximum_delta": 159,
+                  "mean_delta": 3.0357142857142856,
+                  "bitmap_sha256": "F081E696F57F8FF7099FB29F0AB13360B1E314539666A3D969AA45F8CA6D6A46"
+                },
+                {
+                  "codepoint": "U+AFC0",
+                  "character": "꿀",
+                  "different_pixels": 43,
+                  "maximum_delta": 255,
+                  "mean_delta": 5.464285714285714,
+                  "bitmap_sha256": "B16153C9EC817FDD56BDB99CB1A751D1277A79EE2656625D53FAD98237E2148B"
+                },
+                {
+                  "codepoint": "U+ADE4",
+                  "character": "귤",
+                  "different_pixels": 18,
+                  "maximum_delta": 175,
+                  "mean_delta": 6.154761904761905,
+                  "bitmap_sha256": "55122C479160F0598F5D4289BE4F9658E3407B4C0CD2B2A7567AFA4EDF6308EF"
+                },
+                {
+                  "codepoint": "U+B04C",
+                  "character": "끌",
+                  "different_pixels": 53,
+                  "maximum_delta": 255,
+                  "mean_delta": 7.497023809523809,
+                  "bitmap_sha256": "805F15BCE4DCA25E2259038232B3EA616209E4D3A97A334BA52C012950E56303"
+                },
+                {
+                  "codepoint": "U+ACE8",
+                  "character": "골",
+                  "different_pixels": 56,
+                  "maximum_delta": 255,
+                  "mean_delta": 18.50595238095238,
+                  "bitmap_sha256": "32FF5A39B98889FF5FF3C763A63AA0414048A8113EE7674C3DDF422B51CD6B2E"
+                },
+                {
+                  "codepoint": "U+B8F0",
+                  "character": "룰",
+                  "different_pixels": 101,
+                  "maximum_delta": 255,
+                  "mean_delta": 19.339285714285715,
+                  "bitmap_sha256": "C7C7935F74BB7A2FB230100E76A0E5506D8B86613B94B629323BF0B1028E6054"
+                },
+                {
+                  "codepoint": "U+B864",
+                  "character": "롤",
+                  "different_pixels": 101,
+                  "maximum_delta": 255,
+                  "mean_delta": 19.386904761904763,
+                  "bitmap_sha256": "32F46DBEB60F4FE24BA9DC3E4A97E0A198EFB4758F7E8C065A0828C5BAD0B16E"
+                }
+              ]
+            },
+            {
+              "sampled_page": 2,
+              "rect": [
+                268,
+                80,
+                280,
+                108
+              ],
+              "bitmap_sha256": "D237B16310D7EF0321E31ED3B1D107EC6D16F575A7DF310ABA5320C426A685F3",
+              "active_pixels": 88,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+BAA9",
+                  "character": "목",
+                  "different_pixels": 0,
+                  "maximum_delta": 0,
+                  "mean_delta": 0.0,
+                  "bitmap_sha256": "D237B16310D7EF0321E31ED3B1D107EC6D16F575A7DF310ABA5320C426A685F3"
+                },
+                {
+                  "codepoint": "U+BB35",
+                  "character": "묵",
+                  "different_pixels": 41,
+                  "maximum_delta": 207,
+                  "mean_delta": 4.5148809523809526,
+                  "bitmap_sha256": "42ECE7E891680851FF47AB678E6CBF9AE81229109A034EC497C0685B537A81A8"
+                },
+                {
+                  "codepoint": "U+B3C5",
+                  "character": "독",
+                  "different_pixels": 56,
+                  "maximum_delta": 207,
+                  "mean_delta": 7.773809523809524,
+                  "bitmap_sha256": "9CC8345704A5521954C8A702FAC4B18F821BDC3272690892CB5731768442AB87"
+                },
+                {
+                  "codepoint": "U+B4DD",
+                  "character": "득",
+                  "different_pixels": 54,
+                  "maximum_delta": 207,
+                  "mean_delta": 8.345238095238095,
+                  "bitmap_sha256": "56C4A2C4FFFA25E3DCB09C90FCA351131441BACFDF0F82B6FA37E6C2D5124B5B"
+                },
+                {
+                  "codepoint": "U+BCF5",
+                  "character": "복",
+                  "different_pixels": 39,
+                  "maximum_delta": 255,
+                  "mean_delta": 10.898809523809524,
+                  "bitmap_sha256": "6ED78B9434D49EF16063E179777A0F854E5E1C243221A2FC714E85BEA7410F88"
+                },
+                {
+                  "codepoint": "U+C625",
+                  "character": "옥",
+                  "different_pixels": 76,
+                  "maximum_delta": 255,
+                  "mean_delta": 11.62797619047619,
+                  "bitmap_sha256": "21CAD8958F571A494DA3A80585A802CF5923D5C59283DF0E3F5EE47F9D852E5C"
+                },
+                {
+                  "codepoint": "U+D3ED",
+                  "character": "폭",
+                  "different_pixels": 32,
+                  "maximum_delta": 255,
+                  "mean_delta": 12.041666666666666,
+                  "bitmap_sha256": "D68A5F600B0FEEC40C52A021D9BB1DD7569B9EBC0D4118EEF14F2413814D648A"
+                },
+                {
+                  "codepoint": "U+D2B9",
+                  "character": "특",
+                  "different_pixels": 59,
+                  "maximum_delta": 239,
+                  "mean_delta": 12.1875,
+                  "bitmap_sha256": "C74454E88B7E200870D03CBFB93C929A536CB41ABB47C161ECFB377C25D1FDBB"
+                }
+              ]
+            },
+            {
+              "sampled_page": 3,
+              "rect": [
+                268,
+                80,
+                280,
+                108
+              ],
+              "bitmap_sha256": "2120B1016AB0C2DA7979BEC212D5B402A0DD75E9868A846891AA029BD38802A3",
+              "active_pixels": 64,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+AD6C",
+                  "character": "구",
+                  "different_pixels": 72,
+                  "maximum_delta": 255,
+                  "mean_delta": 21.922619047619047,
+                  "bitmap_sha256": "6328672628ED45B88C98244A28221F88D83C16D851678389A0B39CD1C7491710"
+                },
+                {
+                  "codepoint": "U+ADFC",
+                  "character": "근",
+                  "different_pixels": 77,
+                  "maximum_delta": 255,
+                  "mean_delta": 24.389880952380953,
+                  "bitmap_sha256": "8CF2F4B0EA8AB2D5801A4CA2F27B5E9ED72A440050703CB01ABE1905A87EAFED"
+                },
+                {
+                  "codepoint": "U+ACF3",
+                  "character": "곳",
+                  "different_pixels": 84,
+                  "maximum_delta": 255,
+                  "mean_delta": 24.574404761904763,
+                  "bitmap_sha256": "A4848EF38FBE5480C7B9CB71A5B57252FE8DBD476D0A9956DFD6DA368767B82E"
+                },
+                {
+                  "codepoint": "U+CFE0",
+                  "character": "쿠",
+                  "different_pixels": 72,
+                  "maximum_delta": 255,
+                  "mean_delta": 24.767857142857142,
+                  "bitmap_sha256": "78E99217D4AEAE6E7CD82771B15B632141F6F8BA96F3B123903FB36E2B0CA3EF"
+                },
+                {
+                  "codepoint": "U+ACE4",
+                  "character": "곤",
+                  "different_pixels": 81,
+                  "maximum_delta": 255,
+                  "mean_delta": 25.863095238095237,
+                  "bitmap_sha256": "1DF3C3725EB66A7C602B9A6BE7422628C226D9DF501995A213A742FEAE2EF4B8"
+                },
+                {
+                  "codepoint": "U+AFB8",
+                  "character": "꾸",
+                  "different_pixels": 82,
+                  "maximum_delta": 255,
+                  "mean_delta": 26.18452380952381,
+                  "bitmap_sha256": "55F7ACDC46650861704F43E9812034B79F2093BD7C91E05156156E40085ACED9"
+                },
+                {
+                  "codepoint": "U+D070",
+                  "character": "큰",
+                  "different_pixels": 83,
+                  "maximum_delta": 255,
+                  "mean_delta": 27.276785714285715,
+                  "bitmap_sha256": "10C335311BAC636E3D6FAD39F1A32CA2B8565D2463E92D57C4072461DDB16762"
+                },
+                {
+                  "codepoint": "U+C874",
+                  "character": "존",
+                  "different_pixels": 76,
+                  "maximum_delta": 255,
+                  "mean_delta": 27.56547619047619,
+                  "bitmap_sha256": "F68B5320C406C1DEF7D516BB62831CBC19827B19356DB38F1A6519C6E8B3C81B"
+                }
+              ]
+            },
+            {
+              "sampled_page": 4,
+              "rect": [
+                268,
+                80,
+                280,
+                108
+              ],
+              "bitmap_sha256": "4B0C49CC13F09E7678F62A306628BC4D51BA3512F21D2F9A87B6F95B0C5F4D24",
+              "active_pixels": 86,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+BC25",
+                  "character": "밥",
+                  "different_pixels": 0,
+                  "maximum_delta": 0,
+                  "mean_delta": 0.0,
+                  "bitmap_sha256": "4B0C49CC13F09E7678F62A306628BC4D51BA3512F21D2F9A87B6F95B0C5F4D24"
+                },
+                {
+                  "codepoint": "U+D0D1",
+                  "character": "탑",
+                  "different_pixels": 88,
+                  "maximum_delta": 191,
+                  "mean_delta": 18.848214285714285,
+                  "bitmap_sha256": "DC385B0D41A652A05AF034A64B70873A6FBEF1C8DAB58278AAFAF368C77A576D"
+                },
+                {
+                  "codepoint": "U+B78D",
+                  "character": "랍",
+                  "different_pixels": 96,
+                  "maximum_delta": 239,
+                  "mean_delta": 19.75,
+                  "bitmap_sha256": "7506DB9618E4F9E26036D2C64C7CBC85A66C2BCBAFD2C479A6BECA8D215EE967"
+                },
+                {
+                  "codepoint": "U+BC95",
+                  "character": "법",
+                  "different_pixels": 94,
+                  "maximum_delta": 255,
+                  "mean_delta": 20.321428571428573,
+                  "bitmap_sha256": "330014E006186377C6917F9250B603C26FA57AB50A0ECD78AECDAC8F60ED99F5"
+                },
+                {
+                  "codepoint": "U+BCCD",
+                  "character": "볍",
+                  "different_pixels": 95,
+                  "maximum_delta": 239,
+                  "mean_delta": 20.550595238095237,
+                  "bitmap_sha256": "9D3807F7A060B961942681B037943F38669848576CF3AF8D4D20193F016C05DC"
+                },
+                {
+                  "codepoint": "U+D301",
+                  "character": "팁",
+                  "different_pixels": 95,
+                  "maximum_delta": 191,
+                  "mean_delta": 20.711309523809526,
+                  "bitmap_sha256": "1CC18C344798BC9752EBC38B1ACAB38D8B6E56045BFB15A2F2AB00F2301D7DDE"
+                },
+                {
+                  "codepoint": "U+B9BD",
+                  "character": "립",
+                  "different_pixels": 100,
+                  "maximum_delta": 255,
+                  "mean_delta": 21.857142857142858,
+                  "bitmap_sha256": "DA10BC0C42E2B86F77A34A0CC6E5647E8A5071F93218FF6D4BCD8094EA283240"
+                },
+                {
+                  "codepoint": "U+B7FD",
+                  "character": "럽",
+                  "different_pixels": 102,
+                  "maximum_delta": 239,
+                  "mean_delta": 21.94345238095238,
+                  "bitmap_sha256": "69D4E65F7A099A1512EF55D8372663C64DF1123117F3625FCF5BD4D8180292C9"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "pre": {
+            "codepoint": "U+D1A8",
+            "character": "톨",
+            "utf8_hex": "ED86A8",
+            "utf16le_hex": "A8D1",
+            "record_index": 1400,
+            "page": 4,
+            "page_local_index": 104,
+            "rect": [
+              88,
+              152,
+              100,
+              180
+            ],
+            "uv": [
+              0.171875,
+              0.296875,
+              0.1953125,
+              0.3515625
+            ],
+            "metric": [
+              0,
+              12,
+              12
+            ],
+            "bitmap_sha256": "4B7D01BD57BD34AF27A29CDA09E58AFE1758CFF78F5404D930BE4B066CAB8B69",
+            "active_pixels": 93,
+            "analysis": {
+              "active_bounds": [
+                0,
+                13,
+                12,
+                25
+              ],
+              "padding": {
+                "left": 0,
+                "right": 0,
+                "top": 13,
+                "bottom": 3
+              },
+              "active_pixels": 93,
+              "antialias_levels": 13
+            }
+          },
+          "current": {
+            "codepoint": "U+D1A8",
+            "character": "톨",
+            "utf8_hex": "ED86A8",
+            "utf16le_hex": "A8D1",
+            "record_index": 1400,
+            "page": 4,
+            "page_local_index": 104,
+            "rect": [
+              88,
+              152,
+              100,
+              180
+            ],
+            "uv": [
+              0.171875,
+              0.296875,
+              0.1953125,
+              0.3515625
+            ],
+            "metric": [
+              0,
+              12,
+              12
+            ],
+            "bitmap_sha256": "4B7D01BD57BD34AF27A29CDA09E58AFE1758CFF78F5404D930BE4B066CAB8B69",
+            "active_pixels": 93,
+            "analysis": {
+              "active_bounds": [
+                0,
+                13,
+                12,
+                25
+              ],
+              "padding": {
+                "left": 0,
+                "right": 0,
+                "top": 13,
+                "bottom": 3
+              },
+              "active_pixels": 93,
+              "antialias_levels": 13
+            }
+          },
+          "pre_neighbors": [
+            {
+              "record_index": 1397,
+              "codepoint": "U+D018",
+              "character": "퀘",
+              "page": 4,
+              "page_local_index": 101
+            },
+            {
+              "record_index": 1398,
+              "codepoint": "U+D044",
+              "character": "큄",
+              "page": 4,
+              "page_local_index": 102
+            },
+            {
+              "record_index": 1399,
+              "codepoint": "U+D0E4",
+              "character": "탤",
+              "page": 4,
+              "page_local_index": 103
+            },
+            {
+              "record_index": 1400,
+              "codepoint": "U+D1A8",
+              "character": "톨",
+              "page": 4,
+              "page_local_index": 104
+            },
+            {
+              "record_index": 1401,
+              "codepoint": "U+D2A0",
+              "character": "튠",
+              "page": 4,
+              "page_local_index": 105
+            },
+            {
+              "record_index": 1402,
+              "codepoint": "U+D33B",
+              "character": "팻",
+              "page": 4,
+              "page_local_index": 106
+            },
+            {
+              "record_index": 1403,
+              "codepoint": "U+D33D",
+              "character": "팽",
+              "page": 4,
+              "page_local_index": 107
+            }
+          ],
+          "current_neighbors": [
+            {
+              "record_index": 1397,
+              "codepoint": "U+D018",
+              "character": "퀘",
+              "page": 4,
+              "page_local_index": 101
+            },
+            {
+              "record_index": 1398,
+              "codepoint": "U+D044",
+              "character": "큄",
+              "page": 4,
+              "page_local_index": 102
+            },
+            {
+              "record_index": 1399,
+              "codepoint": "U+D0E4",
+              "character": "탤",
+              "page": 4,
+              "page_local_index": 103
+            },
+            {
+              "record_index": 1400,
+              "codepoint": "U+D1A8",
+              "character": "톨",
+              "page": 4,
+              "page_local_index": 104
+            },
+            {
+              "record_index": 1401,
+              "codepoint": "U+D2A0",
+              "character": "튠",
+              "page": 4,
+              "page_local_index": 105
+            },
+            {
+              "record_index": 1402,
+              "codepoint": "U+D33B",
+              "character": "팻",
+              "page": 4,
+              "page_local_index": 106
+            },
+            {
+              "record_index": 1403,
+              "codepoint": "U+D33D",
+              "character": "팽",
+              "page": 4,
+              "page_local_index": 107
+            }
+          ],
+          "mapping_byte_exact": true,
+          "bitmap_byte_exact": true,
+          "page_binding_hypotheses": [
+            {
+              "sampled_page": 0,
+              "rect": [
+                88,
+                152,
+                100,
+                180
+              ],
+              "bitmap_sha256": "3EFA169E137ADED5B74F2C63010FE686D1CFEAD8859B131DA4202876DF8DB4D4",
+              "active_pixels": 70,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+D76C",
+                  "character": "희",
+                  "different_pixels": 106,
+                  "maximum_delta": 255,
+                  "mean_delta": 34.154761904761905,
+                  "bitmap_sha256": "DD4F5D443FDCEF8EC1D83086F1E8C93A1B3219DBBB75836D2FD7172D1BCD20EE"
+                },
+                {
+                  "codepoint": "U+D53C",
+                  "character": "피",
+                  "different_pixels": 100,
+                  "maximum_delta": 255,
+                  "mean_delta": 34.720238095238095,
+                  "bitmap_sha256": "88BBDD114BF3EE1B59BE445290CC52ED38149985B0BA0F4FD652D5EF730C2A42"
+                },
+                {
+                  "codepoint": "U+B274",
+                  "character": "뉴",
+                  "different_pixels": 93,
+                  "maximum_delta": 255,
+                  "mean_delta": 34.86607142857143,
+                  "bitmap_sha256": "659A18F1FE0F75F0D3193724B4ACA2AFA4BA4772BE9FB04029C2509B0810BDB3"
+                },
+                {
+                  "codepoint": "U+B204",
+                  "character": "누",
+                  "different_pixels": 89,
+                  "maximum_delta": 255,
+                  "mean_delta": 34.913690476190474,
+                  "bitmap_sha256": "396F3EA5D92CE96E095A8960102FE6B707D1237C134D368F77E55FB295A15965"
+                },
+                {
+                  "codepoint": "U+B4C0",
+                  "character": "듀",
+                  "different_pixels": 99,
+                  "maximum_delta": 255,
+                  "mean_delta": 35.24404761904762,
+                  "bitmap_sha256": "969B8269A58278EE9D854BAEDD40FEC1FF7EB15D7D6F48BF4479C7FD8FBCC905"
+                },
+                {
+                  "codepoint": "U+CA4C",
+                  "character": "쩌",
+                  "different_pixels": 114,
+                  "maximum_delta": 255,
+                  "mean_delta": 35.24404761904762,
+                  "bitmap_sha256": "83F062D457E00233FF7013CB6C3B5FA94628228447F4B806D00EA30732E06EAA"
+                },
+                {
+                  "codepoint": "U+B450",
+                  "character": "두",
+                  "different_pixels": 95,
+                  "maximum_delta": 255,
+                  "mean_delta": 35.339285714285715,
+                  "bitmap_sha256": "A59FD42D787153258DE5BDC30D575F64B7ECBCEB60993B2BCFD72CB7405F5C4D"
+                },
+                {
+                  "codepoint": "U+C2F8",
+                  "character": "싸",
+                  "different_pixels": 109,
+                  "maximum_delta": 255,
+                  "mean_delta": 35.520833333333336,
+                  "bitmap_sha256": "6A88E6F87CF5241D2A811C58DEC4732BFE5467B55F5B1F4734AF417032048C12"
+                }
+              ]
+            },
+            {
+              "sampled_page": 1,
+              "rect": [
+                88,
+                152,
+                100,
+                180
+              ],
+              "bitmap_sha256": "53E91E564C36ED6DB6E5DA78CA4DCD80065081E2089B957FA4C6BFF4585B7D79",
+              "active_pixels": 82,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+AEF4",
+                  "character": "껴",
+                  "different_pixels": 0,
+                  "maximum_delta": 0,
+                  "mean_delta": 0.0,
+                  "bitmap_sha256": "53E91E564C36ED6DB6E5DA78CA4DCD80065081E2089B957FA4C6BFF4585B7D79"
+                },
+                {
+                  "codepoint": "U+AEBC",
+                  "character": "꺼",
+                  "different_pixels": 33,
+                  "maximum_delta": 223,
+                  "mean_delta": 6.020833333333333,
+                  "bitmap_sha256": "B5733CAC784AE45093E59CD4B468A4FA592B363D45EA6DBCF46D219787703040"
+                },
+                {
+                  "codepoint": "U+AE4C",
+                  "character": "까",
+                  "different_pixels": 54,
+                  "maximum_delta": 223,
+                  "mean_delta": 7.020833333333333,
+                  "bitmap_sha256": "F47D19F5DDCF6536BA1387296994783EF2D78BFEB26A683792D9CE3A1E157B0E"
+                },
+                {
+                  "codepoint": "U+B07C",
+                  "character": "끼",
+                  "different_pixels": 48,
+                  "maximum_delta": 223,
+                  "mean_delta": 10.857142857142858,
+                  "bitmap_sha256": "68C689C35EC79BC82CC5860773E45B1D9EAA3D132BF03389363174C207187306"
+                },
+                {
+                  "codepoint": "U+D30C",
+                  "character": "파",
+                  "different_pixels": 61,
+                  "maximum_delta": 239,
+                  "mean_delta": 15.928571428571429,
+                  "bitmap_sha256": "CBB272D4E583F1A68E337A55382573C4CB63B85DCAC7168DC2984EBC1E7C4375"
+                },
+                {
+                  "codepoint": "U+C528",
+                  "character": "씨",
+                  "different_pixels": 66,
+                  "maximum_delta": 239,
+                  "mean_delta": 16.077380952380953,
+                  "bitmap_sha256": "DEF06E4528016DA6B7621AD72ECEDD1FFB5541C32C533966610A3D63FAC939F5"
+                },
+                {
+                  "codepoint": "U+BBF8",
+                  "character": "미",
+                  "different_pixels": 57,
+                  "maximum_delta": 255,
+                  "mean_delta": 18.074404761904763,
+                  "bitmap_sha256": "402354C3A77EB0B342D0DAB3EA304413360E3F9C285C76E948CA1CD37506E72D"
+                },
+                {
+                  "codepoint": "U+D718",
+                  "character": "휘",
+                  "different_pixels": 73,
+                  "maximum_delta": 255,
+                  "mean_delta": 18.586309523809526,
+                  "bitmap_sha256": "8306C51851EEA8C7180B9B95CCE564272FA6FB35CE4FA2B21019029FEB55C296"
+                }
+              ]
+            },
+            {
+              "sampled_page": 2,
+              "rect": [
+                88,
+                152,
+                100,
+                180
+              ],
+              "bitmap_sha256": "D9C04A43EBA6D9B38E3D57B28342B0846393FF110EF1B6EB4583B61074D2BC70",
+              "active_pixels": 76,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+BC85",
+                  "character": "벅",
+                  "different_pixels": 0,
+                  "maximum_delta": 0,
+                  "mean_delta": 0.0,
+                  "bitmap_sha256": "D9C04A43EBA6D9B38E3D57B28342B0846393FF110EF1B6EB4583B61074D2BC70"
+                },
+                {
+                  "codepoint": "U+BCBD",
+                  "character": "벽",
+                  "different_pixels": 18,
+                  "maximum_delta": 207,
+                  "mean_delta": 6.973214285714286,
+                  "bitmap_sha256": "499A849B0B75D9B2FD28EBC1D4E51054837C17F0DE19CE26A026B2F7EF737E03"
+                },
+                {
+                  "codepoint": "U+B355",
+                  "character": "덕",
+                  "different_pixels": 33,
+                  "maximum_delta": 255,
+                  "mean_delta": 8.869047619047619,
+                  "bitmap_sha256": "1594DCDFF302199E245C34F59DF7A622B75446479544382299D28CFCFE523FD9"
+                },
+                {
+                  "codepoint": "U+D131",
+                  "character": "턱",
+                  "different_pixels": 50,
+                  "maximum_delta": 255,
+                  "mean_delta": 9.404761904761905,
+                  "bitmap_sha256": "977FA8A019C97E91DE2B612C86624CFA4E6EBF69A9BA6488B6BEB5AE51142BE7"
+                },
+                {
+                  "codepoint": "U+B7ED",
+                  "character": "럭",
+                  "different_pixels": 50,
+                  "maximum_delta": 255,
+                  "mean_delta": 9.830357142857142,
+                  "bitmap_sha256": "0AF85D35E945CB6ABAB11ABABBA2DAF09C7E6AF34707430D4CEFE07D5C9F7B7C"
+                },
+                {
+                  "codepoint": "U+B9AD",
+                  "character": "릭",
+                  "different_pixels": 49,
+                  "maximum_delta": 255,
+                  "mean_delta": 11.113095238095237,
+                  "bitmap_sha256": "8D35D78983438CC235164D9E488A09405CB8305579FE9073A0F7C0DD5A6ACF19"
+                },
+                {
+                  "codepoint": "U+BA39",
+                  "character": "먹",
+                  "different_pixels": 34,
+                  "maximum_delta": 255,
+                  "mean_delta": 11.145833333333334,
+                  "bitmap_sha256": "2C37FF9062FE158EA3174A35C8B5D3E8ED53039FF4353D05C5518687A274E2A8"
+                },
+                {
+                  "codepoint": "U+D2F1",
+                  "character": "틱",
+                  "different_pixels": 41,
+                  "maximum_delta": 255,
+                  "mean_delta": 11.25,
+                  "bitmap_sha256": "9A813C7CD0DBD2F51CE497992176345BABAB5D0DEA66CA929586A65110254AE6"
+                }
+              ]
+            },
+            {
+              "sampled_page": 3,
+              "rect": [
+                88,
+                152,
+                100,
+                180
+              ],
+              "bitmap_sha256": "4A8C14816BAD7A09AE5F8D3DAA5C7C58BC2CD9B3542B8CB74A8FC7F954156F30",
+              "active_pixels": 92,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+CABD",
+                  "character": "쪽",
+                  "different_pixels": 0,
+                  "maximum_delta": 0,
+                  "mean_delta": 0.0,
+                  "bitmap_sha256": "4A8C14816BAD7A09AE5F8D3DAA5C7C58BC2CD9B3542B8CB74A8FC7F954156F30"
+                },
+                {
+                  "codepoint": "U+CB49",
+                  "character": "쭉",
+                  "different_pixels": 39,
+                  "maximum_delta": 255,
+                  "mean_delta": 5.544642857142857,
+                  "bitmap_sha256": "A6B9BCABECA790722026C79E44B5ED7BB1502A4652FA4D878BA3A95B8B7C626F"
+                },
+                {
+                  "codepoint": "U+CBE4",
+                  "character": "쯤",
+                  "different_pixels": 61,
+                  "maximum_delta": 255,
+                  "mean_delta": 12.19047619047619,
+                  "bitmap_sha256": "ECB51D6DE5905F8441F9C5DD13930572BEE94D025D821A73CBB463457CDE4F28"
+                },
+                {
+                  "codepoint": "U+AF2D",
+                  "character": "꼭",
+                  "different_pixels": 69,
+                  "maximum_delta": 239,
+                  "mean_delta": 14.363095238095237,
+                  "bitmap_sha256": "43736237DF94A3509B7AA021897C48D209AF77A96CE4A578583EFD144C0378AF"
+                },
+                {
+                  "codepoint": "U+C871",
+                  "character": "족",
+                  "different_pixels": 65,
+                  "maximum_delta": 239,
+                  "mean_delta": 14.889880952380953,
+                  "bitmap_sha256": "CF61F81C41D38C66C078401DB9D3276823E7783A3DA8E4C8B584FABD2D9443A7"
+                },
+                {
+                  "codepoint": "U+D3ED",
+                  "character": "폭",
+                  "different_pixels": 79,
+                  "maximum_delta": 255,
+                  "mean_delta": 16.229166666666668,
+                  "bitmap_sha256": "D68A5F600B0FEEC40C52A021D9BB1DD7569B9EBC0D4118EEF14F2413814D648A"
+                },
+                {
+                  "codepoint": "U+B451",
+                  "character": "둑",
+                  "different_pixels": 55,
+                  "maximum_delta": 239,
+                  "mean_delta": 16.833333333333332,
+                  "bitmap_sha256": "B6BE14CA40C7C494D5FC5155886BE635CF5D0D24FAEC7A85F56F7CC368D50B0B"
+                },
+                {
+                  "codepoint": "U+C989",
+                  "character": "즉",
+                  "different_pixels": 69,
+                  "maximum_delta": 239,
+                  "mean_delta": 17.491071428571427,
+                  "bitmap_sha256": "EFE29C5A74EE295D99A9007A14B77C69FA6A22C4368A7A73472DD30EB0EFEB06"
+                }
+              ]
+            },
+            {
+              "sampled_page": 4,
+              "rect": [
+                88,
+                152,
+                100,
+                180
+              ],
+              "bitmap_sha256": "4B7D01BD57BD34AF27A29CDA09E58AFE1758CFF78F5404D930BE4B066CAB8B69",
+              "active_pixels": 93,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+D1A8",
+                  "character": "톨",
+                  "different_pixels": 0,
+                  "maximum_delta": 0,
+                  "mean_delta": 0.0,
+                  "bitmap_sha256": "4B7D01BD57BD34AF27A29CDA09E58AFE1758CFF78F5404D930BE4B066CAB8B69"
+                },
+                {
+                  "codepoint": "U+D2C0",
+                  "character": "틀",
+                  "different_pixels": 37,
+                  "maximum_delta": 111,
+                  "mean_delta": 2.5654761904761907,
+                  "bitmap_sha256": "BFBBA0032467578ED772AA4E56BB9FDDB003DDDEBC4C25BF3E7CE4A4832252D8"
+                },
+                {
+                  "codepoint": "U+D234",
+                  "character": "툴",
+                  "different_pixels": 24,
+                  "maximum_delta": 111,
+                  "mean_delta": 2.75,
+                  "bitmap_sha256": "7A907D515C612E5FAF258BAC51F10851B40763DEDBEBD210E29F62B97C29EC57"
+                },
+                {
+                  "codepoint": "U+B864",
+                  "character": "롤",
+                  "different_pixels": 41,
+                  "maximum_delta": 207,
+                  "mean_delta": 3.5148809523809526,
+                  "bitmap_sha256": "32F46DBEB60F4FE24BA9DC3E4A97E0A198EFB4758F7E8C065A0828C5BAD0B16E"
+                },
+                {
+                  "codepoint": "U+B8F0",
+                  "character": "룰",
+                  "different_pixels": 57,
+                  "maximum_delta": 207,
+                  "mean_delta": 6.217261904761905,
+                  "bitmap_sha256": "C7C7935F74BB7A2FB230100E76A0E5506D8B86613B94B629323BF0B1028E6054"
+                },
+                {
+                  "codepoint": "U+B960",
+                  "character": "률",
+                  "different_pixels": 58,
+                  "maximum_delta": 207,
+                  "mean_delta": 6.544642857142857,
+                  "bitmap_sha256": "1181595AEAA790CE292E19755BA460D94B7F2C97796527F508F5F910B27BEF64"
+                },
+                {
+                  "codepoint": "U+D23D",
+                  "character": "툽",
+                  "different_pixels": 80,
+                  "maximum_delta": 255,
+                  "mean_delta": 16.833333333333332,
+                  "bitmap_sha256": "B07B3D3D26553D58534FCA82998A8F246B4C916448DBDF3A55164B66F93C222A"
+                },
+                {
+                  "codepoint": "U+D1B1",
+                  "character": "톱",
+                  "different_pixels": 85,
+                  "maximum_delta": 255,
+                  "mean_delta": 17.261904761904763,
+                  "bitmap_sha256": "6CC6E7D821C6D4B6591C040A79A5DD8DA49EFFDD8912E0D4C509285657A0F296"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alias": "kr13_driver_name_semibold",
+      "pre_bfont": "E:\\AMS2_Korean_Work\\artifacts\\AMS2-KR-068.1-candidate11-nameplate-name\\fonts\\kr13_driver_name_semibold\\kr13_driver_name_semibold.bfont",
+      "pre_bfont_sha256": "6409DA7DE921013C28357E59CC0F7FA85FC8954BB1BE0E47FB152120B5CDB958",
+      "current_bfont": "E:\\AMS2_Korean_Work\\artifacts\\AMS2-KR-068.1-candidate12-nameplate-background\\fonts\\kr13_driver_name_semibold\\kr13_driver_name_semibold.bfont",
+      "current_bfont_sha256": "6409DA7DE921013C28357E59CC0F7FA85FC8954BB1BE0E47FB152120B5CDB958",
+      "embedded_name": "kr13_driver_name_semibold",
+      "version": 10,
+      "glyph_count": 1412,
+      "atlas_count": 5,
+      "glyphs_per_atlas": 324,
+      "line_height": 31,
+      "baseline": 25,
+      "bfont_byte_exact": true,
+      "embedded_name_matches_alias": true,
+      "targets": [
+        {
+          "pre": {
+            "codepoint": "U+CF67",
+            "character": "콧",
+            "utf8_hex": "ECBDA7",
+            "utf16le_hex": "67CF",
+            "record_index": 1393,
+            "page": 4,
+            "page_local_index": 97,
+            "rect": [
+              708,
+              88,
+              725,
+              119
+            ],
+            "uv": [
+              0.69140625,
+              0.171875,
+              0.7080078125,
+              0.232421875
+            ],
+            "metric": [
+              0,
+              17,
+              17
+            ],
+            "bitmap_sha256": "9CB4AB0209412CE1D0556D4673962B758E4C0D1F75B2298DD29A623FD6BE1739",
+            "active_pixels": 158,
+            "analysis": {
+              "active_bounds": [
+                1,
+                10,
+                17,
+                27
+              ],
+              "padding": {
+                "left": 1,
+                "right": 0,
+                "top": 10,
+                "bottom": 4
+              },
+              "active_pixels": 158,
+              "antialias_levels": 15
+            }
+          },
+          "current": {
+            "codepoint": "U+CF67",
+            "character": "콧",
+            "utf8_hex": "ECBDA7",
+            "utf16le_hex": "67CF",
+            "record_index": 1393,
+            "page": 4,
+            "page_local_index": 97,
+            "rect": [
+              708,
+              88,
+              725,
+              119
+            ],
+            "uv": [
+              0.69140625,
+              0.171875,
+              0.7080078125,
+              0.232421875
+            ],
+            "metric": [
+              0,
+              17,
+              17
+            ],
+            "bitmap_sha256": "9CB4AB0209412CE1D0556D4673962B758E4C0D1F75B2298DD29A623FD6BE1739",
+            "active_pixels": 158,
+            "analysis": {
+              "active_bounds": [
+                1,
+                10,
+                17,
+                27
+              ],
+              "padding": {
+                "left": 1,
+                "right": 0,
+                "top": 10,
+                "bottom": 4
+              },
+              "active_pixels": 158,
+              "antialias_levels": 15
+            }
+          },
+          "pre_neighbors": [
+            {
+              "record_index": 1390,
+              "codepoint": "U+CEA3",
+              "character": "캣",
+              "page": 4,
+              "page_local_index": 94
+            },
+            {
+              "record_index": 1391,
+              "codepoint": "U+CF08",
+              "character": "켈",
+              "page": 4,
+              "page_local_index": 95
+            },
+            {
+              "record_index": 1392,
+              "codepoint": "U+CF65",
+              "character": "콥",
+              "page": 4,
+              "page_local_index": 96
+            },
+            {
+              "record_index": 1393,
+              "codepoint": "U+CF67",
+              "character": "콧",
+              "page": 4,
+              "page_local_index": 97
+            },
+            {
+              "record_index": 1394,
+              "codepoint": "U+CF78",
+              "character": "콸",
+              "page": 4,
+              "page_local_index": 98
+            },
+            {
+              "record_index": 1395,
+              "codepoint": "U+CFE1",
+              "character": "쿡",
+              "page": 4,
+              "page_local_index": 99
+            },
+            {
+              "record_index": 1396,
+              "codepoint": "U+CFE4",
+              "character": "쿤",
+              "page": 4,
+              "page_local_index": 100
+            }
+          ],
+          "current_neighbors": [
+            {
+              "record_index": 1390,
+              "codepoint": "U+CEA3",
+              "character": "캣",
+              "page": 4,
+              "page_local_index": 94
+            },
+            {
+              "record_index": 1391,
+              "codepoint": "U+CF08",
+              "character": "켈",
+              "page": 4,
+              "page_local_index": 95
+            },
+            {
+              "record_index": 1392,
+              "codepoint": "U+CF65",
+              "character": "콥",
+              "page": 4,
+              "page_local_index": 96
+            },
+            {
+              "record_index": 1393,
+              "codepoint": "U+CF67",
+              "character": "콧",
+              "page": 4,
+              "page_local_index": 97
+            },
+            {
+              "record_index": 1394,
+              "codepoint": "U+CF78",
+              "character": "콸",
+              "page": 4,
+              "page_local_index": 98
+            },
+            {
+              "record_index": 1395,
+              "codepoint": "U+CFE1",
+              "character": "쿡",
+              "page": 4,
+              "page_local_index": 99
+            },
+            {
+              "record_index": 1396,
+              "codepoint": "U+CFE4",
+              "character": "쿤",
+              "page": 4,
+              "page_local_index": 100
+            }
+          ],
+          "mapping_byte_exact": true,
+          "bitmap_byte_exact": true,
+          "page_binding_hypotheses": [
+            {
+              "sampled_page": 0,
+              "rect": [
+                708,
+                88,
+                725,
+                119
+              ],
+              "bitmap_sha256": "F2A468F9AEB091A54EBCDD4A7929449FDC20A7687AF8369BA3924518764EFFA7",
+              "active_pixels": 63,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+B290",
+                  "character": "느",
+                  "different_pixels": 105,
+                  "maximum_delta": 255,
+                  "mean_delta": 37.00189753320683,
+                  "bitmap_sha256": "EFFBD538901B450FCF8CD5528A17650688B52DD97DEB76F1A4F3E84AE1142427"
+                },
+                {
+                  "codepoint": "U+B2C8",
+                  "character": "니",
+                  "different_pixels": 129,
+                  "maximum_delta": 255,
+                  "mean_delta": 37.121442125237195,
+                  "bitmap_sha256": "D1EFAF173B5650D045CF7F03D1400B913B4AA4F9D78C97483CEDE7611AF4D7C9"
+                },
+                {
+                  "codepoint": "U+B178",
+                  "character": "노",
+                  "different_pixels": 117,
+                  "maximum_delta": 255,
+                  "mean_delta": 41.48007590132827,
+                  "bitmap_sha256": "671DC6AD3161CC89A730BC704D2A7A12027E2ED45659E50C7BF15DCCF3B32D0B"
+                },
+                {
+                  "codepoint": "U+B108",
+                  "character": "너",
+                  "different_pixels": 140,
+                  "maximum_delta": 255,
+                  "mean_delta": 41.64326375711575,
+                  "bitmap_sha256": "B2AAF23F032E24A3FE8D32D82036E8A8E4446EAE07D036E71CCB4B794384BDD8"
+                },
+                {
+                  "codepoint": "U+B514",
+                  "character": "디",
+                  "different_pixels": 148,
+                  "maximum_delta": 255,
+                  "mean_delta": 42.27893738140418,
+                  "bitmap_sha256": "A1F8DBEA37E7E61E52BBE4A6DB4E9F48F4D3E17CE75B1A35FF1268313C6F498C"
+                },
+                {
+                  "codepoint": "U+B140",
+                  "character": "녀",
+                  "different_pixels": 158,
+                  "maximum_delta": 255,
+                  "mean_delta": 45.35104364326376,
+                  "bitmap_sha256": "B58891B33127A1DEF054F2EDC735D690DF3EE2498398498AFA6000E46C6F552D"
+                },
+                {
+                  "codepoint": "U+B354",
+                  "character": "더",
+                  "different_pixels": 152,
+                  "maximum_delta": 255,
+                  "mean_delta": 45.38899430740038,
+                  "bitmap_sha256": "8DDC2744C07912695702BF6D94D8B6C752FD88D9F3463CD298416FDE759364E2"
+                },
+                {
+                  "codepoint": "U+B1E8",
+                  "character": "뇨",
+                  "different_pixels": 129,
+                  "maximum_delta": 255,
+                  "mean_delta": 45.40417457305503,
+                  "bitmap_sha256": "3CACB0BFD1DE65A668056B149E2EF3506FA4E057884E48FA3D53199B12511E35"
+                }
+              ]
+            },
+            {
+              "sampled_page": 1,
+              "rect": [
+                708,
+                88,
+                725,
+                119
+              ],
+              "bitmap_sha256": "1015A4AECD6320583B7EAE48D2BCF020F6858CB455E079532941519CEEE2AD35",
+              "active_pixels": 158,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+AEBC",
+                  "character": "꺼",
+                  "different_pixels": 0,
+                  "maximum_delta": 0,
+                  "mean_delta": 0.0,
+                  "bitmap_sha256": "1015A4AECD6320583B7EAE48D2BCF020F6858CB455E079532941519CEEE2AD35"
+                },
+                {
+                  "codepoint": "U+B07C",
+                  "character": "끼",
+                  "different_pixels": 59,
+                  "maximum_delta": 255,
+                  "mean_delta": 3.8804554079696394,
+                  "bitmap_sha256": "F147B9C55C86B8D279C826C69F6CE1C60C188A2E89CD32437B1A06A0A1DD013F"
+                },
+                {
+                  "codepoint": "U+AEF4",
+                  "character": "껴",
+                  "different_pixels": 59,
+                  "maximum_delta": 255,
+                  "mean_delta": 7.470588235294118,
+                  "bitmap_sha256": "D989CF2A2A7C11B94DBD793D8BB117FD2A3A8DD69A026BC2CB552EFD0003B55F"
+                },
+                {
+                  "codepoint": "U+C800",
+                  "character": "저",
+                  "different_pixels": 127,
+                  "maximum_delta": 255,
+                  "mean_delta": 23.975332068311197,
+                  "bitmap_sha256": "674CB1482738732D5285A0BD7A7FEDBF5050F3C0E39B4443A492F7EFF585AEB4"
+                },
+                {
+                  "codepoint": "U+B00C",
+                  "character": "뀌",
+                  "different_pixels": 128,
+                  "maximum_delta": 255,
+                  "mean_delta": 24.060721062618597,
+                  "bitmap_sha256": "7634270FC52E3CC0E17670BF7E2D6C4CF056ED90F1486AC8DF4405B906A89092"
+                },
+                {
+                  "codepoint": "U+D53C",
+                  "character": "피",
+                  "different_pixels": 125,
+                  "maximum_delta": 255,
+                  "mean_delta": 24.10056925996205,
+                  "bitmap_sha256": "7F50343803CCE44B7BB923E1B616C7C014E05E3751A1BC369532C1FE68F473B0"
+                },
+                {
+                  "codepoint": "U+D37C",
+                  "character": "퍼",
+                  "different_pixels": 118,
+                  "maximum_delta": 255,
+                  "mean_delta": 24.865275142314992,
+                  "bitmap_sha256": "4DD3A1EB2DD0CCA56DFF0054249B0BF5CBADA11056DDEB0DCBDD0C21F188EEBF"
+                },
+                {
+                  "codepoint": "U+D5C8",
+                  "character": "허",
+                  "different_pixels": 120,
+                  "maximum_delta": 255,
+                  "mean_delta": 25.347248576850095,
+                  "bitmap_sha256": "D413BB2617911B605FDF9AF644BF1FC1B721AC954B54E3D50047506884EC4E64"
+                }
+              ]
+            },
+            {
+              "sampled_page": 2,
+              "rect": [
+                708,
+                88,
+                725,
+                119
+              ],
+              "bitmap_sha256": "FCA30587E9429B87DDB1C3718AF4687A604DB7B3F49C92D95C8D6D63B54BEE7F",
+              "active_pixels": 178,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+BC24",
+                  "character": "밤",
+                  "different_pixels": 0,
+                  "maximum_delta": 0,
+                  "mean_delta": 0.0,
+                  "bitmap_sha256": "FCA30587E9429B87DDB1C3718AF4687A604DB7B3F49C92D95C8D6D63B54BEE7F"
+                },
+                {
+                  "codepoint": "U+BC1B",
+                  "character": "받",
+                  "different_pixels": 76,
+                  "maximum_delta": 255,
+                  "mean_delta": 13.884250474383302,
+                  "bitmap_sha256": "7B2761B07909E751F2DDEB5BF1FBD71CAF1448544F62F844C43BC27038603F6C"
+                },
+                {
+                  "codepoint": "U+B0A8",
+                  "character": "남",
+                  "different_pixels": 86,
+                  "maximum_delta": 255,
+                  "mean_delta": 13.920303605313093,
+                  "bitmap_sha256": "5E691950F5B1E9E80D419D2CD2EE1BCB983E6599B3CCCD077F4F7AC9DAE47DFF"
+                },
+                {
+                  "codepoint": "U+B2F4",
+                  "character": "담",
+                  "different_pixels": 70,
+                  "maximum_delta": 255,
+                  "mean_delta": 14.554079696394687,
+                  "bitmap_sha256": "9CB34C7B639DB0D68A895FA1BE0ECD5C083818C088CB5478441D523C6FAD5D48"
+                },
+                {
+                  "codepoint": "U+BC29",
+                  "character": "방",
+                  "different_pixels": 98,
+                  "maximum_delta": 255,
+                  "mean_delta": 16.851992409867172,
+                  "bitmap_sha256": "6571D81AF42CAA3E7DA2A2D1FB98ABF0A404C444F348CEAE352393A7890F515C"
+                },
+                {
+                  "codepoint": "U+B9DD",
+                  "character": "망",
+                  "different_pixels": 97,
+                  "maximum_delta": 255,
+                  "mean_delta": 16.943074003795065,
+                  "bitmap_sha256": "0E43624A24457E3D803A4B31C67E7481791946AD74C1DB9EA2BF780BCB59BF86"
+                },
+                {
+                  "codepoint": "U+B9D9",
+                  "character": "맙",
+                  "different_pixels": 86,
+                  "maximum_delta": 255,
+                  "mean_delta": 17.700189753320682,
+                  "bitmap_sha256": "C39B2153EFE1ABA853EB57167D1F9BC03D1B7659A7B6FC13DE01949E170F345F"
+                },
+                {
+                  "codepoint": "U+BC25",
+                  "character": "밥",
+                  "different_pixels": 117,
+                  "maximum_delta": 255,
+                  "mean_delta": 19.134724857685008,
+                  "bitmap_sha256": "0DF8D6071261E53726FCECEA90C0ACC9DFDA9036D0987993AEB9BF5128071860"
+                }
+              ]
+            },
+            {
+              "sampled_page": 3,
+              "rect": [
+                708,
+                88,
+                725,
+                119
+              ],
+              "bitmap_sha256": "18E42EAEACFFEF15EEB9CCD844089D154FCD295E64B02B55A258CC5640388794",
+              "active_pixels": 188,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+C9D9",
+                  "character": "짙",
+                  "different_pixels": 0,
+                  "maximum_delta": 0,
+                  "mean_delta": 0.0,
+                  "bitmap_sha256": "18E42EAEACFFEF15EEB9CCD844089D154FCD295E64B02B55A258CC5640388794"
+                },
+                {
+                  "codepoint": "U+C9C8",
+                  "character": "질",
+                  "different_pixels": 75,
+                  "maximum_delta": 255,
+                  "mean_delta": 7.108159392789374,
+                  "bitmap_sha256": "7E3AE4D9EA59D81517F177860FA830DEB89903B0C756142613E8EAA4678B91F1"
+                },
+                {
+                  "codepoint": "U+C808",
+                  "character": "절",
+                  "different_pixels": 122,
+                  "maximum_delta": 255,
+                  "mean_delta": 14.943074003795067,
+                  "bitmap_sha256": "8904B3FE822D4B83F41F2DEA473F7CA8B5F29172DBDED5371B3550D49843DF9C"
+                },
+                {
+                  "codepoint": "U+C2E4",
+                  "character": "실",
+                  "different_pixels": 116,
+                  "maximum_delta": 255,
+                  "mean_delta": 16.240986717267553,
+                  "bitmap_sha256": "24339B7A0190E2AC9D8DCD7D8DB980563FBEDA42BD71E5D377F1AD19E27EF75E"
+                },
+                {
+                  "codepoint": "U+CE60",
+                  "character": "칠",
+                  "different_pixels": 119,
+                  "maximum_delta": 255,
+                  "mean_delta": 16.99430740037951,
+                  "bitmap_sha256": "D3D9B3535521C093284CBCDD05258213B007DC0E64C335C0C9843279D056C7FF"
+                },
+                {
+                  "codepoint": "U+C9D1",
+                  "character": "집",
+                  "different_pixels": 122,
+                  "maximum_delta": 255,
+                  "mean_delta": 17.717267552182165,
+                  "bitmap_sha256": "953174CD17229718E72EF87D23FD41EFAB212A9185CCB4093F846DD8A0A523D3"
+                },
+                {
+                  "codepoint": "U+CCA0",
+                  "character": "철",
+                  "different_pixels": 134,
+                  "maximum_delta": 255,
+                  "mean_delta": 17.996204933586338,
+                  "bitmap_sha256": "7AC2A57CDB00E337E530298A35D5C15FCC96D49AFD4D75BE62B960FA131A1355"
+                },
+                {
+                  "codepoint": "U+C124",
+                  "character": "설",
+                  "different_pixels": 125,
+                  "maximum_delta": 255,
+                  "mean_delta": 19.445920303605313,
+                  "bitmap_sha256": "7E3A82862D7EFAE409D378BFE90A0C5ED93B04B01A02882E87B1FECC12AE3185"
+                }
+              ]
+            },
+            {
+              "sampled_page": 4,
+              "rect": [
+                708,
+                88,
+                725,
+                119
+              ],
+              "bitmap_sha256": "9CB4AB0209412CE1D0556D4673962B758E4C0D1F75B2298DD29A623FD6BE1739",
+              "active_pixels": 158,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+CF67",
+                  "character": "콧",
+                  "different_pixels": 0,
+                  "maximum_delta": 0,
+                  "mean_delta": 0.0,
+                  "bitmap_sha256": "9CB4AB0209412CE1D0556D4673962B758E4C0D1F75B2298DD29A623FD6BE1739"
+                },
+                {
+                  "codepoint": "U+BABB",
+                  "character": "못",
+                  "different_pixels": 93,
+                  "maximum_delta": 255,
+                  "mean_delta": 13.462998102466793,
+                  "bitmap_sha256": "3A45D8177E44D61CEABA5EF322195144F31766B1295650BFA79CD946C2CDF07D"
+                },
+                {
+                  "codepoint": "U+ACF3",
+                  "character": "곳",
+                  "different_pixels": 88,
+                  "maximum_delta": 255,
+                  "mean_delta": 14.27134724857685,
+                  "bitmap_sha256": "39CB776F24F580C5EEBE5BE50E8811231569E00BE3E69475BBDC420558BD58AE"
+                },
+                {
+                  "codepoint": "U+B4EF",
+                  "character": "듯",
+                  "different_pixels": 105,
+                  "maximum_delta": 255,
+                  "mean_delta": 16.87855787476281,
+                  "bitmap_sha256": "0CB80339E2FC82B258C05D17FF6F8C68EBE679C4ABA52FFEDC39C469284D8C61"
+                },
+                {
+                  "codepoint": "U+B73B",
+                  "character": "뜻",
+                  "different_pixels": 112,
+                  "maximum_delta": 255,
+                  "mean_delta": 18.0853889943074,
+                  "bitmap_sha256": "339BB5EC165BE63A0D4F25C3022343B2851A609E3A25BAC775CE0244E9979453"
+                },
+                {
+                  "codepoint": "U+C637",
+                  "character": "옷",
+                  "different_pixels": 113,
+                  "maximum_delta": 255,
+                  "mean_delta": 18.502846299810248,
+                  "bitmap_sha256": "906B8F0497F61CC26BDE186D13EE074A044F40C5C998B6F917EC87C5F4C8CBD6"
+                },
+                {
+                  "codepoint": "U+CFE4",
+                  "character": "쿤",
+                  "different_pixels": 119,
+                  "maximum_delta": 255,
+                  "mean_delta": 21.783681214421254,
+                  "bitmap_sha256": "5DC60BD6E84199F5E48ADB2E1F09892793367007031326941A3E6FF914C4818C"
+                },
+                {
+                  "codepoint": "U+AE0B",
+                  "character": "긋",
+                  "different_pixels": 133,
+                  "maximum_delta": 255,
+                  "mean_delta": 21.86148007590133,
+                  "bitmap_sha256": "80AE0D19805E4ABA8819D2A670E9273B5B2BF08DF637CA21DD8AD1416EC2A96E"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "pre": {
+            "codepoint": "U+BC25",
+            "character": "밥",
+            "utf8_hex": "EBB0A5",
+            "utf16le_hex": "25BC",
+            "record_index": 1359,
+            "page": 4,
+            "page_local_index": 63,
+            "rect": [
+              764,
+              48,
+              781,
+              79
+            ],
+            "uv": [
+              0.74609375,
+              0.09375,
+              0.7626953125,
+              0.154296875
+            ],
+            "metric": [
+              0,
+              17,
+              17
+            ],
+            "bitmap_sha256": "0DF8D6071261E53726FCECEA90C0ACC9DFDA9036D0987993AEB9BF5128071860",
+            "active_pixels": 176,
+            "analysis": {
+              "active_bounds": [
+                1,
+                9,
+                17,
+                27
+              ],
+              "padding": {
+                "left": 1,
+                "right": 0,
+                "top": 9,
+                "bottom": 4
+              },
+              "active_pixels": 176,
+              "antialias_levels": 12
+            }
+          },
+          "current": {
+            "codepoint": "U+BC25",
+            "character": "밥",
+            "utf8_hex": "EBB0A5",
+            "utf16le_hex": "25BC",
+            "record_index": 1359,
+            "page": 4,
+            "page_local_index": 63,
+            "rect": [
+              764,
+              48,
+              781,
+              79
+            ],
+            "uv": [
+              0.74609375,
+              0.09375,
+              0.7626953125,
+              0.154296875
+            ],
+            "metric": [
+              0,
+              17,
+              17
+            ],
+            "bitmap_sha256": "0DF8D6071261E53726FCECEA90C0ACC9DFDA9036D0987993AEB9BF5128071860",
+            "active_pixels": 176,
+            "analysis": {
+              "active_bounds": [
+                1,
+                9,
+                17,
+                27
+              ],
+              "padding": {
+                "left": 1,
+                "right": 0,
+                "top": 9,
+                "bottom": 4
+              },
+              "active_pixels": 176,
+              "antialias_levels": 12
+            }
+          },
+          "pre_neighbors": [
+            {
+              "record_index": 1356,
+              "codepoint": "U+B81B",
+              "character": "렛",
+              "page": 4,
+              "page_local_index": 60
+            },
+            {
+              "record_index": 1357,
+              "codepoint": "U+BA5C",
+              "character": "멜",
+              "page": 4,
+              "page_local_index": 61
+            },
+            {
+              "record_index": 1358,
+              "codepoint": "U+BB90",
+              "character": "뮐",
+              "page": 4,
+              "page_local_index": 62
+            },
+            {
+              "record_index": 1359,
+              "codepoint": "U+BC25",
+              "character": "밥",
+              "page": 4,
+              "page_local_index": 63
+            },
+            {
+              "record_index": 1360,
+              "codepoint": "U+BC45",
+              "character": "뱅",
+              "page": 4,
+              "page_local_index": 64
+            },
+            {
+              "record_index": 1361,
+              "codepoint": "U+BCA1",
+              "character": "벡",
+              "page": 4,
+              "page_local_index": 65
+            },
+            {
+              "record_index": 1362,
+              "codepoint": "U+BCB5",
+              "character": "벵",
+              "page": 4,
+              "page_local_index": 66
+            }
+          ],
+          "current_neighbors": [
+            {
+              "record_index": 1356,
+              "codepoint": "U+B81B",
+              "character": "렛",
+              "page": 4,
+              "page_local_index": 60
+            },
+            {
+              "record_index": 1357,
+              "codepoint": "U+BA5C",
+              "character": "멜",
+              "page": 4,
+              "page_local_index": 61
+            },
+            {
+              "record_index": 1358,
+              "codepoint": "U+BB90",
+              "character": "뮐",
+              "page": 4,
+              "page_local_index": 62
+            },
+            {
+              "record_index": 1359,
+              "codepoint": "U+BC25",
+              "character": "밥",
+              "page": 4,
+              "page_local_index": 63
+            },
+            {
+              "record_index": 1360,
+              "codepoint": "U+BC45",
+              "character": "뱅",
+              "page": 4,
+              "page_local_index": 64
+            },
+            {
+              "record_index": 1361,
+              "codepoint": "U+BCA1",
+              "character": "벡",
+              "page": 4,
+              "page_local_index": 65
+            },
+            {
+              "record_index": 1362,
+              "codepoint": "U+BCB5",
+              "character": "벵",
+              "page": 4,
+              "page_local_index": 66
+            }
+          ],
+          "mapping_byte_exact": true,
+          "bitmap_byte_exact": true,
+          "page_binding_hypotheses": [
+            {
+              "sampled_page": 0,
+              "rect": [
+                764,
+                48,
+                781,
+                79
+              ],
+              "bitmap_sha256": "2186F0C3E956C7B952DB8886C08744AA8B19DF635EE805BADCA5C1B2F8BD4921",
+              "active_pixels": 69,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+C2A4",
+                  "character": "스",
+                  "different_pixels": 128,
+                  "maximum_delta": 255,
+                  "mean_delta": 41.67172675521822,
+                  "bitmap_sha256": "38E1AC9842DE1D8E96B5684BF48E8CA1B8546BA66769C686983FC10F22E542AF"
+                },
+                {
+                  "codepoint": "U+24D2",
+                  "character": "ⓒ",
+                  "different_pixels": 122,
+                  "maximum_delta": 255,
+                  "mean_delta": 42.64326375711575,
+                  "bitmap_sha256": "AFED558EB38922B79C9FB43903EB96570D5692DA4FEF7F622499543760090BBA"
+                },
+                {
+                  "codepoint": "U+C1FC",
+                  "character": "쇼",
+                  "different_pixels": 132,
+                  "maximum_delta": 255,
+                  "mean_delta": 42.84629981024668,
+                  "bitmap_sha256": "D464CB71BDD6625C6B22BAD6A0B0775B642F2A827726938E99D332B74FA6E609"
+                },
+                {
+                  "codepoint": "U+B290",
+                  "character": "느",
+                  "different_pixels": 126,
+                  "maximum_delta": 255,
+                  "mean_delta": 43.789373814041745,
+                  "bitmap_sha256": "EFFBD538901B450FCF8CD5528A17650688B52DD97DEB76F1A4F3E84AE1142427"
+                },
+                {
+                  "codepoint": "U+B2C8",
+                  "character": "니",
+                  "different_pixels": 143,
+                  "maximum_delta": 255,
+                  "mean_delta": 44.007590132827325,
+                  "bitmap_sha256": "D1EFAF173B5650D045CF7F03D1400B913B4AA4F9D78C97483CEDE7611AF4D7C9"
+                },
+                {
+                  "codepoint": "U+B2C9",
+                  "character": "닉",
+                  "different_pixels": 136,
+                  "maximum_delta": 255,
+                  "mean_delta": 44.0303605313093,
+                  "bitmap_sha256": "F00AE1D15BAF9602925C99D90B8A6F6FBDDFEF62D96C96F2D6C44908F8C99AE4"
+                },
+                {
+                  "codepoint": "U+B179",
+                  "character": "녹",
+                  "different_pixels": 136,
+                  "maximum_delta": 255,
+                  "mean_delta": 44.15180265654649,
+                  "bitmap_sha256": "BA5491BFF5B64156E7C5D6271F4183CA9C7D4392078668C0E9909252E5690696"
+                },
+                {
+                  "codepoint": "U+B1E8",
+                  "character": "뇨",
+                  "different_pixels": 132,
+                  "maximum_delta": 255,
+                  "mean_delta": 44.45351043643264,
+                  "bitmap_sha256": "3CACB0BFD1DE65A668056B149E2EF3506FA4E057884E48FA3D53199B12511E35"
+                }
+              ]
+            },
+            {
+              "sampled_page": 1,
+              "rect": [
+                764,
+                48,
+                781,
+                79
+              ],
+              "bitmap_sha256": "365CFDA8EDB4C6C455219C5C50D0CF5CC2F3BCD5634C05C60B79FAD0A5C7D7A5",
+              "active_pixels": 127,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+AD7F",
+                  "character": "굿",
+                  "different_pixels": 0,
+                  "maximum_delta": 0,
+                  "mean_delta": 0.0,
+                  "bitmap_sha256": "365CFDA8EDB4C6C455219C5C50D0CF5CC2F3BCD5634C05C60B79FAD0A5C7D7A5"
+                },
+                {
+                  "codepoint": "U+AD82",
+                  "character": "궂",
+                  "different_pixels": 43,
+                  "maximum_delta": 255,
+                  "mean_delta": 10.671726755218216,
+                  "bitmap_sha256": "E64B9868A5F70E0E2FE3C6AF77B22BB8071B13AE5FC9DE321226ECC220B95EE0"
+                },
+                {
+                  "codepoint": "U+AE0B",
+                  "character": "긋",
+                  "different_pixels": 86,
+                  "maximum_delta": 255,
+                  "mean_delta": 16.483870967741936,
+                  "bitmap_sha256": "80AE0D19805E4ABA8819D2A670E9273B5B2BF08DF637CA21DD8AD1416EC2A96E"
+                },
+                {
+                  "codepoint": "U+ACF3",
+                  "character": "곳",
+                  "different_pixels": 94,
+                  "maximum_delta": 255,
+                  "mean_delta": 20.98102466793169,
+                  "bitmap_sha256": "39CB776F24F580C5EEBE5BE50E8811231569E00BE3E69475BBDC420558BD58AE"
+                },
+                {
+                  "codepoint": "U+AF43",
+                  "character": "꽃",
+                  "different_pixels": 136,
+                  "maximum_delta": 255,
+                  "mean_delta": 23.165085388994306,
+                  "bitmap_sha256": "DC9E0ACCAFD90CB4C5B68F3CDC093C5713E8D0C248DA1172C527B4960AEED5C9"
+                },
+                {
+                  "codepoint": "U+AD6D",
+                  "character": "국",
+                  "different_pixels": 83,
+                  "maximum_delta": 255,
+                  "mean_delta": 25.125237191650854,
+                  "bitmap_sha256": "6A19BE45C6D097D43DFDADB83E03A1BB45ABD55D3479D99488B287991AC9EA1A"
+                },
+                {
+                  "codepoint": "U+AD81",
+                  "character": "궁",
+                  "different_pixels": 90,
+                  "maximum_delta": 255,
+                  "mean_delta": 26.299810246679318,
+                  "bitmap_sha256": "E367F4342AC763674BF5BDDB26F2687A4D82DB44DEBAED0E794BBFA16AE721B3"
+                },
+                {
+                  "codepoint": "U+AD73",
+                  "character": "굳",
+                  "different_pixels": 90,
+                  "maximum_delta": 255,
+                  "mean_delta": 26.453510436432637,
+                  "bitmap_sha256": "25F1A15751438DEE34AF9C75037DBA7424DE3DE0C557A657884B016920D3CFAA"
+                }
+              ]
+            },
+            {
+              "sampled_page": 2,
+              "rect": [
+                764,
+                48,
+                781,
+                79
+              ],
+              "bitmap_sha256": "6A0906B36EFD93BF507A8A9D24DCF7C16AA144E1DE5E06B29473AE8FAB680C63",
+              "active_pixels": 142,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+BAA9",
+                  "character": "목",
+                  "different_pixels": 0,
+                  "maximum_delta": 0,
+                  "mean_delta": 0.0,
+                  "bitmap_sha256": "6A0906B36EFD93BF507A8A9D24DCF7C16AA144E1DE5E06B29473AE8FAB680C63"
+                },
+                {
+                  "codepoint": "U+B3C5",
+                  "character": "독",
+                  "different_pixels": 37,
+                  "maximum_delta": 255,
+                  "mean_delta": 4.394686907020873,
+                  "bitmap_sha256": "B6D94422A6ACD2D9E7E43AE61A08F7652F87A46E1EC70EE2641A0B81F3410984"
+                },
+                {
+                  "codepoint": "U+BCF5",
+                  "character": "복",
+                  "different_pixels": 48,
+                  "maximum_delta": 255,
+                  "mean_delta": 10.861480075901328,
+                  "bitmap_sha256": "CFE96DB2D625AD9424EF00977618B52E4CEDB2DF72BCD5F48C200C990008180F"
+                },
+                {
+                  "codepoint": "U+C625",
+                  "character": "옥",
+                  "different_pixels": 58,
+                  "maximum_delta": 223,
+                  "mean_delta": 11.275142314990513,
+                  "bitmap_sha256": "EAB613DC3F397F9E842D1473FC4EB690D1F645D681F4D319063E378F1EEA2BDD"
+                },
+                {
+                  "codepoint": "U+C73D",
+                  "character": "윽",
+                  "different_pixels": 63,
+                  "maximum_delta": 255,
+                  "mean_delta": 12.635673624288424,
+                  "bitmap_sha256": "D98F864533D8BC117CC3F586D7F997C72813933064B1665936017E570FF1E511"
+                },
+                {
+                  "codepoint": "U+B611",
+                  "character": "똑",
+                  "different_pixels": 95,
+                  "maximum_delta": 255,
+                  "mean_delta": 12.768500948766603,
+                  "bitmap_sha256": "B3FEC8127D2BD3F8E8897B8C217C65733F341C5F8934EF9F7E79CEBE163E29E8"
+                },
+                {
+                  "codepoint": "U+BB35",
+                  "character": "묵",
+                  "different_pixels": 40,
+                  "maximum_delta": 255,
+                  "mean_delta": 13.96584440227704,
+                  "bitmap_sha256": "66FFB574D82C2FB922FEF5F072719CD6E97AE46982509777E022D9AF665D4E3D"
+                },
+                {
+                  "codepoint": "U+CABD",
+                  "character": "쪽",
+                  "different_pixels": 88,
+                  "maximum_delta": 255,
+                  "mean_delta": 15.548387096774194,
+                  "bitmap_sha256": "F49FD152F49A0F1691AF375CB356CBE3856DAC6701EBCAED99D047153639716F"
+                }
+              ]
+            },
+            {
+              "sampled_page": 3,
+              "rect": [
+                764,
+                48,
+                781,
+                79
+              ],
+              "bitmap_sha256": "F3B26C20CA54F0232D1936D3A0485D0A52A8FFC8FEC20C817067DD695F27A098",
+              "active_pixels": 152,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+C874",
+                  "character": "존",
+                  "different_pixels": 0,
+                  "maximum_delta": 0,
+                  "mean_delta": 0.0,
+                  "bitmap_sha256": "F3B26C20CA54F0232D1936D3A0485D0A52A8FFC8FEC20C817067DD695F27A098"
+                },
+                {
+                  "codepoint": "U+C98C",
+                  "character": "즌",
+                  "different_pixels": 50,
+                  "maximum_delta": 255,
+                  "mean_delta": 5.605313092979127,
+                  "bitmap_sha256": "4905C7E4FD9719B2482BD3271A21FE661DB2EA84A63B60AE852AEA6B99193EEC"
+                },
+                {
+                  "codepoint": "U+C900",
+                  "character": "준",
+                  "different_pixels": 92,
+                  "maximum_delta": 255,
+                  "mean_delta": 10.117647058823529,
+                  "bitmap_sha256": "53CE760975C95417E3C6D22804BD21AFE63A4834C27DC073A00A1742667FFECD"
+                },
+                {
+                  "codepoint": "U+D3F0",
+                  "character": "폰",
+                  "different_pixels": 63,
+                  "maximum_delta": 255,
+                  "mean_delta": 13.696394686907022,
+                  "bitmap_sha256": "18DF5D5F3AECC58847806EBB024C696BE5CEC83BF9B1BDCB288CAD2D880E261B"
+                },
+                {
+                  "codepoint": "U+B3C8",
+                  "character": "돈",
+                  "different_pixels": 79,
+                  "maximum_delta": 255,
+                  "mean_delta": 14.244781783681214,
+                  "bitmap_sha256": "99FB60DDA959626FCB296E3C539DD0A17DBBA32862D0C73A09AA2E7085E943C4"
+                },
+                {
+                  "codepoint": "U+C190",
+                  "character": "손",
+                  "different_pixels": 71,
+                  "maximum_delta": 255,
+                  "mean_delta": 14.721062618595825,
+                  "bitmap_sha256": "A4346E4D05583E9B794F7293CC9340714C82977B8D57C176ACEB14A9D2E21F17"
+                },
+                {
+                  "codepoint": "U+D508",
+                  "character": "픈",
+                  "different_pixels": 66,
+                  "maximum_delta": 255,
+                  "mean_delta": 14.724857685009487,
+                  "bitmap_sha256": "04AB2844B4C33AA5C11882FBE2D883A0CB4DA54FF1B94118F28F312C6CB4B31D"
+                },
+                {
+                  "codepoint": "U+BAAC",
+                  "character": "몬",
+                  "different_pixels": 77,
+                  "maximum_delta": 255,
+                  "mean_delta": 16.240986717267553,
+                  "bitmap_sha256": "C1D49F2FCE13C32C1846D3F182C25A8E160DEC3A7B7729499497FD73161759FE"
+                }
+              ]
+            },
+            {
+              "sampled_page": 4,
+              "rect": [
+                764,
+                48,
+                781,
+                79
+              ],
+              "bitmap_sha256": "0DF8D6071261E53726FCECEA90C0ACC9DFDA9036D0987993AEB9BF5128071860",
+              "active_pixels": 176,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+BC25",
+                  "character": "밥",
+                  "different_pixels": 0,
+                  "maximum_delta": 0,
+                  "mean_delta": 0.0,
+                  "bitmap_sha256": "0DF8D6071261E53726FCECEA90C0ACC9DFDA9036D0987993AEB9BF5128071860"
+                },
+                {
+                  "codepoint": "U+B9D9",
+                  "character": "맙",
+                  "different_pixels": 113,
+                  "maximum_delta": 223,
+                  "mean_delta": 18.07210626185958,
+                  "bitmap_sha256": "C39B2153EFE1ABA853EB57167D1F9BC03D1B7659A7B6FC13DE01949E170F345F"
+                },
+                {
+                  "codepoint": "U+BC24",
+                  "character": "밤",
+                  "different_pixels": 117,
+                  "maximum_delta": 255,
+                  "mean_delta": 19.134724857685008,
+                  "bitmap_sha256": "FCA30587E9429B87DDB1C3718AF4687A604DB7B3F49C92D95C8D6D63B54BEE7F"
+                },
+                {
+                  "codepoint": "U+C555",
+                  "character": "압",
+                  "different_pixels": 117,
+                  "maximum_delta": 255,
+                  "mean_delta": 20.144212523719165,
+                  "bitmap_sha256": "1A01604053D79FD7D6BF8E5EE6CE213CFD2AAD8C10A889D462FF6343C31C3109"
+                },
+                {
+                  "codepoint": "U+BC1C",
+                  "character": "발",
+                  "different_pixels": 137,
+                  "maximum_delta": 255,
+                  "mean_delta": 21.60910815939279,
+                  "bitmap_sha256": "911C8E31A407BCA98CA9658E8FCD8A9707009D83670773982D0E4AF04C3BDCF9"
+                },
+                {
+                  "codepoint": "U+D0D1",
+                  "character": "탑",
+                  "different_pixels": 131,
+                  "maximum_delta": 255,
+                  "mean_delta": 22.06451612903226,
+                  "bitmap_sha256": "66B969043E2FFC9D1F56B8A170CB664F5128E4198B437AF1250E311A81653A90"
+                },
+                {
+                  "codepoint": "U+B78D",
+                  "character": "랍",
+                  "different_pixels": 133,
+                  "maximum_delta": 255,
+                  "mean_delta": 22.119544592030362,
+                  "bitmap_sha256": "11C6A1E7A78974478F47E5480706C7358819E05B54D9B8757ACCD0CADB2DB743"
+                },
+                {
+                  "codepoint": "U+B2F5",
+                  "character": "답",
+                  "different_pixels": 129,
+                  "maximum_delta": 255,
+                  "mean_delta": 22.732447817836814,
+                  "bitmap_sha256": "AE987066B6DB8CBC7DFED3B9691DC65D6CE1B2055EC46781F5273440A8DB78C1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "pre": {
+            "codepoint": "U+D1A8",
+            "character": "톨",
+            "utf8_hex": "ED86A8",
+            "utf16le_hex": "A8D1",
+            "record_index": 1400,
+            "page": 4,
+            "page_local_index": 104,
+            "rect": [
+              904,
+              88,
+              921,
+              119
+            ],
+            "uv": [
+              0.8828125,
+              0.171875,
+              0.8994140625,
+              0.232421875
+            ],
+            "metric": [
+              0,
+              17,
+              17
+            ],
+            "bitmap_sha256": "FB95FB7198CBC7CA5BD3C1DAE5E7335C73FB34FDA80A8C2CB5E9FF45BF5AC5FE",
+            "active_pixels": 211,
+            "analysis": {
+              "active_bounds": [
+                1,
+                9,
+                17,
+                27
+              ],
+              "padding": {
+                "left": 1,
+                "right": 0,
+                "top": 9,
+                "bottom": 4
+              },
+              "active_pixels": 211,
+              "antialias_levels": 13
+            }
+          },
+          "current": {
+            "codepoint": "U+D1A8",
+            "character": "톨",
+            "utf8_hex": "ED86A8",
+            "utf16le_hex": "A8D1",
+            "record_index": 1400,
+            "page": 4,
+            "page_local_index": 104,
+            "rect": [
+              904,
+              88,
+              921,
+              119
+            ],
+            "uv": [
+              0.8828125,
+              0.171875,
+              0.8994140625,
+              0.232421875
+            ],
+            "metric": [
+              0,
+              17,
+              17
+            ],
+            "bitmap_sha256": "FB95FB7198CBC7CA5BD3C1DAE5E7335C73FB34FDA80A8C2CB5E9FF45BF5AC5FE",
+            "active_pixels": 211,
+            "analysis": {
+              "active_bounds": [
+                1,
+                9,
+                17,
+                27
+              ],
+              "padding": {
+                "left": 1,
+                "right": 0,
+                "top": 9,
+                "bottom": 4
+              },
+              "active_pixels": 211,
+              "antialias_levels": 13
+            }
+          },
+          "pre_neighbors": [
+            {
+              "record_index": 1397,
+              "codepoint": "U+D018",
+              "character": "퀘",
+              "page": 4,
+              "page_local_index": 101
+            },
+            {
+              "record_index": 1398,
+              "codepoint": "U+D044",
+              "character": "큄",
+              "page": 4,
+              "page_local_index": 102
+            },
+            {
+              "record_index": 1399,
+              "codepoint": "U+D0E4",
+              "character": "탤",
+              "page": 4,
+              "page_local_index": 103
+            },
+            {
+              "record_index": 1400,
+              "codepoint": "U+D1A8",
+              "character": "톨",
+              "page": 4,
+              "page_local_index": 104
+            },
+            {
+              "record_index": 1401,
+              "codepoint": "U+D2A0",
+              "character": "튠",
+              "page": 4,
+              "page_local_index": 105
+            },
+            {
+              "record_index": 1402,
+              "codepoint": "U+D33B",
+              "character": "팻",
+              "page": 4,
+              "page_local_index": 106
+            },
+            {
+              "record_index": 1403,
+              "codepoint": "U+D33D",
+              "character": "팽",
+              "page": 4,
+              "page_local_index": 107
+            }
+          ],
+          "current_neighbors": [
+            {
+              "record_index": 1397,
+              "codepoint": "U+D018",
+              "character": "퀘",
+              "page": 4,
+              "page_local_index": 101
+            },
+            {
+              "record_index": 1398,
+              "codepoint": "U+D044",
+              "character": "큄",
+              "page": 4,
+              "page_local_index": 102
+            },
+            {
+              "record_index": 1399,
+              "codepoint": "U+D0E4",
+              "character": "탤",
+              "page": 4,
+              "page_local_index": 103
+            },
+            {
+              "record_index": 1400,
+              "codepoint": "U+D1A8",
+              "character": "톨",
+              "page": 4,
+              "page_local_index": 104
+            },
+            {
+              "record_index": 1401,
+              "codepoint": "U+D2A0",
+              "character": "튠",
+              "page": 4,
+              "page_local_index": 105
+            },
+            {
+              "record_index": 1402,
+              "codepoint": "U+D33B",
+              "character": "팻",
+              "page": 4,
+              "page_local_index": 106
+            },
+            {
+              "record_index": 1403,
+              "codepoint": "U+D33D",
+              "character": "팽",
+              "page": 4,
+              "page_local_index": 107
+            }
+          ],
+          "mapping_byte_exact": true,
+          "bitmap_byte_exact": true,
+          "page_binding_hypotheses": [
+            {
+              "sampled_page": 0,
+              "rect": [
+                904,
+                88,
+                921,
+                119
+              ],
+              "bitmap_sha256": "F4BFF31B21312F1DC7C14B4FBBD729264BC5F00D09D4CE18D947BECE9DDAADC5",
+              "active_pixels": 46,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+B108",
+                  "character": "너",
+                  "different_pixels": 124,
+                  "maximum_delta": 255,
+                  "mean_delta": 35.16129032258065,
+                  "bitmap_sha256": "B2AAF23F032E24A3FE8D32D82036E8A8E4446EAE07D036E71CCB4B794384BDD8"
+                },
+                {
+                  "codepoint": "U+B2C8",
+                  "character": "니",
+                  "different_pixels": 116,
+                  "maximum_delta": 255,
+                  "mean_delta": 35.7134724857685,
+                  "bitmap_sha256": "D1EFAF173B5650D045CF7F03D1400B913B4AA4F9D78C97483CEDE7611AF4D7C9"
+                },
+                {
+                  "codepoint": "U+ADF8",
+                  "character": "그",
+                  "different_pixels": 106,
+                  "maximum_delta": 255,
+                  "mean_delta": 36.195445920303605,
+                  "bitmap_sha256": "AED9B272123EE367E8F50DEBBF2A00DDE69CAED20145B8134D627E2C09D82DE2"
+                },
+                {
+                  "codepoint": "U+AE30",
+                  "character": "기",
+                  "different_pixels": 125,
+                  "maximum_delta": 255,
+                  "mean_delta": 37.311195445920305,
+                  "bitmap_sha256": "49B060929F833B33D7F3867F85E6AD6941E7A112F569673BBBCCC913C8CD66EB"
+                },
+                {
+                  "codepoint": "U+C2DC",
+                  "character": "시",
+                  "different_pixels": 122,
+                  "maximum_delta": 255,
+                  "mean_delta": 38.223908918406075,
+                  "bitmap_sha256": "BB0E9D079A6C9E1B3764A428C987B4BCD7C05EAA4457AB8114597A54CA4A9C59"
+                },
+                {
+                  "codepoint": "U+B140",
+                  "character": "녀",
+                  "different_pixels": 140,
+                  "maximum_delta": 255,
+                  "mean_delta": 38.50474383301708,
+                  "bitmap_sha256": "B58891B33127A1DEF054F2EDC735D690DF3EE2498398498AFA6000E46C6F552D"
+                },
+                {
+                  "codepoint": "U+B354",
+                  "character": "더",
+                  "different_pixels": 136,
+                  "maximum_delta": 255,
+                  "mean_delta": 39.27893738140418,
+                  "bitmap_sha256": "8DDC2744C07912695702BF6D94D8B6C752FD88D9F3463CD298416FDE759364E2"
+                },
+                {
+                  "codepoint": "U+CEE4",
+                  "character": "커",
+                  "different_pixels": 140,
+                  "maximum_delta": 255,
+                  "mean_delta": 39.51043643263757,
+                  "bitmap_sha256": "4B2CDD9DE223F81DED24DF6A679EBDE6AD6E6EFD5A2AB5C2A3E440FAF482BDA2"
+                }
+              ]
+            },
+            {
+              "sampled_page": 1,
+              "rect": [
+                904,
+                88,
+                921,
+                119
+              ],
+              "bitmap_sha256": "B65D602670B318DF0A4A33E226CDC9DEB27F89264B40C39BF039ECFC4849E823",
+              "active_pixels": 143,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+AF2D",
+                  "character": "꼭",
+                  "different_pixels": 0,
+                  "maximum_delta": 0,
+                  "mean_delta": 0.0,
+                  "bitmap_sha256": "B65D602670B318DF0A4A33E226CDC9DEB27F89264B40C39BF039ECFC4849E823"
+                },
+                {
+                  "codepoint": "U+AF41",
+                  "character": "꽁",
+                  "different_pixels": 76,
+                  "maximum_delta": 255,
+                  "mean_delta": 16.301707779886147,
+                  "bitmap_sha256": "0DE5DB1C1EFAE61D517F5A2E783C7AED8F7DDD7C4A56EFA15C75AF436CF3AC09"
+                },
+                {
+                  "codepoint": "U+ACE1",
+                  "character": "곡",
+                  "different_pixels": 86,
+                  "maximum_delta": 255,
+                  "mean_delta": 20.466793168880454,
+                  "bitmap_sha256": "4EFCDD13298844E5688111CE72409D893BFA20C94202786FEE6A1AE4045521D0"
+                },
+                {
+                  "codepoint": "U+C989",
+                  "character": "즉",
+                  "different_pixels": 119,
+                  "maximum_delta": 255,
+                  "mean_delta": 20.907020872865274,
+                  "bitmap_sha256": "DE5F1F37FF5BEE1ACB576AE72CD6BAE439B28305B6C081E66E07FA3A16A853C5"
+                },
+                {
+                  "codepoint": "U+C9C1",
+                  "character": "직",
+                  "different_pixels": 124,
+                  "maximum_delta": 255,
+                  "mean_delta": 24.352941176470587,
+                  "bitmap_sha256": "03965ADD636B581F7E59E6A4EFB5CFE12933722AF0A91C2048ED5CA7837FA4D5"
+                },
+                {
+                  "codepoint": "U+ACF0",
+                  "character": "곰",
+                  "different_pixels": 125,
+                  "maximum_delta": 255,
+                  "mean_delta": 24.67931688804554,
+                  "bitmap_sha256": "B87B9981101A3BF6422E8293BCFFE25189ECE80A7C76F89B243A419606D8CD89"
+                },
+                {
+                  "codepoint": "U+AD6D",
+                  "character": "국",
+                  "different_pixels": 101,
+                  "maximum_delta": 255,
+                  "mean_delta": 24.802656546489562,
+                  "bitmap_sha256": "6A19BE45C6D097D43DFDADB83E03A1BB45ABD55D3479D99488B287991AC9EA1A"
+                },
+                {
+                  "codepoint": "U+BB35",
+                  "character": "묵",
+                  "different_pixels": 106,
+                  "maximum_delta": 255,
+                  "mean_delta": 25.06641366223909,
+                  "bitmap_sha256": "66FFB574D82C2FB922FEF5F072719CD6E97AE46982509777E022D9AF665D4E3D"
+                }
+              ]
+            },
+            {
+              "sampled_page": 2,
+              "rect": [
+                904,
+                88,
+                921,
+                119
+              ],
+              "bitmap_sha256": "9B444CC35E80101F76DECB83CF4FB3C2AC5D86624B0EEB3EE5BBF6D9D6998B0B",
+              "active_pixels": 145,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+BC85",
+                  "character": "벅",
+                  "different_pixels": 0,
+                  "maximum_delta": 0,
+                  "mean_delta": 0.0,
+                  "bitmap_sha256": "9B444CC35E80101F76DECB83CF4FB3C2AC5D86624B0EEB3EE5BBF6D9D6998B0B"
+                },
+                {
+                  "codepoint": "U+BA39",
+                  "character": "먹",
+                  "different_pixels": 41,
+                  "maximum_delta": 255,
+                  "mean_delta": 7.383301707779887,
+                  "bitmap_sha256": "387674BC6FDEE4CEE9C5C685B8F08A3F85C3B86F96E0E2DBDFD86A3E09A31066"
+                },
+                {
+                  "codepoint": "U+BCBD",
+                  "character": "벽",
+                  "different_pixels": 36,
+                  "maximum_delta": 255,
+                  "mean_delta": 8.590132827324478,
+                  "bitmap_sha256": "71060A579775361E6052BC38745889D6642CBC18E40172E6494723A2F82F70E7"
+                },
+                {
+                  "codepoint": "U+BC94",
+                  "character": "범",
+                  "different_pixels": 67,
+                  "maximum_delta": 255,
+                  "mean_delta": 14.30740037950664,
+                  "bitmap_sha256": "8574C01ED567432697F9F5A0156F247D321250BFEE9274507363C7487DA1399B"
+                },
+                {
+                  "codepoint": "U+BC15",
+                  "character": "박",
+                  "different_pixels": 62,
+                  "maximum_delta": 255,
+                  "mean_delta": 16.313092979127134,
+                  "bitmap_sha256": "E737F140DDC2170291E403F327DE90DD8CA6B14F49E0D73C6B13520E0DCD8DD6"
+                },
+                {
+                  "codepoint": "U+C5B5",
+                  "character": "억",
+                  "different_pixels": 100,
+                  "maximum_delta": 255,
+                  "mean_delta": 16.853889943074005,
+                  "bitmap_sha256": "C2F03D3A861E01A43D8DFE71F21A6932AAB0A3FD79D172B36A656CFFD5E17E84"
+                },
+                {
+                  "codepoint": "U+BCA1",
+                  "character": "벡",
+                  "different_pixels": 96,
+                  "maximum_delta": 255,
+                  "mean_delta": 18.364326375711574,
+                  "bitmap_sha256": "B0403DEC5A33F50AFCFE091CBF29010E804FA37B8EFBB96DDF4EDA7E53B0275C"
+                },
+                {
+                  "codepoint": "U+BC31",
+                  "character": "백",
+                  "different_pixels": 101,
+                  "maximum_delta": 255,
+                  "mean_delta": 19.394686907020873,
+                  "bitmap_sha256": "09E4CEED41441BC987EF52A1D42AF797C4E6E06EA269C5C66AE4CC105B04335A"
+                }
+              ]
+            },
+            {
+              "sampled_page": 3,
+              "rect": [
+                904,
+                88,
+                921,
+                119
+              ],
+              "bitmap_sha256": "F49FD152F49A0F1691AF375CB356CBE3856DAC6701EBCAED99D047153639716F",
+              "active_pixels": 162,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+CABD",
+                  "character": "쪽",
+                  "different_pixels": 0,
+                  "maximum_delta": 0,
+                  "mean_delta": 0.0,
+                  "bitmap_sha256": "F49FD152F49A0F1691AF375CB356CBE3856DAC6701EBCAED99D047153639716F"
+                },
+                {
+                  "codepoint": "U+BAA9",
+                  "character": "목",
+                  "different_pixels": 88,
+                  "maximum_delta": 255,
+                  "mean_delta": 15.548387096774194,
+                  "bitmap_sha256": "6A0906B36EFD93BF507A8A9D24DCF7C16AA144E1DE5E06B29473AE8FAB680C63"
+                },
+                {
+                  "codepoint": "U+CB49",
+                  "character": "쭉",
+                  "different_pixels": 88,
+                  "maximum_delta": 255,
+                  "mean_delta": 15.994307400379506,
+                  "bitmap_sha256": "EDA42FEA34BD1B9AEE3BB74A0A737725F8B5CC80522385DC11BEDD6651FFC575"
+                },
+                {
+                  "codepoint": "U+C871",
+                  "character": "족",
+                  "different_pixels": 93,
+                  "maximum_delta": 255,
+                  "mean_delta": 16.74762808349146,
+                  "bitmap_sha256": "C5A4009BE6698B82136A55508402BED95B41A7BA8FA0D6F904AF60181E0356BE"
+                },
+                {
+                  "codepoint": "U+B3C5",
+                  "character": "독",
+                  "different_pixels": 96,
+                  "maximum_delta": 255,
+                  "mean_delta": 16.975332068311197,
+                  "bitmap_sha256": "B6D94422A6ACD2D9E7E43AE61A08F7652F87A46E1EC70EE2641A0B81F3410984"
+                },
+                {
+                  "codepoint": "U+B611",
+                  "character": "똑",
+                  "different_pixels": 115,
+                  "maximum_delta": 255,
+                  "mean_delta": 18.992409867172675,
+                  "bitmap_sha256": "B3FEC8127D2BD3F8E8897B8C217C65733F341C5F8934EF9F7E79CEBE163E29E8"
+                },
+                {
+                  "codepoint": "U+D3ED",
+                  "character": "폭",
+                  "different_pixels": 137,
+                  "maximum_delta": 255,
+                  "mean_delta": 19.601518026565465,
+                  "bitmap_sha256": "073CD1DB2187268E6EDE5CE870E11022B993162FF17A6D5D6468142E3A789CBD"
+                },
+                {
+                  "codepoint": "U+BCF5",
+                  "character": "복",
+                  "different_pixels": 103,
+                  "maximum_delta": 255,
+                  "mean_delta": 21.50664136622391,
+                  "bitmap_sha256": "CFE96DB2D625AD9424EF00977618B52E4CEDB2DF72BCD5F48C200C990008180F"
+                }
+              ]
+            },
+            {
+              "sampled_page": 4,
+              "rect": [
+                904,
+                88,
+                921,
+                119
+              ],
+              "bitmap_sha256": "FB95FB7198CBC7CA5BD3C1DAE5E7335C73FB34FDA80A8C2CB5E9FF45BF5AC5FE",
+              "active_pixels": 211,
+              "nearest_declared_glyphs": [
+                {
+                  "codepoint": "U+D1A8",
+                  "character": "톨",
+                  "different_pixels": 0,
+                  "maximum_delta": 0,
+                  "mean_delta": 0.0,
+                  "bitmap_sha256": "FB95FB7198CBC7CA5BD3C1DAE5E7335C73FB34FDA80A8C2CB5E9FF45BF5AC5FE"
+                },
+                {
+                  "codepoint": "U+D2C0",
+                  "character": "틀",
+                  "different_pixels": 63,
+                  "maximum_delta": 239,
+                  "mean_delta": 3.123339658444023,
+                  "bitmap_sha256": "7321B40EABBC5AD3217CF1C709B94A4A9D2FFCF400CD3395817BF19D55F069DD"
+                },
+                {
+                  "codepoint": "U+D234",
+                  "character": "툴",
+                  "different_pixels": 48,
+                  "maximum_delta": 223,
+                  "mean_delta": 4.434535104364326,
+                  "bitmap_sha256": "1D87CA6007CA67D4A337D3210E795EF29633D0B37B0A4DD0D58B35F3FC10D069"
+                },
+                {
+                  "codepoint": "U+B864",
+                  "character": "롤",
+                  "different_pixels": 131,
+                  "maximum_delta": 255,
+                  "mean_delta": 11.707779886148007,
+                  "bitmap_sha256": "2A2F60D074AD916879C4EDA5A541468C586FA3F514BD3FFABD45DC42CC03BBE1"
+                },
+                {
+                  "codepoint": "U+B97C",
+                  "character": "를",
+                  "different_pixels": 133,
+                  "maximum_delta": 255,
+                  "mean_delta": 12.736242884250474,
+                  "bitmap_sha256": "85AD6430C908307665CA5007424B112CA02139018C935C7CD4420606844CA4D4"
+                },
+                {
+                  "codepoint": "U+B960",
+                  "character": "률",
+                  "different_pixels": 134,
+                  "maximum_delta": 255,
+                  "mean_delta": 12.774193548387096,
+                  "bitmap_sha256": "9A55636FCE6AF17B049B8F494183BA29D9F89BDDC27FCC713672AAAA2F6315BE"
+                },
+                {
+                  "codepoint": "U+B8F0",
+                  "character": "룰",
+                  "different_pixels": 142,
+                  "maximum_delta": 255,
+                  "mean_delta": 12.922201138519924,
+                  "bitmap_sha256": "A551F4696F353110BF7995DF0A828E464B665368C8CA6F73B2CB9A7B89460C9D"
+                },
+                {
+                  "codepoint": "U+D50C",
+                  "character": "플",
+                  "different_pixels": 146,
+                  "maximum_delta": 255,
+                  "mean_delta": 22.379506641366223,
+                  "bitmap_sha256": "3C151B45E510164453019B279ADDC0D72269ABD5B53001392B44231931639FA9"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "changed_records": []
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "status": "FIXED_VISIBLE_BOUNDARY_PROVEN_OWNER_UNRESOLVED",
+  "observed_boundary": {
+    "coordinate_space": "full desktop capture pixels",
+    "rightmost_visible_x": 528,
+    "states": [
+      "idle 20-frame series",
+      "slow wheel input",
+      "slow post-input",
+      "fast wheel input",
+      "fast post-input"
+    ],
+    "result": "fixed in sampled evidence"
+  },
+  "owner_candidates": [
+    {
+      "owner": "active SplitApplink text rectangle",
+      "status": "UNPROVEN",
+      "proof_needed": "strong x displacement changes visible column position"
+    },
+    {
+      "owner": "row or list parent rectangle",
+      "status": "UNPROVEN",
+      "proof_needed": "text moves but still clips at same parent edge"
+    },
+    {
+      "owner": "runtime scissor",
+      "status": "UNPROVEN",
+      "proof_needed": "BGUI object/parent geometry cannot move final edge"
+    },
+    {
+      "owner": "screen viewport",
+      "status": "LOW_CONFIDENCE_UNPROVEN",
+      "proof_needed": "clip persists independently of list hierarchy"
+    }
+  ],
+  "rejected_as_final_conclusion": [
+    "digit width alone",
+    "font raster overhang alone",
+    "group A geometry alone"
+  ],
+  "reason_rejected": "none has active-object plus clip-owner runtime proof yet",
+  "resolution_gate": "do not assign final_clip_owner until a >=100px/disappear diagnostic is captured"
+}
+

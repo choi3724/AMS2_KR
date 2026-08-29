@@ -1,0 +1,47 @@
+{
+  "schema": "ams2-kr-068.1-final-font-runtime-validation-v1",
+  "candidate": "AMS2-KR-068.1-candidate11-nameplate-name",
+  "final_verdict": "RUNTIME_TARGET_RETEST_PENDING",
+  "static": {
+    "required_appended_codepoints": 69,
+    "glyph_identity_records": 137,
+    "wrong_glyph_mappings": 0,
+    "missing_glyphs": 0,
+    "nameplate_embedded_name_mismatches": 0,
+    "dds_changes_from_candidate10c": 0,
+    "golden_codepoint_changes": 0,
+    "golden_uv_changes": 0,
+    "golden_metric_changes": 0
+  },
+  "storage_validation": {
+    "status": "PASS",
+    "fonts": 49,
+    "appended_fonts": 47,
+    "appended_records": 3242,
+    "unexpected_l8_changes": 0,
+    "dxt_baseline_byte_changes": 0,
+    "golden_owned_pixel_changes": 0,
+    "golden_index_changes": 0,
+    "golden_metric_changes": 0,
+    "golden_uv_changes": 0,
+    "evidence": "candidate11-storage-validation.json"
+  },
+  "runtime": {
+    "actual_single_race_boot": "PASS",
+    "player_session_list": "PASS",
+    "human_nickname": "PASS",
+    "safety_car_text": "PASS",
+    "above_car_kot": "PENDING",
+    "above_car_bap": "PENDING",
+    "above_car_tol": "PENDING",
+    "replay": "PENDING_AFTER_WINDOWLESS_LOAD",
+    "unexpected_background": "NOT_OBSERVED_IN_COMPLETED_CANDIDATE11_LIST_RUN"
+  },
+  "live_files": {
+    "GUI/kr13_driver_name_semibold.bfont": "6409DA7DE921013C28357E59CC0F7FA85FC8954BB1BE0E47FB152120B5CDB958",
+    "GUI/kr13_driver_name_semibold_04.dds": "6A50996E61194436130B52D8A608D21A8C2B2B7F9A83C937BD7EA1BA823F8595",
+    "Pakfiles/IGPHASEHUD.bff": "D1618BB1F6E09F53E8BB86F4A163C2934B91814F5F326670381C5496B3D7C398"
+  },
+  "commit_allowed": false,
+  "release_allowed": false
+}

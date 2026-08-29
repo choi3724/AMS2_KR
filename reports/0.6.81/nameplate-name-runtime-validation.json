@@ -1,0 +1,53 @@
+{
+  "schema": "ams2-kr-068.1-nameplate-runtime-validation-v1",
+  "route": "IGPHASEHUD.bff/gui/hud_infoabovecar.bgui/ProfileName",
+  "font_alias": "kr13_driver_name_semibold",
+  "pre_fix_status": "FAIL_USER_CONFIRMED",
+  "candidate11_status": "PENDING_EXACT_RUNTIME_RETEST",
+  "root_cause": "BFONT embedded DDS basename was kr13_phoenix_body_regular while the dedicated nameplate DDS basename was kr13_driver_name_semibold",
+  "minimal_fix": {
+    "changed_file": "GUI/kr13_driver_name_semibold.bfont",
+    "old_embedded_name": "kr13_phoenix_body_regular",
+    "new_embedded_name": "kr13_driver_name_semibold",
+    "old_sha256": "A4005F7BFE733C40029C231CFA6090C469FD4F45EC83DAE03916BB9EBBDEA0C6",
+    "new_sha256": "6409DA7DE921013C28357E59CC0F7FA85FC8954BB1BE0E47FB152120B5CDB958",
+    "dds_changes": 0,
+    "glyph_record_changes": 0,
+    "igphasehud_changes": 0,
+    "player_list_changes": 0
+  },
+  "static_validation": {
+    "status": "PASS",
+    "audited_route_records": 137,
+    "wrong_mapping_count": 0,
+    "embedded_name_mismatch_count": 0,
+    "verdict": "BFONT_MAPPING_AND_DDS_BASENAME_PASS"
+  },
+  "required_runtime_names": [
+    {
+      "name": "앤드류 스콧",
+      "character": "콧",
+      "codepoint": "U+CF67",
+      "status": "PENDING"
+    },
+    {
+      "name": "브루노 밥티스타",
+      "character": "밥",
+      "codepoint": "U+BC25",
+      "status": "PENDING"
+    },
+    {
+      "name": "아드리안 톨레도",
+      "character": "톨",
+      "codepoint": "U+D1A8",
+      "status": "PENDING"
+    }
+  ],
+  "failure_evidence": [
+    "runtime/user-fail-abovecar-kot.png",
+    "runtime/user-fail-abovecar-bap.png",
+    "runtime/user-fail-abovecar-tol.png"
+  ],
+  "commit_allowed": false
+}
+

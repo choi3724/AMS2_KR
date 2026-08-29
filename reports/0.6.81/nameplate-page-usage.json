@@ -1,0 +1,906 @@
+{
+  "schema": "ams2-kr-068.1-nameplate-page-usage-v1",
+  "font": "kr13_driver_name_semibold",
+  "font_embedded_name": "kr13_driver_name_semibold",
+  "bfont_byte_exact": true,
+  "target_names": [
+    "앤드류 스콧",
+    "브루노 밥티스타",
+    "아드리안 톨레도"
+  ],
+  "characters": [
+    {
+      "character": "노",
+      "codepoint": "U+B178",
+      "contexts": [
+        "브루노 밥티스타"
+      ],
+      "record_index": 480,
+      "page": 1,
+      "page_filename": "kr13_driver_name_semibold_01.dds",
+      "uv": [
+        0.28125,
+        0.328125,
+        0.2978515625,
+        0.388671875
+      ],
+      "glyph_bounds": [
+        288,
+        168,
+        305,
+        199
+      ],
+      "metric": [
+        0,
+        17,
+        17
+      ],
+      "before": {
+        "transparent_0": 0,
+        "sdf_zero_120": 434,
+        "antialias_121_135": 54,
+        "solid_136": 39,
+        "other_values": 0,
+        "border_sdf_zero_120": 88,
+        "runtime_visible_background": "USER_CONFIRMED_NAMEPLATE_PATH"
+      },
+      "after": {
+        "transparent_0": 434,
+        "sdf_zero_120": 0,
+        "antialias_121_135": 54,
+        "solid_136": 39,
+        "other_values": 0,
+        "border_sdf_zero_120": 0,
+        "runtime_visible_background": "PENDING_RUNTIME"
+      },
+      "identity_mapping_unchanged": true,
+      "status": "STATIC_BACKGROUND_ZERO_NORMALIZED"
+    },
+    {
+      "character": "도",
+      "codepoint": "U+B3C4",
+      "contexts": [
+        "아드리안 톨레도"
+      ],
+      "record_index": 535,
+      "page": 1,
+      "page_filename": "kr13_driver_name_semibold_01.dds",
+      "uv": [
+        0.80078125,
+        0.40625,
+        0.8173828125,
+        0.466796875
+      ],
+      "glyph_bounds": [
+        820,
+        208,
+        837,
+        239
+      ],
+      "metric": [
+        0,
+        17,
+        17
+      ],
+      "before": {
+        "transparent_0": 0,
+        "sdf_zero_120": 414,
+        "antialias_121_135": 65,
+        "solid_136": 48,
+        "other_values": 0,
+        "border_sdf_zero_120": 88,
+        "runtime_visible_background": "USER_CONFIRMED_NAMEPLATE_PATH"
+      },
+      "after": {
+        "transparent_0": 414,
+        "sdf_zero_120": 0,
+        "antialias_121_135": 65,
+        "solid_136": 48,
+        "other_values": 0,
+        "border_sdf_zero_120": 0,
+        "runtime_visible_background": "PENDING_RUNTIME"
+      },
+      "identity_mapping_unchanged": true,
+      "status": "STATIC_BACKGROUND_ZERO_NORMALIZED"
+    },
+    {
+      "character": "드",
+      "codepoint": "U+B4DC",
+      "contexts": [
+        "앤드류 스콧",
+        "아드리안 톨레도"
+      ],
+      "record_index": 561,
+      "page": 1,
+      "page_filename": "kr13_driver_name_semibold_01.dds",
+      "uv": [
+        0.52734375,
+        0.484375,
+        0.5439453125,
+        0.544921875
+      ],
+      "glyph_bounds": [
+        540,
+        248,
+        557,
+        279
+      ],
+      "metric": [
+        0,
+        17,
+        17
+      ],
+      "before": {
+        "transparent_0": 0,
+        "sdf_zero_120": 426,
+        "antialias_121_135": 56,
+        "solid_136": 45,
+        "other_values": 0,
+        "border_sdf_zero_120": 88,
+        "runtime_visible_background": "USER_CONFIRMED_NAMEPLATE_PATH"
+      },
+      "after": {
+        "transparent_0": 426,
+        "sdf_zero_120": 0,
+        "antialias_121_135": 56,
+        "solid_136": 45,
+        "other_values": 0,
+        "border_sdf_zero_120": 0,
+        "runtime_visible_background": "PENDING_RUNTIME"
+      },
+      "identity_mapping_unchanged": true,
+      "status": "STATIC_BACKGROUND_ZERO_NORMALIZED"
+    },
+    {
+      "character": "레",
+      "codepoint": "U+B808",
+      "contexts": [
+        "아드리안 톨레도"
+      ],
+      "record_index": 628,
+      "page": 1,
+      "page_filename": "kr13_driver_name_semibold_01.dds",
+      "uv": [
+        0.390625,
+        0.640625,
+        0.4072265625,
+        0.701171875
+      ],
+      "glyph_bounds": [
+        400,
+        328,
+        417,
+        359
+      ],
+      "metric": [
+        0,
+        17,
+        17
+      ],
+      "before": {
+        "transparent_0": 0,
+        "sdf_zero_120": 344,
+        "antialias_121_135": 84,
+        "solid_136": 99,
+        "other_values": 0,
+        "border_sdf_zero_120": 92,
+        "runtime_visible_background": "USER_CONFIRMED_NAMEPLATE_PATH"
+      },
+      "after": {
+        "transparent_0": 344,
+        "sdf_zero_120": 0,
+        "antialias_121_135": 84,
+        "solid_136": 99,
+        "other_values": 0,
+        "border_sdf_zero_120": 0,
+        "runtime_visible_background": "PENDING_RUNTIME"
+      },
+      "identity_mapping_unchanged": true,
+      "status": "STATIC_BACKGROUND_ZERO_NORMALIZED"
+    },
+    {
+      "character": "루",
+      "codepoint": "U+B8E8",
+      "contexts": [
+        "브루노 밥티스타"
+      ],
+      "record_index": 651,
+      "page": 2,
+      "page_filename": "kr13_driver_name_semibold_02.dds",
+      "uv": [
+        0.08984375,
+        0.015625,
+        0.1064453125,
+        0.076171875
+      ],
+      "glyph_bounds": [
+        92,
+        8,
+        109,
+        39
+      ],
+      "metric": [
+        0,
+        17,
+        17
+      ],
+      "before": {
+        "transparent_0": 0,
+        "sdf_zero_120": 389,
+        "antialias_121_135": 76,
+        "solid_136": 62,
+        "other_values": 0,
+        "border_sdf_zero_120": 88,
+        "runtime_visible_background": "USER_CONFIRMED_NAMEPLATE_PATH"
+      },
+      "after": {
+        "transparent_0": 389,
+        "sdf_zero_120": 0,
+        "antialias_121_135": 76,
+        "solid_136": 62,
+        "other_values": 0,
+        "border_sdf_zero_120": 0,
+        "runtime_visible_background": "PENDING_RUNTIME"
+      },
+      "identity_mapping_unchanged": true,
+      "status": "STATIC_BACKGROUND_ZERO_NORMALIZED"
+    },
+    {
+      "character": "류",
+      "codepoint": "U+B958",
+      "contexts": [
+        "앤드류 스콧"
+      ],
+      "record_index": 658,
+      "page": 2,
+      "page_filename": "kr13_driver_name_semibold_02.dds",
+      "uv": [
+        0.28125,
+        0.015625,
+        0.2978515625,
+        0.076171875
+      ],
+      "glyph_bounds": [
+        288,
+        8,
+        305,
+        39
+      ],
+      "metric": [
+        0,
+        17,
+        17
+      ],
+      "before": {
+        "transparent_0": 0,
+        "sdf_zero_120": 371,
+        "antialias_121_135": 90,
+        "solid_136": 66,
+        "other_values": 0,
+        "border_sdf_zero_120": 88,
+        "runtime_visible_background": "USER_CONFIRMED_NAMEPLATE_PATH"
+      },
+      "after": {
+        "transparent_0": 371,
+        "sdf_zero_120": 0,
+        "antialias_121_135": 90,
+        "solid_136": 66,
+        "other_values": 0,
+        "border_sdf_zero_120": 0,
+        "runtime_visible_background": "PENDING_RUNTIME"
+      },
+      "identity_mapping_unchanged": true,
+      "status": "STATIC_BACKGROUND_ZERO_NORMALIZED"
+    },
+    {
+      "character": "리",
+      "codepoint": "U+B9AC",
+      "contexts": [
+        "아드리안 톨레도"
+      ],
+      "record_index": 668,
+      "page": 2,
+      "page_filename": "kr13_driver_name_semibold_02.dds",
+      "uv": [
+        0.5546875,
+        0.015625,
+        0.5712890625,
+        0.076171875
+      ],
+      "glyph_bounds": [
+        568,
+        8,
+        585,
+        39
+      ],
+      "metric": [
+        0,
+        17,
+        17
+      ],
+      "before": {
+        "transparent_0": 0,
+        "sdf_zero_120": 368,
+        "antialias_121_135": 84,
+        "solid_136": 75,
+        "other_values": 0,
+        "border_sdf_zero_120": 92,
+        "runtime_visible_background": "USER_CONFIRMED_NAMEPLATE_PATH"
+      },
+      "after": {
+        "transparent_0": 368,
+        "sdf_zero_120": 0,
+        "antialias_121_135": 84,
+        "solid_136": 75,
+        "other_values": 0,
+        "border_sdf_zero_120": 0,
+        "runtime_visible_background": "PENDING_RUNTIME"
+      },
+      "identity_mapping_unchanged": true,
+      "status": "STATIC_BACKGROUND_ZERO_NORMALIZED"
+    },
+    {
+      "character": "밥",
+      "codepoint": "U+BC25",
+      "contexts": [
+        "브루노 밥티스타"
+      ],
+      "record_index": 1359,
+      "page": 4,
+      "page_filename": "kr13_driver_name_semibold_04.dds",
+      "uv": [
+        0.74609375,
+        0.09375,
+        0.7626953125,
+        0.154296875
+      ],
+      "glyph_bounds": [
+        764,
+        48,
+        781,
+        79
+      ],
+      "metric": [
+        0,
+        17,
+        17
+      ],
+      "before": {
+        "transparent_0": 351,
+        "sdf_zero_120": 0,
+        "antialias_121_135": 98,
+        "solid_136": 78,
+        "other_values": 0,
+        "border_sdf_zero_120": 0,
+        "runtime_visible_background": "USER_CONFIRMED_NAMEPLATE_PATH"
+      },
+      "after": {
+        "transparent_0": 351,
+        "sdf_zero_120": 0,
+        "antialias_121_135": 98,
+        "solid_136": 78,
+        "other_values": 0,
+        "border_sdf_zero_120": 0,
+        "runtime_visible_background": "PENDING_RUNTIME"
+      },
+      "identity_mapping_unchanged": true,
+      "status": "STATIC_BACKGROUND_ZERO_NORMALIZED"
+    },
+    {
+      "character": "브",
+      "codepoint": "U+BE0C",
+      "contexts": [
+        "브루노 밥티스타"
+      ],
+      "record_index": 786,
+      "page": 2,
+      "page_filename": "kr13_driver_name_semibold_02.dds",
+      "uv": [
+        0.828125,
+        0.25,
+        0.8447265625,
+        0.310546875
+      ],
+      "glyph_bounds": [
+        848,
+        128,
+        865,
+        159
+      ],
+      "metric": [
+        0,
+        17,
+        17
+      ],
+      "before": {
+        "transparent_0": 0,
+        "sdf_zero_120": 401,
+        "antialias_121_135": 67,
+        "solid_136": 59,
+        "other_values": 0,
+        "border_sdf_zero_120": 88,
+        "runtime_visible_background": "USER_CONFIRMED_NAMEPLATE_PATH"
+      },
+      "after": {
+        "transparent_0": 401,
+        "sdf_zero_120": 0,
+        "antialias_121_135": 67,
+        "solid_136": 59,
+        "other_values": 0,
+        "border_sdf_zero_120": 0,
+        "runtime_visible_background": "PENDING_RUNTIME"
+      },
+      "identity_mapping_unchanged": true,
+      "status": "STATIC_BACKGROUND_ZERO_NORMALIZED"
+    },
+    {
+      "character": "스",
+      "codepoint": "U+C2A4",
+      "contexts": [
+        "앤드류 스콧",
+        "브루노 밥티스타"
+      ],
+      "record_index": 871,
+      "page": 2,
+      "page_filename": "kr13_driver_name_semibold_02.dds",
+      "uv": [
+        0.19921875,
+        0.484375,
+        0.2158203125,
+        0.544921875
+      ],
+      "glyph_bounds": [
+        204,
+        248,
+        221,
+        279
+      ],
+      "metric": [
+        0,
+        17,
+        17
+      ],
+      "before": {
+        "transparent_0": 0,
+        "sdf_zero_120": 426,
+        "antialias_121_135": 64,
+        "solid_136": 37,
+        "other_values": 0,
+        "border_sdf_zero_120": 86,
+        "runtime_visible_background": "USER_CONFIRMED_NAMEPLATE_PATH"
+      },
+      "after": {
+        "transparent_0": 426,
+        "sdf_zero_120": 0,
+        "antialias_121_135": 64,
+        "solid_136": 37,
+        "other_values": 0,
+        "border_sdf_zero_120": 0,
+        "runtime_visible_background": "PENDING_RUNTIME"
+      },
+      "identity_mapping_unchanged": true,
+      "status": "STATIC_BACKGROUND_ZERO_NORMALIZED"
+    },
+    {
+      "character": "아",
+      "codepoint": "U+C544",
+      "contexts": [
+        "아드리안 톨레도"
+      ],
+      "record_index": 900,
+      "page": 2,
+      "page_filename": "kr13_driver_name_semibold_02.dds",
+      "uv": [
+        0.0078125,
+        0.5625,
+        0.0244140625,
+        0.623046875
+      ],
+      "glyph_bounds": [
+        8,
+        288,
+        25,
+        319
+      ],
+      "metric": [
+        0,
+        17,
+        17
+      ],
+      "before": {
+        "transparent_0": 0,
+        "sdf_zero_120": 383,
+        "antialias_121_135": 71,
+        "solid_136": 73,
+        "other_values": 0,
+        "border_sdf_zero_120": 88,
+        "runtime_visible_background": "USER_CONFIRMED_NAMEPLATE_PATH"
+      },
+      "after": {
+        "transparent_0": 383,
+        "sdf_zero_120": 0,
+        "antialias_121_135": 71,
+        "solid_136": 73,
+        "other_values": 0,
+        "border_sdf_zero_120": 0,
+        "runtime_visible_background": "PENDING_RUNTIME"
+      },
+      "identity_mapping_unchanged": true,
+      "status": "STATIC_BACKGROUND_ZERO_NORMALIZED"
+    },
+    {
+      "character": "안",
+      "codepoint": "U+C548",
+      "contexts": [
+        "아드리안 톨레도"
+      ],
+      "record_index": 902,
+      "page": 2,
+      "page_filename": "kr13_driver_name_semibold_02.dds",
+      "uv": [
+        0.0625,
+        0.5625,
+        0.080078125,
+        0.623046875
+      ],
+      "glyph_bounds": [
+        64,
+        288,
+        82,
+        319
+      ],
+      "metric": [
+        0,
+        18,
+        17
+      ],
+      "before": {
+        "transparent_0": 0,
+        "sdf_zero_120": 411,
+        "antialias_121_135": 85,
+        "solid_136": 62,
+        "other_values": 0,
+        "border_sdf_zero_120": 91,
+        "runtime_visible_background": "USER_CONFIRMED_NAMEPLATE_PATH"
+      },
+      "after": {
+        "transparent_0": 411,
+        "sdf_zero_120": 0,
+        "antialias_121_135": 85,
+        "solid_136": 62,
+        "other_values": 0,
+        "border_sdf_zero_120": 0,
+        "runtime_visible_background": "PENDING_RUNTIME"
+      },
+      "identity_mapping_unchanged": true,
+      "status": "STATIC_BACKGROUND_ZERO_NORMALIZED"
+    },
+    {
+      "character": "앤",
+      "codepoint": "U+C564",
+      "contexts": [
+        "앤드류 스콧"
+      ],
+      "record_index": 914,
+      "page": 2,
+      "page_filename": "kr13_driver_name_semibold_02.dds",
+      "uv": [
+        0.390625,
+        0.5625,
+        0.4072265625,
+        0.623046875
+      ],
+      "glyph_bounds": [
+        400,
+        288,
+        417,
+        319
+      ],
+      "metric": [
+        0,
+        17,
+        17
+      ],
+      "before": {
+        "transparent_0": 0,
+        "sdf_zero_120": 350,
+        "antialias_121_135": 103,
+        "solid_136": 74,
+        "other_values": 0,
+        "border_sdf_zero_120": 90,
+        "runtime_visible_background": "USER_CONFIRMED_NAMEPLATE_PATH"
+      },
+      "after": {
+        "transparent_0": 350,
+        "sdf_zero_120": 0,
+        "antialias_121_135": 103,
+        "solid_136": 74,
+        "other_values": 0,
+        "border_sdf_zero_120": 0,
+        "runtime_visible_background": "PENDING_RUNTIME"
+      },
+      "identity_mapping_unchanged": true,
+      "status": "STATIC_BACKGROUND_ZERO_NORMALIZED"
+    },
+    {
+      "character": "콧",
+      "codepoint": "U+CF67",
+      "contexts": [
+        "앤드류 스콧"
+      ],
+      "record_index": 1393,
+      "page": 4,
+      "page_filename": "kr13_driver_name_semibold_04.dds",
+      "uv": [
+        0.69140625,
+        0.171875,
+        0.7080078125,
+        0.232421875
+      ],
+      "glyph_bounds": [
+        708,
+        88,
+        725,
+        119
+      ],
+      "metric": [
+        0,
+        17,
+        17
+      ],
+      "before": {
+        "transparent_0": 369,
+        "sdf_zero_120": 0,
+        "antialias_121_135": 96,
+        "solid_136": 62,
+        "other_values": 0,
+        "border_sdf_zero_120": 0,
+        "runtime_visible_background": "USER_CONFIRMED_NAMEPLATE_PATH"
+      },
+      "after": {
+        "transparent_0": 369,
+        "sdf_zero_120": 0,
+        "antialias_121_135": 96,
+        "solid_136": 62,
+        "other_values": 0,
+        "border_sdf_zero_120": 0,
+        "runtime_visible_background": "PENDING_RUNTIME"
+      },
+      "identity_mapping_unchanged": true,
+      "status": "STATIC_BACKGROUND_ZERO_NORMALIZED"
+    },
+    {
+      "character": "타",
+      "codepoint": "U+D0C0",
+      "contexts": [
+        "브루노 밥티스타"
+      ],
+      "record_index": 1186,
+      "page": 3,
+      "page_filename": "kr13_driver_name_semibold_03.dds",
+      "uv": [
+        0.9375,
+        0.40625,
+        0.9541015625,
+        0.466796875
+      ],
+      "glyph_bounds": [
+        960,
+        208,
+        977,
+        239
+      ],
+      "metric": [
+        0,
+        17,
+        17
+      ],
+      "before": {
+        "transparent_0": 0,
+        "sdf_zero_120": 356,
+        "antialias_121_135": 94,
+        "solid_136": 77,
+        "other_values": 0,
+        "border_sdf_zero_120": 89,
+        "runtime_visible_background": "USER_CONFIRMED_NAMEPLATE_PATH"
+      },
+      "after": {
+        "transparent_0": 356,
+        "sdf_zero_120": 0,
+        "antialias_121_135": 94,
+        "solid_136": 77,
+        "other_values": 0,
+        "border_sdf_zero_120": 0,
+        "runtime_visible_background": "PENDING_RUNTIME"
+      },
+      "identity_mapping_unchanged": true,
+      "status": "STATIC_BACKGROUND_ZERO_NORMALIZED"
+    },
+    {
+      "character": "톨",
+      "codepoint": "U+D1A8",
+      "contexts": [
+        "아드리안 톨레도"
+      ],
+      "record_index": 1400,
+      "page": 4,
+      "page_filename": "kr13_driver_name_semibold_04.dds",
+      "uv": [
+        0.8828125,
+        0.171875,
+        0.8994140625,
+        0.232421875
+      ],
+      "glyph_bounds": [
+        904,
+        88,
+        921,
+        119
+      ],
+      "metric": [
+        0,
+        17,
+        17
+      ],
+      "before": {
+        "transparent_0": 316,
+        "sdf_zero_120": 0,
+        "antialias_121_135": 132,
+        "solid_136": 79,
+        "other_values": 0,
+        "border_sdf_zero_120": 0,
+        "runtime_visible_background": "USER_CONFIRMED_NAMEPLATE_PATH"
+      },
+      "after": {
+        "transparent_0": 316,
+        "sdf_zero_120": 0,
+        "antialias_121_135": 132,
+        "solid_136": 79,
+        "other_values": 0,
+        "border_sdf_zero_120": 0,
+        "runtime_visible_background": "PENDING_RUNTIME"
+      },
+      "identity_mapping_unchanged": true,
+      "status": "STATIC_BACKGROUND_ZERO_NORMALIZED"
+    },
+    {
+      "character": "티",
+      "codepoint": "U+D2F0",
+      "contexts": [
+        "브루노 밥티스타"
+      ],
+      "record_index": 1229,
+      "page": 3,
+      "page_filename": "kr13_driver_name_semibold_03.dds",
+      "uv": [
+        0.14453125,
+        0.5625,
+        0.1611328125,
+        0.623046875
+      ],
+      "glyph_bounds": [
+        148,
+        288,
+        165,
+        319
+      ],
+      "metric": [
+        0,
+        17,
+        17
+      ],
+      "before": {
+        "transparent_0": 0,
+        "sdf_zero_120": 371,
+        "antialias_121_135": 81,
+        "solid_136": 75,
+        "other_values": 0,
+        "border_sdf_zero_120": 92,
+        "runtime_visible_background": "USER_CONFIRMED_NAMEPLATE_PATH"
+      },
+      "after": {
+        "transparent_0": 371,
+        "sdf_zero_120": 0,
+        "antialias_121_135": 81,
+        "solid_136": 75,
+        "other_values": 0,
+        "border_sdf_zero_120": 0,
+        "runtime_visible_background": "PENDING_RUNTIME"
+      },
+      "identity_mapping_unchanged": true,
+      "status": "STATIC_BACKGROUND_ZERO_NORMALIZED"
+    }
+  ],
+  "pages": [
+    {
+      "page": 0,
+      "filename": "kr13_driver_name_semibold_00.dds",
+      "format": "L8_ALPHA_ONLY",
+      "width": 1024,
+      "height": 512,
+      "before_sha256": "C0F76F5421B2732D9E7C78D5BA22142CE017DDB8B492AF900752D5E4F5A212C0",
+      "after_sha256": "8347193308012B7C045C6FDBABAF8BFCB74FEF3F99A8553354EB3BAA963B0891",
+      "sdf_zero_120_before": 91646,
+      "sdf_zero_120_inside_glyph_rectangles": 91646,
+      "sdf_zero_120_outside_glyph_rectangles": 0,
+      "sdf_zero_120_after": 0,
+      "changed_payload_bytes": 91646,
+      "only_120_to_0_changes": true,
+      "header_byte_exact": true,
+      "alpha_121_136_counts_unchanged": true
+    },
+    {
+      "page": 1,
+      "filename": "kr13_driver_name_semibold_01.dds",
+      "format": "L8_ALPHA_ONLY",
+      "width": 1024,
+      "height": 512,
+      "before_sha256": "4A4208EC379DA1F795FF7E5F6DD5EF73893559BBE56D63A02C39645D34F06530",
+      "after_sha256": "1FE4205BF751C3C5610666E24F930533A0575768BEE68FE7624E785C3FC4B861",
+      "sdf_zero_120_before": 119101,
+      "sdf_zero_120_inside_glyph_rectangles": 119101,
+      "sdf_zero_120_outside_glyph_rectangles": 0,
+      "sdf_zero_120_after": 0,
+      "changed_payload_bytes": 119101,
+      "only_120_to_0_changes": true,
+      "header_byte_exact": true,
+      "alpha_121_136_counts_unchanged": true
+    },
+    {
+      "page": 2,
+      "filename": "kr13_driver_name_semibold_02.dds",
+      "format": "L8_ALPHA_ONLY",
+      "width": 1024,
+      "height": 512,
+      "before_sha256": "8E0CB3FC3C337FDF62384F7F7F2F8CD8F2AE73A8DA8B0F75E2BCF094EA511048",
+      "after_sha256": "8AA6EF15F043879F027AD33745D446D0B229AC982A1F62575256C0C3FB223F50",
+      "sdf_zero_120_before": 117162,
+      "sdf_zero_120_inside_glyph_rectangles": 117162,
+      "sdf_zero_120_outside_glyph_rectangles": 0,
+      "sdf_zero_120_after": 0,
+      "changed_payload_bytes": 117162,
+      "only_120_to_0_changes": true,
+      "header_byte_exact": true,
+      "alpha_121_136_counts_unchanged": true
+    },
+    {
+      "page": 3,
+      "filename": "kr13_driver_name_semibold_03.dds",
+      "format": "L8_ALPHA_ONLY",
+      "width": 1024,
+      "height": 512,
+      "before_sha256": "746AC04B67C92616D6440237692D6039B4CD39CFE892057F27E6E7D01AB7E547",
+      "after_sha256": "811D78C0AC6A05992981A748FB40BDEDCC124CD4C2FC03FC9F00DCCBB4EA6EA7",
+      "sdf_zero_120_before": 114420,
+      "sdf_zero_120_inside_glyph_rectangles": 114420,
+      "sdf_zero_120_outside_glyph_rectangles": 0,
+      "sdf_zero_120_after": 0,
+      "changed_payload_bytes": 114420,
+      "only_120_to_0_changes": true,
+      "header_byte_exact": true,
+      "alpha_121_136_counts_unchanged": true
+    },
+    {
+      "page": 4,
+      "filename": "kr13_driver_name_semibold_04.dds",
+      "format": "L8_ALPHA_ONLY",
+      "width": 1024,
+      "height": 512,
+      "before_sha256": "6A50996E61194436130B52D8A608D21A8C2B2B7F9A83C937BD7EA1BA823F8595",
+      "after_sha256": "A961198BAF9D698FACA0481D59CA06E40FBAA176952BE85877827EE65C0DB3CE",
+      "sdf_zero_120_before": 16206,
+      "sdf_zero_120_inside_glyph_rectangles": 16206,
+      "sdf_zero_120_outside_glyph_rectangles": 0,
+      "sdf_zero_120_after": 0,
+      "changed_payload_bytes": 16206,
+      "only_120_to_0_changes": true,
+      "header_byte_exact": true,
+      "alpha_121_136_counts_unchanged": true
+    }
+  ],
+  "runtime_scope": {
+    "player_list": "SEPARATE_FONT_UNCHANGED",
+    "above_car": "USER_CONFIRMED_BACKGROUND_BEFORE_FIX",
+    "candidate12": "PENDING_RUNTIME"
+  }
+}

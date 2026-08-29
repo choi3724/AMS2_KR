@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "finding": "SAME_ACTIVE_OBJECT_AND_FIXED_CLIP_BOUNDARY",
+  "active_resource": {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\Automobilista 2\\hud_leaderboard2_1_6.bgui",
+    "sha256": "BC7E1812089CF927604A450F2956086FE73585180D7D7537B112AA49C979D924",
+    "length": 197354,
+    "shadowed_resource": "Pakfiles/IGPHASEHUD.bff::gui/hud_leaderboard2_1_6.bgui"
+  },
+  "runtime_route_evidence": {
+    "procmon_csv": "E:\\AMS2_Korean_Work\\runtime\\AMS2-KR-068.1-replay-time-route-trace\\ams2-replay-route.csv",
+    "lines": [400887, 400888, 400889, 400890, 400891, 400892, 400893, 400894],
+    "decisive_event": "ReadFile SUCCESS, offset 0, length 197354"
+  },
+  "active_object_class": {
+    "name": "SplitApplink",
+    "count": 11,
+    "object_start_offsets": [7530, 16522, 25514, 34506, 43498, 52490, 61482, 70474, 79466, 88458, 97450],
+    "x_field_offsets": [7555, 16547, 25539, 34531, 43523, 52515, 61507, 70499, 79491, 88483, 97475],
+    "x": 76.0,
+    "y": 0.0,
+    "width": 70.0,
+    "height": 25.0,
+    "alignment_hex": "040200000001000000000000",
+    "alignment": "right",
+    "font": "gui\\kr13_font_hud_main.bfont",
+    "clip_rect": [-1000.0, -1000.0, 1000.0, 1000.0]
+  },
+  "states": [
+    {"state": "idle_20_frame_series", "active_object": "Group A SplitApplink", "rightmost_screen_x": 528, "result": "fixed"},
+    {"state": "slow_wheel_input", "active_object": "Group A SplitApplink", "rightmost_screen_x": 528, "list_moved": false, "result": "fixed"},
+    {"state": "slow_post_input", "active_object": "Group A SplitApplink", "rightmost_screen_x": 528, "result": "fixed"},
+    {"state": "fast_wheel_input", "active_object": "Group A SplitApplink", "rightmost_screen_x": 528, "list_moved": false, "result": "fixed"},
+    {"state": "fast_post_input", "active_object": "Group A SplitApplink", "rightmost_screen_x": 528, "result": "fixed"}
+  ],
+  "inactive_same_name_groups": [
+    {"group": "B", "count": 4, "x": 152.0, "y": -3.0, "width": 108.0, "height": 28.0, "font": "gui\\kr08_font_standard_14.bfont"},
+    {"group": "C", "count": 10, "x": 132.0, "y": 0.0, "width": 78.0, "height": 26.0, "font": "gui\\kr13_phoenix_body_footnote.bfont"}
+  ],
+  "rejected_hypotheses": [
+    "different object template by replay state",
+    "scroll-state scissor movement",
+    "fractional coordinate drift",
+    "v39 dedicated time font was active"
+  ]
+}

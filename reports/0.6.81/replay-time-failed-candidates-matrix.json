@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "status": "PRE_DIAGNOSTIC_HISTORY_CLASSIFIED",
+  "candidates": [
+    {"versions": "v21-v24", "target": "other text/group-C and parent geometry variants", "change_class": "layout", "observed": "no accepted fix", "classification": "FAILED_OR_WRONG_TARGET", "identity_proof": false},
+    {"versions": "v25", "target": "hud_leaderboard.bgui SplitApplink", "change_class": "layout", "observed": "no accepted fix", "classification": "WRONG_RESOURCE_CANDIDATE", "identity_proof": false},
+    {"versions": "v26-v27", "target": "loose group-C variants", "change_class": "layout", "observed": "no accepted fix", "classification": "INCONCLUSIVE_WITHOUT_STRONG_DISPLACEMENT_PROOF", "identity_proof": false},
+    {"versions": "v28-v29", "target": "hud_relativepositions_1_6.bgui", "change_class": "layout", "observed": "no accepted fix", "classification": "WRONG_RESOURCE_CANDIDATE", "identity_proof": false},
+    {"versions": "v30-v33", "target": "BFF/group-C/text-parent variants", "change_class": "layout", "observed": "no accepted fix", "classification": "FAILED_OR_SHADOWED", "identity_proof": false},
+    {"versions": "v34-v35", "target": "IGPHASEHUD embedded group A", "change_class": "micro layout", "observed": "no visible effect", "classification": "INVALIDATED_BY_LOOSE_RESOURCE_SHADOWING", "identity_proof": false},
+    {"versions": "v36-v40", "target": "IGPHASEHUD embedded group A plus time font/alignment/digit variants", "change_class": "layout/font", "observed": "no visible effect", "classification": "INVALIDATED_BY_LOOSE_RESOURCE_SHADOWING", "identity_proof": false},
+    {"versions": "v41", "target": "root loose group A", "change_class": "micro x change", "observed": "no accepted runtime proof", "classification": "INCONCLUSIVE_MICRO_DIAGNOSTIC", "identity_proof": false}
+  ],
+  "pre_existing_not_yet_executed_strong_diagnostics": [
+    {"id": "GROUP_A_X176", "expected_visible_proof": "time column moves by approximately 100 logical px if group A is active"},
+    {"id": "GROUP_BC_XPLUS100", "expected_visible_proof": "time column moves by approximately 100 logical px if group B or C is active"},
+    {"id": "ALL_SPLIT_WIDTH_ZERO", "expected_visible_proof": "all bound text collapses if width controls visibility"},
+    {"id": "ALL_SPLIT_UNBOUND", "expected_visible_proof": "time column disappears if SplitApplink is the binding owner"}
+  ],
+  "new_fix_candidates_created_during_rca": 0,
+  "fine_change_gate": "BLOCKED_UNTIL_STRONG_RUNTIME_IDENTITY_PROOF"
+}

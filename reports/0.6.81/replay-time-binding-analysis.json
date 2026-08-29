@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "status": "BINDING_NAME_IDENTIFIED_CONSUMER_GROUP_UNPROVEN",
+  "binding": {
+    "name": "SplitApplink",
+    "candidate_count": 25,
+    "static_text_reference": null,
+    "value_kind": "runtime dynamic",
+    "formatter_owner": "AMS2 engine, exact symbol unresolved",
+    "observed_output_grammar": "optional sign + minutes:seconds.milliseconds"
+  },
+  "resource_resolution": {
+    "loaded": "game-root loose hud_leaderboard2_1_6.bgui",
+    "shadowed": "IGPHASEHUD.bff embedded gui/hud_leaderboard2_1_6.bgui",
+    "evidence": {
+      "procmon_csv": "E:\\AMS2_Korean_Work\\runtime\\AMS2-KR-068.1-replay-time-route-trace\\ams2-replay-route.csv",
+      "decisive_lines": [400887, 400888, 400889, 400890, 400891, 400892, 400893, 400894],
+      "decisive_event": "ReadFile SUCCESS offset 0 length 197354"
+    }
+  },
+  "consumer_groups": [
+    {"group": "A", "count": 11, "runtime_consumer": "UNPROVEN"},
+    {"group": "B", "count": 4, "runtime_consumer": "UNPROVEN"},
+    {"group": "C", "count": 10, "runtime_consumer": "UNPROVEN"}
+  ],
+  "identity_test_order": [
+    "GROUP_A_X176",
+    "GROUP_BC_XPLUS100",
+    "ALL_SPLIT_UNBOUND"
+  ],
+  "pass_rule": "The visible time column must move at least 100 px or disappear in the diagnostic matching its active consumer.",
+  "forbidden_before_pass": [
+    "micro coordinate adjustment",
+    "micro width adjustment",
+    "font route change",
+    "digit metric change",
+    "punctuation metric change"
+  ]
+}
+

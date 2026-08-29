@@ -19,10 +19,10 @@ SDF_LOW = 120
 SDF_HIGH = 136
 NBSP = 0x00A0
 APPEND_EXCLUDED = {
-    "kr13_driver_name_semibold",
     "kr13_font_data_list",
     "kr13_font_heading_44",
 }
+APPEND_WITHOUT_NBSP = {"kr13_driver_name_semibold"}
 
 
 def sha256(data: bytes) -> str:
@@ -165,7 +165,15 @@ def copy_rect(source, source_rect, target, target_rect) -> tuple[bytes, int]:
         for row in range(sy1 - sy0):
             source_start = (sy0 + row) * source.width + sx0
             target_start = (ty0 + row) * target.width + tx0
-            source_bytes = source.payload[source_start : source_start + (sx1 - sx0)]
+            # The unified-font source encodes fully transparent L8 pixels as
+            # the SDF floor (120).  Golden AMS2 fonts use raw 0 outside the
+            # glyph.  Leaving 120 in the atlas makes AMS2 draw a gray glyph
+            # rectangle.  Preserve 121..135 antialiasing samples and only
+            # normalize the proven zero-coverage sentinel.
+            source_bytes = bytes(
+                0 if value == SDF_LOW else value
+                for value in source.payload[source_start : source_start + (sx1 - sx0)]
+            )
             old = payload[target_start : target_start + len(source_bytes)]
             changed += sum(left != right for left, right in zip(old, source_bytes))
             payload[target_start : target_start + len(source_bytes)] = source_bytes
@@ -229,11 +237,17 @@ class BuildTotals:
     existing_pixel_changes: int = 0
     missing_after_build: int = 0
     unexpected_external_alpha: int = 0
+    l8_sdf_floor_pixels: int = 0
 
 
 def write_json(path: Path, value) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def font_file(root: Path, alias: str, suffix: str) -> Path:
+    nested = root / alias / f"{alias}{suffix}"
+    return nested if nested.exists() else root / f"{alias}{suffix}"
 
 
 def build(args) -> int:
@@ -268,13 +282,13 @@ def build(args) -> int:
     for alias in aliases:
         golden_path = golden_gui / f"{alias}.bfont"
         source_path = source_gui / f"{alias}.bfont"
-        current_path = current_gui / f"{alias}.bfont"
+        current_path = font_file(current_gui, alias, ".bfont")
         golden = parser_module.parse_bfont(golden_path.read_bytes(), f"Golden {alias}")
         source = parser_module.parse_bfont(source_path.read_bytes(), f"source {alias}")
         current = parser_module.parse_bfont(current_path.read_bytes(), f"current {alias}")
         golden_pages = [parser_module.parse_dds((golden_gui / f"{alias}_{i:02d}.dds").read_bytes(), f"Golden {alias} page {i}") for i in range(golden.atlas_count)]
         source_pages = [parser_module.parse_dds((source_gui / f"{alias}_{i:02d}.dds").read_bytes(), f"source {alias} page {i}") for i in range(source.atlas_count)]
-        current_pages = [parser_module.parse_dds((current_gui / f"{alias}_{i:02d}.dds").read_bytes(), f"current {alias} page {i}") for i in range(current.atlas_count)]
+        current_pages = [parser_module.parse_dds(font_file(current_gui, alias, f"_{i:02d}.dds").read_bytes(), f"current {alias} page {i}") for i in range(current.atlas_count)]
         golden_rows.append({
             "path": str(golden_path),
             "alias": alias,
@@ -320,7 +334,8 @@ def build(args) -> int:
             build_rows.append({"alias": alias, "mode": "GOLDEN_EXACT", "appended": 0, "files": files, "status": "PASS"})
             continue
 
-        missing = [cp for cp in required if cp not in set(golden.codepoints)]
+        alias_required = [cp for cp in required if cp != NBSP or alias not in APPEND_WITHOUT_NBSP]
+        missing = [cp for cp in alias_required if cp not in set(golden.codepoints)]
         source_index = {cp: i for i, cp in enumerate(source.codepoints)}
         appended_codepoints = [cp for cp in source.codepoints if cp in missing]
         if NBSP in missing:
@@ -328,8 +343,9 @@ def build(args) -> int:
         if set(appended_codepoints) != set(missing):
             absent = sorted(set(missing) - set(appended_codepoints))
             raise RuntimeError(f"{alias}: missing source glyphs {[f'U+{cp:04X}' for cp in absent]}")
-        if len(appended_codepoints) != 69:
-            raise RuntimeError(f"{alias}: expected 69 appended records, got {len(appended_codepoints)}")
+        expected_appended = 68 if alias in APPEND_WITHOUT_NBSP else 69
+        if len(appended_codepoints) != expected_appended:
+            raise RuntimeError(f"{alias}: expected {expected_appended} appended records, got {len(appended_codepoints)}")
         if golden.glyph_count + len(appended_codepoints) > golden.atlas_count * golden.glyphs_per_atlas:
             raise RuntimeError(f"{alias}: append exceeds Golden atlas capacity")
         last_page = golden.glyph_count // golden.glyphs_per_atlas
@@ -356,10 +372,11 @@ def build(args) -> int:
         page_payload = target_page.payload
         appended_rows = []
         alpha_rows = []
+        font_l8_sdf_floor_pixels = 0
         for offset, (cp, metric, target_rect) in enumerate(zip(appended_codepoints, appended_metrics, rects[len(widths):])):
             if cp == NBSP:
                 uv = (0.0, 0.0, 0.0, 0.0)
-                alpha_rows.append({"codepoint": "U+00A0", "active_pixels": 0, "external_alpha_pixels": 0, "antialias_levels": 0})
+                alpha_rows.append({"codepoint": "U+00A0", "active_pixels": 0, "external_alpha_pixels": 0, "antialias_levels": 0, "raw_l8_sdf_floor_pixels": 0})
             else:
                 index = source_index[cp]
                 page_index = index // source.glyphs_per_atlas
@@ -381,7 +398,15 @@ def build(args) -> int:
                 active = sum(value > 0 for value in output_alpha)
                 external = len(output_alpha) if output_alpha and active == len(output_alpha) else 0
                 totals.unexpected_external_alpha += external
-                alpha_rows.append({"codepoint": f"U+{cp:04X}", "active_pixels": active, "external_alpha_pixels": external, "antialias_levels": levels})
+                l8_floor = 0
+                if output_page.kind == "L8":
+                    x0, y0, x1, y1 = target_rect
+                    for y in range(y0, y1):
+                        row = output_page.payload[y * output_page.width + x0 : y * output_page.width + x1]
+                        l8_floor += row.count(SDF_LOW)
+                font_l8_sdf_floor_pixels += l8_floor
+                totals.l8_sdf_floor_pixels += l8_floor
+                alpha_rows.append({"codepoint": f"U+{cp:04X}", "active_pixels": active, "external_alpha_pixels": external, "antialias_levels": levels, "raw_l8_sdf_floor_pixels": l8_floor})
             appended_rows.append((cp, uv, metric))
 
         output_bfont = make_bfont(golden, appended_rows)
@@ -404,7 +429,7 @@ def build(args) -> int:
             dds_rows.append({"page": index, "sha256": sha256(raw), "byte_exact_golden": index != last_page})
         totals.appended_fonts += 1
         totals.appended_glyphs += len(appended_rows)
-        missing_after = sorted(set(required) - set(parsed_output.codepoints))
+        missing_after = sorted(set(alias_required) - set(parsed_output.codepoints))
         totals.missing_after_build += len(missing_after)
         build_rows.append({
             "alias": alias,
@@ -418,7 +443,8 @@ def build(args) -> int:
             "alpha": alpha_rows,
             "bfont_sha256": sha256(output_bfont),
             "dds": dds_rows,
-            "status": "PASS" if not missing_after else "BLOCK",
+            "raw_l8_sdf_floor_pixels": font_l8_sdf_floor_pixels,
+            "status": "PASS" if not missing_after and font_l8_sdf_floor_pixels == 0 else "BLOCK",
         })
 
     first_golden = parser_module.parse_bfont((golden_gui / f"{aliases[0]}.bfont").read_bytes(), "required baseline")
@@ -431,7 +457,8 @@ def build(args) -> int:
         "missing_from_golden": len(missing_from_golden),
         "missing_codepoints": [{"codepoint": f"U+{cp:04X}", "character": chr(cp)} for cp in missing_from_golden],
         "newly_appended_per_general_font": len(missing_from_golden),
-        "general_fonts": totals.appended_fonts,
+        "general_fonts": totals.appended_fonts - len(APPEND_WITHOUT_NBSP),
+        "nameplate_fonts": len(APPEND_WITHOUT_NBSP),
         "missing_after_build": totals.missing_after_build,
         "status": "PASS" if totals.missing_after_build == 0 else "BLOCK",
     }
@@ -450,13 +477,14 @@ def build(args) -> int:
         "status": "PASS",
     }
     alpha_report = {
-        "schema": "ams2-kr-068-font-alpha-regression-v1",
+        "schema": "ams2-kr-068.1-font-alpha-regression-v3",
         "existing_glyph_pixel_changes": 0,
         "unexpected_external_alpha_pixels": totals.unexpected_external_alpha,
-        "gray_background_pixels": 0 if totals.unexpected_external_alpha == 0 else totals.unexpected_external_alpha,
+        "raw_l8_sdf_floor_pixels": totals.l8_sdf_floor_pixels,
+        "gray_background_pixels": totals.l8_sdf_floor_pixels,
         "halo_regression": 0,
         "rough_outline_regression": 0,
-        "status": "PASS" if totals.unexpected_external_alpha == 0 else "BLOCK",
+        "status": "PASS" if totals.unexpected_external_alpha == 0 and totals.l8_sdf_floor_pixels == 0 else "BLOCK",
     }
     build_result = {
         "schema": "ams2-kr-068-font-append-build-v1",
@@ -467,9 +495,10 @@ def build(args) -> int:
         "append_fonts": totals.appended_fonts,
         "golden_exact_fonts": totals.fonts - totals.appended_fonts,
         "appended_glyph_records": totals.appended_glyphs,
-        "appended_per_font": len(missing_from_golden),
+        "appended_per_general_font": len(missing_from_golden),
+        "appended_to_driver_name_font": 68,
         "fonts": build_rows,
-        "status": "PASS" if totals.missing_after_build == 0 and totals.unexpected_external_alpha == 0 else "BLOCK",
+        "status": "PASS" if totals.missing_after_build == 0 and totals.unexpected_external_alpha == 0 and totals.l8_sdf_floor_pixels == 0 else "BLOCK",
     }
     write_json(report_root / "v065-golden-font-manifest.json", {"schema": "ams2-kr-068-v065-golden-font-manifest-v1", "golden_commit": "f6014fb", "font_count": len(golden_rows), "fonts": golden_rows, "status": "PASS"})
     write_json(report_root / "v065-vs-current-font-diff.json", {"schema": "ams2-kr-068-v065-current-font-diff-v1", "fonts": current_diff_rows, "status": "INVENTORY"})
@@ -487,7 +516,7 @@ def build(args) -> int:
         "stock_igphasehud_required": True,
         "status": "PASS" if all(value == "PASS" for value in (preservation["status"], required_report["status"], alpha_report["status"])) else "BLOCK",
     })
-    print(json.dumps({"status": build_result["status"], "fonts": totals.fonts, "append_fonts": totals.appended_fonts, "appended_per_font": len(missing_from_golden), "output": str(output)}, ensure_ascii=False))
+    print(json.dumps({"status": build_result["status"], "fonts": totals.fonts, "append_fonts": totals.appended_fonts, "appended_per_general_font": len(missing_from_golden), "appended_to_driver_name_font": 68, "output": str(output)}, ensure_ascii=False))
     return 0 if build_result["status"] == "PASS" else 1
 
 

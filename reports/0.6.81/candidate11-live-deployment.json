@@ -1,0 +1,20 @@
+{
+  "schema": "ams2-kr-068.1-candidate11-live-deployment-v1",
+  "status": "DEPLOYED_FOR_RUNTIME_VALIDATION",
+  "scope": "one BFONT embedded-name field only",
+  "game_root": "E:/SteamLibrary/steamapps/common/Automobilista 2",
+  "deployed": {
+    "path": "GUI/kr13_driver_name_semibold.bfont",
+    "sha256": "6409DA7DE921013C28357E59CC0F7FA85FC8954BB1BE0E47FB152120B5CDB958"
+  },
+  "backup": {
+    "path": "Backup/AMS2-Korean/AMS2-KR-068.1-NAMEPLATE-METADATA/GUI/kr13_driver_name_semibold.bfont",
+    "sha256": "A4005F7BFE733C40029C231CFA6090C469FD4F45EC83DAE03916BB9EBBDEA0C6"
+  },
+  "unchanged_live_invariants": {
+    "GUI/kr13_driver_name_semibold_04.dds": "6A50996E61194436130B52D8A608D21A8C2B2B7F9A83C937BD7EA1BA823F8595",
+    "Pakfiles/IGPHASEHUD.bff": "D1618BB1F6E09F53E8BB86F4A163C2934B91814F5F326670381C5496B3D7C398"
+  },
+  "restore_available": true,
+  "commit_allowed": false
+}
