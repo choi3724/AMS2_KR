@@ -1,0 +1,14 @@
+{
+  "schema": "ams2-kr-v0683-source-purity-v1",
+  "baseline_release": "v0.6.82",
+  "direct_payload_files": 449,
+  "missing_from_baseline": 0,
+  "changed_from_baseline": 2,
+  "expected_versioned_changes": [
+    "AMS2 Korean Launcher.exe",
+    "AMS2 Korean VR Launcher.exe"
+  ],
+  "unexpected_game_payload_changes": 0,
+  "replay_time_candidate_files_included": 0,
+  "status": "PASS"
+}

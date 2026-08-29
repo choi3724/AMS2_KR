@@ -1,0 +1,37 @@
+{
+  "schema": "ams2-kr-v0683-restore-validation-v1",
+  "validated_at": "2026-08-29T15:53:00+09:00",
+  "game_directory": "E:\\SteamLibrary\\steamapps\\common\\Automobilista 2",
+  "reference_buildid": "24132163",
+  "physical_cycles": 3,
+  "last_cycle": {
+    "install_log": "20260829T064641.672Z.log",
+    "install_result": "INSTALLED_EXACT",
+    "remove_log": "20260829T064645.585Z.log",
+    "remove_result": "RESTORED_EXACT",
+    "final_check": "RESTORED_EXACT"
+  },
+  "file_ledger": {
+    "total": 450,
+    "modified_restored": 95,
+    "modified_stock_sha_mismatches": 0,
+    "created_removed": 355,
+    "created_residue": 0
+  },
+  "shortcuts": {
+    "desktop_residue": 0,
+    "start_menu_residue": 0,
+    "taskbar_residue": 0
+  },
+  "invariants": {
+    "igphasehud_sha256": "F967D1A322EB75AAD742CF21888D75DB0CA4CB407ACDEC72F14D32BD5351E7DA",
+    "bootflow_sha256": "2FE28D744F8DF0443FB290A10DAC52AA1308DE9389E776F0BD5F2BB8F03355B7",
+    "physicspersistent_sha256": "39B720D1DC4CE529AC06AE10D0CF756E602ABD97772C5A24D7F31065C289C434",
+    "physicspersistent_remove_marker": false,
+    "ams2cm_invocations": 0,
+    "generated_bootfiles": 0,
+    "physics_post_processing": 0
+  },
+  "status": "PASS"
+}
+

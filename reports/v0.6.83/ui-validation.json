@@ -1,0 +1,37 @@
+{
+  "schema": "ams2-kr-v0683-ui-validation-v1",
+  "viewport": {
+    "width": 1448,
+    "height": 1086,
+    "dpi_scale": "100%"
+  },
+  "banner": {
+    "source_dimensions": "2172x724",
+    "sha256": "BCD75A2AE091BD4BEF775E942437648BA645189C9DE0A2DC0E7F10F6E5A8F7DD",
+    "exact_user_asset": true,
+    "creator_visible": "ENGIceBlasT"
+  },
+  "font": {
+    "family": "Pretendard",
+    "asset_sha256": "D39E50E4BB52B4993B6A4EEB821A171254745BD824446AF01E1F616B89FFACE0",
+    "button_rendering": "4x AntiAliasGridFit",
+    "main_button_display_size": "approximately 20px",
+    "compact_button_display_size": "approximately 15px"
+  },
+  "assets": {
+    "button_png_count": 20,
+    "status_card_sha256": "77A9A11AB9B8E54CBCA4F8F90C071ABA8913545BB63516069EAFC71CE83095C6"
+  },
+  "checks": {
+    "button_text_clipping": 0,
+    "status_icon_oversize": false,
+    "status_text_vertical_misalignment": false,
+    "path_controls_visible": true,
+    "log_area_visible": true,
+    "all_primary_actions_visible": true
+  },
+  "before_screenshot": "ui/installer-before-v0.6.82.png",
+  "after_screenshot": "ui/installer-after-v0.6.83.png",
+  "after_screenshot_sha256": "46604E54FF532AA2AF34FABA12346D692FBB9F2180F15226B65356AFE958D521",
+  "status": "PASS"
+}

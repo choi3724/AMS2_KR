@@ -1,0 +1,24 @@
+{
+  "schema": "ams2-kr-v0683-release-package-validation-v1",
+  "file": "AMS2 한국어 패치 CB 0.6.83.zip",
+  "bytes": 27066290,
+  "sha256": "E584220E32B67848C6531AA5AC84100AFE01E515874A2569493CF84F380EE683",
+  "zip_entries": 485,
+  "zip_read_errors": 0,
+  "clean_extract_hash_mismatches": 0,
+  "json_parse_errors": 0,
+  "legacy_version_entries": 0,
+  "main_installer_present": true,
+  "emergency_restore_present": true,
+  "clean_extract_executable_launch": "PASS",
+  "clean_extract_window_title": "Automobilista 2 한국어 패치 — Closed Beta 0.6.83",
+  "github_release": {
+    "tag": "v0.6.83",
+    "prerelease": false,
+    "make_latest": true,
+    "uploaded_assets": [
+      "AMS2 한국어 패치 CB 0.6.83.zip"
+    ]
+  },
+  "status": "PASS"
+}
