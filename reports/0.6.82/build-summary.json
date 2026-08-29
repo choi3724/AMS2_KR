@@ -1,0 +1,12 @@
+{
+    "release_root":  "E:\\AMS2_Korean_Work\\release-build\\AMS2-KR-0682-candidate12\\AMS2 한국어 패치 CB 0.6.82",
+    "zip":  "E:\\AMS2_Korean_Work\\release-build\\AMS2-KR-0682-candidate12\\AMS2 한국어 패치 CB 0.6.82.zip",
+    "zip_sha256":  "36C99677BD45905472FABF76E54705F10A8A3605C18C6BE5C2868FC87FE6C2A8",
+    "zip_bytes":  24129690,
+    "payload_files":  449,
+    "font_files":  294,
+    "forward_patch_sha256":  "53D939CA71A5FA917B29E8DB615FD443163840FBB9FC943A3B364D4F19F38715",
+    "installer_version":  "0.6.82.0",
+    "clean_worktree_after":  true,
+    "status":  "BUILT_STATIC_VALIDATION_PENDING"
+}

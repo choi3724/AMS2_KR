@@ -1,0 +1,23 @@
+{
+    "schema":  "ams2-kr-v0682-static-validation-v1",
+    "checked_at":  "2026-08-29T04:15:13.6283001Z",
+    "zip":  "E:\\AMS2_Korean_Work\\release-build\\AMS2-KR-0682-candidate12\\AMS2 한국어 패치 CB 0.6.82.zip",
+    "zip_sha256":  "36C99677BD45905472FABF76E54705F10A8A3605C18C6BE5C2868FC87FE6C2A8",
+    "zip_entries_read":  470,
+    "zip_uncompressed_bytes_read":  294636666,
+    "clean_extraction":  "PASS",
+    "sha256sums_files":  469,
+    "sha256sums":  "PASS",
+    "direct_payload_files":  449,
+    "direct_payload_hashes":  "PASS",
+    "json_manifest":  "PASS",
+    "executable_versions":  "0.6.82.0",
+    "frozen_font_files":  294,
+    "frozen_font_hashes":  "PASS",
+    "debug_candidate_payload_names":  0,
+    "replay_time_binary_candidates_included":  0,
+    "forward_igphasehud_patch":  "PASS",
+    "replay_time_bgui_unchanged":  "PASS",
+    "test_cli":  "E:\\AMS2_Korean_Work\\release-build\\AMS2-KR-0682-candidate12\\AMS2-KR-0682-testcli.exe",
+    "status":  "PASS"
+}

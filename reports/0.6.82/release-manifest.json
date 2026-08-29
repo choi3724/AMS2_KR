@@ -1,0 +1,245 @@
+{
+    "schema":  "ams2-kr-closed-beta-release-v0682",
+    "status":  "RELEASE_CANDIDATE_PACKAGE_VALIDATION_PENDING",
+    "package_id":  "AMS2-KR-BETA-0.6.82-PRETENDARD",
+    "display_version":  "Closed Beta 0.6.82",
+    "creator":  "ENGIceBlasT",
+    "appid":  "1066890",
+    "buildid":  "24132163",
+    "branch":  "public",
+    "install_mode":  "LOCALIZATION_ONLY_LOOSELOADTEXT",
+    "direct_files":  449,
+    "modified_files":  94,
+    "created_files":  355,
+    "launch_command":  "AMS2.exe -novr -lang=Korean -looseloadtext",
+    "vr_launch_command":  "AMS2.exe -forcevr -lang=Korean -looseloadtext",
+    "compatibility_policy":  {
+                                 "reference_build":  "24132163",
+                                 "build_mismatch":  "WARNING_ONLY",
+                                 "bootflow":  "IGNORED_NOT_CHECKED",
+                                 "physicspersistent":  "IGNORED_NOT_CHECKED",
+                                 "mods_and_generated_bootfiles":  "IGNORED",
+                                 "target_original_hash_mismatch":  "BACKUP_AND_REPLACE",
+                                 "required_modified_target_missing":  "BLOCK",
+                                 "payload_integrity_failure":  "BLOCK",
+                                 "backup_or_copy_failure":  "BLOCK_AND_ROLLBACK"
+                             },
+    "hard_invariants":  {
+                            "bootflow_changed":  false,
+                            "physicspersistent_changed":  false,
+                            "physicspersistent_remove_marker":  false,
+                            "generated_vehicle_files":  0,
+                            "generated_track_physics_files":  0,
+                            "direct_track_display_metadata_files":  0,
+                            "crd_trd_driveline_postprocessing":  0,
+                            "ams2cm_helper":  false,
+                            "dotnet_runtime":  false,
+                            "generated_bootfiles":  false
+                        },
+    "shortcut_options":  [
+                             "DESKTOP",
+                             "START_MENU",
+                             "TASKBAR"
+                         ],
+    "hud_beta_fix":  {
+                         "strategy":  "MIRROR_ALL_KOREAN_ROUTED_HUD_BGUI_TO_RUNTIME_ROOT",
+                         "root_hud_bgui":  49,
+                         "added_since_0_5_2_hotfix":  22,
+                         "pit_label":  "PIT",
+                         "dedicated_pit_font":  false
+                     },
+    "typography":  {
+                       "family":  "Pretendard 1.3.9",
+                       "scope":  "GENERAL_UI_ONLY",
+                       "weights":  [
+                                       "Medium",
+                                       "SemiBold",
+                                       "Bold",
+                                       "ExtraBold"
+                                   ],
+                       "regular_weight_used":  false,
+                       "glyphs_per_font":  1413,
+                       "atlas_gutter_pixels":  8,
+                       "l8_spatial_sdf_falloff":  [
+                                                      116,
+                                                      104,
+                                                      88,
+                                                      64
+                                                  ],
+                       "flat_glyph_cell_background":  false,
+                       "dxt3_fully_transparent_blocks_zeroed":  true,
+                       "vehicle_display_fonts_changed":  false,
+                       "added_ai_name_hangul_syllables":  68,
+                       "source_font_family_or_metrics_changed":  false
+                   },
+    "track_localization":  {
+                               "reviewed_records":  265,
+                               "korean_value_changes":  265,
+                               "actual_circuit_aliases_used":  false,
+                               "proposal_sha256":  "D11E288379AAC89262D28DF93D98859DBBBC8EC77B58EB630C109F8230711E7E",
+                               "general_tdb_v062_sha256":  "C5A193A327CFE7920A140FBDE8EF8203B524C86AB45E3423A778D9CDA53DF286",
+                               "general_tdb_insert_sha256":  "0EFD426B238A10BA6716B35A387E0525707BC27CE74F923FF04CEA33AE1CDC61",
+                               "general_tdb_hotfix_sha256":  "D4FF47442502DD5AA78EB242172464102E12CA5E9FB740DCABDA0937F677DEDB",
+                               "fallback_categories":  23,
+                               "fallback_layouts":  4,
+                               "fallback_tdb_keys_added":  24,
+                               "fallback_trd_files":  0,
+                               "existing_tdb_value_changes":  0,
+                               "hash_collisions":  0,
+                               "fallback_proposal_sha256":  "2507D82858DFD9CC4DD44B405029138F1272FDF46B56AFAF8BD50F727A99A11C"
+                           },
+    "race_summary_formats":  {
+                                 "korean_existing_value_changes":  3,
+                                 "added_key_count":  0,
+                                 "date_format":  "[YYYY]/[MM]/[DD]",
+                                 "distance_value":  "raw metres",
+                                 "distance_label":  "거리(m) via Game_MainMenu_DistanceUpper",
+                                 "track_type":  "서킷",
+                                 "game_tdb_sha256":  "A5110C65582CC517CE09897DAC12D3BBA4572A219348FCC7A3591417A6FD5FBF",
+                                 "general_tdb_sha256":  "B1785F373FB226BF82080487359A7922FCFF31FB9A89B68E754EA545477D6EA3",
+                                 "summary_bgui_sha256":  "34EFB86CF7DBFA7E4C657D75EA20193BABA528CA86B2C54F1256140782489653",
+                                 "preserved_track_length_link":  "VM-CustomEvent-TrackAndVehicleSelection-TrackEx-PreviewTrack_Length"
+                             },
+    "update_detection":  {
+                             "previous_version_message":  true,
+                             "update_button":  true,
+                             "stacked_backup_restore":  true
+                         },
+    "runtime_validation":  {
+                               "status":  "PASS",
+                               "required_mode":  "ACTUAL_SINGLE_RACE_NOT_REPLAY_ONLY",
+                               "classes_required":  3,
+                               "classes_tested":  [
+                                                      "GT3 G2",
+                                                      "Formula V10 Gen3(B)",
+                                                      "Formula Junior"
+                                                  ],
+                               "main_menu":  "PASS_NO_GRAY_GLYPH_CELLS",
+                               "single_player_detail":  "PASS_RAW_METRES_WITH_DISTANCE_M_LABEL",
+                               "ai_names":  "PASS_ACTUAL_GAMEPLAY",
+                               "safety_car":  "PASS",
+                               "human_nickname":  "PASS_UNCHANGED"
+                           },
+    "icon":  {
+                 "source_png_sha256":  "B31EC9EFCAF2897D6FA23A18AE340D141800899DC23D134920AE26691A22CA82",
+                 "windows_ico_sha256":  "BCFAF38797DFE0BC380E63BE5BFC2E94C28F451186779CF4C036EB7028BF23A7",
+                 "applied_to":  [
+                                    "AMS2 한국어 패치 CB 0.6.6.exe",
+                                    "AMS2 한국어 패치 CB 0.6.6 긴급 복구.exe",
+                                    "AMS2 Korean Launcher.exe",
+                                    "AMS2 Korean VR Launcher.exe"
+                                ]
+             },
+    "github_update":  {
+                          "repository":  "choi3724/AMS2_KR",
+                          "latest_release_api":  "https://api.github.com/repos/choi3724/AMS2_KR/releases/latest",
+                          "startup_check":  true,
+                          "manual_check_button":  true,
+                          "new_release_action":  "OPEN_GITHUB_RELEASE_PAGE",
+                          "private_repository_limitation":  "Anonymous external update checks require a public release endpoint."
+                      },
+    "translation_corrections_v063":  {
+                                         "tdb_value_changes":  32,
+                                         "tdb_files":  [
+                                                           "text/game.tdb",
+                                                           "text/pit.tdb",
+                                                           "text/rac.tdb"
+                                                       ],
+                                         "mainmenu_inline_labels":  [
+                                                                        "건조/우천 실력",
+                                                                        "제한 셋업"
+                                                                    ],
+                                         "pit_strategy_inline_labels":  [
+                                                                            "서스펜션 전체 동일",
+                                                                            "브레이크 전체 동일",
+                                                                            "전체 수리 선택/해제"
+                                                                        ],
+                                         "audio_blank_help_panels":  2,
+                                         "audio_blank_help_classification":  "SOURCE_ABSENT_UPSTREAM"
+                                     },
+    "font_metrics_v063":  {
+                              "hangul_metrics_changed":  0,
+                              "latin_numeric_wider_than_v062":  0,
+                              "general_latin_advance_scale":  0.92,
+                              "hud_latin_advance_scale":  0.86,
+                              "hud_digit_punctuation_advance_scale":  0.8,
+                              "dds_atlas_changed":  false
+                          },
+    "driver_name_font_v065":  {
+                                  "archive":  "Pakfiles/IGPHASEHUD.bff",
+                                  "entry_index":  288,
+                                  "bgui":  "gui/hud_infoabovecar.bgui",
+                                  "object":  "ProfileName",
+                                  "font":  "GUI/kr13_driver_name_semibold.bfont",
+                                  "family":  "Pretendard SemiBold dedicated nameplate",
+                                  "weight":  "SemiBold",
+                                  "source_archive_sha256":  "F967D1A322EB75AAD742CF21888D75DB0CA4CB407ACDEC72F14D32BD5351E7DA",
+                                  "patched_archive_sha256":  "D1618BB1F6E09F53E8BB86F4A163C2934B91814F5F326670381C5496B3D7C398",
+                                  "patch_payload_sha256":  "53D939CA71A5FA917B29E8DB615FD443163840FBB9FC943A3B364D4F19F38715",
+                                  "archive_entries":  355,
+                                  "changed_entries":  1,
+                                  "glyphs":  1344,
+                                  "atlases":  5,
+                                  "untargeted_entry_metadata_changes":  0,
+                                  "untargeted_payload_changes":  0,
+                                  "vehicle_display_fonts_changed":  false
+                              },
+    "track_detail_localization_v066":  {
+                                           "country_values":  21,
+                                           "course_type_values":  5,
+                                           "country_or_type_tdb_keys_changed_or_added":  26,
+                                           "country_codes_and_flag_ids_changed":  false,
+                                           "track_metadata_changed":  false
+                                       },
+    "distance_and_duration_v066":  {
+                                       "track_and_cumulative_distance":  "[DISTANCE] 킬로미터",
+                                       "single_player_preview":  "RAW_METRES_WITH_KOREAN_DISTANCE_M_LABEL",
+                                       "altitude_unit_changed":  false,
+                                       "favorite_vehicle_label":  "차량 운행 시간",
+                                       "duration_format_hhmm":  "[HH]시간 [MM]분",
+                                       "duration_format_ddhhmm":  "[DD]일 [HH]시간 [MM]분"
+                                   },
+    "stock_ai_names_v066":  {
+                                "source":  "text/drivers.tdb",
+                                "records":  4201,
+                                "unique_original_names":  2701,
+                                "korean_transliterations":  2701,
+                                "non_name_semantic_changes":  0,
+                                "multiplayer_human_nickname_changed":  false,
+                                "glyph_missing":  0,
+                                "runtime_validation":  "PASS_ACTUAL_SINGLE_RACE_THREE_CLASSES",
+                                "runtime_display_policy":  "FULL_KOREAN_NAME_AS_ONE_TOKEN",
+                                "safety_car":  "세이프티 카"
+                            },
+    "update_from_v065":  {
+                             "supported":  true,
+                             "igphasehud_predecessors":  [
+                                                             "F967D1A322EB75AAD742CF21888D75DB0CA4CB407ACDEC72F14D32BD5351E7DA",
+                                                             "D1618BB1F6E09F53E8BB86F4A163C2934B91814F5F326670381C5496B3D7C398"
+                                                         ],
+                             "already_patched_igphasehud":  "NO_OP_AND_VALIDATE",
+                             "uninstall":  "RESTORE_EXACT_PRE_V066_STATE"
+                         },
+    "v068_freeze":  {
+                        "release_boundary":  "e1558dbc97e28257682fda83a30358eb825f2bbc",
+                        "predecessor_package":  "Closed Beta 0.6.6",
+                        "v067_mainmenu_bgui_sha256":  "1903023E097EEE1DE04E9F7C3D6AC01B762CA4E2F2BFDC15D9E72F3464F9F948",
+                        "golden_append_font_files":  294,
+                        "stock_igphasehud_sha256":  "F967D1A322EB75AAD742CF21888D75DB0CA4CB407ACDEC72F14D32BD5351E7DA",
+                        "replay_time_clipping_fix_included":  false,
+                        "v0681_files_included":  0
+                    },
+    "v0682_freeze":  {
+                         "release_boundary":  "bcb0bacfc9a508a9ee9f2a4ab391d61f29b5031e",
+                         "predecessor_package":  "Closed Beta 0.6.8",
+                         "frozen_runtime_candidate":  "AMS2-KR-068.1 candidate12",
+                         "frozen_runtime_timestamp":  "2026-08-28T17:47:56+09:00",
+                         "v067_mainmenu_bgui_sha256":  "1903023E097EEE1DE04E9F7C3D6AC01B762CA4E2F2BFDC15D9E72F3464F9F948",
+                         "candidate12_font_files":  294,
+                         "stock_igphasehud_sha256":  "F967D1A322EB75AAD742CF21888D75DB0CA4CB407ACDEC72F14D32BD5351E7DA",
+                         "patched_igphasehud_sha256":  "D1618BB1F6E09F53E8BB86F4A163C2934B91814F5F326670381C5496B3D7C398",
+                         "nameplate_font":  "GUI/kr13_driver_name_semibold.bfont",
+                         "replay_time_clipping_fix_included":  false,
+                         "replay_time_binary_candidates_included":  0
+                     }
+}
