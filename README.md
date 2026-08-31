@@ -1,32 +1,37 @@
-# AMS2 한국어 패치
+# AMS2 Korean Patch
 
-Automobilista 2 비공식 한국어 패치 및 관련 제작 도구 저장소입니다.
+Source repository for the unofficial Automobilista 2 Korean patch and its authoring tools.
 
-## 최신 배포본
+## Current baseline
 
-- 버전: Closed Beta 0.6.6
-- 제작자: ENGIceBlasT
-- 설치 후 게임은 `AMS2 Korean Launcher.exe` 또는 설치 과정에서 만든 바로가기로 실행합니다.
-- 일반 실행과 VR 모드 실행은 각각 제공되는 바로가기를 사용합니다.
-- 0.6.6은 이전 설치 버전을 감지하며, 새 버전 확인 버튼을 제공합니다.
+- Version: Closed Beta 0.6.85
+- Author: ENGIceBlasT
+- Reference game build: Steam public build 24132163
+- After installation, launch through `AMS2 Korean Launcher.exe` or an installer-created shortcut.
 
-배포 ZIP과 검증 자료는 `releases/0.6.6`, `reports/0.6.6`에서 확인할 수 있습니다.
+## Repository boundary
 
-## 0.6.6 핵심 변경
+This repository contains source, project configuration, canonical source assets, and documentation. Compiled output and distribution archives are not committed.
 
-- 서킷 국가명 21개와 코스 타입 5개 한국어화
-- 싱글 레이스 상세는 `거리(m)`와 원시 미터값을 사용하고, 로딩/누적 거리는 킬로미터로 표시
-- 플레이어 선호도의 `타임`을 `차량 운행 시간`으로 변경하고 duration을 `시간/분`으로 표기
-- 순정 AI 이름 2,701개를 한국어 음차로 표시하고 `Safety Car`를 `세이프티카`로 수정
-- 기존 글자 모양과 metrics를 보존하면서 AI 이름에 필요한 68개 한글 음절을 일반 UI 폰트 46종에 추가
-- 실제 Single Race 3개 클래스 및 제거·v0.6.5 복원·재설치 검증
+- Build: `E:\AMS2_Korean_Work\build\<version>`
+- Release: `E:\AMS2_Korean_Work\releases\<version>`
+- Logs: `E:\AMS2_Korean_Work\logs`
+- ChatGPT handoff: `E:\AMS2_Korean_Work\handoff`
 
-## 제작 도구
+See [Repository Artifact Policy](docs/REPOSITORY_ARTIFACT_POLICY.md) for the full contract.
 
-`tools/AMS2-Asset-Studio`에는 BFONT/DDS 폰트 생성, BGUI 레이아웃 조정 및 TDB 문자열 편집을 위한 개발 도구가 들어 있습니다.
+## External build
 
-## 주의
+Run the following command from PowerShell. Output is written outside the Git repository.
 
-- 비공식·코드 미서명 패치입니다.
-- 현재 배포본은 특정 AMS2 빌드를 기준으로 제작되었습니다.
-- 원본 게임 파일, 사용자 백업, 진단 로그 및 개인 환경 파일은 이 저장소에 포함하지 않습니다.
+```powershell
+powershell -ExecutionPolicy Bypass -File tools/repository/Build-InstallerOutsideRepo.ps1 -Version 0.6.85
+```
+
+`tools/AMS2-Asset-Studio` contains BFONT/DDS generation, BGUI adjustment, TDB editing, and analysis tools.
+
+## Notes
+
+- This is an unofficial, unsigned patch.
+- Original game files, user backups, and personal environment data are never stored here.
+- Before committing, run `tools/repository/Check-CommitArtifacts.ps1`.

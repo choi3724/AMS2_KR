@@ -120,8 +120,11 @@ namespace Ams2KoreanBeta
             Text = "Automobilista 2 한국어 패치 — Closed Beta 0.6.84";
             Font = UiFont(9F);
             BackColor = Color.FromArgb(115, 18, 21);
-            ClientSize = new Size(1448, 1086);
-            MinimumSize = new Size(1220, 900);
+            Rectangle workArea = Screen.PrimaryScreen.WorkingArea;
+            int targetWidth = Math.Min(1200, Math.Max(640, workArea.Width - 24));
+            int targetHeight = Math.Min(860, Math.Max(640, workArea.Height - 24));
+            ClientSize = new Size(targetWidth, targetHeight);
+            MinimumSize = new Size(Math.Min(960, targetWidth), Math.Min(700, targetHeight));
             StartPosition = FormStartPosition.CenterScreen;
             AutoScaleMode = AutoScaleMode.Dpi;
             FormBorderStyle = FormBorderStyle.None;
@@ -137,7 +140,8 @@ namespace Ams2KoreanBeta
 
             TableLayoutPanel root = new TableLayoutPanel { Dock = DockStyle.Fill, ColumnCount = 1, RowCount = 4, BackColor = Canvas, Padding = new Padding(12, 0, 12, 0) };
             root.RowStyles.Add(new RowStyle(SizeType.Absolute, 45F));
-            root.RowStyles.Add(new RowStyle(SizeType.Absolute, 458F));
+            RowStyle heroRow = new RowStyle(SizeType.Absolute, 300F);
+            root.RowStyles.Add(heroRow);
             root.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             root.RowStyles.Add(new RowStyle(SizeType.Absolute, 43F));
             root.Controls.Add(BuildTitleBar(), 0, 0);
@@ -145,7 +149,23 @@ namespace Ams2KoreanBeta
             root.Controls.Add(BuildBody(), 0, 2);
             root.Controls.Add(BuildFooter(), 0, 3);
             Controls.Add(root);
-            Shown += delegate { LoadManifest(); AutoDetect(); CheckGithubUpdate(true); };
+            EventHandler resizeLayout = delegate
+            {
+                heroRow.Height = Math.Max(160F, Math.Min(340F, root.ClientSize.Height - 560F));
+            };
+            root.Resize += resizeLayout;
+            resizeLayout(root, EventArgs.Empty);
+            Shown += delegate { FitWindowToWorkingArea(); LoadManifest(); AutoDetect(); CheckGithubUpdate(true); };
+        }
+
+        private void FitWindowToWorkingArea()
+        {
+            Rectangle workArea = Screen.FromControl(this).WorkingArea;
+            int maxWidth = Math.Max(640, workArea.Width - 24);
+            int maxHeight = Math.Max(640, workArea.Height - 24);
+            MinimumSize = new Size(Math.Min(MinimumSize.Width, maxWidth), Math.Min(MinimumSize.Height, maxHeight));
+            Size = new Size(Math.Min(Width, maxWidth), Math.Min(Height, maxHeight));
+            Location = new Point(workArea.Left + Math.Max(0, (workArea.Width - Width) / 2), workArea.Top + Math.Max(0, (workArea.Height - Height) / 2));
         }
 
         private Control BuildTitleBar()
@@ -192,7 +212,7 @@ namespace Ams2KoreanBeta
             TableLayoutPanel body = new TableLayoutPanel { Dock = DockStyle.Fill, BackColor = Canvas, Padding = new Padding(0), ColumnCount = 1, RowCount = 7 };
             body.RowStyles.Add(new RowStyle(SizeType.Absolute, 96F));
             body.RowStyles.Add(new RowStyle(SizeType.Absolute, 78F));
-            body.RowStyles.Add(new RowStyle(SizeType.Absolute, 90F));
+            body.RowStyles.Add(new RowStyle(SizeType.Absolute, 124F));
             body.RowStyles.Add(new RowStyle(SizeType.Absolute, 64F));
             body.RowStyles.Add(new RowStyle(SizeType.Absolute, 0F));
             body.RowStyles.Add(new RowStyle(SizeType.Absolute, 34F));
@@ -215,9 +235,30 @@ namespace Ams2KoreanBeta
             statusIcon.Visible = false;
             statusBadge.Text = "상태: 확인 전"; statusBadge.AutoSize = false; statusBadge.BackColor = Color.Transparent; statusBadge.ForeColor = AccentBright; statusBadge.Font = UiFont(12F, FontStyle.Bold); statusBadge.TextAlign = ContentAlignment.MiddleLeft; statusBadge.SetBounds(92, 18, 520, 28);
             statusDetail.Text = "게임 경로를 감지한 뒤 설치 상태를 확인합니다."; statusDetail.BackColor = Color.Transparent; statusDetail.ForeColor = Muted; statusDetail.Font = UiFont(9F); statusDetail.TextAlign = ContentAlignment.MiddleLeft; statusDetail.AutoEllipsis = true; statusDetail.SetBounds(92, 47, 535, 24);
-            card.Resize += delegate { statusDetail.Width = Math.Max(300, card.ClientSize.Width - 700); };
-            card.Controls.AddRange(new Control[] { statusBadge, statusDetail });
+            Label patchVersion = new Label { Text = PatchVersionValue(), BackColor = Color.FromArgb(15, 14, 15), ForeColor = Color.FromArgb(220, 207, 204), Font = UiFont(8.5F), TextAlign = ContentAlignment.MiddleLeft, AutoEllipsis = true };
+            card.Resize += delegate
+            {
+                statusDetail.Width = Math.Max(300, card.ClientSize.Width - 700);
+                int versionWidth = ScalePx(card, 135);
+                int versionRight = ScalePx(card, 20);
+                patchVersion.SetBounds(Math.Max(0, card.ClientSize.Width - versionWidth - versionRight), ScalePx(card, 43), versionWidth, ScalePx(card, 28));
+                patchVersion.BringToFront();
+            };
+            card.Controls.AddRange(new Control[] { statusBadge, statusDetail, patchVersion });
             return card;
+        }
+
+        private static string PatchVersionValue()
+        {
+            const string prefix = "Closed Beta ";
+            return PackageManifest.Version.StartsWith(prefix, StringComparison.OrdinalIgnoreCase)
+                ? PackageManifest.Version.Substring(prefix.Length)
+                : PackageManifest.Version;
+        }
+
+        private static int ScalePx(Control control, int value)
+        {
+            return (int)Math.Round(value * control.DeviceDpi / 96F);
         }
 
         private Control BuildPathCard()
@@ -256,8 +297,37 @@ namespace Ams2KoreanBeta
             startMenuShortcut.Text = "시작 메뉴에 바로가기 만들기"; startMenuShortcut.AutoSize = true; startMenuShortcut.ForeColor = TextPrimary; startMenuShortcut.Location = new Point(370, 12); startMenuShortcut.Checked = true;
             taskbarShortcut.Text = "작업 표시줄에 고정"; taskbarShortcut.AutoSize = true; taskbarShortcut.ForeColor = TextPrimary; taskbarShortcut.Location = new Point(625, 12);
             Label hint = new Label { Text = "※ 작업표시줄 고정은 Windows 정책에 따라 즉시 표시되지 않을 수 있습니다.", AutoSize = false, AutoEllipsis = true, ForeColor = Muted, Location = new Point(625, 42), Size = new Size(500, 25), TextAlign = ContentAlignment.MiddleLeft, Anchor = AnchorStyles.Top | AnchorStyles.Right };
-            card.Resize += delegate { hint.Left = Math.Max(625, card.ClientSize.Width - 505); };
-            card.Controls.AddRange(new Control[] { heading, consent, desktopShortcut, startMenuShortcut, taskbarShortcut, hint });
+            consent.AutoSize = false;
+            consent.AutoEllipsis = true;
+            desktopShortcut.Margin = new Padding(0, 7, 28, 0);
+            startMenuShortcut.Margin = new Padding(0, 7, 28, 0);
+            taskbarShortcut.Margin = new Padding(0, 7, 28, 0);
+            FlowLayoutPanel optionFlow = new FlowLayoutPanel { FlowDirection = FlowDirection.LeftToRight, WrapContents = true, AutoScroll = false, BackColor = Color.Transparent, Margin = new Padding(0), Padding = new Padding(0) };
+            optionFlow.Controls.AddRange(new Control[] { desktopShortcut, startMenuShortcut, taskbarShortcut });
+            card.Resize += delegate
+            {
+                int sidePadding = ScalePx(card, 14);
+                int flowLeft = ScalePx(card, 115);
+                int flowWidth = Math.Max(ScalePx(card, 260), card.ClientSize.Width - flowLeft - sidePadding);
+                optionFlow.SetBounds(flowLeft, ScalePx(card, 3), flowWidth, ScalePx(card, 60));
+                Size preferred = optionFlow.GetPreferredSize(new Size(flowWidth, 0));
+                bool wrapped = preferred.Height > ScalePx(card, 38);
+                optionFlow.Height = ScalePx(card, wrapped ? 60 : 38);
+                int noticeY = ScalePx(card, wrapped ? 68 : 47);
+                if (card.ClientSize.Width < ScalePx(card, 1100))
+                {
+                    int contentWidth = Math.Max(ScalePx(card, 200), card.ClientSize.Width - sidePadding * 2);
+                    consent.SetBounds(sidePadding, noticeY, contentWidth, ScalePx(card, 24));
+                    hint.SetBounds(sidePadding, noticeY + ScalePx(card, 25), contentWidth, ScalePx(card, 24));
+                }
+                else
+                {
+                    consent.SetBounds(sidePadding, noticeY, Math.Max(ScalePx(card, 300), card.ClientSize.Width - ScalePx(card, 560)), ScalePx(card, 24));
+                    int hintLeft = Math.Max(ScalePx(card, 520), card.ClientSize.Width - ScalePx(card, 505));
+                    hint.SetBounds(hintLeft, noticeY, Math.Max(ScalePx(card, 200), card.ClientSize.Width - hintLeft - sidePadding), ScalePx(card, 24));
+                }
+            };
+            card.Controls.AddRange(new Control[] { heading, optionFlow, consent, hint });
             return card;
         }
 

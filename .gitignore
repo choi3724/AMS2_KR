@@ -1,2 +1,44 @@
+# Python
 __pycache__/
 *.py[cod]
+
+# .NET generated output
+**/bin/
+**/obj/
+*.pdb
+*.deps.json
+*.runtimeconfig.json
+
+# Repository-local build and staging output
+/build/
+/dist/
+/out/
+/publish/
+/release-staging/
+/release-temp/
+
+# Release payloads live in E:\AMS2_Korean_Work\releases.
+# Only concise release notes remain source-controlled here.
+/releases/**
+!/releases/*/
+!/releases/*/RELEASE_NOTES*.md
+/SHA256SUMS.txt
+
+# Test, runtime evidence, logs, and diagnostics
+/TestResults/
+/coverage/
+/test-output/
+/mock-output/
+/reports/
+/local-debug/
+/diagnostics/
+/logs/
+*.dmp
+*.pml
+
+# Handoff and temporary output
+/handoff/
+/tmp/
+/temp/
+*.tmp
+*.bak
