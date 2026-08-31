@@ -1,0 +1,17 @@
+{
+    "schema":  "ams2-kr-release-package-validation-v0684",
+    "validated_at":  "2026-08-31T01:31:26.4180359Z",
+    "zip_name":  "AMS2 한국어 패치 CB 0.6.84.zip",
+    "zip_bytes":  58458498,
+    "zip_sha256":  "FE1D58B96475E297CF5C9FA79B2DC13BCBCEB9FDDF2B90614E8A28B1BBCA7974",
+    "top_level_entries":  1,
+    "top_level_name":  "AMS2 한국어 패치 CB 0.6.84",
+    "required_files_missing":  0,
+    "sha256_entries":  483,
+    "sha256_mismatches":  0,
+    "json_parse_errors":  0,
+    "old_installer_executables":  0,
+    "fixed_igphasehud_blob_present":  false,
+    "dynamic_patcher_sha256":  "DB41713EFB5E17AF6F3A9B6098011CC2FAF7A2A77BD83437B7FC19B13B125922",
+    "pass":  true
+}

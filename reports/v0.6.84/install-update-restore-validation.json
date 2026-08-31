@@ -1,0 +1,29 @@
+{
+  "schema": "ams2-kr-v0684-install-validation-v1",
+  "status": "PASS",
+  "game_buildid": "24132163",
+  "update_from_v0683": {
+    "status": "INSTALLED_EXACT",
+    "install_before_sha256": "D1618BB1F6E09F53E8BB86F4A163C2934B91814F5F326670381C5496B3D7C398",
+    "installed_sha256": "A4A1A63E0FBA780953D774742A6588EEA7F1507F576085DF9F4B93FB956308FC"
+  },
+  "remove": {
+    "status": "RESTORED_EXACT",
+    "restored_sha256": "F967D1A322EB75AAD742CF21888D75DB0CA4CB407ACDEC72F14D32BD5351E7DA",
+    "restored_route": "GUI/font_phoenix_body_regular.bfont",
+    "owned_launchers_remaining": 0
+  },
+  "reinstall_from_stock": {
+    "status": "INSTALLED_EXACT",
+    "installed_sha256": "A3D4C1C31ABBF5AE4D7D1F6FC4505A7FBFDAC1192E3F599B0EAC2A4E0B762B39",
+    "installed_route": "GUI/kr13_driver_name_semibold.bfont"
+  },
+  "runtime": {
+    "stock_boot": "PASS_NO_CRASH",
+    "patched_boot": "PASS_NO_CRASH",
+    "patched_process_alive_seconds": 60,
+    "bugsplat_processes": 0,
+    "application_error_events": 0
+  },
+  "final_state": "INSTALLED_EXACT"
+}

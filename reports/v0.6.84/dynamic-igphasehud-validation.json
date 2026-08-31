@@ -1,0 +1,36 @@
+{
+  "schema": "ams2-kr-v0684-dynamic-bff-validation-v1",
+  "status": "PASS",
+  "target_entry": "gui/hud_infoabovecar.bgui",
+  "target_object": "ProfileName",
+  "target_route": "GUI/kr13_driver_name_semibold.bfont",
+  "variants": [
+    {
+      "name": "stock_build_24132163",
+      "source_bytes": 9597262,
+      "source_sha256": "F967D1A322EB75AAD742CF21888D75DB0CA4CB407ACDEC72F14D32BD5351E7DA",
+      "output_sha256": "A3D4C1C31ABBF5AE4D7D1F6FC4505A7FBFDAC1192E3F599B0EAC2A4E0B762B39",
+      "other_entry_payload_changes": 0,
+      "other_entry_metadata_changes": 0
+    },
+    {
+      "name": "legacy_v0683_route",
+      "source_bytes": 9597262,
+      "source_sha256": "D1618BB1F6E09F53E8BB86F4A163C2934B91814F5F326670381C5496B3D7C398",
+      "output_sha256": "A4A1A63E0FBA780953D774742A6588EEA7F1507F576085DF9F4B93FB956308FC",
+      "other_entry_payload_changes": 0,
+      "other_entry_metadata_changes": 0
+    },
+    {
+      "name": "stock_plus_4096_trailing_bytes",
+      "source_bytes": 9601358,
+      "source_sha256": "B9A4534B2E987476FA932210F0AAECC84211FBC069A79B183F8BF9CA8C786B7F",
+      "output_sha256": "1324E652631143815F07CADD6043F5DB182DBF17DF757507A46D344F8ACA2BD8",
+      "other_entry_payload_changes": 0,
+      "other_entry_metadata_changes": 0
+    }
+  ],
+  "whole_archive_size_gate": false,
+  "whole_archive_sha_gate": false,
+  "unexpected_non_target_changes": 0
+}
