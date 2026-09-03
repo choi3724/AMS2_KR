@@ -23,6 +23,21 @@ namespace BffEntryInspect
                 return 0;
             }
 
+            if (args.Length == 3 && args[0] == "--scan-deflate")
+            {
+                var source = File.ReadAllBytes(args[1]);
+                var expected = File.ReadAllBytes(args[2]);
+                foreach (var strategy in Enum.GetValues(typeof(DeflateStrategy)).Cast<DeflateStrategy>())
+                {
+                    for (var level = 0; level <= 9; level++)
+                    {
+                        var candidate = CompressZlib(source, level, strategy);
+                        Console.WriteLine($"Level={level} Strategy={strategy} Bytes={candidate.Length} SHA256={Sha256(candidate)} Exact={candidate.SequenceEqual(expected)}");
+                    }
+                }
+                return 0;
+            }
+
             if (args.Length == 4 && args[0] == "--entry-crc")
             {
                 var crcGame = args[1];
@@ -45,6 +60,33 @@ namespace BffEntryInspect
 
             if (args.Length == 7 && args[0] == "--pack-entry")
                 return PackEntry(args[1], args[2], int.Parse(args[3]), args[4], args[5], args[6]);
+
+            if (args.Length == 8 && args[0] == "--pack-raw-entry")
+                return PackEntry(args[1], args[2], int.Parse(args[3]), args[4], args[6], args[7], args[5]);
+
+            if (args.Length == 5 && args[0] == "--dump-entry")
+            {
+                var dumpGame = args[1];
+                var dumpPakPath = args[2];
+                var dumpIndex = int.Parse(args[3]);
+                if (!BConfig.Instance.LoadConfig(Path.Combine(dumpGame, "Languages", "Languages.bml")))
+                    throw new InvalidOperationException("Failed to load Languages.bml.");
+                BPakFileEncryption.SetKeyset(KeysetType.PC2AndAbove);
+                var dumpPak = new BPakFile();
+                dumpPak.FromFile(dumpPakPath, withExtraInfo: true);
+                var dumpEntry = dumpPak.Entries[dumpIndex];
+                var dumpBytes = new byte[dumpEntry.mSizeInPak];
+                using (var input = File.OpenRead(dumpPakPath))
+                {
+                    input.Position = checked((long)dumpEntry.mDataPos);
+                    if (input.Read(dumpBytes, 0, dumpBytes.Length) != dumpBytes.Length)
+                        throw new EndOfStreamException();
+                }
+                BPakFileEncryption.DecryptData(dumpPak.Header.mEncryption, dumpBytes, dumpBytes.Length, dumpPak.KeyIndex);
+                File.WriteAllBytes(args[4], dumpBytes);
+                Console.WriteLine($"Dumped={args[4]} Bytes={dumpBytes.Length} SHA256={Sha256(dumpBytes)}");
+                return 0;
+            }
 
             if (args.Length == 4 && args[0] == "--toc-entry")
             {
@@ -73,6 +115,7 @@ namespace BffEntryInspect
             {
                 foreach (var type in typeof(BPakFile).Assembly.GetTypes()
                     .Where(type => type.FullName.IndexOf("Pak", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                                   type.FullName.IndexOf("Dir", StringComparison.OrdinalIgnoreCase) >= 0 ||
                                    type.FullName.IndexOf("Compress", StringComparison.OrdinalIgnoreCase) >= 0 ||
                                    type.FullName.IndexOf("Encrypt", StringComparison.OrdinalIgnoreCase) >= 0)
                     .OrderBy(type => type.FullName))
@@ -100,7 +143,7 @@ namespace BffEntryInspect
             BPakFileEncryption.SetKeyset(KeysetType.PC2AndAbove);
             var pak = new BPakFile();
             pak.FromFile(args[1], withExtraInfo: true);
-            Console.WriteLine($"Header Encryption={pak.Header.mEncryption} KeyIndex={pak.KeyIndex} SectorSize=0x{pak.Header.mSectorSize:X} DataOffset=0x{pak.Header.mDataOffset:X} TocSize={pak.Header.mTocSize} CRCSize={pak.Header.mCRCSize} ExtInfoSize={pak.Header.mExtInfoSize} FileCount={pak.Header.mFileCount}");
+            Console.WriteLine($"Header Encryption={pak.Header.mEncryption} KeyIndex={pak.KeyIndex} SectorSize=0x{pak.Header.mSectorSize:X} DataOffset=0x{pak.Header.mDataOffset:X} TocSize={pak.Header.mTocSize} CRCSize={pak.Header.mCRCSize} ExtInfoSize={pak.Header.mExtInfoSize} SectionInfoPos=0x{pak.Header.mSectionInfoPos:X} SectionInfoSize={pak.Header.mSectionInfoSize} FileCount={pak.Header.mFileCount}");
 
             var matches = pak.ExtEntries
                 .Select((extra, index) => new { extra, entry = pak.Entries[index], index })
@@ -127,7 +170,7 @@ namespace BffEntryInspect
             return matches.Length == 0 ? 1 : 0;
         }
 
-        private static int PackEntry(string game, string sourcePakPath, int entryIndex, string replacementPath, string outputPakPath, string reportPath)
+        private static int PackEntry(string game, string sourcePakPath, int entryIndex, string replacementPath, string outputPakPath, string reportPath, string compressedPath = null)
         {
             if (!BConfig.Instance.LoadConfig(Path.Combine(game, "Languages", "Languages.bml")))
                 throw new InvalidOperationException("Failed to load Languages.bml.");
@@ -147,7 +190,19 @@ namespace BffEntryInspect
 
             var sourceBytes = File.ReadAllBytes(sourcePakPath);
             var replacement = File.ReadAllBytes(replacementPath);
-            var compressed = CompressZlib(replacement);
+            var compressed = compressedPath == null ? CompressZlib(replacement) : File.ReadAllBytes(compressedPath);
+            if (compressedPath != null)
+            {
+                var inflater = new Inflater(noHeader: true);
+                inflater.SetInput(compressed);
+                var roundTrip = new byte[replacement.Length + 1];
+                var written = inflater.Inflate(roundTrip);
+                if (written != replacement.Length || !inflater.IsFinished || inflater.RemainingInput != 0 ||
+                    !replacement.SequenceEqual(roundTrip.Take(written)))
+                    throw new InvalidOperationException("Supplied raw deflate stream is not an exact, fully consumed replacement payload.");
+                if (compressed.Length != sourceEntry.mSizeInPak)
+                    throw new InvalidOperationException($"Supplied raw deflate stream is {compressed.Length} bytes; source entry is {sourceEntry.mSizeInPak} bytes.");
+            }
             var sectorSize = checked((int)sourcePak.Header.mSectorSize);
             var allocation = entryIndex + 1 < sourcePak.Entries.Count
                 ? checked((int)(sourcePak.Entries[entryIndex + 1].mDataPos - sourceEntry.mDataPos))
@@ -173,7 +228,11 @@ namespace BffEntryInspect
 
             var candidate = (byte[])sourceBytes.Clone();
             Buffer.BlockCopy(encryptedToc, 0, candidate, tocOffset, encryptedToc.Length);
+            Array.Clear(candidate, checked((int)sourceEntry.mDataPos), allocation);
             Buffer.BlockCopy(encryptedPayload, 0, candidate, checked((int)sourceEntry.mDataPos), encryptedPayload.Length);
+            if (candidate.Skip(checked((int)sourceEntry.mDataPos + encryptedPayload.Length))
+                .Take(allocation - encryptedPayload.Length).Any(value => value != 0))
+                throw new InvalidOperationException("Target entry allocation tail is not zero-filled.");
 
             Directory.CreateDirectory(Path.GetDirectoryName(Path.GetFullPath(outputPakPath)));
             File.WriteAllBytes(outputPakPath, candidate);
@@ -209,6 +268,8 @@ namespace BffEntryInspect
                 source_crc32 = $"0x{sourceEntry.mCRC:X8}",
                 candidate_crc32 = $"0x{crc:X8}",
                 replacement_sha256 = Sha256(replacement),
+                compressed_source = compressedPath ?? "SharpZipLib",
+                compressed_sha256 = Sha256(compressed),
                 validation_extract_sha256 = Sha256(validationBytes),
                 other_entry_payload_changes = 0,
                 other_entry_metadata_changes = 0,
@@ -222,8 +283,15 @@ namespace BffEntryInspect
 
         private static byte[] CompressZlib(byte[] source)
         {
+            return CompressZlib(source, 6, DeflateStrategy.Default);
+        }
+
+        private static byte[] CompressZlib(byte[] source, int level, DeflateStrategy strategy)
+        {
             using var output = new MemoryStream();
-            using (var stream = new DeflaterOutputStream(output, new Deflater(9, noZlibHeaderOrFooter: true)))
+            var deflater = new Deflater(level, noZlibHeaderOrFooter: false);
+            deflater.SetStrategy(strategy);
+            using (var stream = new DeflaterOutputStream(output, deflater))
             {
                 stream.IsStreamOwner = false;
                 stream.Write(source, 0, source.Length);

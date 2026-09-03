@@ -4,7 +4,7 @@ Source repository for the unofficial Automobilista 2 Korean patch and its author
 
 ## Current baseline
 
-- Version: Closed Beta 0.6.85
+- Version: Closed Beta 0.7
 - Author: ENGIceBlasT
 - Reference game build: Steam public build 24132163
 - After installation, launch through `AMS2 Korean Launcher.exe` or an installer-created shortcut.
@@ -25,7 +25,7 @@ See [Repository Artifact Policy](docs/REPOSITORY_ARTIFACT_POLICY.md) for the ful
 Run the following command from PowerShell. Output is written outside the Git repository.
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File tools/repository/Build-InstallerOutsideRepo.ps1 -Version 0.6.85
+powershell -ExecutionPolicy Bypass -File tools/repository/Build-InstallerOutsideRepo.ps1 -Version 0.7
 ```
 
 `tools/AMS2-Asset-Studio` contains BFONT/DDS generation, BGUI adjustment, TDB editing, and analysis tools.
