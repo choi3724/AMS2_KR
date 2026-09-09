@@ -57,3 +57,31 @@ AMS2 한국어 UI 자산을 한 곳에서 편집하는 개발용 도구다. 입�
 ```
 
 `PASS`와 BGUI/TDB 레코드 수가 출력되면 parser 및 기본 경로가 정상이다.
+
+## 0.7 UI 수정 테스트
+
+`build_ui_hotfix.py --release-root <0.7 배포 폴더> --output <새 외부 폴더>`는
+리플레이 안내 2개와 세이프티 카 이름 3개만 수정한 `0.7-test3` 후보를 만든다.
+세이프티 카 표기는 사용자 요청에 따라 일반 공백(U+0020)을 넣은 `세이프티 카`다.
+입력 SHA-256을 고정하여 다른 버전이나 이미 수정된 파일의 재사용을 거부한다.
+`0.7-test1`은 실제 게임 시작 시 충돌하여 원복했고 재적용을 차단했다.
+텍스트 수정 생성기에서는 메뉴 객체 추가 코드를 제거했다.
+제작자 표기 후보 `0.7-menu-footer2`도 실제 게임 시작 시 충돌하여 원복했다.
+객체 계층 등록을 보완하고 정적 검사를 통과했어도 런타임 안전성은 확보되지 않았다.
+실패한 메뉴 생성기는 저장소에서 제거하고 외부 오류 기록 폴더에 보존했다.
+현재 메뉴 객체 추가 후보의 재적용은 모두 차단한다.
+
+`test_ui_hotfix.ps1 -CandidateDir <후보> -ReleaseRoot <0.7 배포> -OutputRoot <외부 검사 폴더>`로
+가상 게임 폴더에서 적용·원복과 수동 수정 보호를 검사한다.
+`Use-UiHotfix.ps1 -Action Apply|Restore|Status -CandidateDir <후보> [-GameDir <게임 폴더>]`는
+텍스트 파일 2개만 적용하며 백업은 후보 폴더의 `backup`에 둔다.
+이전 test1 파일 4개는 상태 확인과 원복만 허용한다.
+진단용 manifest의 `REPLAY_TIME_DIAGNOSTIC`은 루트/GUI의 `hud_leaderboard2_1_6.bgui` 두 복사본만,
+`LAUNCHER_TEST`는 일반/VR 한국어 런처 두 파일만,
+`MENU_FOOTER_TEST`는 `gui/menu_mainmenu_1_6.bgui`와 `gui/menu_mainmenuams2.bgui`의 상태 확인·원복만 허용한다.
+다른 경로 조합은 거부한다.
+Apply/Restore는 게임과 한국어 런처를 종료한 상태에서 실행한다.
+
+테스트 중에는 기존 0.7 인스톨러의 상태 검사가 변경된 파일을 감지한다.
+정규 설치 기록을 바꾸지 않으므로 테스트가 끝나면 이 도구의 Restore로 0.7을 먼저 복원한다.
+스크립트는 `powershell -NoProfile -ExecutionPolicy Bypass -File ...`로 실행할 수 있다.

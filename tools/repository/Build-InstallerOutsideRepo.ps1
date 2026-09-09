@@ -1,5 +1,5 @@
 param(
-    [string]$Version = '0.6.85',
+    [string]$Version = '0.8',
     [string]$WorkRoot = 'E:\AMS2_Korean_Work'
 )
 
@@ -24,7 +24,8 @@ $commonReferences = @(
     '/reference:System.Drawing.dll',
     '/reference:System.Windows.Forms.dll',
     '/reference:System.IO.Compression.dll',
-    '/reference:System.IO.Compression.FileSystem.dll'
+    '/reference:System.IO.Compression.FileSystem.dll',
+    '/reference:System.Web.Extensions.dll'
 )
 
 function Invoke-Csc([string]$Target, [string]$Main, [string]$OutputFile, [string[]]$Sources, [string[]]$Extra = @()) {
@@ -39,11 +40,21 @@ $icon = Join-Path $source 'ams2-korean.ico'
 $manifest = Join-Path $source 'app.manifest'
 $win32 = @("/win32icon:$icon", "/win32manifest:$manifest")
 
-Invoke-Csc 'winexe' 'Ams2KoreanBeta.InstallerProgram' (Join-Path $output "AMS2-Korean-Patch-CB-$Version.exe") @((Join-Path $source 'InstallerProgram.cs'),$core,$assembly) $win32
-Invoke-Csc 'winexe' 'Ams2KoreanBeta.RestoreProgram' (Join-Path $output "AMS2-Korean-Patch-CB-$Version-Emergency-Restore.exe") @((Join-Path $source 'RestoreProgram.cs'),$core,$assembly) $win32
-Invoke-Csc 'winexe' 'Ams2KoreanBeta.LauncherProgram' (Join-Path $output 'AMS2 Korean Launcher.exe') @((Join-Path $source 'LauncherProgram.cs'),$assembly) $win32
-Invoke-Csc 'winexe' 'Ams2KoreanBeta.LauncherProgram' (Join-Path $output 'AMS2 Korean Launcher VR.exe') @((Join-Path $source 'LauncherProgram.cs'),$assembly) ($win32 + '/define:VR_LAUNCHER')
-Invoke-Csc 'exe' 'Ams2KoreanBeta.TestCliProgram' (Join-Path $output 'AMS2 Korean Patch TestCli.exe') @((Join-Path $source 'TestCliProgram.cs'),$core,$assembly)
+$shared = @('GameLauncher.cs','GithubUpdater.cs' | ForEach-Object { Join-Path $source $_ } | Where-Object { Test-Path -LiteralPath $_ })
+$update = @(Join-Path $source 'InstallerUpdate.cs' | Where-Object { Test-Path -LiteralPath $_ })
+$launcherResources = @()
+if (Test-Path -LiteralPath (Join-Path $source 'GithubUpdater.cs')) {
+    $launcherResources = @('/resource:' + (Join-Path $source 'assets\installer-hero.png') + ',Ams2KoreanBeta.LauncherHero')
+    $launcherResources += '/resource:' + (Join-Path $source 'assets\Pretendard-Medium.otf') + ',Ams2KoreanBeta.Pretendard'
+}
+Invoke-Csc 'winexe' 'Ams2KoreanBeta.InstallerProgram' (Join-Path $output "AMS2-Korean-Patch-CB-$Version.exe") (@((Join-Path $source 'InstallerProgram.cs'),$core,$assembly) + $shared + $update) $win32
+Invoke-Csc 'winexe' 'Ams2KoreanBeta.RestoreProgram' (Join-Path $output "AMS2-Korean-Patch-CB-$Version-Emergency-Restore.exe") (@((Join-Path $source 'RestoreProgram.cs'),$core,$assembly) + $shared) $win32
+Invoke-Csc 'winexe' 'Ams2KoreanBeta.LauncherProgram' (Join-Path $output 'AMS2 Korean Launcher.exe') (@((Join-Path $source 'LauncherProgram.cs'),$assembly) + $shared) ($win32 + $launcherResources)
+Invoke-Csc 'winexe' 'Ams2KoreanBeta.LauncherProgram' (Join-Path $output 'AMS2 Korean VR Launcher.exe') (@((Join-Path $source 'LauncherProgram.cs'),$assembly) + $shared) ($win32 + $launcherResources + '/define:VR_LAUNCHER')
+Invoke-Csc 'exe' 'Ams2KoreanBeta.TestCliProgram' (Join-Path $output 'AMS2 Korean Patch TestCli.exe') (@((Join-Path $source 'TestCliProgram.cs'),$core,$assembly) + $shared)
+if (Test-Path -LiteralPath (Join-Path $source 'LauncherUpdateTest.cs')) {
+    Invoke-Csc 'exe' 'Ams2KoreanBeta.LauncherUpdateTest' (Join-Path $output 'AMS2 Launcher Update Test.exe') (@((Join-Path $source 'LauncherUpdateTest.cs'),(Join-Path $source 'LauncherProgram.cs'),$assembly) + $shared) $launcherResources
+}
 
 Copy-Item -LiteralPath (Join-Path $source 'Installer.exe.config') -Destination (Join-Path $output "AMS2-Korean-Patch-CB-$Version.exe.config") -Force
 Copy-Item -LiteralPath (Join-Path $source 'assets') -Destination (Join-Path $output 'assets') -Recurse -Force

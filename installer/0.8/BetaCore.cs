@@ -25,8 +25,8 @@ namespace Ams2KoreanBeta
 
     internal sealed class PackageManifest
     {
-        public const string PackageId = "AMS2-KR-BETA-0.7-PRETENDARD";
-        public const string Version = "Closed Beta 0.7";
+        public const string PackageId = "AMS2-KR-BETA-0.8-PRETENDARD";
+        public const string Version = "Closed Beta 0.8";
         public const string AppId = "1066890";
         public const string BuildId = "24132163";
         public const string Branch = "public";
@@ -606,11 +606,8 @@ namespace Ams2KoreanBeta
                 InstallState state = LoadState();
                 if (state == null || state.Status != "INSTALLED") throw new InvalidOperationException("한국어 패치가 정확히 설치되지 않았습니다.");
                 ValidateInstalled(state);
-                ProcessStartInfo p = new ProcessStartInfo(Path.Combine(gameDir, "AMS2.exe"), "-novr -lang=Korean -looseloadtext");
-                p.WorkingDirectory = gameDir;
-                p.UseShellExecute = true;
-                Process.Start(p);
-                Log("한국어 실행: AMS2.exe -novr -lang=Korean -looseloadtext");
+                GameLauncher.Start(gameDir, false);
+                Log("한국어 실행: Steam " + GameLauncher.Arguments(false));
                 return Ok("LAUNCHED_KOREAN", "한국어 모드로 게임을 실행했습니다.", SaveLog());
             }
             catch (Exception e) { return Fail("LAUNCH_FAILED", e.Message); }
@@ -774,6 +771,24 @@ namespace Ams2KoreanBeta
             {
                 target.Action = "created"; target.BeforeSha = "ABSENT"; target.BeforeBytes = 0; return;
             }
+            // A matching prior installation owns its verified original, including unknown preinstall files.
+            foreach (PreviousInstallInfo item in history.OrderByDescending(x => x.InstalledUtc))
+            {
+                DirectState old = item.State.Files.FirstOrDefault(x => x.RelativePath.Equals(target.RelativePath, StringComparison.OrdinalIgnoreCase));
+                if (old == null || !target.InstallBeforeSha.Equals(old.AfterSha, StringComparison.OrdinalIgnoreCase)) continue;
+                if (old.Action == "created" && old.BeforeSha == "ABSENT")
+                {
+                    target.Action = "created"; target.BeforeSha = "ABSENT"; target.BeforeBytes = 0; return;
+                }
+                if (old.Action == "modified")
+                {
+                    string source = PackageManifest.SafeJoin(Path.Combine(item.StateRoot, "original", item.State.BackupId), target.RelativePath);
+                    PackageManifest.RequireFile(source, old.BeforeBytes, old.BeforeSha, "이전 버전 설치 전 백업");
+                    target.Action = "modified"; target.BeforeSha = old.BeforeSha; target.BeforeBytes = old.BeforeBytes;
+                    CopyCanonicalBackup(source, target, backupId);
+                    return;
+                }
+            }
             if (stockIsAbsent && target.InstallBeforeExists &&
                 (target.InstallBeforeSha.Equals(target.AfterSha, StringComparison.OrdinalIgnoreCase) || accepted.Contains(target.InstallBeforeSha)))
             {
@@ -786,25 +801,6 @@ namespace Ams2KoreanBeta
                 target.Action = "modified"; target.BeforeSha = target.InstallBeforeSha; target.BeforeBytes = target.InstallBeforeBytes;
                 CopyCanonicalBackup(PackageManifest.SafeJoin(gameDir, target.RelativePath), target, backupId);
                 return;
-            }
-            foreach (PreviousInstallInfo item in history.OrderBy(x => x.InstalledUtc))
-            {
-                DirectState old = item.State.Files.FirstOrDefault(x => x.RelativePath.Equals(target.RelativePath, StringComparison.OrdinalIgnoreCase));
-                if (old == null) continue;
-                if (stockIsAbsent && old.Action == "created" && old.BeforeSha == "ABSENT" &&
-                    target.InstallBeforeSha.Equals(old.AfterSha, StringComparison.OrdinalIgnoreCase))
-                {
-                    target.Action = "created"; target.BeforeSha = "ABSENT"; target.BeforeBytes = 0; return;
-                }
-                if (!stockIsAbsent && old.Action == "modified" && accepted.Contains(old.BeforeSha) &&
-                    target.InstallBeforeSha.Equals(old.AfterSha, StringComparison.OrdinalIgnoreCase))
-                {
-                    string source = PackageManifest.SafeJoin(Path.Combine(item.StateRoot, "original", item.State.BackupId), target.RelativePath);
-                    PackageManifest.RequireFile(source, old.BeforeBytes, old.BeforeSha, "이전 버전 설치 전 백업");
-                    target.Action = "modified"; target.BeforeSha = old.BeforeSha; target.BeforeBytes = old.BeforeBytes;
-                    CopyCanonicalBackup(source, target, backupId);
-                    return;
-                }
             }
             if (target.InstallBeforeExists)
             {

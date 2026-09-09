@@ -3,9 +3,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Text;
 using System.IO;
-using System.Net;
 using System.Runtime.InteropServices;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -117,7 +115,7 @@ namespace Ams2KoreanBeta
         public InstallerForm()
         {
             EnsureEmbeddedTypeface();
-            Text = "Automobilista 2 한국어 패치 — Closed Beta 0.7";
+            Text = "Automobilista 2 한국어 패치 — Closed Beta 0.8";
             Font = UiFont(9F);
             BackColor = Color.FromArgb(115, 18, 21);
             Rectangle workArea = Screen.PrimaryScreen.WorkingArea;
@@ -172,7 +170,7 @@ namespace Ams2KoreanBeta
         {
             Panel bar = new Panel { Dock = DockStyle.Fill, BackColor = Color.FromArgb(15, 13, 15), Margin = new Padding(-12, 0, -12, 0) };
             Label icon = new Label { Text = "▰", ForeColor = AccentBright, Font = new Font("Segoe UI Symbol", 12F, FontStyle.Bold), TextAlign = ContentAlignment.MiddleCenter, Location = new Point(14, 0), Size = new Size(35, 43) };
-            Label title = new Label { Text = "Automobilista 2 한국어 패치 — Closed Beta 0.7", ForeColor = TextPrimary, Font = UiFont(10.5F), TextAlign = ContentAlignment.MiddleLeft, Location = new Point(49, 0), Size = new Size(720, 43) };
+            Label title = new Label { Text = "Automobilista 2 한국어 패치 — Closed Beta 0.8", ForeColor = TextPrimary, Font = UiFont(10.5F), TextAlign = ContentAlignment.MiddleLeft, Location = new Point(49, 0), Size = new Size(720, 43) };
             Button minimize = TitleButton("—"); Button maximize = TitleButton("□"); Button exit = TitleButton("×");
             minimize.Click += delegate { WindowState = FormWindowState.Minimized; };
             maximize.Click += delegate { WindowState = WindowState == FormWindowState.Maximized ? FormWindowState.Normal : FormWindowState.Maximized; };
@@ -195,7 +193,7 @@ namespace Ams2KoreanBeta
         {
             Panel footer = new Panel { Dock = DockStyle.Fill, BackColor = Color.FromArgb(28, 13, 15), Margin = new Padding(-12, 6, -12, 0) };
             Label ready = new Label { Text = "●   준비 완료", ForeColor = Color.FromArgb(210, 201, 198), Font = UiFont(9F, FontStyle.Bold), TextAlign = ContentAlignment.MiddleLeft, Location = new Point(24, 0), Size = new Size(180, 37) };
-            Label version = new Label { Text = "Automobilista 2 한국어 패치 — Closed Beta 0.7", ForeColor = Color.FromArgb(131, 118, 117), Font = UiFont(8.5F), TextAlign = ContentAlignment.MiddleRight, Anchor = AnchorStyles.Top | AnchorStyles.Right, Size = new Size(430, 37) };
+            Label version = new Label { Text = "Automobilista 2 한국어 패치 — Closed Beta 0.8", ForeColor = Color.FromArgb(131, 118, 117), Font = UiFont(8.5F), TextAlign = ContentAlignment.MiddleRight, Anchor = AnchorStyles.Top | AnchorStyles.Right, Size = new Size(430, 37) };
             footer.Controls.AddRange(new Control[] { ready, version });
             footer.Resize += delegate { version.Left = footer.ClientSize.Width - version.Width - 26; };
             return footer;
@@ -540,25 +538,18 @@ namespace Ams2KoreanBeta
         private void SetEnabled(bool enabled) { install.Enabled = enabled; remove.Enabled = enabled; check.Enabled = enabled; launch.Enabled = enabled; diagnostic.Enabled = enabled; updateCheck.Enabled = enabled; browse.Enabled = enabled; detect.Enabled = enabled; desktopShortcut.Enabled = enabled; startMenuShortcut.Enabled = enabled; taskbarShortcut.Enabled = enabled; }
     }
 
-    internal sealed class GithubReleaseInfo { public string Tag; public string PageUrl; }
-
-    internal static class GithubUpdater
-    {
-        private const string LatestReleaseApi = "https://api.github.com/repos/choi3724/AMS2_KR/releases/latest";
-        public static GithubReleaseInfo Check()
-        {
-            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12; HttpWebRequest request = (HttpWebRequest)WebRequest.Create(LatestReleaseApi); request.UserAgent = "AMS2-Korean-Patch-Updater/0.7"; request.Accept = "application/vnd.github+json"; request.Timeout = 6000; string json;
-            using (HttpWebResponse response = (HttpWebResponse)request.GetResponse()) using (StreamReader reader = new StreamReader(response.GetResponseStream())) json = reader.ReadToEnd();
-            string tag = ReadJsonString(json, "tag_name"); string page = ReadJsonString(json, "html_url"); if (String.IsNullOrWhiteSpace(tag) || String.IsNullOrWhiteSpace(page)) throw new InvalidOperationException("GitHub release metadata is incomplete."); return new GithubReleaseInfo { Tag = tag, PageUrl = page };
-        }
-        public static bool IsNewer(string remote, string current) { return ParseVersion(remote).CompareTo(ParseVersion(current)) > 0; }
-        private static System.Version ParseVersion(string value) { Match match = Regex.Match(value ?? "", "(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)"); if (!match.Success) return new System.Version(0, 0, 0); return new System.Version(Int32.Parse(match.Groups["major"].Value), Int32.Parse(match.Groups["minor"].Value), Int32.Parse(match.Groups["patch"].Value)); }
-        private static string ReadJsonString(string json, string name) { Match match = Regex.Match(json ?? "", "\\\"" + Regex.Escape(name) + "\\\"\\s*:\\s*\\\"(?<value>(?:\\\\.|[^\\\"])*)\\\""); return match.Success ? match.Groups["value"].Value.Replace("\\/", "/") : null; }
-    }
-
     internal static class InstallerProgram
     {
         [STAThread]
-        public static void Main() { Application.EnableVisualStyles(); Application.SetCompatibleTextRenderingDefault(false); Application.Run(new InstallerForm()); }
+        public static int Main(string[] args)
+        {
+            Application.EnableVisualStyles(); Application.SetCompatibleTextRenderingDefault(false);
+            if (args.Length > 0)
+            {
+                using (var form = new InstallerUpdateForm(args)) { Application.Run(form); return form.ExitCode; }
+            }
+            Application.Run(new InstallerForm());
+            return 0;
+        }
     }
 }

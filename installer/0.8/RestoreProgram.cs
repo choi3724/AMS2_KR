@@ -14,12 +14,12 @@ namespace Ams2KoreanBeta
 
         public RestoreForm()
         {
-            Text = "AMS2 한국어 패치 CB 0.7 — 긴급 원복";
+            Text = "AMS2 한국어 패치 CB 0.8 — 긴급 원복";
             Font = new Font("Malgun Gothic", 9F); Width = 720; Height = 340; BackColor = Color.FromArgb(244, 246, 250); AutoScaleMode = AutoScaleMode.Dpi;
             StartPosition = FormStartPosition.CenterScreen; FormBorderStyle = FormBorderStyle.FixedDialog; MaximizeBox = false;
             Panel header = new Panel { Dock = DockStyle.Top, Height = 92, BackColor = Color.FromArgb(26, 31, 43) };
             header.Controls.Add(new Label { Text = "긴급 제거 및 설치 직전 상태 복원", Left = 24, Top = 20, Width = 620, Height = 34, ForeColor = Color.White, Font = new Font("Malgun Gothic", 17F, FontStyle.Bold) });
-            header.Controls.Add(new Label { Text = "CLOSED BETA 0.7", Left = 26, Top = 58, Width = 240, Height = 20, ForeColor = Color.FromArgb(190, 199, 214), Font = new Font("Segoe UI", 8.5F, FontStyle.Bold) });
+            header.Controls.Add(new Label { Text = "CLOSED BETA 0.8", Left = 26, Top = 58, Width = 240, Height = 20, ForeColor = Color.FromArgb(190, 199, 214), Font = new Font("Segoe UI", 8.5F, FontStyle.Bold) });
             Controls.Add(header);
             Controls.Add(new Label { Text = "활성 설치 상태와 설치 직전 백업을 검증한 뒤 패치가 만든 파일을 제거합니다.", Left = 24, Top = 110, Width = 650, Height = 28, ForeColor = Color.FromArgb(70, 78, 92) });
             path.SetBounds(24, 145, 540, 30); Controls.Add(path);
