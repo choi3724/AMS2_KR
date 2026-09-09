@@ -1,4 +1,4 @@
-"""Exercise 0.8 install/restore and 0.7 upgrade in a new isolated game fixture."""
+"""Exercise 0.81 install/restore and 0.8 upgrade in a new isolated game fixture."""
 import csv
 import hashlib
 import json
@@ -8,8 +8,8 @@ import subprocess
 
 REPO = Path(__file__).resolve().parents[2]
 WORK = REPO.parent
-BUILD = WORK / 'build/0.8'
-PACKAGE = WORK / 'releases/0.8/AMS2 한국어 패치 CB 0.8'
+BUILD = WORK / 'build/0.81'
+PACKAGE = WORK / 'releases/0.81/AMS2 한국어 패치 오픈베타 0.81'
 
 
 def sha(path):
@@ -38,7 +38,7 @@ def main():
         if row['role'] == 'modified' or relative == preserved_created:
             target = game / relative
             target.parent.mkdir(parents=True, exist_ok=True)
-            target.write_text('0.8 fixture original: ' + relative, encoding='utf-8')
+            target.write_text('0.81 fixture original: ' + relative, encoding='utf-8')
             originals[relative] = sha(target)
     old_backups = WORK / 'build/0.7/fixture/steamapps/common/Automobilista 2/Backup/AMS2-Korean/AMS2-KR-BETA-0.7-PRETENDARD/original'
     stock = next(path for path in old_backups.rglob('IGPHASEHUD.bff') if sha(path) == 'F967D1A322EB75AAD742CF21888D75DB0CA4CB407ACDEC72F14D32BD5351E7DA')
@@ -66,17 +66,17 @@ def main():
         operation(str(cycle) + '-check', '--check', expected='INSTALLED_EXACT')
         operation(str(cycle) + '-remove', '--uninstall', expected='RESTORED_EXACT')
         restored()
-    operation('upgrade-prepare-07', '--install', BUILD / 'baseline/AMS2 한국어 패치 CB 0.7',
-              WORK / 'build/0.7/installer/AMS2 Korean Patch TestCli.exe', 'INSTALLED_EXACT')
+    operation('upgrade-prepare-08', '--install', WORK / 'releases/0.8/AMS2 한국어 패치 CB 0.8',
+              WORK / 'build/0.8/installer/AMS2 Korean Patch TestCli.exe', 'INSTALLED_EXACT')
     operation('upgrade-08', '--install', expected='UPDATED_EXACT')
     operation('upgrade-check', '--check', expected='INSTALLED_EXACT')
     operation('upgrade-remove', '--uninstall', expected='RESTORED_EXACT')
     restored()
-    report = {'status': 'PASS', 'install_restore_cycles': 2, 'upgrade_07_to_08': 'PASS',
+    report = {'status': 'PASS', 'install_restore_cycles': 2, 'upgrade_08_to_081': 'PASS',
               'restored_files': len(originals), 'removed_created_files': sum(row['role'] == 'created' and row['relative_path'] not in originals for row in rows),
               'game_executed': False}
     (fixture / 'result.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
-    print('PASS: install/check/restore twice, 0.7 to 0.8 upgrade, 96 originals exact, 354 created files removed. No game executed.')
+    print('PASS: install/check/restore twice, 0.8 to 0.81 upgrade, 96 originals exact, 354 created files removed. No game executed.')
 
 
 if __name__ == '__main__':

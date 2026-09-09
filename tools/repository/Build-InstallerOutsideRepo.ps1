@@ -1,5 +1,5 @@
 param(
-    [string]$Version = '0.8',
+    [string]$Version = '0.81',
     [string]$WorkRoot = 'E:\AMS2_Korean_Work'
 )
 
@@ -47,7 +47,7 @@ if (Test-Path -LiteralPath (Join-Path $source 'GithubUpdater.cs')) {
     $launcherResources = @('/resource:' + (Join-Path $source 'assets\installer-hero.png') + ',Ams2KoreanBeta.LauncherHero')
     $launcherResources += '/resource:' + (Join-Path $source 'assets\Pretendard-Medium.otf') + ',Ams2KoreanBeta.Pretendard'
 }
-Invoke-Csc 'winexe' 'Ams2KoreanBeta.InstallerProgram' (Join-Path $output "AMS2-Korean-Patch-CB-$Version.exe") (@((Join-Path $source 'InstallerProgram.cs'),$core,$assembly) + $shared + $update) $win32
+Invoke-Csc 'winexe' 'Ams2KoreanBeta.InstallerProgram' (Join-Path $output "AMS2-Korean-Patch-OB-$Version.exe") (@((Join-Path $source 'InstallerProgram.cs'),$core,$assembly) + $shared + $update) $win32
 Invoke-Csc 'winexe' 'Ams2KoreanBeta.LauncherProgram' (Join-Path $output 'AMS2 Korean Launcher.exe') (@((Join-Path $source 'LauncherProgram.cs'),$assembly) + $shared) ($win32 + $launcherResources)
 Invoke-Csc 'winexe' 'Ams2KoreanBeta.LauncherProgram' (Join-Path $output 'AMS2 Korean VR Launcher.exe') (@((Join-Path $source 'LauncherProgram.cs'),$assembly) + $shared) ($win32 + $launcherResources + '/define:VR_LAUNCHER')
 Invoke-Csc 'exe' 'Ams2KoreanBeta.TestCliProgram' (Join-Path $output 'AMS2 Korean Patch TestCli.exe') (@((Join-Path $source 'TestCliProgram.cs'),$core,$assembly) + $shared)
@@ -55,7 +55,7 @@ if (Test-Path -LiteralPath (Join-Path $source 'LauncherUpdateTest.cs')) {
     Invoke-Csc 'exe' 'Ams2KoreanBeta.LauncherUpdateTest' (Join-Path $output 'AMS2 Launcher Update Test.exe') (@((Join-Path $source 'LauncherUpdateTest.cs'),(Join-Path $source 'LauncherProgram.cs'),$assembly) + $shared) $launcherResources
 }
 
-Copy-Item -LiteralPath (Join-Path $source 'Installer.exe.config') -Destination (Join-Path $output "AMS2-Korean-Patch-CB-$Version.exe.config") -Force
+Copy-Item -LiteralPath (Join-Path $source 'Installer.exe.config') -Destination (Join-Path $output "AMS2-Korean-Patch-OB-$Version.exe.config") -Force
 Copy-Item -LiteralPath (Join-Path $source 'assets') -Destination (Join-Path $output 'assets') -Recurse -Force
 
 $patcherOutput = Join-Path $output 'runtime'

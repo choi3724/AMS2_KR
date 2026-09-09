@@ -26,7 +26,7 @@ namespace Ams2KoreanBeta
 
         public static Version ParseVersion(string value)
         {
-            Match match = Regex.Match(value ?? "", @"^(?:v|Closed Beta\s+)?(?<version>\d+\.\d+(?:\.\d+){0,2})$", RegexOptions.IgnoreCase);
+            Match match = Regex.Match(value ?? "", @"^(?:v|(?:Closed|Open) Beta\s+)?(?<version>\d+\.\d+(?:\.\d+){0,2})$", RegexOptions.IgnoreCase);
             Version version;
             if (!match.Success || !Version.TryParse(match.Groups["version"].Value, out version)) throw new FormatException("버전 형식을 인식하지 못했습니다: " + value);
             return new Version(version.Major, version.Minor, Math.Max(0, version.Build), Math.Max(0, version.Revision));
@@ -80,7 +80,7 @@ namespace Ams2KoreanBeta
             foreach (var item in assets.Cast<object>().OfType<Dictionary<string, object>>())
             {
                 string name = Text(item, "name");
-                if (name == null || !Regex.IsMatch(name, @"^AMS2\.CB\.\d+\.\d+(?:\.\d+){0,2}\.zip$", RegexOptions.IgnoreCase)) continue;
+                if (name == null || !Regex.IsMatch(name, @"^AMS2\.(?:(?:CB|OB)\.)?\d+\.\d+(?:\.\d+){0,2}\.zip$", RegexOptions.IgnoreCase)) continue;
                 if (info.AssetUrl != null) throw new InvalidDataException("자동 업데이트 패키지가 둘 이상입니다.");
                 string url = Text(item, "browser_download_url"), digest = Text(item, "digest");
                 if (url != RepositoryUrl + "/releases/download/" + tag + "/" + name || !Regex.IsMatch(digest ?? "", "^sha256:[0-9a-fA-F]{64}$")) throw new InvalidDataException("패키지 주소 또는 SHA-256이 유효하지 않습니다.");
@@ -172,7 +172,7 @@ namespace Ams2KoreanBeta
         internal static string FindInstaller(string directory, string version)
         {
             string[] installers = Directory.GetFiles(directory, "*.exe", SearchOption.AllDirectories).Where(path =>
-                Regex.IsMatch(Path.GetFileName(path), @"^(?:AMS2-Korean-Patch-CB-|AMS2 한국어 패치 CB )\d+\.\d+(?:\.\d+){0,2}\.exe$", RegexOptions.IgnoreCase)
+                Regex.IsMatch(Path.GetFileName(path), @"^(?:AMS2-Korean-Patch-(?:CB|OB)-|AMS2 한국어 패치 (?:CB |오픈베타 ))\d+\.\d+(?:\.\d+){0,2}\.exe$", RegexOptions.IgnoreCase)
                 && File.Exists(Path.Combine(Path.GetDirectoryName(path), "manifest", "direct-files.tsv"))).ToArray();
             if (installers.Length != 1) throw new InvalidDataException("업데이트 설치 프로그램을 하나로 식별하지 못했습니다.");
             FileVersionInfo info = FileVersionInfo.GetVersionInfo(installers[0]);

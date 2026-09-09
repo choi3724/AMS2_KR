@@ -1,15 +1,16 @@
-# Closed Beta 0.8 validation
+# Open Beta 0.81 validation
 
 Baseline: `v0.7` / `0bfdafa09d6556539c57d193633eaa4f7b55efad`.
 
-- Assemble with `tools/repository/Build-Release08.py` after the external 0.8 build. The input 0.7 ZIP is pinned by SHA-256.
+- Assemble with `tools/repository/Build-Release081.py` after the external 0.81 build. The input 0.7 ZIP is pinned by SHA-256.
 - Of 449 direct files, only desktop/VR launchers and `text/game.tdb`, `text/drivers.tdb` change. Five Korean values change; other values, keys and language hashes are preserved.
 - Original 0.7 menus, replay layouts, and the runtime-tested BFF patcher are retained. Failed menu-footer experiments are excluded. The shipped patcher retains the exact hash pinned by `BetaCore`; a new compile is not substituted.
 - Production build, desktop/update-choice/scaled VR rendering and text-fit checks pass.
-- Latest/offline/slow startup decisions: 5016/5013/5015 ms. A newer version pauses for a choice; immediate launch skips the countdown.
-- `tools/repository/Test-Release08.py` tests install/check/removal twice, then 0.7 to 0.8 upgrade/removal in a new fixture. It includes unknown preinstall files and a preexisting file in a patch-created path.
+- Latest/offline/slow startup decisions: 5014/5008/5014 ms. A newer version pauses for a choice; immediate launch skips the countdown.
+- `tools/repository/Test-Release081.py` tests install/check/removal twice, then 0.8 to 0.81 upgrade/removal in a new fixture. It includes unknown preinstall files and a preexisting file in a patch-created path.
 - Upgrade backup handling now uses a matching prior installation's verified original before payload adoption rules.
-- Final package checks and hashes are recorded outside Git under `build/0.8` and `releases/0.8`.
+- Final package checks and hashes are recorded outside Git under `build/0.81` and `releases/0.81`.
+- Open Beta installer filename and normal/VR launcher version 0.81 verified; no standalone emergency tool is built or packaged. The supplied announcement is preserved in the release notes.
 
 Runtime limits: multiplayer replay-save dialog, headset VR startup, and full download/install/game-relaunch remain unverified. Replay time clipping is unresolved. The 150% render is a form scale test, not a physical monitor DPI test.
 

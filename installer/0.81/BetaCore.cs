@@ -25,8 +25,8 @@ namespace Ams2KoreanBeta
 
     internal sealed class PackageManifest
     {
-        public const string PackageId = "AMS2-KR-BETA-0.8-PRETENDARD";
-        public const string Version = "Closed Beta 0.8";
+        public const string PackageId = "AMS2-KR-BETA-0.81-PRETENDARD";
+        public const string Version = "Open Beta 0.81";
         public const string AppId = "1066890";
         public const string BuildId = "24132163";
         public const string Branch = "public";

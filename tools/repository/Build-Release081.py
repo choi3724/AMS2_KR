@@ -1,4 +1,4 @@
-"""Assemble 0.8 from the verified 0.7 ZIP and externally built 0.8 executables."""
+"""Assemble 0.81 from the verified 0.7 ZIP and externally built 0.81 executables."""
 import csv
 import hashlib
 import json
@@ -10,8 +10,8 @@ import zipfile
 
 REPO = Path(__file__).resolve().parents[2]
 WORK = REPO.parent
-BUILD = WORK / 'build/0.8'
-PACKAGE = WORK / 'releases/0.8/AMS2 한국어 패치 CB 0.8'
+BUILD = WORK / 'build/0.81'
+PACKAGE = WORK / 'releases/0.81/AMS2 한국어 패치 오픈베타 0.81'
 BASE_ZIP = WORK / 'releases/0.7/AMS2.CB.0.7.zip'
 
 
@@ -35,15 +35,15 @@ def main():
         assert path.stat().st_size == int(row['bytes']) and sha(path) == row['sha256'].upper()
     overlay = BUILD / 'translation'
     subprocess.run([sys.executable, '-B', str(REPO / 'tools/AMS2-Asset-Studio/build_ui_hotfix.py'),
-                    '--release-root', str(source), '--output', str(overlay), '--version', '0.8'], check=True)
+                    '--release-root', str(source), '--output', str(overlay), '--version', '0.81'], check=True)
     PACKAGE.mkdir(parents=True)
     for directory in ('assets', 'payload', 'runtime'):
         shutil.copytree(source / directory, PACKAGE / directory)
     (PACKAGE / 'manifest').mkdir()
     binaries = BUILD / 'installer'
-    installer_name = 'AMS2 한국어 패치 CB 0.8.exe'
-    shutil.copy2(binaries / 'AMS2-Korean-Patch-CB-0.8.exe', PACKAGE / installer_name)
-    shutil.copy2(REPO / 'installer/0.8/Installer.exe.config', PACKAGE / (installer_name + '.config'))
+    installer_name = 'AMS2 한국어 패치 오픈베타 0.81.exe'
+    shutil.copy2(binaries / 'AMS2-Korean-Patch-OB-0.81.exe', PACKAGE / installer_name)
+    shutil.copy2(REPO / 'installer/0.81/Installer.exe.config', PACKAGE / (installer_name + '.config'))
     changed = []
     for row in rows:
         relative = row['relative_path']
@@ -63,11 +63,11 @@ def main():
     # The unchanged, runtime-tested BFF tool is retained with the hash pinned by BetaCore.
     runtime = PACKAGE / 'runtime/AMS2.DynamicBffPatcher.exe'
     assert sha(runtime) == '4179D08A1452D497D612B0B371BF9C8881AFFDBEAE2389A9A1D393F85FA6AAA5'
-    notes = REPO / 'releases/0.8/RELEASE_NOTES.md'
+    notes = REPO / 'releases/0.81/RELEASE_NOTES.md'
     shutil.copy2(notes, PACKAGE / notes.name)
     manifest = {
-        'schema': 'ams2-kr-closed-beta-release-v08', 'version': '0.8',
-        'package_id': 'AMS2-KR-BETA-0.8-PRETENDARD', 'creator': 'ENGIceBlasT',
+        'schema': 'ams2-kr-open-beta-release-v081', 'version': '0.81',
+        'package_id': 'AMS2-KR-BETA-0.81-PRETENDARD', 'creator': 'ENGIceBlasT',
         'reference_buildid': '24132163', 'baseline_tag': 'v0.7', 'baseline_zip_sha256': sha(BASE_ZIP),
         'direct_files': len(rows), 'changed_direct_files': changed,
         'dynamic_bff_patcher_sha256': sha(runtime), 'launcher_update_protocol': 1,
@@ -75,7 +75,7 @@ def main():
         'pending': ['Multiplayer replay-save dialog', 'VR headset startup', 'Replay time-column clipping'],
     }
     (PACKAGE / 'manifest/release-manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    print('PASS: 0.8 package assembled; 449 direct files, exactly 4 replacements; original menu/HUD retained.')
+    print('PASS: 0.81 package assembled; 449 direct files, exactly 4 replacements; original menu/HUD retained.')
 
 
 if __name__ == '__main__':

@@ -1,4 +1,4 @@
-# 런처 업데이트 — Closed Beta 0.8
+# 런처 업데이트 — Open Beta 0.81
 
 ## 동작
 
@@ -39,18 +39,19 @@ VR 실기 실행, 새 릴리즈를 설치하고 게임을 자동 재실행하는
 
 ## 배포 계약
 
-- 다음 버전의 PackageManifest 버전/PackageId, AssemblyVersion/FileVersion, GitHub tag와 ZIP 이름을 일치시킨다. `AMS2.CB.<버전>.zip` 자산을 사용한다.
+- 다음 버전의 PackageManifest 버전/PackageId, AssemblyVersion/FileVersion, GitHub tag와 ZIP 이름을 일치시킨다. 오픈베타 ZIP의 GitHub 정규화 이름 `AMS2.<버전>.zip`과 기존 `AMS2.CB.<버전>.zip`을 인식한다.
 - 새 설치 프로그램에는 `AssemblyDescription`의 `AMS2 Korean Patch Launcher Update Protocol 1` 표시를 유지한다. 이는 Windows 버전 정보의 `Comments`에 기록된다.
-- 설치 프로그램은 ZIP 내 `manifest/direct-files.tsv`와 같은 폴더에 둔다. 현재 지원하는 설치 파일 이름은 `AMS2-Korean-Patch-CB-<버전>.exe`와 `AMS2 한국어 패치 CB <버전>.exe`다.
+- Open Beta 0.81부터 사용자 실행 파일명은 `AMS2 한국어 패치 오픈베타 0.81.exe`다. 기존 CB 0.8 런처는 새 파일명을 인식하지 못하므로 이번 전환은 ZIP을 내려받아 수동 설치한다. 0.81 업데이터는 기존 CB와 새 오픈베타 이름을 모두 인식한다.
+- 설치 프로그램은 ZIP 내 `manifest/direct-files.tsv`와 같은 폴더에 둔다. `AMS2 한국어 패치 오픈베타 <버전>.exe`와 기존 CB 이름 및 내부 빌드용 OB 이름을 인식한다.
 - payload에는 새 일반/VR 런처와 승인된 번역만 넣고 direct-files.tsv 및 모든 배포 해시를 재생성한다. 개발용 테스트 EXE와 타이머 진단본은 배포하지 않는다.
 - 로컬 시험 적용분은 원복한 후 정식 업데이트를 검사한다. 시험 파일을 기존 설치 기록에 몰래 편입하지 않는다.
 
 ## 재현 검사
 
-`Build-InstallerOutsideRepo.ps1 -Version 0.8`은 `AMS2 Launcher Update Test.exe`도 외부 빌드 폴더에 만든다.
+`Build-InstallerOutsideRepo.ps1 -Version 0.81`은 `AMS2 Launcher Update Test.exe`도 외부 빌드 폴더에 만든다.
 
 ```powershell
-& "$output\AMS2 Launcher Update Test.exe" $newTestDirectory "$output\AMS2-Korean-Patch-CB-0.8.exe"
+& "$output\AMS2 Launcher Update Test.exe" $newTestDirectory "$output\AMS2-Korean-Patch-OB-0.81.exe"
 ```
 
 마지막에 `--live`를 붙이면 GitHub 메타데이터 조회, `--render`는 개발용 창 렌더링,
