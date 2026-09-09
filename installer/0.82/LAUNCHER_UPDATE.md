@@ -1,4 +1,4 @@
-# 런처 업데이트 — Open Beta 0.81
+# 런처 업데이트 — Open Beta 0.82
 
 ## 동작
 
@@ -18,6 +18,9 @@
 
 ## 확인 결과
 
+- 0.82 일반·업데이트 선택·VR 확대 창 렌더링 및 문구 폭 검사 통과. 최신/오프라인/지연 시 실행 결정은 5008/5012/5014ms였으며 게임을 실행하지 않는 검사다.
+- 배포된 0.81 업데이터가 0.82 버전과 새 설치 파일의 실행 규약을 인식함을 확인했다.
+- 아래 초기 런처 개발 결과는 이전 버전에서의 검증 기록이다.
 - 전체 외부 빌드 통과.
 - `0.7`, `0.7.0.0`, `Closed Beta 0.6.87`, `v0.7.1` 비교 및 다운그레이드 거부 통과.
 - 정식 릴리즈·공식 다운로드 주소·해시·크기 검사 통과.
@@ -43,15 +46,15 @@ VR 실기 실행, 새 릴리즈를 설치하고 게임을 자동 재실행하는
 - 새 설치 프로그램에는 `AssemblyDescription`의 `AMS2 Korean Patch Launcher Update Protocol 1` 표시를 유지한다. 이는 Windows 버전 정보의 `Comments`에 기록된다.
 - Open Beta 0.81부터 사용자 실행 파일명은 `AMS2 한국어 패치 오픈베타 0.81.exe`다. 기존 CB 0.8 런처는 새 파일명을 인식하지 못하므로 이번 전환은 ZIP을 내려받아 수동 설치한다. 0.81 업데이터는 기존 CB와 새 오픈베타 이름을 모두 인식한다.
 - 설치 프로그램은 ZIP 내 `manifest/direct-files.tsv`와 같은 폴더에 둔다. `AMS2 한국어 패치 오픈베타 <버전>.exe`와 기존 CB 이름 및 내부 빌드용 OB 이름을 인식한다.
-- payload에는 새 일반/VR 런처와 승인된 번역만 넣고 direct-files.tsv 및 모든 배포 해시를 재생성한다. 개발용 테스트 EXE와 타이머 진단본은 배포하지 않는다.
-- 로컬 시험 적용분은 원복한 후 정식 업데이트를 검사한다. 시험 파일을 기존 설치 기록에 몰래 편입하지 않는다.
+- payload에는 새 일반/VR 런처와 승인된 번역·계기판 수정만 넣고 direct-files.tsv 및 모든 배포 해시를 재생성한다. 개발용 테스트 EXE와 타이머 진단본은 배포하지 않는다.
+- 0.82는 해시가 정확히 일치하는 ERS 두 번째 테스트본도 인식한다. 기존 설치 기록은 직접 고치지 않으며, 새 설치 트랜잭션에서 이전 원본 백업 또는 검증된 역변환 원본을 보존한다. 다른 시험본은 별도로 원복한다.
 
 ## 재현 검사
 
-`Build-InstallerOutsideRepo.ps1 -Version 0.81`은 `AMS2 Launcher Update Test.exe`도 외부 빌드 폴더에 만든다.
+`Build-InstallerOutsideRepo.ps1 -Version 0.82`는 `AMS2 Launcher Update Test.exe`도 외부 빌드 폴더에 만든다.
 
 ```powershell
-& "$output\AMS2 Launcher Update Test.exe" $newTestDirectory "$output\AMS2-Korean-Patch-OB-0.81.exe"
+& "$output\AMS2 Launcher Update Test.exe" $newTestDirectory "$output\AMS2-Korean-Patch-OB-0.82.exe"
 ```
 
 마지막에 `--live`를 붙이면 GitHub 메타데이터 조회, `--render`는 개발용 창 렌더링,

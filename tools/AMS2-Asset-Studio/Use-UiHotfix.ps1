@@ -24,6 +24,20 @@ if ($Action -ne 'Status' -and @(Get-Process -Name 'AMS2','AMS2AVX','AMS2 Korean 
 }
 $manifest = Get-Content -LiteralPath (Join-Path $CandidateDir 'manifest.json') -Raw -Encoding UTF8 | ConvertFrom-Json
 $allowed = @('text/drivers.tdb','text/game.tdb')
+$created = @()
+if ($manifest.PSObject.Properties['scope'] -and $manifest.scope -in @('ERS_COCKPIT_TEST','ERS_COCKPIT_ARCHIVE_TEST')) {
+    $allowed = @('gui/display_formula_hybrid_gen1.bgui','gui/display_formula_ultimate_2019.bgui',
+                 'gui/display_formula_ultimate_2022.bgui','gui/display_formula_ultimate_2024.bgui',
+                 'gui/display_lamborghini_sc63.bgui','gui/display_lamborghini_sc63_IMSA.bgui',
+                 'gui/display_porsche_963.bgui','gui/display_porsche_963_IMSA.bgui')
+    $created = @(foreach ($size in @(20,40,52,60)) {
+        "gui/kr081_ers_value_$size.bfont"
+        "gui/kr081_ers_value_$($size)_00.dds"
+        "gui/kr081_ers_value_$($size)_01.dds"
+    })
+    $allowed += $created
+    if ($manifest.scope -eq 'ERS_COCKPIT_ARCHIVE_TEST') { $allowed += 'Pakfiles/HUDDISPLAY.bff' }
+}
 if ($manifest.PSObject.Properties['scope'] -and $manifest.scope -eq 'REPLAY_TIME_DIAGNOSTIC') {
     $allowed = @('gui/hud_leaderboard2_1_6.bgui','hud_leaderboard2_1_6.bgui')
 }
@@ -66,9 +80,19 @@ function Replace-Exact([string]$Source, [string]$Target, [string]$Expected) {
         if ([IO.File]::Exists($temp)) { [IO.File]::Delete($temp) }
     }
 }
+function Restore-Item($Item) {
+    if ($Item.row.before_sha256 -eq 'MISSING') {
+        $current = Hash $Item.live
+        if ($current -notin @('MISSING', $Item.row.after_sha256)) { throw "Refusing to delete changed test font: $($Item.live)" }
+        if ($current -ne 'MISSING') { [IO.File]::Delete($Item.live) }
+    } else { Replace-Exact $Item.backup $Item.live $Item.row.before_sha256 }
+}
 
 $items = foreach ($row in $manifest.files) {
-    if ($row.before_sha256 -notmatch '^[a-fA-F0-9]{64}$' -or $row.after_sha256 -notmatch '^[a-fA-F0-9]{64}$') { throw 'Invalid manifest hash.' }
+    if ($row.path -in $created) {
+        if ($row.before_sha256 -ne 'MISSING') { throw 'New ERS fonts must be absent before the test.' }
+    } elseif ($row.before_sha256 -notmatch '^[a-fA-F0-9]{64}$') { throw 'Invalid original hash.' }
+    if ($row.after_sha256 -notmatch '^[a-fA-F0-9]{64}$') { throw 'Invalid candidate hash.' }
     $live = Inside $GameDir $row.path
     $payload = Inside (Join-Path $CandidateDir 'payload') $row.path
     $backup = Inside $BackupRoot $row.path
@@ -87,6 +111,10 @@ $items = foreach ($row in $manifest.files) {
 if ($Action -eq 'Apply') {
     # Complete and verify every backup before changing any game file.
     foreach ($item in $items) {
+        if ($item.row.before_sha256 -eq 'MISSING') {
+            if ([IO.File]::Exists($item.backup)) { throw 'Unexpected backup for a newly created font.' }
+            continue
+        }
         if (-not [IO.File]::Exists($item.backup)) {
             [IO.Directory]::CreateDirectory([IO.Path]::GetDirectoryName($item.backup)) | Out-Null
             [IO.File]::Copy($item.live, $item.backup, $false)
@@ -98,20 +126,22 @@ if ($Action -eq 'Apply') {
     } catch {
         $failure = $_
         foreach ($item in $items) {
-            try { Replace-Exact $item.backup $item.live $item.row.before_sha256 }
+            try { Restore-Item $item }
             catch { Write-Warning "Rollback failed: $($item.live): $_" }
         }
         throw $failure
     }
 } elseif ($Action -eq 'Restore') {
-    foreach ($item in $items) { Replace-Exact $item.backup $item.live $item.row.before_sha256 }
+    foreach ($item in $items) { Restore-Item $item }
 }
 $observed = @($items | ForEach-Object {
     $value = Hash $_.live
     [pscustomobject]@{ path=$_.row.path; sha256=$value; original=($value -eq $_.row.before_sha256); candidate=($value -eq $_.row.after_sha256) }
 })
 $state = if (@($observed | Where-Object { -not $_.candidate }).Count -eq 0) { 'TEST_APPLIED' }
-         elseif (@($observed | Where-Object { -not $_.original }).Count -eq 0) { 'ORIGINAL_0.7' }
+         elseif (@($observed | Where-Object { -not $_.original }).Count -eq 0) {
+             if ($created.Count) { 'ORIGINAL_0.81' } else { 'ORIGINAL_0.7' }
+         }
          else { 'MIXED_OR_CHANGED' }
 $result = [ordered]@{ action=$Action; state=$state; version=$manifest.version; game=$GameDir; backup=$BackupRoot; files=$observed }
 $json = $result | ConvertTo-Json -Depth 4

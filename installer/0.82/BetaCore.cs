@@ -25,8 +25,8 @@ namespace Ams2KoreanBeta
 
     internal sealed class PackageManifest
     {
-        public const string PackageId = "AMS2-KR-BETA-0.81-PRETENDARD";
-        public const string Version = "Open Beta 0.81";
+        public const string PackageId = "AMS2-KR-BETA-0.82-PRETENDARD";
+        public const string Version = "Open Beta 0.82";
         public const string AppId = "1066890";
         public const string BuildId = "24132163";
         public const string Branch = "public";
@@ -79,6 +79,7 @@ namespace Ams2KoreanBeta
         {
             foreach (DirectFile f in DirectFiles) RequireFile(DirectSource(f), f.Bytes, f.Sha256, "payload");
             RequireFile(BffPatcherSource, BffPatcherBytes, BffPatcherSha256, "IGPHASEHUD dynamic patcher");
+            ErsArchivePatch.ValidatePackage(ReleaseRoot);
         }
 
         internal static void RequireFile(string path, long bytes, string hash, string label)
@@ -477,6 +478,8 @@ namespace Ams2KoreanBeta
         private string stateRoot;
         private string igphaseHudCandidatePath;
         private string igphaseHudPatchReportPath;
+        private string ersCandidatePath;
+        private string ersOriginalPath;
 
         public BetaEngine(PackageManifest package, Action<string> logger, bool mock)
         {
@@ -719,6 +722,9 @@ namespace Ams2KoreanBeta
             Directory.CreateDirectory(tempRoot);
             igphaseHudCandidatePath = Path.Combine(tempRoot, "IGPHASEHUD.candidate.bff");
             igphaseHudPatchReportPath = Path.Combine(tempRoot, "IGPHASEHUD.dynamic-patch.json");
+            ersCandidatePath = Path.Combine(tempRoot, "HUDDISPLAY.candidate.bff");
+            ersOriginalPath = Path.Combine(tempRoot, "HUDDISPLAY.original.bff");
+            ErsArchivePatch.Prepare(manifest.ReleaseRoot, PackageManifest.SafeJoin(gameDir, ErsArchivePatch.RelativePath), ersCandidatePath, ersOriginalPath);
             FileOps.RunBffTool(manifest.BffPatcherSource, "patch", gameDir, igphaseHud, igphaseHudCandidatePath, igphaseHudPatchReportPath);
             if (!File.Exists(igphaseHudCandidatePath) || new FileInfo(igphaseHudCandidatePath).Length != new FileInfo(igphaseHud).Length)
                 throw new InvalidOperationException("IGPHASEHUD 동적 패치 후보 검증에 실패했습니다.");
@@ -743,8 +749,18 @@ namespace Ams2KoreanBeta
             if (String.IsNullOrWhiteSpace(igphaseHudCandidatePath) || !File.Exists(igphaseHudCandidatePath))
                 throw new InvalidOperationException("IGPHASEHUD 동적 패치 후보가 없습니다.");
             DirectState bff = CreateTransactionRecord(PackageManifest.IgphaseHudRelativePath, FileOps.Sha256(igphaseHudCandidatePath), new FileInfo(igphaseHudCandidatePath).Length, s.BackupId);
-            ResolveDynamicBffOriginal(bff, previous, s.BackupId);
+            ResolveCanonicalOriginal(bff, false, new[] { PackageManifest.KnownStockIgphaseHudSha256 }, history, s.BackupId);
             s.Files.Add(bff);
+            DirectState ers = CreateTransactionRecord(ErsArchivePatch.RelativePath, ErsArchivePatch.PatchedSha, ErsArchivePatch.ArchiveBytes, s.BackupId);
+            if (ers.InstallBeforeSha == ErsArchivePatch.PatchedSha && !history.Any(item => item.State.Files.Any(old =>
+                old.RelativePath.Equals(ers.RelativePath, StringComparison.OrdinalIgnoreCase) && old.AfterSha == ers.InstallBeforeSha)))
+            {
+                // Adopt the exact pre-release ERS test archive; its verified inverse supplies the stock backup.
+                ers.Action = "modified"; ers.BeforeSha = ErsArchivePatch.StockSha; ers.BeforeBytes = ErsArchivePatch.ArchiveBytes;
+                CopyCanonicalBackup(ersOriginalPath, ers, s.BackupId);
+            }
+            else ResolveCanonicalOriginal(ers, false, new[] { ErsArchivePatch.StockSha }, history, s.BackupId);
+            s.Files.Add(ers);
             ValidateBackupContract(s);
             return s;
         }
@@ -775,7 +791,8 @@ namespace Ams2KoreanBeta
             foreach (PreviousInstallInfo item in history.OrderByDescending(x => x.InstalledUtc))
             {
                 DirectState old = item.State.Files.FirstOrDefault(x => x.RelativePath.Equals(target.RelativePath, StringComparison.OrdinalIgnoreCase));
-                if (old == null || !target.InstallBeforeSha.Equals(old.AfterSha, StringComparison.OrdinalIgnoreCase)) continue;
+                if (old == null || !(target.InstallBeforeSha.Equals(old.AfterSha, StringComparison.OrdinalIgnoreCase) ||
+                    (target.InstallBeforeSha.Equals(target.AfterSha, StringComparison.OrdinalIgnoreCase) && accepted.Contains(old.AfterSha)))) continue;
                 if (old.Action == "created" && old.BeforeSha == "ABSENT")
                 {
                     target.Action = "created"; target.BeforeSha = "ABSENT"; target.BeforeBytes = 0; return;
@@ -788,6 +805,14 @@ namespace Ams2KoreanBeta
                     CopyCanonicalBackup(source, target, backupId);
                     return;
                 }
+            }
+            if (!stockIsAbsent && target.InstallBeforeSha == target.AfterSha && accepted.Count == 1 && ErsArchivePatch.IsNewLooseLayout(target.RelativePath))
+            {
+                string recovered = Path.Combine(Path.GetDirectoryName(ersOriginalPath), Path.GetFileName(target.RelativePath));
+                ErsArchivePatch.RestoreLooseOriginal(PackageManifest.SafeJoin(gameDir, target.RelativePath), recovered, accepted.Single());
+                target.Action = "modified"; target.BeforeSha = accepted.Single(); target.BeforeBytes = new FileInfo(recovered).Length;
+                CopyCanonicalBackup(recovered, target, backupId);
+                return;
             }
             if (stockIsAbsent && target.InstallBeforeExists &&
                 (target.InstallBeforeSha.Equals(target.AfterSha, StringComparison.OrdinalIgnoreCase) || accepted.Contains(target.InstallBeforeSha)))
@@ -821,34 +846,16 @@ namespace Ams2KoreanBeta
             else FileOps.CopyNewExact(source, destination, target.BeforeSha);
         }
 
-        private void ResolveDynamicBffOriginal(DirectState target, PreviousInstallInfo previous, string backupId)
-        {
-            if (!target.InstallBeforeExists) throw new InvalidOperationException("IGPHASEHUD.bff가 없습니다.");
-            if (previous != null)
-            {
-                DirectState old = previous.State.Files.FirstOrDefault(item => item.RelativePath.Equals(target.RelativePath, StringComparison.OrdinalIgnoreCase));
-                if (old != null && old.Action == "modified" && target.InstallBeforeSha.Equals(old.AfterSha, StringComparison.OrdinalIgnoreCase))
-                {
-                    string source = PackageManifest.SafeJoin(Path.Combine(previous.StateRoot, "original", previous.State.BackupId), target.RelativePath);
-                    PackageManifest.RequireFile(source, old.BeforeBytes, old.BeforeSha, "이전 버전 IGPHASEHUD 원본 백업");
-                    target.Action = "modified";
-                    target.BeforeSha = old.BeforeSha;
-                    target.BeforeBytes = old.BeforeBytes;
-                    CopyCanonicalBackup(source, target, backupId);
-                    return;
-                }
-            }
-            target.Action = "modified";
-            target.BeforeSha = target.InstallBeforeSha;
-            target.BeforeBytes = target.InstallBeforeBytes;
-            CopyCanonicalBackup(PackageManifest.SafeJoin(gameDir, target.RelativePath), target, backupId);
-        }
-
         private void ApplyFiles(InstallState state)
         {
             Dictionary<string, DirectFile> table = manifest.DirectFiles.ToDictionary(x => x.RelativePath, StringComparer.OrdinalIgnoreCase);
             foreach (DirectState d in state.Files)
             {
+                if (d.RelativePath.Equals(ErsArchivePatch.RelativePath, StringComparison.OrdinalIgnoreCase))
+                {
+                    FileOps.ReplaceExact(ersCandidatePath, PackageManifest.SafeJoin(gameDir, d.RelativePath), d.AfterSha);
+                    continue;
+                }
                 if (d.RelativePath.Equals(PackageManifest.IgphaseHudRelativePath, StringComparison.OrdinalIgnoreCase))
                 {
                     FileOps.ApplyIgphaseHudCandidate(igphaseHudCandidatePath, PackageManifest.SafeJoin(gameDir, d.RelativePath), d.AfterBytes, d.AfterSha);
@@ -924,7 +931,7 @@ namespace Ams2KoreanBeta
 
         private void ValidateInstalled(InstallState state)
         {
-            if (state.Files.Count != manifest.DirectFiles.Count + 1) throw new InvalidOperationException("설치 상태 계약 불일치");
+            if (state.Files.Count != manifest.DirectFiles.Count + 2) throw new InvalidOperationException("설치 상태 계약 불일치");
             foreach (DirectState d in state.Files) PackageManifest.RequireFile(PackageManifest.SafeJoin(gameDir, d.RelativePath), d.AfterBytes, d.AfterSha, "설치 파일");
         }
 
@@ -1189,6 +1196,8 @@ namespace Ams2KoreanBeta
             string candidate = igphaseHudCandidatePath;
             igphaseHudCandidatePath = null;
             igphaseHudPatchReportPath = null;
+            ersCandidatePath = null;
+            ersOriginalPath = null;
             if (String.IsNullOrWhiteSpace(candidate)) return;
             try
             {

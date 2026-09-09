@@ -23,6 +23,31 @@ AMS2 한국어 UI 자산을 한 곳에서 편집하는 개발용 도구다. 입�
 
 기준 BFONT와 `_00.dds`는 출력 포맷과 AMS2 코드포인트 계약을 제공한다. 일반 UI 폰트만 대상으로 사용하고 아이콘/차량 LCD 전용 폰트에는 적용하지 않는다.
 
+### ERS 모드명 표시 테스트
+
+`build_ers_hotfix.py`는 0.81에서 확인된 계기판 8개·ERS 모드명 13곳에 별도의 Pretendard 폰트를 연결한다. 원본 Arial 폰트와 숫자 전용 LCD 폰트는 유지하며, BGUI는 길이가 같은 폰트 경로만 교체한다. 입력 해시·문자 누락·그림 데이터·변경 범위를 검사한 뒤 별도 출력 폴더에 테스트본과 `glyph-preview.png`를 만든다. 게임 테스트 통과 전에는 릴리즈에 포함하지 않는다.
+
+2026-09-09 Gen1 테스트에서 개별 BGUI만 바꾼 첫 테스트는 ERS 별표를 해결하지 못했다. `HUDDISPLAY.bff` 안에도 원래 계기판과 Arial 연결이 남아 있음을 확인했다. `build_ers_archive_hotfix.py`는 첫 단계의 폰트/개별 파일 결과를 받아 묶음 파일 안의 13곳도 수정한다. 원본 묶음 SHA-256을 고정하고, 재추출한 나머지 계기판 319개와 모든 비대상 바이트가 동일함을 검증한다. 현재 배포 전 테스트는 이 두 번째 결과를 대상으로 진행한다.
+
+같은 날 두 번째 테스트본에서 사용자가 Gen1의 ERS `균형` 정상 표시를 확인했다. 다른 ERS 모드·모드 변경 알림·다른 차종은 아직 실차 확인되지 않았다. 이 결과는 전체 차종 테스트 통과를 의미하지 않는다.
+
+0.82 배포는 이 두 번째 결과를 사용한다. `tools/repository/Build-Release082.py`가 기존 0.81 패키지에 계기판·폰트를 반영하고, 묶음 파일은 검증된 원본/수정본 사이의 gzip 압축 XOR 차이만 배포한다. 인스톨러는 양쪽 전체 해시가 맞을 때만 후보를 적용하며, 0.81 업데이트 및 정확히 일치하는 테스트본의 원본 백업을 새 설치 기록으로 승계한다. 미확인 게임 테스트 범위는 릴리즈 노트에 명시한다.
+
+```powershell
+python -B build_ers_hotfix.py --source-root 'E:/SteamLibrary/steamapps/common/Automobilista 2' --output 'E:/AMS2_Korean_Work/build/ers-test'
+./test_ui_hotfix.ps1 -CandidateDir 'E:/AMS2_Korean_Work/build/ers-test' -SourceRoot 'E:/SteamLibrary/steamapps/common/Automobilista 2' -OutputRoot 'E:/AMS2_Korean_Work/build/ers-checks'
+./Use-UiHotfix.ps1 -Action Apply -CandidateDir 'E:/AMS2_Korean_Work/build/ers-test'
+./Use-UiHotfix.ps1 -Action Restore -CandidateDir 'E:/AMS2_Korean_Work/build/ers-test'
+```
+
+두 번째 단계는 아래처럼 실행한다. `--bff-tool`에는 기존 `vendor/BffEntryInspect`의 빌드된 실행 파일을 지정한다. 출력 폴더는 새 경로여야 하며, 게임의 원래 `HUDDISPLAY.bff`가 필요하다. 테스트 직전 상태로 복구한 뒤 두 번째 출력 폴더를 `Use-UiHotfix.ps1`의 `CandidateDir`로 사용한다.
+
+```powershell
+python -B build_ers_archive_hotfix.py --game-dir 'E:/SteamLibrary/steamapps/common/Automobilista 2' --direct-candidate 'E:/AMS2_Korean_Work/build/ers-test' --bff-tool 'E:/AMS2_Korean_Work/build/repo-tools/BffEntryInspect/bin/Release/netcoreapp3.1/BffEntryInspect.exe' --output 'E:/AMS2_Korean_Work/build/ers-archive-test'
+```
+
+적용 전 게임을 종료한다. 적용 도구는 원본 8개(묶음 포함 테스트는 9개)를 백업하고 새 폰트의 기존 파일 충돌을 거부한다. 복구는 백업의 원본을 복원하고 테스트에서 만든 폰트만 제거한다. 지원되는 ERS 모드를 전환하며 평상시 모드명·변경 알림·다른 계기판 숫자를 확인한다.
+
 ### BGUI 레이아웃/폰트
 
 - 모든 Text 레코드 검색

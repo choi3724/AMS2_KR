@@ -34,13 +34,13 @@ namespace Ams2KoreanBeta
             Require(GithubUpdater.IsNewer("v0.7", "Closed Beta 0.6.87"), "0.7 upgrade ordering");
             Require(GithubUpdater.IsNewer("v0.7.1", "Closed Beta 0.7"), "patch upgrade ordering");
             Require(!GithubUpdater.IsNewer("v0.6.87", "0.7"), "downgrade blocked");
-            Require(GithubUpdater.IsNewer("v0.81", "Closed Beta 0.8"), "open beta upgrade ordering");
-            Require(!GithubUpdater.IsNewer("v0.81", "Open Beta 0.81"), "open beta version equality");
+            Require(GithubUpdater.IsNewer("v0.82", "Open Beta 0.81"), "open beta upgrade ordering");
+            Require(!GithubUpdater.IsNewer("v0.82", "Open Beta 0.82"), "open beta version equality");
             Refuses(() => GithubUpdater.ParseVersion("not-a-version"), "malformed version accepted");
-            Refuses(() => GithubUpdater.ParseVersion("v0.82-test1"), "prerelease accepted");
-            string json = "{\"tag_name\":\"v0.82\",\"html_url\":\"https://github.com/choi3724/AMS2_KR/releases/tag/v0.82\",\"draft\":false,\"prerelease\":false,\"author\":{\"html_url\":\"https://example.com\"},\"assets\":[{\"name\":\"AMS2.0.82.zip\",\"size\":100,\"digest\":\"sha256:" + new string('a', 64) + "\",\"browser_download_url\":\"https://github.com/choi3724/AMS2_KR/releases/download/v0.82/AMS2.0.82.zip\"}]}";
+            Refuses(() => GithubUpdater.ParseVersion("v0.83-test1"), "prerelease accepted");
+            string json = "{\"tag_name\":\"v0.83\",\"html_url\":\"https://github.com/choi3724/AMS2_KR/releases/tag/v0.83\",\"draft\":false,\"prerelease\":false,\"author\":{\"html_url\":\"https://example.com\"},\"assets\":[{\"name\":\"AMS2.0.83.zip\",\"size\":100,\"digest\":\"sha256:" + new string('a', 64) + "\",\"browser_download_url\":\"https://github.com/choi3724/AMS2_KR/releases/download/v0.83/AMS2.0.83.zip\"}]}";
             GithubReleaseInfo release = GithubUpdater.ParseRelease(json);
-            Require(GithubUpdater.ParseRelease(json.Replace("AMS2.0.82.zip", "AMS2.CB.0.82.zip")).AssetUrl != null, "legacy ZIP naming rejected");
+            Require(GithubUpdater.ParseRelease(json.Replace("AMS2.0.83.zip", "AMS2.CB.0.83.zip")).AssetUrl != null, "legacy ZIP naming rejected");
             Require(release.AssetBytes == 100 && release.Sha256.Length == 64, "release asset extraction");
             Refuses(() => GithubUpdater.ParseRelease(json.Replace("\"draft\":false", "\"draft\":true")), "draft accepted");
             Refuses(() => GithubUpdater.ParseRelease(json.Replace("sha256:", "sha1:")), "wrong digest accepted");
@@ -69,9 +69,9 @@ namespace Ams2KoreanBeta
             string package = Path.Combine(output, "installer");
             Directory.CreateDirectory(Path.Combine(package, "manifest"));
             File.WriteAllText(Path.Combine(package, "manifest/direct-files.tsv"), "header");
-            File.Copy(args[1], Path.Combine(package, "AMS2 한국어 패치 오픈베타 0.81.exe"));
-            Require(File.Exists(GithubUpdater.FindInstaller(package, "v0.81")), "new installer protocol not recognized");
-            Refuses(() => GithubUpdater.FindInstaller(package, "v0.82"), "installer version mismatch accepted");
+            File.Copy(args[1], Path.Combine(package, "AMS2 한국어 패치 오픈베타 0.82.exe"));
+            Require(File.Exists(GithubUpdater.FindInstaller(package, "v0.82")), "new installer protocol not recognized");
+            Refuses(() => GithubUpdater.FindInstaller(package, "v0.83"), "installer version mismatch accepted");
             Require(GameLauncher.Arguments(false) == "-applaunch 1066890 -novr -lang=Korean -looseloadtext", "desktop Steam arguments");
             Require(GameLauncher.Arguments(true) == "-applaunch 1066890 -forcevr -lang=Korean -looseloadtext", "VR Steam arguments");
             Console.WriteLine("PASS: version ordering, release validation, extraction boundaries, cancellation, installer protocol, desktop/VR launch arguments. No game or installer executed.");
@@ -86,14 +86,14 @@ namespace Ams2KoreanBeta
             if (args.Length > 2 && args[2] == "--startup")
             {
                 Application.EnableVisualStyles(); Application.SetCompatibleTextRenderingDefault(false);
-                VerifyStartup(output, "current", Task.FromResult(new GithubReleaseInfo { Tag = "v0.81" }), false, false);
+                VerifyStartup(output, "current", Task.FromResult(new GithubReleaseInfo { Tag = "v0.82" }), false, false);
                 var offline = new TaskCompletionSource<GithubReleaseInfo>(); offline.SetException(new IOException("offline test"));
                 VerifyStartup(output, "offline", offline.Task, false, false);
                 var slow = new TaskCompletionSource<GithubReleaseInfo>();
                 VerifyStartup(output, "slow lookup", slow.Task, false, false);
                 slow.SetResult(release); Application.DoEvents();
                 VerifyStartup(output, "new version waits", Task.FromResult(release), true, false);
-                VerifyStartup(output, "manual launch", Task.FromResult(new GithubReleaseInfo { Tag = "v0.81" }), false, true);
+                VerifyStartup(output, "manual launch", Task.FromResult(new GithubReleaseInfo { Tag = "v0.82" }), false, true);
                 Console.WriteLine("PASS: five-second countdown, offline/slow fallback, new-version pause, and immediate launch. No game or installer executed.");
             }
             if (args.Length > 2 && (args[2] == "--live" || args[2] == "--download-legacy"))
@@ -147,10 +147,10 @@ namespace Ams2KoreanBeta
             {
                 HideTestWindow(form); form.Show();
                 if (scale != 1) form.Scale(new SizeF(scale, scale));
-                if (info != null) form.OfferUpdate(info, "0.81");
+                if (info != null) form.OfferUpdate(info, "0.82");
                 form.PerformLayout();
                 Require(form.Controls.Find("PatchCreator", true)[0].Text == "한글 패치 제작자 : ENGIceBlasT", "creator wording differs");
-                Require(form.Controls.Find("PatchVersion", true)[0].Text.Contains("0.81"), "launcher must display 0.81");
+                Require(form.Controls.Find("PatchVersion", true)[0].Text.Contains("0.82"), "launcher must display 0.82");
                 Console.WriteLine("FONT: " + form.Font.FontFamily.Name + " / " + name);
                 using (var bitmap = new Bitmap(form.Width, form.Height))
                 {

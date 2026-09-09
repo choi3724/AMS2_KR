@@ -115,7 +115,7 @@ namespace Ams2KoreanBeta
         public InstallerForm()
         {
             EnsureEmbeddedTypeface();
-            Text = "Automobilista 2 한국어 패치 — Open Beta 0.81";
+            Text = "Automobilista 2 한국어 패치 — Open Beta 0.82";
             Font = UiFont(9F);
             BackColor = Color.FromArgb(115, 18, 21);
             Rectangle workArea = Screen.PrimaryScreen.WorkingArea;
@@ -170,7 +170,7 @@ namespace Ams2KoreanBeta
         {
             Panel bar = new Panel { Dock = DockStyle.Fill, BackColor = Color.FromArgb(15, 13, 15), Margin = new Padding(-12, 0, -12, 0) };
             Label icon = new Label { Text = "▰", ForeColor = AccentBright, Font = new Font("Segoe UI Symbol", 12F, FontStyle.Bold), TextAlign = ContentAlignment.MiddleCenter, Location = new Point(14, 0), Size = new Size(35, 43) };
-            Label title = new Label { Text = "Automobilista 2 한국어 패치 — Open Beta 0.81", ForeColor = TextPrimary, Font = UiFont(10.5F), TextAlign = ContentAlignment.MiddleLeft, Location = new Point(49, 0), Size = new Size(720, 43) };
+            Label title = new Label { Text = "Automobilista 2 한국어 패치 — Open Beta 0.82", ForeColor = TextPrimary, Font = UiFont(10.5F), TextAlign = ContentAlignment.MiddleLeft, Location = new Point(49, 0), Size = new Size(720, 43) };
             Button minimize = TitleButton("—"); Button maximize = TitleButton("□"); Button exit = TitleButton("×");
             minimize.Click += delegate { WindowState = FormWindowState.Minimized; };
             maximize.Click += delegate { WindowState = WindowState == FormWindowState.Maximized ? FormWindowState.Normal : FormWindowState.Maximized; };
@@ -193,7 +193,7 @@ namespace Ams2KoreanBeta
         {
             Panel footer = new Panel { Dock = DockStyle.Fill, BackColor = Color.FromArgb(28, 13, 15), Margin = new Padding(-12, 6, -12, 0) };
             Label ready = new Label { Text = "●   준비 완료", ForeColor = Color.FromArgb(210, 201, 198), Font = UiFont(9F, FontStyle.Bold), TextAlign = ContentAlignment.MiddleLeft, Location = new Point(24, 0), Size = new Size(180, 37) };
-            Label version = new Label { Text = "Automobilista 2 한국어 패치 — Open Beta 0.81", ForeColor = Color.FromArgb(131, 118, 117), Font = UiFont(8.5F), TextAlign = ContentAlignment.MiddleRight, Anchor = AnchorStyles.Top | AnchorStyles.Right, Size = new Size(430, 37) };
+            Label version = new Label { Text = "Automobilista 2 한국어 패치 — Open Beta 0.82", ForeColor = Color.FromArgb(131, 118, 117), Font = UiFont(8.5F), TextAlign = ContentAlignment.MiddleRight, Anchor = AnchorStyles.Top | AnchorStyles.Right, Size = new Size(430, 37) };
             footer.Controls.AddRange(new Control[] { ready, version });
             footer.Resize += delegate { version.Left = footer.ClientSize.Width - version.Width - 26; };
             return footer;
