@@ -41,12 +41,9 @@ def main():
         shutil.copytree(source / directory, PACKAGE / directory)
     (PACKAGE / 'manifest').mkdir()
     binaries = BUILD / 'installer'
-    for old, new in {
-        'AMS2-Korean-Patch-CB-0.8.exe': 'AMS2 한국어 패치 CB 0.8.exe',
-        'AMS2-Korean-Patch-CB-0.8-Emergency-Restore.exe': 'AMS2 한국어 패치 CB 0.8 긴급 복구.exe',
-    }.items():
-        shutil.copy2(binaries / old, PACKAGE / new)
-        shutil.copy2(REPO / 'installer/0.8/Installer.exe.config', PACKAGE / (new + '.config'))
+    installer_name = 'AMS2 한국어 패치 CB 0.8.exe'
+    shutil.copy2(binaries / 'AMS2-Korean-Patch-CB-0.8.exe', PACKAGE / installer_name)
+    shutil.copy2(REPO / 'installer/0.8/Installer.exe.config', PACKAGE / (installer_name + '.config'))
     changed = []
     for row in rows:
         relative = row['relative_path']

@@ -8,6 +8,7 @@ Source repository for the unofficial Automobilista 2 Korean patch and its author
 - Author: ENGIceBlasT
 - Reference game build: Steam public build 24132163
 - After installation, launch through `AMS2 Korean Launcher.exe` or an installer-created shortcut.
+- To remove the patch, choose `제거 / 복구` in the installer. No separate emergency removal tool is distributed.
 
 ## Repository boundary
 

@@ -48,7 +48,6 @@ if (Test-Path -LiteralPath (Join-Path $source 'GithubUpdater.cs')) {
     $launcherResources += '/resource:' + (Join-Path $source 'assets\Pretendard-Medium.otf') + ',Ams2KoreanBeta.Pretendard'
 }
 Invoke-Csc 'winexe' 'Ams2KoreanBeta.InstallerProgram' (Join-Path $output "AMS2-Korean-Patch-CB-$Version.exe") (@((Join-Path $source 'InstallerProgram.cs'),$core,$assembly) + $shared + $update) $win32
-Invoke-Csc 'winexe' 'Ams2KoreanBeta.RestoreProgram' (Join-Path $output "AMS2-Korean-Patch-CB-$Version-Emergency-Restore.exe") (@((Join-Path $source 'RestoreProgram.cs'),$core,$assembly) + $shared) $win32
 Invoke-Csc 'winexe' 'Ams2KoreanBeta.LauncherProgram' (Join-Path $output 'AMS2 Korean Launcher.exe') (@((Join-Path $source 'LauncherProgram.cs'),$assembly) + $shared) ($win32 + $launcherResources)
 Invoke-Csc 'winexe' 'Ams2KoreanBeta.LauncherProgram' (Join-Path $output 'AMS2 Korean VR Launcher.exe') (@((Join-Path $source 'LauncherProgram.cs'),$assembly) + $shared) ($win32 + $launcherResources + '/define:VR_LAUNCHER')
 Invoke-Csc 'exe' 'Ams2KoreanBeta.TestCliProgram' (Join-Path $output 'AMS2 Korean Patch TestCli.exe') (@((Join-Path $source 'TestCliProgram.cs'),$core,$assembly) + $shared)
