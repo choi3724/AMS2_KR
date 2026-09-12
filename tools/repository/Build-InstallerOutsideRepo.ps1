@@ -1,6 +1,7 @@
 param(
     [string]$Version = '0.82',
-    [string]$WorkRoot = 'E:\AMS2_Korean_Work'
+    [string]$WorkRoot = 'E:\AMS2_Korean_Work',
+    [string]$CompatibilityDataRoot = ''
 )
 
 $ErrorActionPreference = 'Stop'
@@ -41,18 +42,31 @@ $manifest = Join-Path $source 'app.manifest'
 $win32 = @("/win32icon:$icon", "/win32manifest:$manifest")
 
 $shared = @('GameLauncher.cs','GithubUpdater.cs' | ForEach-Object { Join-Path $source $_ } | Where-Object { Test-Path -LiteralPath $_ })
+$compatibility = Join-Path $source 'GameUpdateCompatibility.cs'
+$compatibilityResources = @()
+$launcherCore = @()
+if (Test-Path -LiteralPath $compatibility) {
+    if (-not $CompatibilityDataRoot) { throw 'CompatibilityDataRoot is required for an update-aware installer/launcher.' }
+    $shared += $compatibility
+    $launcherCore = $core
+    foreach ($name in @('rules.json','IGPHASEHUD.xor.gz','HUDDISPLAY.xor.gz')) {
+        $path = Join-Path $CompatibilityDataRoot $name
+        if (-not (Test-Path -LiteralPath $path)) { throw "Missing compatibility data: $path" }
+        $compatibilityResources += '/resource:' + $path + ',Ams2KoreanBeta.Compatibility.' + $name
+    }
+}
 $update = @(Join-Path $source 'InstallerUpdate.cs' | Where-Object { Test-Path -LiteralPath $_ })
 $launcherResources = @()
 if (Test-Path -LiteralPath (Join-Path $source 'GithubUpdater.cs')) {
     $launcherResources = @('/resource:' + (Join-Path $source 'assets\installer-hero.png') + ',Ams2KoreanBeta.LauncherHero')
     $launcherResources += '/resource:' + (Join-Path $source 'assets\Pretendard-Medium.otf') + ',Ams2KoreanBeta.Pretendard'
 }
-Invoke-Csc 'winexe' 'Ams2KoreanBeta.InstallerProgram' (Join-Path $output "AMS2-Korean-Patch-OB-$Version.exe") ((@((Join-Path $source 'InstallerProgram.cs'),$assembly) + $core) + $shared + $update) $win32
-Invoke-Csc 'winexe' 'Ams2KoreanBeta.LauncherProgram' (Join-Path $output 'AMS2 Korean Launcher.exe') (@((Join-Path $source 'LauncherProgram.cs'),$assembly) + $shared) ($win32 + $launcherResources)
-Invoke-Csc 'winexe' 'Ams2KoreanBeta.LauncherProgram' (Join-Path $output 'AMS2 Korean VR Launcher.exe') (@((Join-Path $source 'LauncherProgram.cs'),$assembly) + $shared) ($win32 + $launcherResources + '/define:VR_LAUNCHER')
-Invoke-Csc 'exe' 'Ams2KoreanBeta.TestCliProgram' (Join-Path $output 'AMS2 Korean Patch TestCli.exe') ((@((Join-Path $source 'TestCliProgram.cs'),$assembly) + $core) + $shared)
+Invoke-Csc 'winexe' 'Ams2KoreanBeta.InstallerProgram' (Join-Path $output "AMS2-Korean-Patch-OB-$Version.exe") ((@((Join-Path $source 'InstallerProgram.cs'),$assembly) + $core) + $shared + $update) ($win32 + $compatibilityResources)
+Invoke-Csc 'winexe' 'Ams2KoreanBeta.LauncherProgram' (Join-Path $output 'AMS2 Korean Launcher.exe') (@((Join-Path $source 'LauncherProgram.cs'),$assembly) + $shared + $launcherCore) ($win32 + $launcherResources + $compatibilityResources)
+Invoke-Csc 'winexe' 'Ams2KoreanBeta.LauncherProgram' (Join-Path $output 'AMS2 Korean VR Launcher.exe') (@((Join-Path $source 'LauncherProgram.cs'),$assembly) + $shared + $launcherCore) ($win32 + $launcherResources + $compatibilityResources + '/define:VR_LAUNCHER')
+Invoke-Csc 'exe' 'Ams2KoreanBeta.TestCliProgram' (Join-Path $output 'AMS2 Korean Patch TestCli.exe') ((@((Join-Path $source 'TestCliProgram.cs'),$assembly) + $core) + $shared) $compatibilityResources
 if (Test-Path -LiteralPath (Join-Path $source 'LauncherUpdateTest.cs')) {
-    Invoke-Csc 'exe' 'Ams2KoreanBeta.LauncherUpdateTest' (Join-Path $output 'AMS2 Launcher Update Test.exe') (@((Join-Path $source 'LauncherUpdateTest.cs'),(Join-Path $source 'LauncherProgram.cs'),$assembly) + $shared) $launcherResources
+    Invoke-Csc 'exe' 'Ams2KoreanBeta.LauncherUpdateTest' (Join-Path $output 'AMS2 Launcher Update Test.exe') (@((Join-Path $source 'LauncherUpdateTest.cs'),(Join-Path $source 'LauncherProgram.cs'),$assembly) + $shared + $launcherCore) ($launcherResources + $compatibilityResources)
 }
 
 Copy-Item -LiteralPath (Join-Path $source 'Installer.exe.config') -Destination (Join-Path $output "AMS2-Korean-Patch-OB-$Version.exe.config") -Force

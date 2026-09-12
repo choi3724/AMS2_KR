@@ -1,5 +1,47 @@
 # AMS2 Project Memory
 
+## Open Beta 0.83 — 2026-09-13
+
+The user authorized repair, commit, and publication of 0.83, with progress updates.
+0.83 supports Steam build `25271800` / V1.6.9.95.3432. The final package was installed on
+this PC; the user supplied a screenshot confirming normal Korean main-menu text.
+Normal/VR launchers now repair compatible updated menu font routes, preserve current game
+originals for removal, and stop for unknown archive/translation/font changes. This is not
+a guarantee that all future game updates work automatically.
+
+The 26 installation/repair/recovery fixture checks passed, including interrupted repair,
+manual-change protection, 0.81/0.82 upgrades, and restoration to new game originals.
+See `installer/0.83/VALIDATION.md` and the external handoff
+`E:\AMS2_Korean_Work\handoff\AMS2_작업인계_2026-09-13.md` for final release identifiers.
+Build evidence and the tested candidate are in `build\game-update-20260913-v3` outside Git.
+Do not use the rejected v1/v2 menu candidates, which missed named widgets.
+
+Multiplayer replay-save wording, replay timer clipping, all ERS modes, physical VR, and the
+complete automatic download/install/relaunch flow remain unverified or unresolved as noted
+in validation. Four missing glyphs and 13 translation-token discrepancies remain unchanged.
+The old full uninstaller is restricted to build 24132163; do not ship it for build 25271800.
+
+## Initial game-update diagnosis — 2026-09-13 (historical)
+
+The current local game is now V1.6.9.95.3432 / Steam build `25271800` (updated 2026-09-12 23:42:29 KST).
+Open Beta 0.82 targets the previous build `24132163`. Four menu BGUI files and IGPHASEHUD/HUDDISPLAY
+were replaced with verified new Steam originals. All four menus now have zero Korean font references;
+461 of 465 direct patch files still match 0.82. This explains the reported menu `**` output.
+Read `E:\AMS2_Korean_Work\analysis\update-20260913\진단결과.md` before the older handoff below.
+The initial no-patch state was superseded by the 0.83 work above. Do not overwrite
+new game menus with old menu files or bypass the old full uninstaller's build check.
+
+## Previous work handoff — 2026-09-10 (historical)
+
+Read `E:\AMS2_Korean_Work\handoff\AMS2_작업인계_2026-09-10.md` before resuming work.
+The published baseline is Open Beta 0.82 (`8421f83176b86a61c5c9bdfdd6a9f523992e0463`).
+Subsequent recovery/update changes are uncommitted and unreleased. Preserve the working tree.
+The separate full uninstaller passed 16 fixture checks; its actual stock-font appearance check is pending.
+Four missing Korean glyphs and 13 translation-token discrepancies remain unmodified.
+Do not commit, tag, push, or publish a new release without a new user request.
+
+This is a dated handoff pointer. Verify current files and remote release state when resuming.
+
 ## GitHub Release Korean text encoding rule
 
 This rule is mandatory for every future AMS2 Korean patch release.
@@ -22,13 +64,16 @@ Root cause recorded on 2026-08-26: Windows PowerShell 5 interpreted Korean liter
 
 ## Release file naming rule
 
-Use the following base filename for every future distributable installer and ZIP:
+The user's Open Beta naming request from 0.81 onward supersedes the earlier CB naming rule.
+Use this base filename for the main patch installer and ZIP, with the user-approved version:
 
-`AMS2 한국어 패치 CB 0.X.X`
+`AMS2 한국어 패치 오픈베타 <버전>`
 
 Examples:
 
-- `AMS2 한국어 패치 CB 0.7.0.exe`
-- `AMS2 한국어 패치 CB 0.7.0.zip`
+- `AMS2 한국어 패치 오픈베타 0.82.exe`
+- `AMS2 한국어 패치 오픈베타 0.82.zip`
 
 This rule applies to user-facing release filenames. Do not rename internal package IDs or the normal/VR launcher executables unless separately instructed.
+The existing GitHub asset is `AMS2.0.82.zip`; do not rename or replace it while preparing a future release.
+Separate recovery tools keep their descriptive filenames, such as `AMS2 한국어 패치 완전 제거.exe`.

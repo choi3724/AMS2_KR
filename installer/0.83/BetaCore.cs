@@ -25,15 +25,15 @@ namespace Ams2KoreanBeta
 
     internal sealed class PackageManifest
     {
-        public const string PackageId = "AMS2-KR-BETA-0.82-PRETENDARD";
-        public const string Version = "Open Beta 0.82";
+        public const string PackageId = "AMS2-KR-BETA-0.83-PRETENDARD";
+        public const string Version = "Open Beta 0.83";
         public const string AppId = "1066890";
-        public const string BuildId = "24132163";
+        public const string BuildId = "25271800";
         public const string Branch = "public";
-        public const string StockBootflowSha256 = "2FE28D744F8DF0443FB290A10DAC52AA1308DE9389E776F0BD5F2BB8F03355B7";
+        public const string StockBootflowSha256 = "806BE47D41676BA56FD986109459AFD9C0C8E0F19B3717516A6BF9E0E5FB790F";
         public const string StockPhysicsSha256 = "39B720D1DC4CE529AC06AE10D0CF756E602ABD97772C5A24D7F31065C289C434";
         public const string IgphaseHudRelativePath = "Pakfiles\\IGPHASEHUD.bff";
-        public const string KnownStockIgphaseHudSha256 = "F967D1A322EB75AAD742CF21888D75DB0CA4CB407ACDEC72F14D32BD5351E7DA";
+        public const string KnownStockIgphaseHudSha256 = "0F4EC40436B7AD92988C959996A66FBE05C45421C6EEA18D6B4843D2D8004DFB";
         public const string KnownLegacyPatchedIgphaseHudSha256 = "D1618BB1F6E09F53E8BB86F4A163C2934B91814F5F326670381C5496B3D7C398";
         public const long BffPatcherBytes = 72343081;
         public const string BffPatcherSha256 = "4179D08A1452D497D612B0B371BF9C8881AFFDBEAE2389A9A1D393F85FA6AAA5";
@@ -525,6 +525,8 @@ namespace Ams2KoreanBeta
                 Prepare(game);
                 ValidateGame(game);
                 manifest.ValidateAll();
+                if (GameUpdateCompatibility.NeedsRepair(gameDir))
+                    return Ok("GAME_UPDATE_DETECTED", "게임 업데이트 또는 파일 변경이 감지되었습니다. 설치를 누르면 호환성을 확인하고 필요한 한글 연결을 다시 적용합니다.", null);
                 string detected = DetectState();
                 if (detected == "UPDATE_AVAILABLE")
                 {
@@ -555,6 +557,7 @@ namespace Ams2KoreanBeta
                 ValidateGame(game);
                 manifest.ValidateAll();
                 GuardProcesses();
+                GameUpdateCompatibility.Ensure(gameDir, false, Log);
                 string detected = DetectState();
                 if (detected == "INSTALLED_EXACT")
                 {
@@ -609,6 +612,7 @@ namespace Ams2KoreanBeta
                 Prepare(game);
                 ValidateGame(game);
                 GuardProcesses();
+                GameUpdateCompatibility.Ensure(gameDir, false, Log);
                 InstallState state = LoadState();
                 if (state == null || (state.Status != "INSTALLED" && state.Status != "PREPARED")) throw new InvalidOperationException("복구할 활성 설치 상태가 없습니다.");
                 ValidateBackupContract(state);
@@ -630,6 +634,7 @@ namespace Ams2KoreanBeta
                 Prepare(game);
                 ValidateGame(game);
                 GuardProcesses();
+                GameUpdateCompatibility.Ensure(gameDir, true, Log);
                 InstallState state = LoadState();
                 if (state == null || state.Status != "INSTALLED") throw new InvalidOperationException("한국어 패치가 정확히 설치되지 않았습니다.");
                 ValidateInstalled(state);
@@ -706,6 +711,16 @@ namespace Ams2KoreanBeta
                         foreach (string recent in Directory.GetFiles(logRoot, "*.log").OrderByDescending(File.GetLastWriteTimeUtc).Take(10))
                             File.Copy(recent, Path.Combine(temp, "logs", Path.GetFileName(recent)));
                     }
+                    string repairRoot = Path.Combine(stateRoot, "game-updates");
+                    if (Directory.Exists(repairRoot))
+                        foreach (string folder in Directory.GetDirectories(repairRoot).OrderByDescending(Directory.GetLastWriteTimeUtc).Take(5))
+                            foreach (string name in new[] { "before.tsv", "result.txt" })
+                            {
+                                string source = Path.Combine(folder, name);
+                                if (!File.Exists(source)) continue;
+                                string destination = Path.Combine(temp, "game-updates", Path.GetFileName(folder), name);
+                                FileOps.EnsureDirectoryFor(destination); File.Copy(source, destination);
+                            }
                     if (File.Exists(outputZip)) throw new InvalidOperationException("진단 ZIP 대상이 이미 존재합니다.");
                     Directory.CreateDirectory(Path.GetDirectoryName(Path.GetFullPath(outputZip)));
                     ZipFile.CreateFromDirectory(temp, outputZip, CompressionLevel.Optimal, false);
@@ -725,6 +740,8 @@ namespace Ams2KoreanBeta
         private void ValidateGame(GameInfo game)
         {
             if (!File.Exists(Path.Combine(gameDir, "AMS2.exe")) || !File.Exists(Path.Combine(gameDir, "AMS2AVX.exe"))) throw new InvalidOperationException("게임 실행 파일 검증 실패");
+            if (game.BuildId != PackageManifest.BuildId && GameUpdateCompatibility.ActiveState(gameDir) == null)
+                throw new InvalidOperationException("현재 게임 빌드는 새 설치의 지원 대상과 다릅니다. 최신 한글패치를 확인해주세요. 현재 build: " + game.BuildId);
             if (game.BuildId != PackageManifest.BuildId) Log("경고: 이 패치는 build " + PackageManifest.BuildId + " 기준으로 최적화되었습니다. 현재 build: " + game.BuildId);
             if (!game.Branch.Equals(PackageManifest.Branch, StringComparison.OrdinalIgnoreCase)) Log("경고: 이 패치는 " + PackageManifest.Branch + " branch 기준으로 최적화되었습니다. 현재 branch: " + game.Branch);
         }

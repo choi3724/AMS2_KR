@@ -2,13 +2,18 @@
 
 Source repository for the unofficial Automobilista 2 Korean patch and its authoring tools.
 
+For the current local work handoff and pending changes, read [PROJECT_MEMORY.md](PROJECT_MEMORY.md).
+
 ## Current baseline
 
-- Version: Open Beta 0.82
+- Version: Open Beta 0.83
 - Author: ENGIceBlasT
-- Reference game build: Steam public build 24132163
+- Reference game build: Steam public build 25271800 / V1.6.9.95.3432
 - After installation, launch through `AMS2 Korean Launcher.exe` or an installer-created shortcut.
-- To remove the patch, choose `제거 / 복구` in the installer. No separate emergency removal tool is distributed.
+- Normal and VR launchers check changed game files and repair compatible menu font routes with backups. Unknown archive, translation-index, or font changes stop launch for a compatibility review.
+- To remove the patch, choose `제거 / 복구` in the installer. After a supported game update, removal restores the newer game originals.
+- The historical [full uninstaller](installer/0.82/RECOVERY.md) targets build 24132163 only. It is not included in 0.83 and must not be used to downgrade the current game.
+- See [0.83 validation and reproduction](installer/0.83/VALIDATION.md) for test evidence and remaining runtime checks.
 
 ## Repository boundary
 
@@ -26,7 +31,7 @@ See [Repository Artifact Policy](docs/REPOSITORY_ARTIFACT_POLICY.md) for the ful
 Run the following command from PowerShell. Output is written outside the Git repository.
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File tools/repository/Build-InstallerOutsideRepo.ps1 -Version 0.82
+powershell -ExecutionPolicy Bypass -File tools/repository/Build-InstallerOutsideRepo.ps1 -Version 0.83 -CompatibilityDataRoot E:\AMS2_Korean_Work\build\game-update-20260913-v3\data
 ```
 
 `tools/AMS2-Asset-Studio` contains BFONT/DDS generation, BGUI adjustment, TDB editing, and analysis tools.
