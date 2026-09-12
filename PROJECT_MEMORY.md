@@ -1,5 +1,20 @@
 # AMS2 Project Memory
 
+## Open Beta 0.83.1 — 2026-09-13
+
+The user requested accurate error messages, installation on the previous game build, and a 0.83.1 release.
+The new installer/normal/VR launcher share profiles for builds `24132163` and `25271800`.
+Four legacy menus are byte-identical to the reviewed 0.82 payload, preserving its non-font changes too.
+Legacy ERS uses the old reviewed archive pair; current menus/archives remain the 0.83 assets.
+Unknown builds and changed files have distinct messages; the compatibility guard is retained.
+
+Read `installer/0.83.1/VALIDATION.md` and the external
+`E:\AMS2_Korean_Work\handoff\AMS2_작업인계_0.83.1_2026-09-13.md` for final release/test identifiers.
+Candidate root: `build/compat-legacy-20260913-v3` outside Git. Do not use v1/v2 intermediates.
+The old TEXT index content is unavailable locally: production pins its official Steam depot size/SHA1;
+old-build fixture tests explicitly substitute only that index fingerprint. Actual old-PC display remains a user check.
+Do not describe fixture tests as a real old-game execution or overwrite the published 0.83 ZIP.
+
 ## Open Beta 0.83 — 2026-09-13
 
 The user authorized repair, commit, and publication of 0.83, with progress updates.

@@ -54,6 +54,9 @@ if (Test-Path -LiteralPath $compatibility) {
         if (-not (Test-Path -LiteralPath $path)) { throw "Missing compatibility data: $path" }
         $compatibilityResources += '/resource:' + $path + ',Ams2KoreanBeta.Compatibility.' + $name
     }
+    foreach ($path in Get-ChildItem -LiteralPath $CompatibilityDataRoot -Filter '*.24132163.*.gz' -File) {
+        $compatibilityResources += '/resource:' + $path.FullName + ',Ams2KoreanBeta.Compatibility.' + $path.Name
+    }
 }
 $update = @(Join-Path $source 'InstallerUpdate.cs' | Where-Object { Test-Path -LiteralPath $_ })
 $launcherResources = @()
