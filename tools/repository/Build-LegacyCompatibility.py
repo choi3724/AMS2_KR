@@ -49,6 +49,8 @@ def main():
     for relative in compat.MENUS:
         before = (out / 'original-24132163' / relative).read_bytes()
         after = (old_package / 'payload/direct' / relative).read_bytes()
+        if relative in compat.halo_help.MENUS:
+            after, _ = compat.halo_help.patch(after)
         output = out / 'candidate-24132163' / relative
         output.parent.mkdir(parents=True, exist_ok=True)
         output.write_bytes(after)
@@ -76,7 +78,7 @@ def main():
         legacy['files'][relative.lower()]['sha256'] = compat.sha(after)
     rules['legacy'] = legacy
     (out / 'data/rules.json').write_text(json.dumps(rules, ensure_ascii=False, indent=2), encoding='utf-8')
-    print('PASS: two game profiles; legacy menus and ERS match the reviewed 0.82 payload')
+    print('PASS: two game profiles; legacy menus retain reviewed changes plus halo help; ERS preserved')
 
 
 if __name__ == '__main__':

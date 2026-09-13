@@ -22,12 +22,13 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--compatibility', type=Path, required=True)
     parser.add_argument('--package', type=Path)
+    parser.add_argument('--version', choices=('0.83.1', '0.83.2'), default='0.83.1')
     args = parser.parse_args()
     compat = args.compatibility.resolve()
-    root = WORK / 'build/qa0831' / uuid.uuid4().hex[:8]
+    root = WORK / 'build' / ('qa' + args.version.replace('.', '')) / uuid.uuid4().hex[:8]
     root.mkdir(parents=True)
-    package = args.package.resolve() if args.package else compat / 'package/AMS2 한국어 패치 오픈베타 0.83.1'
-    production = compat / 'build/0.83.1/installer/AMS2 Korean Patch TestCli.exe'
+    package = args.package.resolve() if args.package else compat / 'package' / ('AMS2 한국어 패치 오픈베타 ' + args.version)
+    production = compat / 'build' / args.version / 'installer/AMS2 Korean Patch TestCli.exe'
     rules = json.loads((compat / 'data/rules.json').read_text(encoding='utf-8'))
     assert rules['legacy']['textIndexSha1'] == 'E69F8BCC367FCE781C5F4F09CB5537D85F3C4A86'
     assert rules['legacy']['textIndexBytes'] == 53149
@@ -36,7 +37,7 @@ def main():
     test_rules['legacy']['textIndexSha1'] = hashlib.sha1(old_index).hexdigest().upper()
     (root / 'fixture-rules.json').write_text(json.dumps(test_rules), encoding='utf-8')
     cli = root / 'fixture-cli.exe'
-    source = REPO / 'installer/0.83.1'
+    source = REPO / 'installer' / args.version
     command = [r'C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe', '/nologo', '/target:exe', '/platform:anycpu',
                '/main:Ams2KoreanBeta.TestCliProgram', '/out:' + str(cli), '/define:COMPATIBILITY_TEST']
     command += ['/reference:' + name + '.dll' for name in ('System', 'System.Core', 'System.Drawing', 'System.Windows.Forms', 'System.IO.Compression', 'System.IO.Compression.FileSystem', 'System.Web.Extensions')]
@@ -108,6 +109,31 @@ def main():
             run(build + '-repeat-' + str(cycle), game, '--install', 'INSTALLED_EXACT', tool)
             run(build + '-launch-guard-' + str(cycle), game, 'repair', 'COMPATIBILITY=PASS', tool)
             run(build + '-remove-' + str(cycle), game, '--uninstall', 'RESTORED_EXACT', tool)
+            assert snapshot(game) == before
+    if args.version == '0.83.2':
+        previous = WORK / 'build/compat-legacy-20260913-v3'
+        previous_rules = json.loads((previous / 'data/rules.json').read_text(encoding='utf-8'))
+        previous_rules['legacy']['textIndexSha1'] = test_rules['legacy']['textIndexSha1']
+        previous_rules_file = root / 'previous-fixture-rules.json'
+        previous_rules_file.write_text(json.dumps(previous_rules), encoding='utf-8')
+        previous_cli = root / 'previous-fixture-cli.exe'
+        previous_command = [item.replace(str(source), str(REPO / 'installer/0.83.1')).replace('/out:' + str(cli), '/out:' + str(previous_cli))
+                            for item in command if not item.startswith('/resource:')]
+        previous_command += ['/resource:' + str(previous_rules_file) + ',Ams2KoreanBeta.Compatibility.rules.json']
+        previous_command += ['/resource:' + str(p) + ',Ams2KoreanBeta.Compatibility.' + p.name for p in (previous / 'data').glob('*.gz')]
+        compiled = subprocess.run(previous_command, capture_output=True)
+        (root / 'previous-compile.log').write_bytes(compiled.stdout + compiled.stderr)
+        assert compiled.returncode == 0
+        previous_package = WORK / 'releases/0.83.1/AMS2 한국어 패치 오픈베타 0.83.1'
+        for build in ('24132163', '25271800'):
+            game = create('0831-upgrade-' + build, build)
+            before = snapshot(game)
+            old_tool = previous_cli if build == '24132163' else previous / 'build/0.83.1/installer/AMS2 Korean Patch TestCli.exe'
+            new_tool = cli if build == '24132163' else production
+            run(build + '-0831-install', game, '--install', 'INSTALLED_EXACT', old_tool, previous_package)
+            run(build + '-0832-upgrade', game, '--install', 'UPDATED_EXACT', new_tool)
+            installed(game, build)
+            run(build + '-0832-upgrade-remove', game, '--uninstall', 'RESTORED_EXACT', new_tool)
             assert snapshot(game) == before
     game = create('legacy-upgrade', '24132163')
     before = snapshot(game)

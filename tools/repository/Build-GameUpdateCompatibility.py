@@ -18,6 +18,8 @@ sys.path.insert(0, str(REPO / 'tools/AMS2-Asset-Studio/vendor'))
 import ams2_bgui_editor as bgui
 from build_ers_hotfix import ROUTES, patch_layout
 from steam_manifest import parse_manifest
+from rebase_translations import build as rebase_translations
+import halo_help
 
 MENUS = ['gui/menu_' + name + '_1_6.bgui' for name in
          ('dialogbox_frontendonly', 'dialogbox_gamewide', 'ingamemenu', 'mainmenu')]
@@ -128,13 +130,17 @@ def main():
             value = before.group()
             restored[after.start() - 1:after.end()] = bytes([len(value)]) + value
         assert bytes(restored) == source
+        help_overrides = {}
+        if relative in halo_help.MENUS:
+            result, help_overrides = halo_help.patch(result)
         rules['menus'][relative] = {'stock': sha(source), 'patched': sha(result), 'count': len(edits), 'texts': len(final),
-                                    'map': default, 'overrides': overrides}
+                                    'map': default, 'overrides': overrides, 'helpOverrides': help_overrides}
+        rules['files'][relative]['sha256'] = sha(result)
         for folder, content in [('original', source), ('candidate', result)]:
             path = out / folder / relative
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_bytes(content)
-        print(relative, len(edits), 'font fields;', len(final), 'Text records; reverse-byte-exact PASS')
+        print(relative, len(edits), 'font fields;', len(final), 'Text records; font reversal PASS; halo help', len(help_overrides))
     inspect = WORK / 'build/repo-tools/BffEntryInspect/bin/Release/netcoreapp3.1/BffEntryInspect.exe'
     patcher = package / 'runtime/AMS2.DynamicBffPatcher.exe'
     for relative, expected in STOCK.items():
@@ -190,10 +196,24 @@ def main():
         (data / (key + '.xor.gz')).write_bytes(delta)
         rules['archives'][relative.lower()] = {'stock': sha(source), 'patched': sha(after), 'bytes': len(source), 'resource': key}
         rules['files'][relative.lower()] = {'sha256': sha(after), 'role': 'modified'}
-    # The translation tables are loose overlays of this archive. A changed index requires a translation review.
+    # Most text tables live in BOOTFLOW, not Dir/TEXT. Review actual native keys too.
+    bootflow = game / 'Pakfiles/BOOTFLOW.bff'
+    assert hashlib.sha1(bootflow.read_bytes()).hexdigest().upper() == official['pakfiles/bootflow.bff']['sha1_content']
+    extracted_text = out / 'stock-text'
+    run([inspect, game, bootflow, '.tdb', extracted_text])
+    reviews = rebase_translations(extracted_text / 'text', package / 'payload/direct/text', out / 'candidate/text')
+    for review in reviews:
+        rules['files']['text/' + review['file']]['sha256'] = review['after_sha256'].upper()
+    # TEXT contains additional tables; a changed index still requires review.
     text_index = (current_root / 'Pakfiles/Dir/TEXT.bff').read_bytes()
     assert hashlib.sha1(text_index).hexdigest().upper() == official['pakfiles/dir/text.bff']['sha1_content']
     rules['textIndex'] = sha(text_index)
+    for relative in ('Languages/Languages.bml', 'Pakfiles/Dir/TEXT.bff'):
+        original = current_root / relative
+        assert hashlib.sha1(original.read_bytes()).hexdigest().upper() == official[relative.lower()]['sha1_content']
+        target = out / 'original' / relative
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(original, target)
     (data / 'rules.json').write_text(json.dumps(rules, ensure_ascii=False, indent=2), encoding='utf-8')
     print('PASS: compatibility data', data)
 

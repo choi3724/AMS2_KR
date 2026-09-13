@@ -1,5 +1,19 @@
 # AMS2 Project Memory
 
+## Open Beta 0.83.2 — 2026-09-13
+
+The user authorized a 0.83.2 release with the exact public note:
+`번역이 제대로 표시되지 않는 문제 수정`.
+Native BOOTFLOW translation tables now supply the key sets and non-Korean values;
+18 missing keys and 10 changed English entries are reviewed, preserving prior Korean values.
+Both main/in-game halo help routes and visibility are restored for both supported builds,
+and the shared update repair keeps these corrections with record fingerprint checks.
+Read `installer/0.83.2/VALIDATION.md` for final test evidence and remaining issues.
+Source assets are built outside Git under `build/translation-halo-legacy-20260913-v1`.
+The unrelated remote-PC all-asterisk report is unresolved because its diagnostic files were deleted.
+Other historic help-reference differences are recorded in the external qualifying analysis;
+do not blindly restore them because some reuse keys later corrected for replay messages.
+
 ## Open Beta 0.83.1 — 2026-09-13
 
 The user requested accurate error messages, installation on the previous game build, and a 0.83.1 release.

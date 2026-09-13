@@ -19,6 +19,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--compatibility', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--version', choices=('0.83.1', '0.83.2'), default='0.83.1')
     args = parser.parse_args()
     source, output = args.compatibility.resolve(), args.output.resolve()
     if output.exists() or output == REPO or REPO in output.parents:
@@ -33,19 +34,25 @@ def main():
     for folder in ('assets', 'runtime', 'payload'):
         shutil.copytree(baseline / folder, output / folder)
     (output / 'manifest').mkdir()
-    binaries = source / 'build/0.83.1/installer'
+    version = args.version
+    binaries = source / 'build' / version / 'installer'
+    rules = json.loads((source / 'data/rules.json').read_text(encoding='utf-8'))
     for row in rows:
         name = row['relative_path']
-        if name in ('AMS2 Korean Launcher.exe', 'AMS2 Korean VR Launcher.exe'):
+        launcher = name in ('AMS2 Korean Launcher.exe', 'AMS2 Korean VR Launcher.exe')
+        replacement = binaries / name if launcher else source / 'candidate' / name
+        if replacement.exists():
             row['allowed_before_sha256'] = ';'.join(sorted(set(filter(None, row['allowed_before_sha256'].split(';'))) | {row['sha256']}))
-            shutil.copy2(binaries / name, output / 'payload/direct' / name)
-            row['sha256'], row['bytes'] = sha(binaries / name), str((binaries / name).stat().st_size)
+            shutil.copy2(replacement, output / 'payload/direct' / name)
+            row['sha256'], row['bytes'] = sha(replacement), str(replacement.stat().st_size)
+        if not launcher:
+            assert row['sha256'] == rules['files'][name.replace('\\', '/').lower()]['sha256'], ('Stale payload', name)
     def table(name, entries):
         with (output / 'manifest' / name).open('w', encoding='utf-8', newline='') as stream:
             writer = csv.DictWriter(stream, fieldnames=list(rows[0]), delimiter='\t', lineterminator='\n')
             writer.writeheader(); writer.writerows(entries)
     table('direct-files.tsv', rows)
-    legacy = json.loads((source / 'data/rules.json').read_text(encoding='utf-8'))['legacy']
+    legacy = rules['legacy']
     old_rows = [dict(row) for row in rows]
     for row in old_rows:
         relative = row['relative_path'].replace('\\', '/').lower()
@@ -59,11 +66,11 @@ def main():
             row['allowed_before_sha256'] = legacy['menus'][relative]['stock']
     table('direct-files-24132163.tsv', old_rows)
     shutil.copy2(source / 'data/HUDDISPLAY.24132163.xor.gz', output / 'payload/HUDDISPLAY.24132163.xor.gz')
-    name = 'AMS2 한국어 패치 오픈베타 0.83.1.exe'
-    shutil.copy2(binaries / 'AMS2-Korean-Patch-OB-0.83.1.exe', output / name)
-    shutil.copy2(REPO / 'installer/0.83.1/Installer.exe.config', output / (name + '.config'))
-    shutil.copy2(REPO / 'releases/0.83.1/RELEASE_NOTES.md', output / 'RELEASE_NOTES.md')
-    metadata = {'version': '0.83.1', 'supported_builds': ['24132163', '25271800'], 'direct_files_per_build': 465,
+    name = f'AMS2 한국어 패치 오픈베타 {version}.exe'
+    shutil.copy2(binaries / f'AMS2-Korean-Patch-OB-{version}.exe', output / name)
+    shutil.copy2(REPO / 'installer' / version / 'Installer.exe.config', output / (name + '.config'))
+    shutil.copy2(REPO / 'releases' / version / 'RELEASE_NOTES.md', output / 'RELEASE_NOTES.md')
+    metadata = {'version': version, 'supported_builds': ['24132163', '25271800'], 'direct_files_per_build': 465,
                 'compatibility_rules_sha256': sha(source / 'data/rules.json'), 'status': 'AWAITING_TESTS'}
     (output / 'manifest/release-manifest.json').write_text(json.dumps(metadata, indent=2), encoding='utf-8')
     print('PASS:', output)

@@ -10,6 +10,7 @@ if (-not $repo) { throw 'Not a Git repository.' }
 $repo = [IO.Path]::GetFullPath($repo)
 $source = Join-Path $repo "installer\$Version"
 if (-not (Test-Path -LiteralPath $source -PathType Container)) { throw "Installer source is missing: $source" }
+$assetSource = if (Test-Path -LiteralPath (Join-Path $source 'assets')) { $source } else { Join-Path $repo 'installer\0.83.1' }
 
 $output = Join-Path $WorkRoot "build\$Version\installer"
 $output = & (Join-Path $PSScriptRoot 'Assert-ExternalOutputPath.ps1') -OutputPath $output -RepositoryRoot $repo
@@ -37,7 +38,7 @@ function Invoke-Csc([string]$Target, [string]$Main, [string]$OutputFile, [string
 
 $assembly = Join-Path $source 'AssemblyInfo.cs'
 $core = @('BetaCore.cs','ErsArchivePatch.cs' | ForEach-Object { Join-Path $source $_ } | Where-Object { Test-Path -LiteralPath $_ })
-$icon = Join-Path $source 'ams2-korean.ico'
+$icon = Join-Path $assetSource 'ams2-korean.ico'
 $manifest = Join-Path $source 'app.manifest'
 $win32 = @("/win32icon:$icon", "/win32manifest:$manifest")
 
@@ -61,8 +62,8 @@ if (Test-Path -LiteralPath $compatibility) {
 $update = @(Join-Path $source 'InstallerUpdate.cs' | Where-Object { Test-Path -LiteralPath $_ })
 $launcherResources = @()
 if (Test-Path -LiteralPath (Join-Path $source 'GithubUpdater.cs')) {
-    $launcherResources = @('/resource:' + (Join-Path $source 'assets\installer-hero.png') + ',Ams2KoreanBeta.LauncherHero')
-    $launcherResources += '/resource:' + (Join-Path $source 'assets\Pretendard-Medium.otf') + ',Ams2KoreanBeta.Pretendard'
+    $launcherResources = @('/resource:' + (Join-Path $assetSource 'assets\installer-hero.png') + ',Ams2KoreanBeta.LauncherHero')
+    $launcherResources += '/resource:' + (Join-Path $assetSource 'assets\Pretendard-Medium.otf') + ',Ams2KoreanBeta.Pretendard'
 }
 Invoke-Csc 'winexe' 'Ams2KoreanBeta.InstallerProgram' (Join-Path $output "AMS2-Korean-Patch-OB-$Version.exe") ((@((Join-Path $source 'InstallerProgram.cs'),$assembly) + $core) + $shared + $update) ($win32 + $compatibilityResources)
 Invoke-Csc 'winexe' 'Ams2KoreanBeta.LauncherProgram' (Join-Path $output 'AMS2 Korean Launcher.exe') (@((Join-Path $source 'LauncherProgram.cs'),$assembly) + $shared + $launcherCore) ($win32 + $launcherResources + $compatibilityResources)
@@ -73,7 +74,7 @@ if (Test-Path -LiteralPath (Join-Path $source 'LauncherUpdateTest.cs')) {
 }
 
 Copy-Item -LiteralPath (Join-Path $source 'Installer.exe.config') -Destination (Join-Path $output "AMS2-Korean-Patch-OB-$Version.exe.config") -Force
-Copy-Item -LiteralPath (Join-Path $source 'assets') -Destination (Join-Path $output 'assets') -Recurse -Force
+Copy-Item -LiteralPath (Join-Path $assetSource 'assets') -Destination (Join-Path $output 'assets') -Recurse -Force
 
 $patcherOutput = Join-Path $output 'runtime'
 $patcherIntermediate = Join-Path $intermediate 'DynamicBffPatcher'
