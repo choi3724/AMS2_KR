@@ -8,6 +8,7 @@ import rebase_translations as rebase
 import ams2_bgui_editor as bgui
 import ams2_korean_font_builder as fonts
 import halo_help
+import hud_beta_help
 import struct
 
 
@@ -41,6 +42,7 @@ def main():
     index = document.keys.index('Game_HelpText_ManufacturerEvents')
     halo_text = document.language('Korean').values[index]
     required.update(ord(c) for c in halo_text if '\uac00' <= c <= '\ud7a3')
+    required.update(ord(c) for c in hud_beta_help.KOREAN if '\uac00' <= c <= '\ud7a3')
     names = set()
     for folder in ('direct', '24132163'):
         for menu in (args.package / 'payload' / folder / 'gui').glob('menu_*.bgui'):
@@ -49,6 +51,9 @@ def main():
         font = args.package / 'payload/direct' / name
         assert required <= set(fonts.parse_bfont(font.read_bytes(), name).codepoints), ('Missing new Hangul', name)
     for folder in ('direct', '24132163'):
+        menu = (args.package / 'payload' / folder / hud_beta_help.MENU).read_bytes()
+        assert hud_beta_help.field(hud_beta_help.ENGLISH) not in menu
+        assert menu.count(hud_beta_help.field(hud_beta_help.KOREAN)) == 1
         for relative in halo_help.MENUS:
             data = (args.package / 'payload' / folder / relative).read_bytes()
             help_record = halo_help.record(data)
@@ -74,7 +79,7 @@ def main():
         assert 'Conflicting' in str(error)
     else:
         raise AssertionError('Conflicting duplicate accepted')
-    print(f'PASS: {checked} tables; both 465-file manifests; {len(names)} menu fonts; halo help in both menus/builds; rejection guards')
+    print(f'PASS: {checked} tables; both 465-file manifests; {len(names)} menu fonts; halo and HUD beta help in both builds; rejection guards')
 
 
 if __name__ == '__main__':

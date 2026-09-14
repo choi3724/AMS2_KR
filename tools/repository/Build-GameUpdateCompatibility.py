@@ -20,6 +20,7 @@ from build_ers_hotfix import ROUTES, patch_layout
 from steam_manifest import parse_manifest
 from rebase_translations import build as rebase_translations
 import halo_help
+import hud_beta_help
 
 MENUS = ['gui/menu_' + name + '_1_6.bgui' for name in
          ('dialogbox_frontendonly', 'dialogbox_gamewide', 'ingamemenu', 'mainmenu')]
@@ -133,8 +134,12 @@ def main():
         help_overrides = {}
         if relative in halo_help.MENUS:
             result, help_overrides = halo_help.patch(result)
+        literal_text = None
+        if relative == hud_beta_help.MENU:
+            result = hud_beta_help.patch(result)
+            literal_text = [hud_beta_help.ENGLISH, hud_beta_help.KOREAN]
         rules['menus'][relative] = {'stock': sha(source), 'patched': sha(result), 'count': len(edits), 'texts': len(final),
-                                    'map': default, 'overrides': overrides, 'helpOverrides': help_overrides}
+                                    'map': default, 'overrides': overrides, 'helpOverrides': help_overrides, 'literalText': literal_text}
         rules['files'][relative]['sha256'] = sha(result)
         for folder, content in [('original', source), ('candidate', result)]:
             path = out / folder / relative

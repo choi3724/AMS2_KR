@@ -51,6 +51,8 @@ def main():
         after = (old_package / 'payload/direct' / relative).read_bytes()
         if relative in compat.halo_help.MENUS:
             after, _ = compat.halo_help.patch(after)
+        if relative == compat.hud_beta_help.MENU:
+            after = compat.hud_beta_help.patch(after)
         output = out / 'candidate-24132163' / relative
         output.parent.mkdir(parents=True, exist_ok=True)
         output.write_bytes(after)

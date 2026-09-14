@@ -1,5 +1,15 @@
 # AMS2 Project Memory
 
+## Open Beta 0.83.3 — 2026-09-14
+
+The user authorized 0.83.3 with the exact public note `누락된 부분의 번역 수정`.
+The inline HUD beta explanation in menu_mainmenu_1_6.bgui is translated again
+for both supported game builds; it is not a missing TDB entry. Shared launcher
+repair preserves the literal replacement and rejects changed/duplicate originals.
+Sources are in installer/0.83.3; the 0.83.2 source snapshot remains unchanged.
+External compatibility/build root: build/hud-beta-help-legacy-20260914-v2.
+Read installer/0.83.3/VALIDATION.md for checks and actual-game limits.
+
 ## Open Beta 0.83.2 — 2026-09-13
 
 The user authorized a 0.83.2 release with the exact public note:

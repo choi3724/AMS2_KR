@@ -22,7 +22,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--compatibility', type=Path, required=True)
     parser.add_argument('--package', type=Path)
-    parser.add_argument('--version', choices=('0.83.1', '0.83.2'), default='0.83.1')
+    parser.add_argument('--version', choices=('0.83.1', '0.83.2', '0.83.3'), default='0.83.1')
     args = parser.parse_args()
     compat = args.compatibility.resolve()
     root = WORK / 'build' / ('qa' + args.version.replace('.', '')) / uuid.uuid4().hex[:8]
@@ -110,30 +110,31 @@ def main():
             run(build + '-launch-guard-' + str(cycle), game, 'repair', 'COMPATIBILITY=PASS', tool)
             run(build + '-remove-' + str(cycle), game, '--uninstall', 'RESTORED_EXACT', tool)
             assert snapshot(game) == before
-    if args.version == '0.83.2':
-        previous = WORK / 'build/compat-legacy-20260913-v3'
+    if args.version in ('0.83.2', '0.83.3'):
+        previous_version = '0.83.2' if args.version == '0.83.3' else '0.83.1'
+        previous = WORK / ('build/translation-halo-legacy-20260913-v1' if previous_version == '0.83.2' else 'build/compat-legacy-20260913-v3')
         previous_rules = json.loads((previous / 'data/rules.json').read_text(encoding='utf-8'))
         previous_rules['legacy']['textIndexSha1'] = test_rules['legacy']['textIndexSha1']
         previous_rules_file = root / 'previous-fixture-rules.json'
         previous_rules_file.write_text(json.dumps(previous_rules), encoding='utf-8')
         previous_cli = root / 'previous-fixture-cli.exe'
-        previous_command = [item.replace(str(source), str(REPO / 'installer/0.83.1')).replace('/out:' + str(cli), '/out:' + str(previous_cli))
+        previous_command = [item.replace(str(source), str(REPO / 'installer' / previous_version)).replace('/out:' + str(cli), '/out:' + str(previous_cli))
                             for item in command if not item.startswith('/resource:')]
         previous_command += ['/resource:' + str(previous_rules_file) + ',Ams2KoreanBeta.Compatibility.rules.json']
         previous_command += ['/resource:' + str(p) + ',Ams2KoreanBeta.Compatibility.' + p.name for p in (previous / 'data').glob('*.gz')]
         compiled = subprocess.run(previous_command, capture_output=True)
         (root / 'previous-compile.log').write_bytes(compiled.stdout + compiled.stderr)
         assert compiled.returncode == 0
-        previous_package = WORK / 'releases/0.83.1/AMS2 한국어 패치 오픈베타 0.83.1'
+        previous_package = WORK / 'releases' / previous_version / ('AMS2 한국어 패치 오픈베타 ' + previous_version)
         for build in ('24132163', '25271800'):
-            game = create('0831-upgrade-' + build, build)
+            game = create(previous_version + '-upgrade-' + build, build)
             before = snapshot(game)
-            old_tool = previous_cli if build == '24132163' else previous / 'build/0.83.1/installer/AMS2 Korean Patch TestCli.exe'
+            old_tool = previous_cli if build == '24132163' else previous / 'build' / previous_version / 'installer/AMS2 Korean Patch TestCli.exe'
             new_tool = cli if build == '24132163' else production
-            run(build + '-0831-install', game, '--install', 'INSTALLED_EXACT', old_tool, previous_package)
-            run(build + '-0832-upgrade', game, '--install', 'UPDATED_EXACT', new_tool)
+            run(build + '-' + previous_version + '-install', game, '--install', 'INSTALLED_EXACT', old_tool, previous_package)
+            run(build + '-' + args.version + '-upgrade', game, '--install', 'UPDATED_EXACT', new_tool)
             installed(game, build)
-            run(build + '-0832-upgrade-remove', game, '--uninstall', 'RESTORED_EXACT', new_tool)
+            run(build + '-' + args.version + '-upgrade-remove', game, '--uninstall', 'RESTORED_EXACT', new_tool)
             assert snapshot(game) == before
     game = create('legacy-upgrade', '24132163')
     before = snapshot(game)
