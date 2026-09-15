@@ -22,7 +22,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--compatibility', type=Path, required=True)
     parser.add_argument('--package', type=Path)
-    parser.add_argument('--version', choices=('0.83.1', '0.83.2', '0.83.3'), default='0.83.1')
+    parser.add_argument('--version', choices=('0.83.1', '0.83.2', '0.83.3', '0.84'), default='0.83.1')
     args = parser.parse_args()
     compat = args.compatibility.resolve()
     root = WORK / 'build' / ('qa' + args.version.replace('.', '')) / uuid.uuid4().hex[:8]
@@ -44,6 +44,7 @@ def main():
     command += ['/resource:' + str(root / 'fixture-rules.json') + ',Ams2KoreanBeta.Compatibility.rules.json']
     command += ['/resource:' + str(p) + ',Ams2KoreanBeta.Compatibility.' + p.name for p in (compat / 'data').glob('*.gz')]
     command += [str(source / (name + '.cs')) for name in ('AssemblyInfo', 'BetaCore', 'ErsArchivePatch', 'GameLauncher', 'GithubUpdater', 'GameUpdateCompatibility', 'TestCliProgram')]
+    if (source / "ContentManagerOverlay.cs").exists(): command.append(str(source / "ContentManagerOverlay.cs"))
     compiled = subprocess.run(command, capture_output=True)
     (root / 'compile.log').write_bytes(compiled.stdout + compiled.stderr)
     assert compiled.returncode == 0, 'fixture compilation failed'
@@ -110,16 +111,16 @@ def main():
             run(build + '-launch-guard-' + str(cycle), game, 'repair', 'COMPATIBILITY=PASS', tool)
             run(build + '-remove-' + str(cycle), game, '--uninstall', 'RESTORED_EXACT', tool)
             assert snapshot(game) == before
-    if args.version in ('0.83.2', '0.83.3'):
-        previous_version = '0.83.2' if args.version == '0.83.3' else '0.83.1'
-        previous = WORK / ('build/translation-halo-legacy-20260913-v1' if previous_version == '0.83.2' else 'build/compat-legacy-20260913-v3')
+    if args.version in ('0.83.2', '0.83.3', '0.84'):
+        previous_version = '0.83.3' if args.version == '0.84' else '0.83.2' if args.version == '0.83.3' else '0.83.1'
+        previous = WORK / ('build/hud-beta-help-legacy-20260914-v2' if previous_version == '0.83.3' else 'build/translation-halo-legacy-20260913-v1' if previous_version == '0.83.2' else 'build/compat-legacy-20260913-v3')
         previous_rules = json.loads((previous / 'data/rules.json').read_text(encoding='utf-8'))
         previous_rules['legacy']['textIndexSha1'] = test_rules['legacy']['textIndexSha1']
         previous_rules_file = root / 'previous-fixture-rules.json'
         previous_rules_file.write_text(json.dumps(previous_rules), encoding='utf-8')
         previous_cli = root / 'previous-fixture-cli.exe'
         previous_command = [item.replace(str(source), str(REPO / 'installer' / previous_version)).replace('/out:' + str(cli), '/out:' + str(previous_cli))
-                            for item in command if not item.startswith('/resource:')]
+                            for item in command if not item.startswith('/resource:') and not item.endswith('ContentManagerOverlay.cs')]
         previous_command += ['/resource:' + str(previous_rules_file) + ',Ams2KoreanBeta.Compatibility.rules.json']
         previous_command += ['/resource:' + str(p) + ',Ams2KoreanBeta.Compatibility.' + p.name for p in (previous / 'data').glob('*.gz')]
         compiled = subprocess.run(previous_command, capture_output=True)

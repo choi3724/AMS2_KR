@@ -1,5 +1,24 @@
 # AMS2 Project Memory
 
+## Open Beta 0.84 — release preparation 2026-09-15
+
+User authorized commit/tag/push/release. Source installer/0.84 includes reviewed CM
+bootfile overlays before normal/VR launch and installed-patch upgrade. Normal game
+launch candidate confirmed by user; VR remains unconfirmed. Disable CM before
+Korean uninstall; arbitrary shared mod edits remain unsupported. Build and test
+evidence: E:\AMS2_Korean_Work\build\release084. Read docs/CONTENT_MANAGER_COMPATIBILITY.md.
+
+
+## Regression prevention — 2026-09-14 (unreleased maintenance)
+
+The user requested preparation against losing old fixes in later patches.
+Read docs/REGRESSION_PREVENTION.md before future game-update/release work.
+Build-Release0831.py now gates 0.83.3+ assembly on the reviewed baseline,
+both manifests, independent help invariants and actual installer/desktop/VR menu repair.
+The baseline is not automatically promoted from new candidates. Intentional asset
+changes require exact before/after hashes, rationale and verification evidence in Git.
+No new game patch/release is authorized by this maintenance request.
+
 ## Open Beta 0.83.3 — 2026-09-14
 
 The user authorized 0.83.3 with the exact public note `누락된 부분의 번역 수정`.

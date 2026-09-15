@@ -5,6 +5,7 @@ import hashlib
 import json
 from pathlib import Path
 import shutil
+import release_regressions
 
 REPO = Path(__file__).resolve().parents[2]
 WORK = REPO.parent
@@ -19,7 +20,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--compatibility', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--version', choices=('0.83.1', '0.83.2', '0.83.3'), default='0.83.1')
+    parser.add_argument('--version', choices=('0.83.1', '0.83.2', '0.83.3', '0.84'), default='0.83.3')
     args = parser.parse_args()
     source, output = args.compatibility.resolve(), args.output.resolve()
     if output.exists() or output == REPO or REPO in output.parents:
@@ -73,6 +74,15 @@ def main():
     metadata = {'version': version, 'supported_builds': ['24132163', '25271800'], 'direct_files_per_build': 465,
                 'compatibility_rules_sha256': sha(source / 'data/rules.json'), 'status': 'AWAITING_TESTS'}
     (output / 'manifest/release-manifest.json').write_text(json.dumps(metadata, indent=2), encoding='utf-8')
+    if tuple(map(int, version.split('.'))) >= (0, 83, 3):
+        try:
+            release_regressions.verify(output, source, version, output / 'manifest/regression-report.json')
+        except Exception:
+            metadata['status'] = 'BLOCKED_REGRESSION'
+            (output / 'manifest/release-manifest.json').write_text(json.dumps(metadata, indent=2), encoding='utf-8')
+            raise
+        metadata['status'] = 'REGRESSION_PASS_AWAITING_LIFECYCLE'
+        (output / 'manifest/release-manifest.json').write_text(json.dumps(metadata, indent=2), encoding='utf-8')
     print('PASS:', output)
 
 

@@ -49,6 +49,13 @@ $launcherCore = @()
 if (Test-Path -LiteralPath $compatibility) {
     if (-not $CompatibilityDataRoot) { throw 'CompatibilityDataRoot is required for an update-aware installer/launcher.' }
     $shared += $compatibility
+    $cmOverlay = Join-Path $source 'ContentManagerOverlay.cs'
+    if (Test-Path -LiteralPath $cmOverlay) {
+        $shared += $cmOverlay
+        $cmData = Join-Path $CompatibilityDataRoot 'cm-overlays.json.gz'
+        if (-not (Test-Path -LiteralPath $cmData)) { throw "Missing CM compatibility data: $cmData" }
+        $compatibilityResources += '/resource:' + $cmData + ',Ams2KoreanBeta.Compatibility.cm-overlays.json.gz'
+    }
     $launcherCore = $core
     foreach ($name in @('rules.json','IGPHASEHUD.xor.gz','HUDDISPLAY.xor.gz')) {
         $path = Join-Path $CompatibilityDataRoot $name

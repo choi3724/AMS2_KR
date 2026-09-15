@@ -6,17 +6,22 @@ For the current local work handoff and pending changes, read [PROJECT_MEMORY.md]
 
 ## Current baseline
 
-- Version: Open Beta 0.83.3
+- Version: Open Beta 0.84
 - Author: ENGIceBlasT
 - Supported game builds: Steam public builds 24132163 and 25271800 (V1.6.9.95.3432).
 - The installer selects the matching menus and ERS archive for each build; shared translations/fonts remain common.
 - After installation, launch through `AMS2 Korean Launcher.exe` or an installer-created shortcut.
 - Normal and VR launchers check changed game files and repair compatible menu font routes with backups. Unknown archive, translation-index, or font changes stop launch for a compatibility review.
+- CM generated bootfiles are checked before launch and compatible Korean content is reapplied automatically. Disable CM mods before removing the Korean patch.
 - To remove the patch, choose `제거 / 복구` in the installer. After a supported game update, removal restores the newer game originals.
 - The historical [full uninstaller](installer/0.82/RECOVERY.md) targets build 24132163 only. It is not included in 0.83 and must not be used to downgrade the current game.
-- See [0.83.3 validation and reproduction](installer/0.83.3/VALIDATION.md) for test evidence and remaining runtime checks.
+- See [0.84 validation and reproduction](installer/0.84/VALIDATION.md) for test evidence and remaining runtime checks.
 
 ## Repository boundary
+
+Before preparing another update, follow [기존 수정사항 누락 방지](docs/REGRESSION_PREVENTION.md).
+The release assembler checks the reviewed 0.83.3 assets and the shipped menu repair code,
+and blocks unreviewed differences instead of silently accepting a rebuilt package.
 
 This repository contains source, project configuration, canonical source assets, and documentation. Compiled output and distribution archives are not committed.
 
