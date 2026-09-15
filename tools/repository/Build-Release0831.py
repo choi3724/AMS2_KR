@@ -20,7 +20,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--compatibility', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--version', choices=('0.83.1', '0.83.2', '0.83.3', '0.84'), default='0.83.3')
+    parser.add_argument('--version', choices=('0.83.1', '0.83.2', '0.83.3', '0.84', '0.85'), default='0.83.3')
     args = parser.parse_args()
     source, output = args.compatibility.resolve(), args.output.resolve()
     if output.exists() or output == REPO or REPO in output.parents:

@@ -503,7 +503,8 @@
       "before": null,
       "after": "324D888A5D7E6DB6A1179EC6D10D26EEEC71A15ECEE44F7FFF725109BF768787",
       "versions": [
-        "0.84"
+        "0.84",
+        "0.85"
       ],
       "reason": "Add reviewed native CM bootfile Korean overlays; existing localization assets unchanged",
       "validation": "13 captured files semantically checked; 11 isolated launch repair checks passed; user confirmed normal game launch"

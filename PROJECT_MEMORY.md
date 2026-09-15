@@ -1,5 +1,14 @@
 # AMS2 Project Memory
 
+## Open Beta 0.85 — 2026-09-15
+
+User authorized release and commit. Fix intact older installation records being
+rejected by CM compatibility checks; CM absence returns without repair. Unknown
+mod edits remain blocked. Source installer/0.85; evidence build/release085.
+Actual report-PC cause remains unconfirmed without its ZIP. No real-PC install
+is authorized in this release task.
+
+
 ## Open Beta 0.84 — release preparation 2026-09-15
 
 User authorized commit/tag/push/release. Source installer/0.84 includes reviewed CM
