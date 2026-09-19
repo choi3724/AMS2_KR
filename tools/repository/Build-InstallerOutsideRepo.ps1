@@ -1,7 +1,8 @@
 param(
     [string]$Version = '0.82',
     [string]$WorkRoot = 'E:\AMS2_Korean_Work',
-    [string]$CompatibilityDataRoot = ''
+    [string]$CompatibilityDataRoot = '',
+    [string]$VerifiedBffPatcher = ''
 )
 
 $ErrorActionPreference = 'Stop'
@@ -38,6 +39,7 @@ function Invoke-Csc([string]$Target, [string]$Main, [string]$OutputFile, [string
 
 $assembly = Join-Path $source 'AssemblyInfo.cs'
 $core = @('BetaCore.cs','ErsArchivePatch.cs' | ForEach-Object { Join-Path $source $_ } | Where-Object { Test-Path -LiteralPath $_ })
+$core += @('UpgradeOwnership.cs','UpgradePlan.cs' | ForEach-Object { Join-Path $source $_ } | Where-Object { Test-Path -LiteralPath $_ })
 $icon = Join-Path $assetSource 'ams2-korean.ico'
 $manifest = Join-Path $source 'app.manifest'
 $win32 = @("/win32icon:$icon", "/win32manifest:$manifest")
@@ -45,6 +47,12 @@ $win32 = @("/win32icon:$icon", "/win32manifest:$manifest")
 $shared = @('GameLauncher.cs','GithubUpdater.cs' | ForEach-Object { Join-Path $source $_ } | Where-Object { Test-Path -LiteralPath $_ })
 $compatibility = Join-Path $source 'GameUpdateCompatibility.cs'
 $compatibilityResources = @()
+if (Test-Path -LiteralPath (Join-Path $source 'UpgradeOwnership.cs')) {
+    $ownership = Join-Path $source 'ownership.tsv'
+    if (-not (Test-Path -LiteralPath $ownership)) { $ownership = Join-Path $CompatibilityDataRoot 'ownership.tsv' }
+    if (-not (Test-Path -LiteralPath $ownership)) { throw 'Verified official release ownership catalog is required.' }
+    $compatibilityResources += '/resource:' + $ownership + ',Ams2KoreanBeta.Ownership'
+}
 $launcherCore = @()
 if (Test-Path -LiteralPath $compatibility) {
     if (-not $CompatibilityDataRoot) { throw 'CompatibilityDataRoot is required for an update-aware installer/launcher.' }
@@ -90,8 +98,15 @@ New-Item -ItemType Directory -Path $patcherOutput,$patcherIntermediate,$patcherB
 $baseIntermediateArg = '-p:BaseIntermediateOutputPath=' + $patcherIntermediate + '\'
 $projectExtensionsArg = '-p:MSBuildProjectExtensionsPath=' + $patcherIntermediate + '\'
 $baseOutputArg = '-p:BaseOutputPath=' + $patcherBuildRoot + '\'
-dotnet publish (Join-Path $source 'DynamicBffPatcher\BffEntryInspect.csproj') -c Release -o $patcherOutput --nologo $baseIntermediateArg $projectExtensionsArg $baseOutputArg
-if ($LASTEXITCODE -ne 0) { throw 'DynamicBffPatcher publish failed.' }
+if ($VerifiedBffPatcher) {
+    $coreText = Get-Content -Raw -LiteralPath (Join-Path $source 'BetaCore.cs')
+    $expected = [regex]::Match($coreText, 'BffPatcherSha256 = "([0-9A-F]{64})"').Groups[1].Value
+    if (-not $expected -or (Get-FileHash -LiteralPath $VerifiedBffPatcher -Algorithm SHA256).Hash -ne $expected) { throw 'Unchanged BFF runtime does not match the pinned source contract.' }
+    Copy-Item -LiteralPath $VerifiedBffPatcher -Destination (Join-Path $patcherOutput 'AMS2.DynamicBffPatcher.exe') -Force
+} else {
+    dotnet publish (Join-Path $source 'DynamicBffPatcher\BffEntryInspect.csproj') -c Release -o $patcherOutput --nologo $baseIntermediateArg $projectExtensionsArg $baseOutputArg
+    if ($LASTEXITCODE -ne 0) { throw 'DynamicBffPatcher publish failed.' }
+}
 
 $head = (& git -C $repo rev-parse HEAD).Trim()
 $files = Get-ChildItem -LiteralPath $output -File -Recurse | Sort-Object FullName | ForEach-Object {

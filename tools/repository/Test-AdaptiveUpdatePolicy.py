@@ -20,6 +20,7 @@ def main():
     parser.add_argument('--package', type=Path, required=True)
     parser.add_argument('--cli', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--version', default='0.86')
     args = parser.parse_args()
     source, package, cli, output = map(Path.resolve, (args.game, args.package, args.cli, args.output))
     repo = Path(__file__).resolve().parents[2]
@@ -126,7 +127,7 @@ def main():
     run('unknown-build-uninstall', fresh, ['--game-dir', str(fresh), '--release-root', str(package), '--uninstall', '--mock'])
 
     report = {'status': 'PASS', 'checks': checks, 'game_executed': False, 'source_game_modified': False,
-              'fixture': str(output), 'cli_sha256': sha(cli), 'package_installer_sha256': sha(package / 'AMS2 한국어 패치 오픈베타 0.86.exe')}
+              'fixture': str(output), 'cli_sha256': sha(cli), 'package_installer_sha256': sha(package / ('AMS2 한국어 패치 오픈베타 '+args.version+'.exe'))}
     (output / 'result.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(json.dumps(report, ensure_ascii=False, indent=2))
 
