@@ -1,5 +1,6 @@
 """Exercise compiled CM launch repair against an isolated copy of captured game files."""
 import argparse
+import csv
 import gzip
 import hashlib
 import json
@@ -39,11 +40,13 @@ def main():
             shutil.copy2(args.capture / relative, game / relative)
 
     def snapshot():
-        return {relative: (digest(game / relative), (game / relative).stat().st_mtime_ns,
-                           (game / relative).stat().st_birthtime_ns) for relative in edits}
+        def times(path):
+            stat = path.stat()
+            return stat.st_mtime_ns, getattr(stat, 'st_birthtime_ns', stat.st_ctime_ns)
+        return {relative: (digest(game / relative), *times(game / relative)) for relative in edits}
 
     protected = [game / (relative + '.orig') for relative in edits]
-    protected += [game / 'Mods/state.json', game / 'Mods/cm-preservation-sentinel', root / 'files.tsv', root / 'install-state.tsv']
+    protected += [game / 'Mods/state.json', game / 'Mods/cm-preservation-sentinel']
     before = {str(p): digest(p) for p in protected}
     reset()
     times = snapshot()
@@ -61,29 +64,35 @@ def main():
     run('cm-regenerated-between-launches')
     reset()
     target = game / next(iter(edits))
-    target.write_bytes(target.read_bytes() + b'unknown mod edit')
-    corrupt = snapshot()
-    run('unknown-shared-mod-rejected', 1)
-    assert snapshot() == corrupt
+    marker = b'unknown mod edit preserved'
+    target.write_bytes(target.read_bytes() + marker)
+    times_before = snapshot()[next(iter(edits))][1:]
+    run('unrelated-shared-mod-preserved')
+    assert target.read_bytes().endswith(marker)
+    assert snapshot()[next(iter(edits))][1:] == times_before
+    run('unrelated-shared-mod-idempotent')
+    assert target.read_bytes().endswith(marker)
     reset()
     native = snapshot()
-    (game / '.cm_fail_after_write').touch()
+    (game / '.compat_fail_after_write').touch()
     try:
         run('injected-write-failure', 1, True)
     finally:
-        (game / '.cm_fail_after_write').unlink()
+        (game / '.compat_fail_after_write').unlink()
     assert snapshot() == native
     assert not (root / 'cm-overlay/pending.json').exists()
-    (game / '.cm_interrupt_after_write').touch()
+    (game / '.compat_interrupt_after_write').touch()
     try:
-        run('interrupted-process', 74, True)
+        run('interrupted-process', 73, True)
     finally:
-        (game / '.cm_interrupt_after_write').unlink()
-    assert (root / 'cm-overlay/pending.json').exists()
+        (game / '.compat_interrupt_after_write').unlink()
+    assert 'status\tGAME_UPDATE_PENDING' in (root / 'install-state.tsv').read_text(encoding='utf-8')
     run('next-launch-recovers-interruption')
-    assert not (root / 'cm-overlay/pending.json').exists()
+    assert 'status\tGAME_UPDATE_PENDING' not in (root / 'install-state.tsv').read_text(encoding='utf-8')
     assert all(digest(game / p) == e['after'] for p, e in edits.items())
     assert before == {str(p): digest(p) for p in protected}
+    rows = list(csv.DictReader((root / 'files.tsv').open(encoding='utf-8-sig'), delimiter='\t'))
+    assert all(not (game / row['relative_path']).exists() or digest(game / row['relative_path']) == row['after_sha256'] for row in rows)
     checks.append('cm-backups-state-and-unrelated-mod-preserved')
     # CM installed after Korean: disabling bootfiles restores its Korean .orig.
     for relative in edits:

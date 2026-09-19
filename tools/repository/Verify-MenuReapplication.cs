@@ -10,6 +10,7 @@ class VerifyMenus
     static object Invoke(MethodInfo method, params object[] args) { return method.Invoke(null, args); }
     static int Main(string[] args)
     {
+        Console.OutputEncoding = new UTF8Encoding(false);
         try { Run(args); return 0; }
         catch (Exception error) { Console.Error.WriteLine(error.ToString()); return 1; }
     }
@@ -30,7 +31,9 @@ class VerifyMenus
                 string suffix = build == "24132163" ? "-24132163" : "";
                 byte[] source = File.ReadAllBytes(Path.Combine(args[1], "original" + suffix, name));
                 byte[] expected = File.ReadAllBytes(Path.Combine(args[1], "candidate" + suffix, name));
-                byte[] result = (byte[])Invoke(patch, source, entry.Value);
+                byte[] result;
+                try { result = (byte[])Invoke(patch, source, entry.Value); }
+                catch (TargetInvocationException error) { throw new Exception("Menu reapplication failed: " + build + " / " + name, error.InnerException ?? error); }
                 if (!result.SequenceEqual(expected)) throw new Exception("Menu mismatch: " + name);
             }
         }
@@ -54,6 +57,6 @@ class VerifyMenus
             }
             throw new Exception("Unsafe literal accepted");
         }
-        Console.WriteLine("PASS: " + Path.GetFileName(args[0]) + "; 8 menu outputs; changed/duplicate literal rejected");
+        Console.WriteLine("PASS: " + Path.GetFileName(args[0]) + "; all managed menu outputs; changed/duplicate literal rejected");
     }
 }

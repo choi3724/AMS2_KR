@@ -504,10 +504,33 @@
       "after": "324D888A5D7E6DB6A1179EC6D10D26EEEC71A15ECEE44F7FFF725109BF768787",
       "versions": [
         "0.84",
-        "0.85"
+        "0.85",
+        "0.86"
       ],
       "reason": "Add reviewed native CM bootfile Korean overlays; existing localization assets unchanged",
       "validation": "13 captured files semantically checked; 11 isolated launch repair checks passed; user confirmed normal game launch"
+    },
+    {
+      "scope": "compatibility",
+      "path": "data/rules.json",
+      "before": "59E8C3CCB9915B20AE233CDDB313B62AADC3A167FD23E9868B5D85C012C58D70",
+      "after": "9AA774527FE9D7947F1C41FD7BFA67A993FBCBB24F89CED655A4309D00FEB36E",
+      "versions": [
+        "0.86"
+      ],
+      "reason": "Apply one structure-based compatibility policy to all 98 modified BGUI files and make build IDs advisory",
+      "validation": "Rules generated from verified stock-to-patched pairs; all source pairs reverse-validated byte for byte"
+    },
+    {
+      "scope": "package",
+      "path": "runtime/AMS2.DynamicBffPatcher.exe",
+      "before": "4179D08A1452D497D612B0B371BF9C8881AFFDBEAE2389A9A1D393F85FA6AAA5",
+      "after": "252AF942BB9F4268616E4F45D1D18A4B2D40778413ABE1953EB3406CB0B09F05",
+      "versions": [
+        "0.86"
+      ],
+      "reason": "Patch both HUD archives from the current archive structure while preserving every unrelated entry",
+      "validation": "Current build 25391793 candidates were re-extracted; target entries changed and every non-target entry remained identical"
     }
   ]
 }
