@@ -13,6 +13,9 @@ def main():
     for name in ('package','cli','game','catalog','output'): p.add_argument('--'+name,type=pathlib.Path,required=True)
     p.add_argument('--published-cli',type=pathlib.Path)
     p.add_argument('--published-package',type=pathlib.Path)
+    p.add_argument('--version', default='0.87')
+    p.add_argument('--skip-scenarios', type=int, default=0, help='Resume after completed lifecycle scenarios; preserve earlier logs')
+    p.add_argument('--cleanup-completed', action='store_true', help='Remove completed isolated fixtures, retaining logs')
     p.add_argument('--focus-old-menus',action='store_true',help='Focused rerun of original-menu migration and transaction/CM/parent cases')
     a=p.parse_args(); work=pathlib.Path(__file__).resolve().parents[3]
     if a.output.exists(): raise ValueError('fresh output required')
@@ -86,7 +89,7 @@ def main():
         checks.append(label);return text
     def snapshot(game): return {p.relative_to(game).as_posix():sha(p) for p in game.rglob('*') if p.is_file() and 'Backup' not in p.relative_to(game).parts}
     def exact(game):
-        state=game/'Backup/AMS2-Korean/AMS2-KR-BETA-0.87-PRETENDARD'
+        state=game/('Backup/AMS2-Korean/AMS2-KR-BETA-'+a.version+'-PRETENDARD')
         rows=table(state/'files.tsv')
         assert all(sha(game/r['relative_path'].replace('\\','/'))==r['after_sha256'] for r in rows)
         assert 'schema_version\t2' in (state/'install-state.tsv').read_text()
@@ -98,8 +101,10 @@ def main():
         assert result.returncode!=0 and b'AMS2 Korean Launcher.exe' in raw and b'AMS2 Korean VR Launcher.exe' in raw
         checks.append('published-086-old-launcher-collision-reproduced')
     scenarios=[('v0.6.2-hotfix','oldest-six','record',True),('v0.6.83','font-generation','record',True),('v0.7','skip-many','renamed',True),('v0.82','ers-transition','record',False),('v0.84','reported-084','record',False),('v0.85','previous-085','record',False),('v0.86','retry-086','record',False),('v0.84','multiple-history','multiple',True),('v0.84','no-record','missing',False),('v0.84','broken-record','broken',False),('v0.6.2-hotfix','oldest-original-menus','old-menus',True),('v0.84','old-original-menus','old-menus',False)]
+    if a.version != '0.87': scenarios.append(('v0.87','previous-087','record',False))
     if a.focus_old_menus: scenarios=[x for x in scenarios if x[2]=='old-menus']
     scenarios.sort(key=lambda x:x[2]!='old-menus')
+    scenarios=scenarios[a.skip_scenarios:]
     for tag,label,mode,six in scenarios:
         game,state,old=fixture(tag,label,mode,six)
         prior=snapshot(game)
@@ -108,11 +113,15 @@ def main():
         result=subprocess.run([str(a.cli),'--repair-game-update',str(game)],capture_output=True,timeout=300)
         assert result.returncode==0,(label,result.stdout,result.stderr);checks.append(label+'-launch-policy')
         run(label+'-uninstall',game,'--uninstall')
-        restored_head=(game/'Backup/AMS2-Korean/AMS2-KR-BETA-0.87-PRETENDARD/install-state.tsv').read_text()
+        restored_head=(game/('Backup/AMS2-Korean/AMS2-KR-BETA-'+a.version+'-PRETENDARD/install-state.tsv')).read_text()
         if 'restore_policy\tPRE_UPGRADE' in restored_head: assert snapshot(game)==prior
         else:
             assert not (game/'AMS2 Korean Launcher.exe').exists()
             assert not (game/'AMS2 Korean VR Launcher.exe').exists()
+        if a.cleanup_completed:
+            fixture_root=game.parents[2].resolve()
+            assert fixture_root.parent==a.output.resolve()
+            shutil.rmtree(fixture_root)
     retired_package=a.output/'retirement-package';shutil.copytree(a.package,retired_package)
     retired_modified=next(r['relative_path'] for r in latest if r['role']=='modified')
     retired_created='AMS2 Korean VR Launcher.exe'
@@ -182,10 +191,10 @@ def main():
         row=next(r for r in rows if r['relative_path']==launcher.name)
         row['after_sha256']=sha(launcher);row['after_bytes']=str(launcher.stat().st_size)
         write(state/'files.tsv',rows)
-        result=subprocess.run([str(harness),str(parent_package/'AMS2 한국어 패치 오픈베타 0.87.exe'),str(game),str(launcher)]+(['vr'] if vr else []),capture_output=True,timeout=300)
+        result=subprocess.run([str(harness),str(parent_package/('AMS2 한국어 패치 오픈베타 '+a.version+'.exe')),str(game),str(launcher)]+(['vr'] if vr else []),capture_output=True,timeout=300)
         (a.output/(label+'.log')).write_bytes(result.stdout+result.stderr)
         assert result.returncode==0,(label,result.stderr[-3000:]);exact(game);checks.append(label)
-    report={'status':'PASS','checks':checks,'public_releases_cataloged':len(coverage),'real_game_modified':False,'game_executed':False,'cli_sha256':sha(a.cli),'installer_sha256':sha(a.package/'AMS2 한국어 패치 오픈베타 0.87.exe')}
+    report={'status':'PASS','checks':checks,'public_releases_cataloged':len(coverage),'real_game_modified':False,'game_executed':False,'cli_sha256':sha(a.cli),'installer_sha256':sha(a.package/('AMS2 한국어 패치 오픈베타 '+a.version+'.exe'))}
     (a.output/'result.json').write_text(json.dumps(report,indent=2),encoding='utf-8');print(json.dumps(report))
 
 if __name__=='__main__':main()

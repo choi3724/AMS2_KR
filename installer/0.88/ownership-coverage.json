@@ -1,0 +1,134 @@
+[
+  {
+    "tag": "v0.86",
+    "asset": "AMS2.0.86.zip",
+    "sha256": "87C11F216AA1433B0F748D5359455B542CB04E8ED4F1F3760990BB34CD20FB7E",
+    "entries": 930
+  },
+  {
+    "tag": "v0.85",
+    "asset": "AMS2.0.85.zip",
+    "sha256": "89F521BCA82DF7507DECA530C81CAB35B81C99DC973C4EDE66D60F98A2940ADF",
+    "entries": 930
+  },
+  {
+    "tag": "v0.84",
+    "asset": "AMS2.0.84.zip",
+    "sha256": "F626C62D291B2E32B32AD320A2263BFED0330DFA108B60950EA7E75B2ED9A711",
+    "entries": 930
+  },
+  {
+    "tag": "v0.83.3",
+    "asset": "AMS2.0.83.3.zip",
+    "sha256": "203A3D32B61CF9C69B25AD2867540B4A1F820DC2C0BC468C84A300C7F732CA95",
+    "entries": 930
+  },
+  {
+    "tag": "v0.83.2",
+    "asset": "AMS2.0.83.2.zip",
+    "sha256": "A26C2261CD107CCABD0B8C5F386764ACC11EA3B1805CC3DA3A63606760BBB430",
+    "entries": 930
+  },
+  {
+    "tag": "v0.83.1",
+    "asset": "AMS2.0.83.1.zip",
+    "sha256": "328A835BD7B5E9C5A8F49DFA5AB596399DA675DB79FE2A973F2745E54856208E",
+    "entries": 930
+  },
+  {
+    "tag": "v0.83",
+    "asset": "AMS2.0.83.zip",
+    "sha256": "E34DFFA3401BFB0AD30F891078DF31142CE291E92D6F57FF85DC481EF63E44A0",
+    "entries": 465
+  },
+  {
+    "tag": "v0.82",
+    "asset": "AMS2.0.82.zip",
+    "sha256": "AF00158ECF5D1AF3BE6BA8E2800402330FC6B0EA8206BF23B676613A86EA900D",
+    "entries": 465
+  },
+  {
+    "tag": "v0.81",
+    "asset": "AMS2.0.81.zip",
+    "sha256": "4219812330063E4E156763AFCFF7D82EB1E5DC02CB30410D6BE25380FD7CBA30",
+    "entries": 449
+  },
+  {
+    "tag": "v0.8",
+    "asset": "AMS2.CB.0.8.zip",
+    "sha256": "E3E0DF73126A9E660F4C7DBF3100B826AFE82AA80F4E314406ACAEBF288FF426",
+    "entries": 449
+  },
+  {
+    "tag": "v0.7",
+    "asset": "AMS2.CB.0.7.zip",
+    "sha256": "A8244FB06B57B4747672FF59BD737D0209A4D3CD0E7F755F7CD5EFE5EFEB590E",
+    "entries": 449
+  },
+  {
+    "tag": "v0.6.87",
+    "asset": "AMS2.CB.0.6.87.zip",
+    "sha256": "EDB2C59320D83AE9383ED9D455C1582F8F8AB23F82E576408C77B74F1A08C88B",
+    "entries": 449
+  },
+  {
+    "tag": "v0.6.86",
+    "asset": "AMS2.CB.0.6.86.zip",
+    "sha256": "BAF15B92C8B8E0F367C549C96EC2FCEE7403D79423F87FD0CD34DD58D72E72DD",
+    "entries": 449
+  },
+  {
+    "tag": "v0.6.85",
+    "asset": "AMS2.CB.0.6.85.zip",
+    "sha256": "C817654ADC85BB6CE2687C71949FD9D02F8A70B1552DBEB73F9E5AF37E41D348",
+    "entries": 449
+  },
+  {
+    "tag": "v0.6.84",
+    "asset": "AMS2.CB.0.6.84.zip",
+    "sha256": "FE1D58B96475E297CF5C9FA79B2DC13BCBCEB9FDDF2B90614E8A28B1BBCA7974",
+    "entries": 449
+  },
+  {
+    "tag": "v0.6.83",
+    "asset": "AMS2.CB.0.6.83.zip",
+    "sha256": "E584220E32B67848C6531AA5AC84100AFE01E515874A2569493CF84F380EE683",
+    "entries": 449
+  },
+  {
+    "tag": "v0.6.82",
+    "asset": "AMS2.CB.0.6.82.zip",
+    "sha256": "36C99677BD45905472FABF76E54705F10A8A3605C18C6BE5C2868FC87FE6C2A8",
+    "entries": 449
+  },
+  {
+    "tag": "v0.6.8",
+    "asset": "AMS2.CB.0.6.8.zip",
+    "sha256": "93E91A736B305D3D24CF161ABA18E06D642F91FACD54E8584C34D2FB493E7A28",
+    "entries": 449
+  },
+  {
+    "tag": "v0.6.4",
+    "asset": "AMS2.CB.0.6.4.zip",
+    "sha256": "4F7EED362997358C4A238E5E3B159281879946E418A839A450AAD90D69902820",
+    "entries": 448
+  },
+  {
+    "tag": "v0.6.3",
+    "asset": "AMS2-Korean-Closed-Beta-0.6.3-Pretendard.zip",
+    "sha256": "A4A2A2E41AFC830523E5AB4D00AE42FE482C374F86DFCD4517C17A9181B7D188",
+    "entries": 442
+  },
+  {
+    "tag": "v0.6.2-hotfix",
+    "asset": "AMS2-Korean-Closed-Beta-0.6.2-Hotfix.zip",
+    "sha256": "521063A6F8F62B67C00B9AB74F94F09AF06E544E1EBC1AA20C755BF7E522583A",
+    "entries": 442
+  },
+  {
+    "tag": "v0.87",
+    "asset": "AMS2.0.87.zip",
+    "sha256": "026E2E8B7E212BDD346AB2F1D448EB4B9DA46B162FD95D4C74D33280808FF436",
+    "entries": 930
+  }
+]

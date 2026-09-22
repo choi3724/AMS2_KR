@@ -17,7 +17,7 @@ internal static class VerifyUpgradeParent
             using (var parent = Process.Start(new ProcessStartInfo(args[2], "parent") { UseShellExecute = false, CreateNoWindow = true }))
             {
                 var watch = Stopwatch.StartNew();
-                string[] request = { "--update-and-launch", args[1], "--parent", parent.Id.ToString(), "--expected-version", "0.87" };
+                string[] request = { "--update-and-launch", args[1], "--parent", parent.Id.ToString(), "--expected-version", assembly.GetName().Version.ToString(2) };
                 if (args.Length > 3) request = request.Concat(new[] { "--vr" }).ToArray();
                 updater.GetMethod("InstallAndVerify", BindingFlags.NonPublic | BindingFlags.Static).Invoke(null, new object[] { request });
                 if (!parent.HasExited || watch.ElapsedMilliseconds < 1000) throw new Exception("Parent wait was skipped");
