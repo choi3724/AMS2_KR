@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>AMS2.DynamicBffPatcher</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PCarsTools_x64"><HintPath>..\..\0.83.1\DynamicBffPatcher\lib\PCarsTools_x64.dll</HintPath></Reference>
+    <Reference Include="ICSharpCode.SharpZipLib"><HintPath>..\..\0.83.1\DynamicBffPatcher\lib\ICSharpCode.SharpZipLib.dll</HintPath></Reference>
+    <Reference Include="Syroot.BinaryData"><HintPath>..\..\0.83.1\DynamicBffPatcher\lib\Syroot.BinaryData.dll</HintPath></Reference>
+    <Reference Include="Syroot.BinaryData.Core"><HintPath>..\..\0.83.1\DynamicBffPatcher\lib\Syroot.BinaryData.Core.dll</HintPath></Reference>
+    <Reference Include="Syroot.BinaryData.Memory"><HintPath>..\..\0.83.1\DynamicBffPatcher\lib\Syroot.BinaryData.Memory.dll</HintPath></Reference>
+    <Reference Include="XCompression"><HintPath>..\..\0.83.1\DynamicBffPatcher\lib\XCompression.dll</HintPath></Reference>
+    <Reference Include="BouncyCastle.Crypto"><HintPath>..\..\0.83.1\DynamicBffPatcher\lib\BouncyCastle.Crypto.dll</HintPath></Reference>
+    <Reference Include="CommandLine"><HintPath>..\..\0.83.1\DynamicBffPatcher\lib\CommandLine.dll</HintPath></Reference>
+  </ItemGroup>
+</Project>

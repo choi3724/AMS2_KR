@@ -14,6 +14,7 @@ def main():
     p.add_argument('--published-cli',type=pathlib.Path)
     p.add_argument('--published-package',type=pathlib.Path)
     p.add_argument('--version', default='0.87')
+    p.add_argument('--only-tag', help='Run only this official release lifecycle, without the unrelated full fault suite')
     p.add_argument('--skip-scenarios', type=int, default=0, help='Resume after completed lifecycle scenarios; preserve earlier logs')
     p.add_argument('--cleanup-completed', action='store_true', help='Remove completed isolated fixtures, retaining logs')
     p.add_argument('--focus-old-menus',action='store_true',help='Focused rerun of original-menu migration and transaction/CM/parent cases')
@@ -102,6 +103,8 @@ def main():
         checks.append('published-086-old-launcher-collision-reproduced')
     scenarios=[('v0.6.2-hotfix','oldest-six','record',True),('v0.6.83','font-generation','record',True),('v0.7','skip-many','renamed',True),('v0.82','ers-transition','record',False),('v0.84','reported-084','record',False),('v0.85','previous-085','record',False),('v0.86','retry-086','record',False),('v0.84','multiple-history','multiple',True),('v0.84','no-record','missing',False),('v0.84','broken-record','broken',False),('v0.6.2-hotfix','oldest-original-menus','old-menus',True),('v0.84','old-original-menus','old-menus',False)]
     if a.version != '0.87': scenarios.append(('v0.87','previous-087','record',False))
+    if a.only_tag:
+        scenarios=[(a.only_tag,'targeted-upgrade','record',False)]
     if a.focus_old_menus: scenarios=[x for x in scenarios if x[2]=='old-menus']
     scenarios.sort(key=lambda x:x[2]!='old-menus')
     scenarios=scenarios[a.skip_scenarios:]
@@ -122,6 +125,9 @@ def main():
             fixture_root=game.parents[2].resolve()
             assert fixture_root.parent==a.output.resolve()
             shutil.rmtree(fixture_root)
+    if a.only_tag:
+        report={'status':'PASS','checks':checks,'tag':a.only_tag,'version':a.version,'real_game_modified':False,'game_executed':False}
+        (a.output/'result.json').write_text(json.dumps(report,indent=2),encoding='utf-8');print(json.dumps(report));return
     retired_package=a.output/'retirement-package';shutil.copytree(a.package,retired_package)
     retired_modified=next(r['relative_path'] for r in latest if r['role']=='modified')
     retired_created='AMS2 Korean VR Launcher.exe'

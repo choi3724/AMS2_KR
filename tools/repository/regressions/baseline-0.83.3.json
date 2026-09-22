@@ -507,7 +507,8 @@
         "0.85",
         "0.86",
         "0.87",
-        "0.88"
+        "0.88",
+        "0.88.1"
       ],
       "reason": "Add reviewed native CM bootfile Korean overlays; existing localization assets unchanged",
       "validation": "13 captured files semantically checked; 11 isolated launch repair checks passed; user confirmed normal game launch"
@@ -520,7 +521,8 @@
       "versions": [
         "0.86",
         "0.87",
-        "0.88"
+        "0.88",
+        "0.88.1"
       ],
       "reason": "Apply one structure-based compatibility policy to all 98 modified BGUI files and make build IDs advisory",
       "validation": "Rules generated from verified stock-to-patched pairs; all source pairs reverse-validated byte for byte"
@@ -533,7 +535,8 @@
       "versions": [
         "0.86",
         "0.87",
-        "0.88"
+        "0.88",
+        "0.88.1"
       ],
       "reason": "Patch both HUD archives from the current archive structure while preserving every unrelated entry",
       "validation": "Current build 25391793 candidates were re-extracted; target entries changed and every non-target entry remained identical"
